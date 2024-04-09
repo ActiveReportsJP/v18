@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <title>バッチ印刷サンプル</title>
+    <link href="jsViewer.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <div class='container'>
+        <div class='container-header'>
+            <h2 id="header">バッチ印刷サンプル</h2>
+        </div>
+        <div class='container-left'></div>
+        <div class='container-list'>
+            <div id="all-reports" class="list-heading">すべてのレポート </div>
+            <div>
+                <ul id="reportsList"></ul>
+            </div>
+        </div>
+        <div class='container-printlist'>
+            <div id="selected-reports" class="list-heading">選択したレポート</div>
+            <div>
+                <ul id="selectedReportsList"></ul>
+            </div>
+            <div id="selected-list-footer" style="display:none" class='list-footer'>
+                <input id="print-button" type="button" value="選択したレポートを印刷する">
+            </div>
+        </div>
+        <div class='container-right' ></div>
+    </div>
+</body>
+<script type="module" src="script.js"></script>
+</html>
