@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Layers", "Layers\Layers.vbproj", "{EB325FEF-FDFA-4ED7-8E8D-4804DE6BDE8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Release|AnyCPU = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB325FEF-FDFA-4ED7-8E8D-4804DE6BDE8D}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{EB325FEF-FDFA-4ED7-8E8D-4804DE6BDE8D}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{EB325FEF-FDFA-4ED7-8E8D-4804DE6BDE8D}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{EB325FEF-FDFA-4ED7-8E8D-4804DE6BDE8D}.Release|AnyCPU.Build.0 = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

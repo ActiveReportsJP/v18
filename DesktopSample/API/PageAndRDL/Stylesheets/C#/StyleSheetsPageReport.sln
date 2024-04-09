@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StyleSheetsPageReport", "Stylesheets\StyleSheetsPageReport.csproj", "{E6897FB1-6B06-4509-BFD8-0B7662495B06}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Release|AnyCPU = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6897FB1-6B06-4509-BFD8-0B7662495B06}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{E6897FB1-6B06-4509-BFD8-0B7662495B06}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{E6897FB1-6B06-4509-BFD8-0B7662495B06}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{E6897FB1-6B06-4509-BFD8-0B7662495B06}.Release|AnyCPU.Build.0 = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

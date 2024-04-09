@@ -1,0 +1,141 @@
+﻿<Report xmlns="http://cdn.grapecity.com/ActiveReports/reporting/2023/08/reportdefinition">
+	<Name>Barcodes.rdlx</Name>
+	<ReportSections>
+		<ReportSection Name="ReportArea1">
+			<Body>
+				<Height>11.2cm</Height>
+				<ReportItems>
+					<CustomReportItem Name="Barcode1">
+						<Type>Barcode</Type>
+						<Top>1.6cm</Top>
+						<Left>1.2cm</Left>
+						<Width>13.8cm</Width>
+						<Height>1.6cm</Height>
+						<Style>
+							<FontFamily>Courier New</FontFamily>
+							<FontSize>8pt</FontSize>
+						</Style>
+						<CustomProperties>
+							<CustomProperty>
+								<Name>dd:QRCodeOptions.Encoding</Name>
+								<Value>65001</Value>
+							</CustomProperty>
+							<CustomProperty>
+								<Name>dd:Symbology</Name>
+								<Value>Code_128_A</Value>
+							</CustomProperty>
+							<CustomProperty>
+								<Name>dd:CaptionLocation</Name>
+								<Value>Below</Value>
+							</CustomProperty>
+							<CustomProperty>
+								<Name>dd:Value</Name>
+								<Value>(01)01234567890128(15)051231</Value>
+							</CustomProperty>
+						</CustomProperties>
+					</CustomReportItem>
+					<Textbox Name="BarcodeText">
+						<Top>7.689625cm</Top>
+						<Left>5.6cm</Left>
+						<Width>5cm</Width>
+						<Height>0.4cm</Height>
+						<Style>
+							<FontFamily>Courier New</FontFamily>
+							<FontSize>8pt</FontSize>
+							<PaddingBottom>2pt</PaddingBottom>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+						</Style>
+						<ZIndex>1</ZIndex>
+						<CanGrow>true</CanGrow>
+						<Value>(01)01234567890128(15)051231</Value>
+					</Textbox>
+					<Textbox Name="BarcodeBars">
+						<Top>6.669625cm</Top>
+						<Left>0.7672917cm</Left>
+						<Width>15.1915cm</Width>
+						<Height>1cm</Height>
+						<Style>
+							<FontFamily>Code 128</FontFamily>
+							<FontSize>48pt</FontSize>
+							<PaddingBottom>0pt</PaddingBottom>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>0pt</PaddingTop>
+						</Style>
+						<ZIndex>2</ZIndex>
+						<CanGrow>true</CanGrow>
+						<Value>=Code.Ean128(ReportItems!BarcodeText.Value)</Value>
+					</Textbox>
+					<Textbox Name="CaptionAR">
+						<Top>0.6cm</Top>
+						<Left>1.8cm</Left>
+						<Width>10.7148cm</Width>
+						<Height>0.6cm</Height>
+						<Style>
+							<FontFamily>IPAexMincho</FontFamily>
+							<FontSize>10pt</FontSize>
+							<FontStyle>Normal</FontStyle>
+							<FontWeight>400</FontWeight>
+							<PaddingBottom>2pt</PaddingBottom>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+						</Style>
+						<ZIndex>3</ZIndex>
+						<CanGrow>true</CanGrow>
+						<Value>通常のバーコード</Value>
+					</Textbox>
+					<Textbox Name="CaptionFonts">
+						<Top>5.8cm</Top>
+						<Left>1.799167cm</Left>
+						<Width>11.0331cm</Width>
+						<Height>0.6cm</Height>
+						<Style>
+							<FontFamily>IPAexMincho</FontFamily>
+							<FontSize>10pt</FontSize>
+							<FontStyle>Normal</FontStyle>
+							<FontWeight>400</FontWeight>
+							<PaddingBottom>2pt</PaddingBottom>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+						</Style>
+						<ZIndex>4</ZIndex>
+						<CanGrow>true</CanGrow>
+						<Value>「Code 128」フォントで作成したバーコード（FontResolver）</Value>
+					</Textbox>
+				</ReportItems>
+			</Body>
+			<Page>
+				<PageHeight>29.7cm</PageHeight>
+				<PageWidth>21cm</PageWidth>
+				<TopMargin>2.5cm</TopMargin>
+				<BottomMargin>2.5cm</BottomMargin>
+				<LeftMargin>2.5cm</LeftMargin>
+				<RightMargin>2.5cm</RightMargin>
+			</Page>
+			<Width>16cm</Width>
+		</ReportSection>
+	</ReportSections>
+	<Code>Public Function Ean128(ByVal data As String) As String	
+	' idea is from https://github.com/andreimanu/Barcodes
+	Dim ean As System.Text.StringBuilder = New System.Text.StringBuilder()
+	ean.Append(ChrW(204))
+	ean.Append(data)
+	
+	Dim cSum As Integer = 104
+	For i As Integer = 0 To data.Length - 1
+		Dim currChar = AscW(data(i))
+		Dim cVal = currChar - 32
+		cSum += cVal * (i + 1)
+	Next
+	Dim checksum As Char = ChrW(((cSum Mod 103) + 32))
+	ean.Append(checksum)
+	
+	ean.Append(ChrW(206))
+	Return ean.ToString()
+End Function
+</Code>
+</Report>
