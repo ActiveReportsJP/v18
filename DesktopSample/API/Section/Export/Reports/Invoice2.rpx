@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.5" PrintWidth="8640" DocumentName="ActiveReports Document" ScriptLang="C#" MasterReport="0" CompatibilityMode="CrossPlatform">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-style: normal; text-decoration: none; font-weight: normal; color: Black; vertical-align: top; font-family: &quot;ＭＳ Ｐゴシック&quot;; font-size: 10pt; ddo-char-set: 128" />
+    <Style Name="見出し1" Value="font-size: 12pt; font-weight: bold; ddo-char-set: 128" />
+    <Style Name="見出し2" Value="font-size: 14pt; font-weight: bold; ddo-char-set: 128" />
+    <Style Name="見出し3" Value="font-size: 12pt; font-weight: bold; font-style: italic; ddo-char-set: 128" />
+    <Style Name="レポートタイトル" Value="font-size: 20.5pt; font-weight: bold; color: #FF8000; text-align: center; vertical-align: middle; background-color: #FFE0C0; ddo-char-set: 128" />
+    <Style Name="詳細タイトル" Value="font-weight: bold; color: #FF8000; ddo-char-set: 128; vertical-align: middle" />
+    <Style Name="詳細" Value="font-family: &quot;ＭＳ Ｐ明朝&quot;; vertical-align: middle; ddo-char-set: 128; font-size: 9pt" />
+    <Style Name="備考" Value="ddo-char-set: 128; font-size: 8pt; font-weight: bold; vertical-align: middle; color: #FF8000" />
+    <Style Name="合計タイトル" Value="ddo-char-set: 128; background-color: #FF8000; color: #FFFFFF; font-weight: bold; vertical-align: middle; text-align: center" />
+    <Style Name="合計タイトル2" Value="font-size: 8.25pt; font-weight: bold; color: #FF8000; vertical-align: middle; ddo-char-set: 128; text-align: center" />
+    <Style Name="合計" Value="font-family: &quot;ＭＳ 明朝&quot;; ddo-char-set: 128; font-size: 8.25pt; text-align: right; vertical-align: middle" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="GroupHeader" Name="GroupHeader1" Height="3211" DataField="EstimateID" BackColor="16777215" CanGrow="0">
+      <Control Type="AR.Label" Name="lblPrice" Left="6796.8" Top="2894.4" Width="1670.4" Height="302.4" Caption="単価" ClassName="詳細タイトル" Style="color: Indigo; text-align: right" PaddingRight="10" />
+      <Control Type="AR.Label" Name="lblProductID" Left="57.6" Top="2894.4" Width="1008" Height="302.4" Caption="商品ID" ClassName="詳細タイトル" Style="color: Indigo; text-align: right" PaddingRight="3" />
+      <Control Type="AR.Label" Name="lblProductName" Left="1137.6" Top="2894.4" Width="3600" Height="302.4" Caption="商品名" ClassName="詳細タイトル" Style="color: Indigo; text-align: justify; text-justify: distribute-all-lines" PaddingLeft="30" PaddingRight="30" />
+      <Control Type="AR.Label" Name="lblQtyPerUnit" Left="4809.6" Top="2894.4" Width="1900.8" Height="302.4" Caption="数量／単位" ClassName="詳細タイトル" Style="color: Indigo; text-align: center" />
+      <Control Type="AR.Label" Name="lblTitle" BorderTopStyle="13" BorderTopColor="33023" BorderBottomStyle="13" BorderBottomColor="33023" Left="4605.12" Top="89.28" Width="3870" Height="540" Caption="納品書" ClassName="レポートタイトル" Style="background-color: Thistle; color: Indigo" />
+      <Control Type="AR.Label" Name="lblCompanyAddress" Left="5774.399" Top="1349.28" Width="2700" Height="270" Caption="仙台市 泉区 紫山3-1-4" Style="font-size: 9pt; vertical-align: middle" />
+      <Control Type="AR.Label" Name="lblCompanyZipCode" Left="5774.399" Top="1619.28" Width="2700" Height="270" Caption="〒981-3205" Style="font-size: 9pt; vertical-align: middle" />
+      <Control Type="AR.Image" Name="picLogo2" Left="5774.399" Top="809.28" Width="2700" Height="450" LineColor="16777215" LineWeight="0" SizeMode="2">0D0D0004020E16000089504E470D0A1A0A0000000D494844520000028C0000004E080200000025EED017000000017352474200AECE1CE90000000467414D410000B18F0BFC6105000000206348524D00007A26000080840000FA00000080E8000075300000EA6000003A98000017709CBA513C0000000970485973000017100000171001186111DB0000157749444154785EED5D3BB228390D1D4256C32E08892126610D90C21A600514DB00428880FD0CAE7255574FB7AD73F4ED9FA917CC3C64593AFA1CCBED7BE7673FFEF8E30FEB7F0B010702FFFEC77FFFFDCFFFFDE54F7F1BEAF8DD1F7EFDBB3FFCC6A17E2D5D082C0416021F46A091F40DFFF78B9FFF8AFCF3AFBFFFE786F67FC7A4DFFEF2F74CA4FEFCC7BF7E0793E5E9426021B0108842E0872845B17A98BEDF6556F78F455EA58D64E81EA926AC52BE8417020B8185C0426091F4CA012302ED78743E4B35266E7FDFFE0CF97B9DA88C58AF650B8185C057115824FDD5C8BBFD3E30F479506E5F22CE54EDDE762958082C0416021F42E0A624DDA731E6CF8762752757CF63F4CCBA0397DFC98965CB426021B010B83B023725E9BBC3F679FB0E242DDC631F487ADD787F3E7716000B818580028145D20AB096E886C09AA457322C0416020B8102046E4AD2EB757741EC9D5BC06FD24DFFFA26ED04792D5F082C043E8EC022E98F2780DDFD33016F4FBBFB6382F3496BDD75DBE15E2B17020B814F22F036921E72C3C616EB477563939CBFF0583F271D8BFCD2B61058087C04816F9174A38A8FC4B5C6CDE10F590D997B1D8F6A22B27659082C045E86C04D49BA757FE6E7AFCED7A7F224BD483A237D67BFBA64FB4563EB57B766C0BE742E0416025F40E0A6246D867E9134444075472D086F5FA0370E3E1CADDEC1CDCD8B28C4FC7A5E792121203CEC03F22FA3DD9668D59A7B4EDE42A196679BC2DFD41B5B9570BB59CEB785B196F051982546D48B99192666FD3A92BEB661F5D95A0E06A4283E960F958408F8A962A8A1EDCB57DD81CECDA5BEFDFEF6FDBD4B6CE09CB685A3CD831C8B439E361515C116B4D9A9529BE79D47B3E0C2AC13C274852D9437D89FDB9724F30CD5286466B098F5EB481A66803F6C8C0621B490A2F8147CAE248361920C39EAC13079CC0B0C1CA4048F9DB6B5E6520F842556958A4D05E1C370A6521BEB519436034933191B625E1417D4F3F4CB49DAD656C257094C00BB7F4882DE5C0904213C220785B0F0522D0C8C4E365006FDE4312810846C552A3615AE4F0F76AAD466FB68D36F20E9B6117CCE693366BF2A8AA17B3461BBF01BBCD7F066924E6DACDA6E350B1B343236DEF7D4C69CA6B5806BE5E5C28361D26EB7978F0A4AAA917770300A28A71E9E4D67893D3CB8F06A9DF6E72DB79174B747E051A7C1B10CDD0AA1F8DCF966920E8F4D469F828DD599A04F597E87600958C13065E48636761E1B52D76A1DB9B93CCFA643C9598BE7D5DE161F0F490B3CEDF117369666F3F08F5C11193C3DFB11A1990B87DFC5B479A11DF4AFFC269DDA77B4CAD7240D2B6D562DE6BF87F57908A2E7AB84361F322669FEE700CD90DA16C2D03F4B8067D37306DA72EC29F838497AC6D35AD6D9E0821D40D62C2F0FE4E9A419804C9BCB489A77DBD67778FD1D8245D264C6848BC12F5E0C5F0EEF2D67275921A3545D3B1C8AA53004019EA40FEDAF2DB4DDD684985DA0C44FD2439E967133B75686FB6BE6692D9B90230119F1CB481ABA11F2736F24B8B6E3B3CCEE640096584780FCEC6D6B070BE44F216023693878F16A6F8B7608499F4BD55095B0DE198666FA86C1B673F8481E81A4761020F3E41A928611820543BAD7C418E08440C2F0F0962C4919019815F54F4256C8EE8600BC2095EB7DEFCEA1B4E1BD8BB0F5F06E66282F700FD3A9EE29A3254258E9244393E77B95B661C2431630C485E7B86B481A565A606B60E0B3DD71AD493A304C5D15530CE19B2E850F4280296741462069A76672B9C067A4861B8A69495A76C1C0A9B1AC5F3349F3A05D40D2D980EE21867BC1E10CD2C6831ADC234C853DE8115E2C23931080E9619EA49D9AC9E58BA4E5098DA7AE4382C9AD9E1F5B3D9374BF508123684F15DED30B485AA63D279A078821C542B0A086A466F459B50BF0CF869E719CE4C299D87E0BB2993A773C2C7F2549F3B36FEA7BEC54E54C72AACE0DBCC20B489A3FEAF26ECC2499029377599CE18F824AC3025C05D7D784998A26AFBB9DAA6CCBDF47D2FC5855309E258DE9B62A13FCE5416B5B5793B41C27FE4446A2060B0982B53883843A4A0C7EA188DA68E9792202B0A2F9190096B673AFE1F29791347F670BEB3AAAF9877FF03697896089CAD96A9216EC867CA9058B294298645089D6AA250F11E0FB2C54B5045E8600F30B618471EAFC396CFF303BF6027CF8E45BE8CE43F9F0BF148A8BDC4B45301BE065DC59761A902B4B3043CB74A5242DC317DE4D9892839B2E928610850B2C920E87B45861EA2B1EE88B50B370AD2090A4D66392612DF92DC0A05958527C0B7D6DFA751C0497B5A79C5292967FD030362D9A36785BC59C68164987C7052A5C240D21BAB9003C1FA7DA9FC4A6496A53A1382B8FBA83E5CD2EF8147D36E6DA47648163B44064F01A7816A3E97F4F3AD66E9822905C5BB232271AA8075AB204B4082C92D622762B7978DFC81C8E3D1E25B169925A8FA786B58217E6A62F980193C1E002B944E669A6F9931BA98E08DBBE9059E090C90B1C223B25E9C0F19FC10E3A40760A0825634C864C0B369C5720081E81BC2C7F1349F76FA81E9C8BD7FAC30AD3D2BF855C50496C9AA436A339083A8B49BAEC53F4D965783E48CA4312E1CAB6C09274F8C5BAE7F8D68C218F8D10CAE21AEBDBC13E58D3D9937C7F0D49C336511326D52E645DCC420FEB853C1C7B522B894D93D47A3C35AC2529C4A0593550B69CBC3613F20C9895DBC15F5829AAB2958529929E19941427C67F320BA12A524FA018342930BAAAD847F96823E9064BC61FCF71BB2C10B11B99E3C81C4ACCCAF985496C9AA496F72B4452F022B61BCB6DAAED9551AD679DC56FD6F80BE3CA364E91F4AC89783AA090B2B067F1E3028432A472544AA0776502B155DD4180B53DC40A86C983892A3A9B70AA491E77E05A9BBFCC050F5F77661BE4149A250F4318F2BB5746438DFB103A2101E05A528039AEC13CAC1108E420C1EBF32E95FD0193F4CC9AA494659C27530D72464B235E558824E35D4D72F75D429CDA2B911D9CE54C2A2C361F2BA310BB97AD306108328E74DA135BA7D258B854DA6CD8DA3270B6AA80A46FF23D8E0C4D08BCDA97D195797838220C1E8E0D91CAAB581818559D40284302CC2B81DE150BA8C064DC7C07493F689238278C21A68CBF4CF4436460CD16D7C87E3B03B62198EC956493F4B318BAA111424633AFFDCA67F132E7D291A467D51B78C9B0CFBFF066010B3EBC84048533EFCA3EF09CEFF4C2DD97019FA50D0C93A72F1B7C94EDF1C40B76408FF21E5F6D6D3245A7D569C07C5B929A0C9E446A6BCD8DD503C861ADE082DF3C26199C18662C77E627FF29DA10C774921E5AEF4F8599ABB08569B786056F00DDBCE4EC9DD61DF3D6650BE50A9C9901C3E4296C83EFC33C6C7FE9EC05CD12E8697D4AC0A2F37BAD0A01B4C7930CCEB5F5D1394327A490DF3C273E172E3767A980A7592773F3610ED64F26E9E1A9CA3FFECF2A9639C4A9AA9DE9895A851EF94306876480C79E8CB542950A99C384DE56FFB6743DEF65D3A3EAB07D5373E9DAA2091931CA71C6BCBC34B0258FED5342F3E27C6515F837F20B380667F38C140563861E5BA2AA1E8BD9B0CD9DA487D990472DB05F18B686838B0D77C3AA8325B69432EC5BB9446EB232FD18820B5DB3E93CE74C60B06042569234ACB840C761B0A031199D5DAB93C928ADCE587988B37946DACE19E62D6C0BF7871E192B6DED143074733991A4870E6851E0A3020FD1B67E017B226FA153F2102AA7B67B2E97D1661ADC1DFC3A1755A0E53021F34AEC802DB4C456718608C2DA1F4EB49D33F8ED047F79258C642CE96AB531160E65E48DCA9241B61F262D5FAA42D6C53A9B48D2A9F3C43912F01CCDA3BF570E836ACE69D5C22F8CD10D1039882AC4AE123E976E6CC5DE2421212FC67A2D44135AB2EF712A56E60F25B1C9A6A5D558F947F74926102187893286CE9DA453E789433060A19A5BC61D7AE2D93B5B2131197CAD8C503F9EF65AE954F6E33E78182D7036AFDCB4C6434B02EF9F3E3249DB0A4D4ECB5BF52B396718A6A864E844923E27746A9CE059525BFC9BFC1D48FA5C006677EEBCF00577DDC3EA8DC53C2FD5493B212F326D8EDC4B1683969CB1F2ECBB48DA83DE6BD6D67C87DEC39575DD7DD09B5AB790473DE703A83C3BF9CE39613BEA66DBE9D7FF82BBEEB30BE1991F7259670E16C38B35F9C958B2481A1EE98602E6F478FDC27A86CE9AA4CFC4961ABCD4B6753949C7369AD44038953FFDAE7B58C09E03E210CFD8E7A9AA9091BC5843D2F0DA3F9C7ECA26E986737FD426FF9965424366BF7096814222A9B2E23BC2B3FC6F8077CCE19148FB56B1639B32491F9486F7A97D5AC05A75E61084DEA95F5E7EDEBDA603A63A35542EE35C6F8F61C7732D858FD142C5F6DDF3D20316C2E67E9E0D5B500463E47669086B5BD2B6837DC6D67F6DF684F4EEA79F893DD019D6922754C8D3FB322199319EA40FF5935AB1103812052166B03719E24D2E29F8C0495A522026247706D5857B34CC93F0E4BF2A1B2145EDC317EEF5215842D5F7ADA3465E869B8727337FDB61F2D3D9BB8598864410DE04A8928A27BFB3A46C090335241AB3794CAA38037D76F087BDC6ECF65A70F577555B6CC866BF1366B2B346460699C9E31A3B67BBCC6A38DCAA4BB251DB4C435ABC00DDCC9E2D4FFC24ED6FCACDC8ECBC75F6EED4BB2B98A866560B5F08D335D517B8BB7079C6AC1DD6D14F483ABC49ED15CAD8459D0F6084927C1C76A2ECB24FF205AA7DFA183D0C96B984CCF73A193B6A193AF5CABD2133A3CF7D697848BAE931B82C7C1E86C96F167092B47C10315BD517C2B619CEB5668572D50426C3D042A6669D811E4CD2DBDD8233CCF27278D48DDA1D665BD4467B3D43EF9870661893ADF3E963F4CCFE0CDC0AAE8E36B36189CD0452139539BC9A491ABA6C6382A4B3B5BF77E77D96866DD38664C62A215D0BBC608AC51FE8432F1AFCF7A4EBBB556055C038857B5776771A6EB94D615EA7B0D9A35A554C5472935259EE39046FD754E6E1C06CEA79C773B1DB483A7566627AB116137FEFCEFB2C0DDB6606DDDA740AA1910F6D6D61CFBD99B35D739311D06012C31FE80B485A2EA7408666EE6DB4A505E5EB1B1F34294F402EE6BC7D4334CF6A38EA53CBC148B965046E2AD7D7BEADD4E7EA61C761B11B483A95A1BBCD8101EA89E1EFDD79D5F70E921E827C7E6D2093F4FE6ACAF6CCC81FE86A922E6B55DD31986D21ED7E53326B16B1BBDC449B1CCAD8C35686CBB3E249B2BCE6BB804057E7F6742D49CFA6102D49930C2DCF9DCC18179B18FEDE9D5780026F6DDF43FB3F40F00FF2B67F355FD7ED1D993D0624497AD8E45F38491733743149C367AB194C73A14E990F2E348CD97A667CF8C0040F70BD013136CB32F072EFBCFC42921670569134FC0EBDB566A896797416C8D37E9216C6F1A69CE10F67D609E017ECCE18BF5928044E4BD26DDF2D5518374302BD7736F79B747D5B2F9BA4EB9B3E93A37932F5A10CF445303E7097832AF334C098A41AA037855791B47C12826CBA07449E80F7AD99545BD631427A77DE8D37CCBAE2AF45D01EB38081A4FB5E0C430B072972F9D9AF4492962F46CC10CB0B6B4AEE92A69F8418A336EF9E8DD9DD2923042B704E3A182923E6F1489EFF648FAE2269D92A924D7B979C51DDF91CC0AB952135F756F2D0A6D27F5525BE86A1852C52054228E190D358C5242D93655E732C20E94B9ABEA7AD3BD75ED5179C66F7E5575D00A8E884F7D4A9B69EA467DF05F72EF36C3A931C4EEABC5A3955EED6BB536F6866A938DB944FDDFB489A2769D2856790F4856D3D9BA4AF6AFA647E64883DD465F8F13203AB4DA7D0496D275461DA6388B01B564FD20CC83C9B0E256777E9BCDACDC861AADF8DA4EB6FBC531FDF1CDCE1939949ADA1CC22E9E9EF18EA0DC2D6A1F878A492F443E98A47EF2CF950972143A7E6A173DE3D474150A872E47D241DF51E4D385DDD8DA48B4720D5ED85A1D50CF5ABB25ABBE9D749BA388154EDCCF3AAF6DAA6AFCDC228F98732B4FC18A2E01D6CE0930561803690C7FB48DAF088577E5A7FAE7403CEC3020CBC052D2B4CA1EF45F1E8708BBC9FB968A1F93A495FFEBD366392863AA3F2358A5C43F4943582106BBB1278966A8D32B5FE651BB4ED7E1602AD1EF912DEAC2D2A70FCBDF44132EA3DDAC191C32E51F80492B4DC9102DB51CDCFB00C77C9ABD34F93F4E50C2D9C92B60A517516F9D967CD05BECAE028E1C7313413A902866EF8078ED187B6DE9A8B9330DE3449C326CE73BFFC95C789B97C4232DFEB088F1E2032649788FAC802B72B7E3AFE5D9216CE5C81273B186F38F5420D9B005455F0899DB73650F2710CCD44AA86A10BAE073D817E1349431C3C24BD8FE30D49BA99247FD30969B9C2390082AF15487D9B26DF946C6EDE30D0DDF2989F93AEB91561020FFB758892B7CED0F27571D4099D090123434ECF3D5835C6DFA7108600BE86A4997EEA21E9FD9D1CB31793AEE6EBEE96E7FD12053EB6D8B6F067BB805E14207BD084CEC360AB92F9E2247DABC604495A7E0ECA9741C85955955BD9C2973FFAE31D5435AC32862EBEB5E3E1926F5C337AAECA369E4D3749463FAF76A6AD735E143E0C496F7CACCDF0B372678312C668A7E619DAE12F30661B7D8EA4CB9065CA727FFE1592AC17DEFE0FCFCD6F9DA10B6ECFC808CEC47AFFD246AA8CA19BD9B3944B6A6A063CDF314993ACE927E9AE81DC0E8643EE4819FFAF39F1E451077A6A13F0C78BDCF75B245DF921810C80D02B43CAA0B96C4E7DDE854A49F9D2D87F6F268F299D440F67A6C3BF7A0217D5616144EE590B07B3DF41D230165D20A4E9DB487A3F10F764F6E4F06C6D2F1C41B3B978E5A33089BF56ACEC829D27E9615F32CC0964F487DBB55CB27F931EDA7A070E2311318899935E9BAF65F27291A71E470CF86B97A4DABF8FD10CC63203C884793A49936E0692B4BC6312FBCA79DEB979332CE31D096340B32124BD376692375585DE16B5C381FE92E00E41B090F46CF6BA0987259D7442323230D59CAA326A5B6592967155F295A978FF4FD15B5C1649770454892A08AB72D2297CE0E6BD55B0E31DE8671BF4673DCD696AC6F2A89009572CEF21E9594B2ABB5784D192E9C79040F7710DFACE08C0FBED9AE308EC2C8648F5CBF31AFB3BD40F62E866ED22E9C791741F34615DDBAA69A6D9567AA9AB2002BC0079DDFDD4497AD8928ADB22130C5BCA9E938C290FC69E9BC8C8F46CFBFC66762DA3068AE3F52C865E24BD15B839690F0B3372B897A121930D4D6F76E1944AB736E551217BF9243DCC48433205C22DA832A4EC3E7B6EEB970DBD5BD1737721B0C109378136B898553386AE9CE3193BF7326B928E9DA4A372787B3BA90DE85EDE768338DC31CA2F1B1F0F577990218F568FBFEE3E73DE0D07E8433020331DB2A197CA9D9BAC2D53E592BBEA3812D208AE8AD713197A4DD2F799A4B7D752B68A9EADD2763CA1F69D434E203D3755B13DD97FDDBD852FF61F6698530FC7CE8BAFEAECB69C8650C62681CDC8D455E79AB9FC8C653BF8F7AFCE5771738FD1533EFA9C336A4DD2C593F43622DB6EB06D3D8139FE32E5AFA5FC5862CEAB7492A46DE067ACA248FA407219762C9DA9086CBC52D92C188FE0F96913B8CF416A7B1CBB379E71F6729921DA975B35C433245167D915E8F26D7360E6BBB98E8430F1552C4B06C645503573C48C4CB6D9FF073C85DD2C3C86D9EC0000000049454E44AE426082</Control>
+      <Control Type="AR.Label" Name="lblCompanyTEL" Left="5774.399" Top="1889.28" Width="2700" Height="270" Caption="phone: 022-777-8210" Style="font-size: 9pt; vertical-align: middle" />
+      <Control Type="AR.Label" Name="lblCompanyFAX" Left="5774.399" Top="2159.28" Width="2700" Height="270" Caption="fax: 022-777-8231" Style="font-size: 9pt; vertical-align: middle" />
+      <Control Type="AR.Field" Name="txtPostal" DataField="PostalCode" Left="1440" Top="810" Width="2070" Height="270" Text="txtPostal" Style="vertical-align: middle" />
+      <Control Type="AR.Field" Name="txtAddress1" DataField="Address" Left="1440" Top="1080" Width="3780" Height="270" Text="txtAddress1" Style="vertical-align: middle" />
+      <Control Type="AR.Field" Name="txtAddress2" DataField="BuildingName" Left="1710" Top="1350" Width="3510" Height="270" Text="txtAddress2" Style="vertical-align: middle" />
+      <Control Type="AR.Field" Name="txtName" DataField="CompanyName" Left="1440" Top="1710" Width="3780" Height="270" Text="txtName" Style="vertical-align: middle" />
+      <Control Type="AR.Label" Name="lblCustomerID" Left="0" Top="2550.24" Width="990" Height="240.4801" Caption="お客様コード" Style="font-size: 8.25pt; vertical-align: middle" />
+      <Control Type="AR.Label" Name="lblYear" Left="2521.44" Top="2550.24" Width="270.72" Height="240.4801" Caption="年" Style="font-size: 8.25pt; vertical-align: middle" />
+      <Control Type="AR.Label" Name="lblMonth" Left="3238.56" Top="2550.24" Width="270.72" Height="240.4801" Caption="月" Style="font-size: 8.25pt; vertical-align: middle" />
+      <Control Type="AR.Label" Name="lblDay" Left="3840.48" Top="2550.24" Width="270" Height="240.4801" Caption="日" Style="font-size: 8.25pt; vertical-align: middle" />
+      <Control Type="AR.Label" Name="lblEstimateID" Left="4109.28" Top="2550.24" Width="270" Height="240.4801" Caption="No" Style="font-size: 8.25pt" />
+      <Control Type="AR.Field" Name="txtCustomerID" DataField="CustomerID" Left="1080" Top="2550.24" Width="915.3601" Height="240.4801" Text="CustomerID" Style="font-size: 8.25pt; vertical-align: middle" />
+      <Control Type="AR.Field" Name="txtYear" Left="2115.36" Top="2550.24" Width="375.3599" Height="240.4801" Text="XXXX" Style="font-family: ＭＳ ゴシック; font-size: 8.25pt; vertical-align: middle" />
+      <Control Type="AR.Field" Name="txtMonth" Left="2822.4" Top="2550.24" Width="416.1601" Height="240.4801" Text="XX" Style="font-family: ＭＳ ゴシック; font-size: 8.25pt; vertical-align: middle" />
+      <Control Type="AR.Field" Name="txtDay" Left="3628.8" Top="2550.24" Width="210.3599" Height="240.4801" Text="XX" Style="font-family: ＭＳ ゴシック; font-size: 8.25pt; vertical-align: middle" />
+      <Control Type="AR.Field" Name="txtEstimateID" DataField="EstimateID" Left="4453.92" Top="2550.24" Width="945.36" Height="240.4801" Text="EstimateID" Style="font-size: 8.25pt" />
+      <Control Type="AR.CrossSectionBox" Name="csbDetail" Left="0" Top="2851.2" Right="8568" Bottom="475.2" LineColor="33023" LineWeight="3" />
+      <Control Type="AR.CrossSectionLine" Name="cslDetail1" Left="1094.4" Top="2851.2" Right="1094.4" Bottom="0" LineColor="33023" />
+      <Control Type="AR.CrossSectionLine" Name="cslDetail2" Left="4766.4" Top="2851.2" Right="4766.4" Bottom="0" LineColor="33023" />
+      <Control Type="AR.CrossSectionLine" Name="cslDetail3" Left="6753.6" Top="2851.2" Right="6753.6" Bottom="0" LineColor="33023" />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="323.0001" BackColor="16777215" KeepTogether="1" CanGrow="0">
+      <Control Type="AR.Shape" Name="shpDetailBack" Left="0" Top="0" Width="8553.6" Height="720" BackColor="16777215" LineColor="16777215" />
+      <Control Type="AR.Field" Name="txtProductId" DataField="ProductID" Left="57.6" Top="28.8" Width="1008" Height="270" Text="ProductID" CanGrow="0" ClassName="詳細" Style="text-align: right" PaddingRight="3" />
+      <Control Type="AR.Field" Name="txtProductName" DataField="ProductName" Left="1137.6" Top="28.8" Width="3600" Height="270" Text="ProductName" CanGrow="0" ClassName="詳細" PaddingLeft="10" />
+      <Control Type="AR.Field" Name="txtQuantitPerUnit" DataField="QuantityPerUnit" Left="4809.6" Top="28.8" Width="1900.8" Height="270" Text="QuantityPerUnit" CanGrow="0" ClassName="詳細" Style="text-align: center" />
+      <Control Type="AR.Field" Name="txtPrice" DataField="Price" Left="6796.8" Top="30" Width="1670.4" Height="270" Text="Price" OutputFormat="¥#,##0" CanGrow="0" ClassName="詳細" Style="text-align: right" PaddingRight="10" />
+    </Section>
+    <Section Type="GroupFooter" Name="GroupFooter1" Height="495" BackColor="16777215" NewPage="2">
+      <Control Type="AR.Field" Name="txtTax" BorderLeftStyle="1" BorderLeftColor="33023" BorderRightStyle="1" BorderRightColor="33023" Left="6140.16" Top="7.2" Width="935.9999" Height="432" Text="Tax" OutputFormat="¥#,##0" ClassName="合計" PaddingRight="2" />
+      <Control Type="AR.Label" Name="lblTotalPrice1" Left="4439.52" Top="37.44001" Width="240" Height="403.2" Caption="税抜" ClassName="合計タイトル2" Style="color: Indigo" />
+      <Control Type="AR.Label" Name="lblTotal" Left="3885.12" Top="7.2" Width="554.4" Height="453.6" Caption="合計" ClassName="合計タイトル" Style="background-color: Indigo" />
+      <Control Type="AR.Label" Name="lblBiko" Left="57.6" Top="37.44" Width="3782.88" Height="403.2" Caption="" ClassName="備考" />
+      <Control Type="AR.Label" Name="lblTaxPrice1" Left="5879.521" Top="37.44" Width="240" Height="403.2" Caption="税額" ClassName="合計タイトル2" Style="color: Indigo" />
+      <Control Type="AR.Label" Name="lblPretaxPrice1" Left="7090.561" Top="37.44" Width="240" Height="403.2" Caption="税込" ClassName="合計タイトル2" Style="color: Indigo" />
+      <Control Type="AR.Line" Name="linBorder" X1="8568" Y1="0" X2="9.999999" Y2="0" LineColor="33023" />
+      <Control Type="AR.Field" Name="txtTotalPrice" DataField="Price" BorderLeftStyle="1" BorderLeftColor="33023" BorderRightStyle="1" BorderRightColor="33023" Left="4705.92" Top="7.2" Width="1152" Height="432" Text="TotalPrice" OutputFormat="¥#,##0" ClassName="合計" SummaryType="3" SummaryRunning="1" SummaryGroup="GroupHeader1" PaddingRight="2" />
+      <Control Type="AR.Field" Name="txtPretax" BorderLeftStyle="1" BorderLeftColor="33023" Left="7362.72" Top="7.2" Width="1094.4" Height="432" Text="Pretax" OutputFormat="¥#,##0" ClassName="合計" PaddingRight="2" />
+    </Section>
+  </Sections>
+  <ReportComponentTray />
+  <Script><![CDATA[const int PAGEROWS = 8;		//１ページに 8 行 出力します。     
+private System.Drawing.Color myBackColor;	//動的に色を変更する為の変数（背景色）                
+private System.Drawing.Color myLineColor;	//動的に色を変更する為の変数（線の色）
+int GroupCount;     //グループ内のレコード数
+int iCnt;			//詳細行の番号
+int mCnt;			//レコードの番号
+int gCnt;			//グループの番号
+int MAX_mCnt;		//レコードの最大値（全部でいくつのレコードが存在しているかを表します）
+int MAX_gCnt;		//グループの最大値（全部でいくつのグループが存在しているかを表します）
+
+System.Data.DataSet myDataSet = new System.Data.DataSet();
+System.Data.DataRow myDataRow;
+
+public void ActiveReport_ReportStart()
+{
+	//仮想プリンタの設定
+	rpt.Document.Printer.PrinterName = "";
+	rpt.PageSettings.PaperKind = GrapeCity.ActiveReports.Printing.PaperKind.Custom;
+    rpt.PageSettings.PaperHeight = 11.69F;
+	rpt.PageSettings.PaperWidth = 8.27F;
+
+	//今日の日付を設定します。
+	this.txtYear.Value = DateTime.Today.Year;
+	this.txtMonth.Value = DateTime.Today.Month;
+	this.txtDay.Value = DateTime.Today.Day;       
+
+	// スタイルシートで設定できない色を設定します。
+	// (レポートタイトルから設定色を取得)
+	myBackColor = this.lblTitle.BackColor;
+	myLineColor = this.lblTitle.ForeColor;
+
+	// (セクションを跨ぐ線・枠)
+	this.csbDetail.LineColor = myLineColor;
+	this.cslDetail1.LineColor = myLineColor;
+	this.cslDetail2.LineColor = myLineColor;
+	this.cslDetail3.LineColor = myLineColor;
+
+	// (タイトルの枠線)
+	lblTitle.Border.TopColor = myLineColor;
+	lblTitle.Border.BottomColor = myLineColor;
+
+	// (合計関連の枠線)
+	this.txtTotalPrice.Border.LeftColor = myLineColor;
+	this.txtTotalPrice.Border.RightColor = myLineColor;
+	this.txtTax.Border.LeftColor = myLineColor;
+	this.txtTax.Border.RightColor = myLineColor;
+	this.txtPretax.Border.LeftColor = myLineColor;
+	this.linBorder.LineColor = myLineColor;	
+	
+    /*データベースに接続して、DataSet にデータを取得します。ActiveReports のようにデータに
+	対して参照しか行わない場合には、通常 DataReader を使用するのが一般的ですが、この
+	サンプルではインデックスによるレコード管理を行うために DataSet を使用します。*/
+	String strMainSQL;
+	String strMainCn;
+
+	strMainSQL = "SELECT Estimate.EstimateID, Products.ProductName, Products.Price, [Quantity] & '／' & [Unit] AS QuantityPerUnit, Customers.PostalCode, Customers.Address, Customers.BuildingName, Customers.CompanyName, Customers.CustomerID, Products.ProductID FROM (Customers INNER JOIN Estimate ON Customers.CustomerID = Estimate.CustomerID) INNER JOIN Products ON Estimate.ProductID = Products.ProductID ORDER BY Estimate.EstimateID";
+	strMainCn = @"Data Source=..\\..\\..\\..\\..\\..\\..\\..\\Data\\Seikyu2.db";
+
+	System.Data.SQLite.SQLiteConnection myConnection = new System.Data.SQLite.SQLiteConnection(strMainCn);
+	System.Data.SQLite.SQLiteDataAdapter MainDataAdapter = new System.Data.SQLite.SQLiteDataAdapter(strMainSQL, myConnection);
+	System.Data.SQLite.SQLiteDataAdapter CountDataAdapter = new System.Data.SQLite.SQLiteDataAdapter("SELECT Count(Estimate.AutoID) AS GroupCount FROM Estimate GROUP BY Estimate.EstimateID ORDER BY Estimate.EstimateID", myConnection);
+
+	MainDataAdapter.Fill(myDataSet, "tb_Main");
+	CountDataAdapter.Fill(myDataSet, "tb_Count");
+
+	//各テーブルのレコード数（最大行数）を各変数に代入します。
+	MAX_mCnt = myDataSet.Tables["tb_Main"].Rows.Count;
+	MAX_gCnt = myDataSet.Tables["tb_Count"].Rows.Count;
+
+
+//最初のグループのレコード数を設定します。
+	myDataRow = myDataSet.Tables["tb_Count"].Rows[0];
+	GroupCount = int.Parse(myDataRow["GroupCount"].ToString());
+	gCnt = 1;
+
+
+	myDataRow = myDataSet.Tables["tb_Main"].Rows[0];	
+}
+
+public void ActiveReport_DataInitialize()
+{
+	//アンバウンド方式の為のFieldを追加します。
+	rpt.Fields.Add("EstimateID");
+	rpt.Fields.Add("CustomerID");
+	rpt.Fields.Add("ProductName");
+	rpt.Fields.Add("Price");
+	rpt.Fields.Add("QuantityPerUnit");
+	rpt.Fields.Add("PostalCode");
+	rpt.Fields.Add("Address");
+	rpt.Fields.Add("BuildingName");
+	rpt.Fields.Add("CompanyName");
+	rpt.Fields.Add("ProductID");
+	
+}
+
+
+public bool ActiveReport_FetchData(bool eof)
+{
+	try
+	{
+		//最初のグループのデータを代入します。
+		if (iCnt == 0)
+		{
+			rpt.Fields["EstimateID"].Value = myDataRow["EstimateID"];
+			rpt.Fields["CustomerID"].Value = myDataRow["CustomerID"];
+			rpt.Fields["PostalCode"].Value = myDataRow["PostalCode"];
+			rpt.Fields["Address"].Value = myDataRow["Address"];
+			rpt.Fields["BuildingName"].Value = myDataRow["BuildingName"];
+			rpt.Fields["CompanyName"].Value = myDataRow["CompanyName"];
+		}
+		
+		//１ページにつき PAGEROWS 個の行を出力するようにします。
+		if (iCnt < PAGEROWS)
+		{
+				
+			//現在のグループ内のレコード数分、詳細行へデータを代入し、それ以降は空行を出力
+			//するために全フィールドの値をクリアします。
+			if (iCnt < GroupCount)
+			{
+				//詳細行のデータを代入します
+				myDataRow = myDataSet.Tables["tb_Main"].Rows[mCnt];
+				rpt.Fields["ProductName"].Value = myDataRow["ProductName"];
+				rpt.Fields["QuantityPerUnit"].Value = myDataRow["QuantityPerUnit"];
+				rpt.Fields["ProductID"].Value = myDataRow["ProductID"];
+				rpt.Fields["Price"].Value = myDataRow["Price"];
+
+				/*レコードのインデックスが最大値以下未満の場合、インデックスを
+				インクリメントします。*/
+				if (MAX_mCnt > mCnt)
+				{	
+					mCnt++;
+				}
+			}
+			else
+			{
+				//空行を出力するために全フィールドの値をクリアします。
+				rpt.Fields["ProductID"].Value = "";
+				rpt.Fields["ProductName"].Value = "";
+				rpt.Fields["QuantityPerUnit"].Value = "";
+				rpt.Fields["Price"].Value = "";
+			}
+				                
+			//詳細行の番号をインクリメントします。
+			iCnt++;
+			eof = false;
+		}
+		else
+		{
+			/*グループの番号が最大値を超えていない場合に、新しいグループのレコード数を代入し、
+			グループの番号をインクリメントします。最大値を超えている場合には、eof を
+			true に設定してレポートの生成処理を終了します。*/
+			if (MAX_gCnt > gCnt)
+			{
+				/*１ページ分の詳細行を出力し終えたので、グループを変更し、新しいグループのデータ
+				を代入します。現在のグループに PAGEROWS 以上の数のレコードが存在する場合、
+				それ以降のレコードは無視され、次グループまでレコードが遷移します。*/
+				if (PAGEROWS < GroupCount)
+				{
+					for (int i = PAGEROWS; i <= GroupCount - 1; i++)
+						mCnt += 1;
+				}
+				myDataRow = myDataSet.Tables["tb_Main"].Rows[mCnt];
+
+				//グループヘッダ部分のデータを代入します。
+				rpt.Fields["EstimateID"].Value = myDataRow["EstimateID"];
+				rpt.Fields["CustomerID"].Value = myDataRow["CustomerID"];
+				rpt.Fields["PostalCode"].Value = myDataRow["PostalCode"];
+				rpt.Fields["Address"].Value = myDataRow["Address"];
+				rpt.Fields["BuildingName"].Value = myDataRow["BuildingName"];
+				rpt.Fields["CompanyName"].Value = myDataRow["CompanyName"];
+
+				//詳細行のデータを代入します。
+				rpt.Fields["ProductName"].Value = myDataRow["ProductName"];
+				rpt.Fields["QuantityPerUnit"].Value = myDataRow["QuantityPerUnit"];
+				rpt.Fields["ProductID"].Value = myDataRow["ProductID"];
+				rpt.Fields["Price"].Value = myDataRow["Price"];
+
+				//レコードのインデックスが最大値以下未満の場合、インデックスをインクリメントします。
+				if (MAX_mCnt > mCnt)
+				{
+					mCnt += 1;
+				}
+
+				myDataRow = myDataSet.Tables["tb_Count"].Rows[gCnt];
+				GroupCount = (int) myDataRow["GroupCount"];
+				gCnt++;
+				iCnt = 1;
+				eof = false;
+			}
+			else
+			{
+				eof = true;
+			}
+                					
+		}
+				
+	}
+		
+	catch
+	{
+		eof = true;
+	}
+	return eof;
+}
+
+
+
+public void Detail_Format()
+{
+	//詳細セクションは１行ごとに背景色を切り替えます。
+	if(iCnt % 2 == 0)
+		this.shpDetailBack.BackColor = System.Drawing.Color.White;   //白色
+	else
+		this.shpDetailBack.BackColor = myBackColor;
+}
+
+public void GroupFooter1_Format()
+{
+	// 合計・税込金額等を表示します。
+	this.txtTax.Value = (int) ((double) txtTotalPrice.Value * 0.05);
+	this.txtPretax.Value = int.Parse(txtTotalPrice.Value.ToString()) + (int) txtTax.Value;	
+}
+
+]]></Script>
+  <PageSettings TopMargin="1152" BottomMargin="1152" PaperSize="1" PaperWidth="12240" PaperHeight="15840" PaperName="" />
+  <Parameters />
+</ActiveReportsLayout>

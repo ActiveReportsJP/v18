@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalSignaturePro", "DigitalSignaturePro\DigitalSignaturePro.csproj", "{A28375FE-1E1C-4D16-BC75-6C2846AF56DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Release|AnyCPU = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A28375FE-1E1C-4D16-BC75-6C2846AF56DD}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{A28375FE-1E1C-4D16-BC75-6C2846AF56DD}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{A28375FE-1E1C-4D16-BC75-6C2846AF56DD}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{A28375FE-1E1C-4D16-BC75-6C2846AF56DD}.Release|AnyCPU.Build.0 = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24757575-9079-4371-A4F7-9089C9E87764}
+	EndGlobalSection
+EndGlobal
