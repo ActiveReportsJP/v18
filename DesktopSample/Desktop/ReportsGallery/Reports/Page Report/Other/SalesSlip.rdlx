@@ -1,0 +1,1589 @@
+﻿<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+	<Body>
+		<Height>21cm</Height>
+		<ReportItems>
+			<FixedPage Name="FixedPage1">
+				<Pages>
+					<Page>
+						<ReportItems>
+							<Shape Name="Shape1">
+								<Height>1.7145cm</Height>
+								<Left>8.5725cm</Left>
+								<dd:RoundingRadius xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+									<Default>5pt</Default>
+								</dd:RoundingRadius>
+								<Style>
+									<BackgroundColor>LavenderBlush</BackgroundColor>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>0.254cm</Top>
+								<Width>7.239cm</Width>
+								<dd:ShapeStyle xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Rectangle</dd:ShapeStyle>
+							</Shape>
+							<OverflowPlaceHolder Name="OverflowPlaceHolder1">
+								<Height>8.25cm</Height>
+								<Left>4.933531in</Left>
+								<Top>6.5405cm</Top>
+								<Width>11.493cm</Width>
+								<OverflowName>OverflowPlaceHolder2</OverflowName>
+							</OverflowPlaceHolder>
+							<Textbox Name="TextBox39">
+								<Height>0.1979167in</Height>
+								<Left>15.621cm</Left>
+								<Value>売上日</Value>
+								<Style>
+									<BackgroundColor>LavenderBlush</BackgroundColor>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>8pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+									<VerticalAlign>Middle</VerticalAlign>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>4.7625cm</Top>
+								<Width>1.104167in</Width>
+							</Textbox>
+							<Textbox Name="TextBox43">
+								<Height>0.1979167in</Height>
+								<Left>21.22417cm</Left>
+								<Value>製品形態</Value>
+								<Style>
+									<BackgroundColor>LavenderBlush</BackgroundColor>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>8pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+									<VerticalAlign>Middle</VerticalAlign>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>4.7625cm</Top>
+								<Width>1.104167in</Width>
+							</Textbox>
+							<Textbox Name="TextBox41">
+								<Height>0.1979167in</Height>
+								<Left>18.42416cm</Left>
+								<Value>売上番号</Value>
+								<Style>
+									<BackgroundColor>LavenderBlush</BackgroundColor>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>8pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+									<VerticalAlign>Middle</VerticalAlign>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>4.7625cm</Top>
+								<Width>1.104167in</Width>
+							</Textbox>
+							<Shape Name="Shape2">
+								<Height>2.7305cm</Height>
+								<Left>1.0795cm</Left>
+								<dd:RoundingRadius xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+									<Default>5pt</Default>
+								</dd:RoundingRadius>
+								<Style>
+									<BackgroundColor>LavenderBlush</BackgroundColor>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>2.794cm</Top>
+								<Width>6.477cm</Width>
+								<dd:ShapeStyle xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Rectangle</dd:ShapeStyle>
+							</Shape>
+							<Textbox Name="TextBox13">
+								<Height>0.75cm</Height>
+								<Left>8.079162in</Left>
+								<Value>=Sum(Fields!Price.Value * Fields!Quantity.Value)</Value>
+								<Style>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>8pt</FontSize>
+									<Format>c</Format>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Right</TextAlign>
+									<VerticalAlign>Middle</VerticalAlign>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>14.7905cm</Top>
+								<Visibility>
+									<Hidden>=IIF((Globals!TotalPages&lt;&gt;Globals!PageNumber),True,False)</Hidden>
+								</Visibility>
+								<Width>3.5031cm</Width>
+							</Textbox>
+							<Textbox Name="TextBox38">
+								<Height>0.2917in</Height>
+								<Left>15.621cm</Left>
+								<Value>=Fields!Pdate.Value</Value>
+								<Style>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>8pt</FontSize>
+									<Format>D</Format>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+									<VerticalAlign>Middle</VerticalAlign>
+									<dd:ShrinkToFit xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">true</dd:ShrinkToFit>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>5.265208cm</Top>
+								<Width>1.104167in</Width>
+							</Textbox>
+							<Textbox Name="TextBox40">
+								<Height>0.2917in</Height>
+								<Left>18.42417cm</Left>
+								<Value>=Fields!SalesNo.Value</Value>
+								<Style>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>8pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+									<VerticalAlign>Middle</VerticalAlign>
+									<dd:ShrinkToFit xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">true</dd:ShrinkToFit>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>5.265208cm</Top>
+								<Width>1.104163in</Width>
+							</Textbox>
+							<Textbox Name="TextBox42">
+								<Height>0.2917in</Height>
+								<Left>21.22874cm</Left>
+								<Value>=Fields!PKG.Value</Value>
+								<Style>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>8pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+									<VerticalAlign>Middle</VerticalAlign>
+									<dd:ShrinkToFit xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">true</dd:ShrinkToFit>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>5.265208cm</Top>
+								<Width>1.104167in</Width>
+							</Textbox>
+							<Textbox Name="TextBox1">
+								<Height>1.397cm</Height>
+								<Left>9.017cm</Left>
+								<Value>売上伝票</Value>
+								<Style>
+									<BackgroundColor>LavenderBlush</BackgroundColor>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>22pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>500</FontWeight>
+									<Language>ja-JP</Language>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+									<dd:CharacterSpacing xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">20pt</dd:CharacterSpacing>
+								</Style>
+								<Top>0.508cm</Top>
+								<Width>6.477cm</Width>
+								<ZIndex>2</ZIndex>
+							</Textbox>
+							<Table Name="Table1">
+								<DataSetName>DataSet1</DataSetName>
+								<Header>
+									<RepeatOnNewPage>true</RepeatOnNewPage>
+									<TableRows>
+										<TableRow>
+											<Height>0.75cm</Height>
+											<TableCells>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox2">
+															<Value>No.</Value>
+															<Style>
+																<BackgroundColor>LavenderBlush</BackgroundColor>
+																<FontFamily>メイリオ</FontFamily>
+																<FontSize>8pt</FontSize>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Center</TextAlign>
+																<VerticalAlign>Middle</VerticalAlign>
+																<BorderStyle>
+																	<Default>Solid</Default>
+																</BorderStyle>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox8">
+															<Value>製品名</Value>
+															<Style>
+																<BackgroundColor>LavenderBlush</BackgroundColor>
+																<FontFamily>メイリオ</FontFamily>
+																<FontSize>8pt</FontSize>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Center</TextAlign>
+																<VerticalAlign>Middle</VerticalAlign>
+																<BorderStyle>
+																	<Default>Solid</Default>
+																</BorderStyle>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox3">
+															<Value>数量</Value>
+															<Style>
+																<BackgroundColor>LavenderBlush</BackgroundColor>
+																<FontFamily>メイリオ</FontFamily>
+																<FontSize>8pt</FontSize>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Center</TextAlign>
+																<VerticalAlign>Middle</VerticalAlign>
+																<BorderStyle>
+																	<Default>Solid</Default>
+																</BorderStyle>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox4">
+															<Value>税込単価</Value>
+															<Style>
+																<BackgroundColor>LavenderBlush</BackgroundColor>
+																<FontFamily>メイリオ</FontFamily>
+																<FontSize>8pt</FontSize>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Center</TextAlign>
+																<VerticalAlign>Middle</VerticalAlign>
+																<BorderStyle>
+																	<Default>Solid</Default>
+																</BorderStyle>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox10">
+															<Value>税込金額</Value>
+															<Style>
+																<BackgroundColor>LavenderBlush</BackgroundColor>
+																<FontFamily>メイリオ</FontFamily>
+																<FontSize>8pt</FontSize>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Center</TextAlign>
+																<VerticalAlign>Middle</VerticalAlign>
+																<BorderStyle>
+																	<Default>Solid</Default>
+																</BorderStyle>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+											</TableCells>
+										</TableRow>
+									</TableRows>
+								</Header>
+								<Details>
+									<TableRows>
+										<TableRow>
+											<Height>0.75cm</Height>
+											<TableCells>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="txtRowNo">
+															<Value>=RowNumber()</Value>
+															<Style>
+																<FontFamily>メイリオ</FontFamily>
+																<FontSize>8pt</FontSize>
+																<Format>0#</Format>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Center</TextAlign>
+																<VerticalAlign>Middle</VerticalAlign>
+																<BorderStyle>
+																	<Default>Solid</Default>
+																</BorderStyle>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox9">
+															<Value>=Fields!ProductNm.Value</Value>
+															<Style>
+																<FontFamily>メイリオ</FontFamily>
+																<FontSize>8pt</FontSize>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<VerticalAlign>Middle</VerticalAlign>
+																<dd:ShrinkToFit xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">true</dd:ShrinkToFit>
+																<BorderStyle>
+																	<Default>Solid</Default>
+																</BorderStyle>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox6">
+															<Value>=Fields!Quantity.Value</Value>
+															<Style>
+																<FontFamily>メイリオ</FontFamily>
+																<FontSize>8pt</FontSize>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Right</TextAlign>
+																<VerticalAlign>Middle</VerticalAlign>
+																<BorderStyle>
+																	<Default>Solid</Default>
+																</BorderStyle>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox7">
+															<Value>=Fields!Price.Value</Value>
+															<Style>
+																<FontFamily>メイリオ</FontFamily>
+																<FontSize>8pt</FontSize>
+																<Format>c</Format>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Right</TextAlign>
+																<VerticalAlign>Middle</VerticalAlign>
+																<BorderStyle>
+																	<Default>Solid</Default>
+																</BorderStyle>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox11">
+															<Value>=Fields!Price.Value * Fields!Quantity.Value</Value>
+															<Style>
+																<FontFamily>メイリオ</FontFamily>
+																<FontSize>8pt</FontSize>
+																<Format>c</Format>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Right</TextAlign>
+																<VerticalAlign>Middle</VerticalAlign>
+																<BorderStyle>
+																	<Default>Solid</Default>
+																</BorderStyle>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+											</TableCells>
+										</TableRow>
+									</TableRows>
+								</Details>
+								<Height>1.5cm</Height>
+								<Left>0.5715cm</Left>
+								<dd:FixedHeight xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">8.25cm</dd:FixedHeight>
+								<dd:FixedWidth xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">11.19717cm</dd:FixedWidth>
+								<dd:OverflowName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">OverflowPlaceHolder1</dd:OverflowName>
+								<dd:RepeatToFill xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">true</dd:RepeatToFill>
+								<Style>
+									<FontSize>8pt</FontSize>
+								</Style>
+								<TableColumns>
+									<TableColumn>
+										<Width>0.8255cm</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>5.842cm</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>0.8255cm</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>2cm</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>2cm</Width>
+									</TableColumn>
+								</TableColumns>
+								<Top>6.5405cm</Top>
+								<Width>11.493cm</Width>
+								<ZIndex>3</ZIndex>
+							</Table>
+							<Textbox Name="TextBox12">
+								<Height>0.75cm</Height>
+								<Left>7.557311in</Left>
+								<Value>合計</Value>
+								<Style>
+									<BackgroundColor>LavenderBlush</BackgroundColor>
+									<FontFamily>メイリオ</FontFamily>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+									<VerticalAlign>Middle</VerticalAlign>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>14.7905cm</Top>
+								<Visibility>
+									<Hidden>=IIF((Globals!TotalPages&lt;&gt;Globals!PageNumber),True,False)</Hidden>
+								</Visibility>
+								<Width>1.3255cm</Width>
+								<ZIndex>4</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox18">
+								<Height>0.5cm</Height>
+								<Left>1.8415cm</Left>
+								<Value>=Fields!Postalcode.Value</Value>
+								<Style>
+									<BackgroundColor>LavenderBlush</BackgroundColor>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>8pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+								</Style>
+								<Top>3.048cm</Top>
+								<Width>2.5cm</Width>
+								<ZIndex>6</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox19">
+								<Height>0.9525cm</Height>
+								<Left>1.397cm</Left>
+								<Value>=Fields!Address.Value</Value>
+								<Style>
+									<BackgroundColor>LavenderBlush</BackgroundColor>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>8pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+								</Style>
+								<Top>3.6195cm</Top>
+								<Width>5.9055cm</Width>
+								<ZIndex>7</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox5">
+								<Height>0.5cm</Height>
+								<Left>2.7305cm</Left>
+								<Value>=Fields!PName.Value</Value>
+								<Style>
+									<BackgroundColor>LavenderBlush</BackgroundColor>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>8pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+								</Style>
+								<Top>4.699cm</Top>
+								<Width>2.5cm</Width>
+								<ZIndex>8</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox20">
+								<Height>0.5cm</Height>
+								<Left>5.715cm</Left>
+								<Value>様</Value>
+								<Style>
+									<BackgroundColor>LavenderBlush</BackgroundColor>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>8pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+								</Style>
+								<Top>4.699cm</Top>
+								<Width>0.635cm</Width>
+								<ZIndex>9</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox31">
+								<Height>0.5cm</Height>
+								<Left>17.9705cm</Left>
+								<Value>〒</Value>
+								<Style>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>8pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+								</Style>
+								<Top>0.825in</Top>
+								<Width>0.4445cm</Width>
+								<ZIndex>9</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox30">
+								<Height>0.5cm</Height>
+								<Left>1.397cm</Left>
+								<Value>〒</Value>
+								<Style>
+									<BackgroundColor>LavenderBlush</BackgroundColor>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>8pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+								</Style>
+								<Top>3.048cm</Top>
+								<Width>0.4445cm</Width>
+								<ZIndex>9</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox23">
+								<Height>1.0795cm</Height>
+								<Left>17.9705cm</Left>
+								<Value>=Fields!MyCorporateNm.Value</Value>
+								<Style>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>18pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<dd:ShrinkToFit xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">true</dd:ShrinkToFit>
+								</Style>
+								<Top>0.4in</Top>
+								<Width>5.969cm</Width>
+								<ZIndex>10</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox24">
+								<Height>0.516cm</Height>
+								<Left>17.9705cm</Left>
+								<Value>=Fields!MyAddress.Value</Value>
+								<Style>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>8pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<dd:ShrinkToFit xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">true</dd:ShrinkToFit>
+								</Style>
+								<Top>1.025in</Top>
+								<Width>6.096cm</Width>
+								<ZIndex>11</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox25">
+								<Height>0.5cm</Height>
+								<Left>7.25361in</Left>
+								<Value>=Fields!MyPostalcode.Value</Value>
+								<Style>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>8pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+								</Style>
+								<Top>0.825in</Top>
+								<Width>3.3255cm</Width>
+								<ZIndex>12</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox26">
+								<Height>0.5cm</Height>
+								<Left>7.962271in</Left>
+								<Value>TEL：</Value>
+								<Style>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>8pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+								</Style>
+								<Top>1.225in</Top>
+								<Width>1cm</Width>
+								<ZIndex>13</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox27">
+								<Height>0.5cm</Height>
+								<Left>7.962272in</Left>
+								<Value>FAX：</Value>
+								<Style>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>8pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+								</Style>
+								<Top>1.425in</Top>
+								<Width>1cm</Width>
+								<ZIndex>14</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox28">
+								<Height>0.5cm</Height>
+								<Left>8.355972in</Left>
+								<Value>=Fields!MyTEL.Value</Value>
+								<Style>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>8pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+								</Style>
+								<Top>1.225in</Top>
+								<Width>2.8cm</Width>
+								<ZIndex>15</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox29">
+								<Height>0.5cm</Height>
+								<Left>8.355973in</Left>
+								<Value>=Fields!MyFAX.Value</Value>
+								<Style>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>8pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+								</Style>
+								<Top>1.425in</Top>
+								<Width>2.8cm</Width>
+								<ZIndex>16</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox53">
+								<Height>0.75cm</Height>
+								<Left>11.049cm</Left>
+								<Value>=Globals!PageNumber &amp; " / " &amp; Globals!TotalPages</Value>
+								<Style>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+								</Style>
+								<Top>15.113cm</Top>
+								<Width>2.5cm</Width>
+								<ZIndex>17</ZIndex>
+							</Textbox>
+						</ReportItems>
+						<Style />
+					</Page>
+					<Page>
+						<ReportItems>
+							<Textbox Name="TextBox48">
+								<Height>0.1979167in</Height>
+								<Left>15.621cm</Left>
+								<Value>売上日</Value>
+								<Style>
+									<BackgroundColor>LavenderBlush</BackgroundColor>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>8pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+									<VerticalAlign>Middle</VerticalAlign>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>0.5405cm</Top>
+								<Width>1.104167in</Width>
+							</Textbox>
+							<Textbox Name="TextBox47">
+								<Height>0.1979167in</Height>
+								<Left>18.42416cm</Left>
+								<Value>売上番号</Value>
+								<Style>
+									<BackgroundColor>LavenderBlush</BackgroundColor>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>8pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+									<VerticalAlign>Middle</VerticalAlign>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>0.5405cm</Top>
+								<Width>1.104167in</Width>
+							</Textbox>
+							<Textbox Name="TextBox50">
+								<Height>0.1979167in</Height>
+								<Left>21.22417cm</Left>
+								<Value>製品形態</Value>
+								<Style>
+									<BackgroundColor>LavenderBlush</BackgroundColor>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>8pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+									<VerticalAlign>Middle</VerticalAlign>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>0.5405cm</Top>
+								<Width>1.104167in</Width>
+							</Textbox>
+							<Textbox Name="TextBox49">
+								<Height>0.2917in</Height>
+								<Left>21.22874cm</Left>
+								<Value>=Fields!PKG.Value</Value>
+								<Style>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>8pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+									<VerticalAlign>Middle</VerticalAlign>
+									<dd:ShrinkToFit xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">true</dd:ShrinkToFit>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>1.0389cm</Top>
+								<Width>1.104167in</Width>
+							</Textbox>
+							<OverflowPlaceHolder Name="OverflowPlaceHolder2">
+								<Height>14.25cm</Height>
+								<Left>0.5715cm</Left>
+								<Top>0.5405cm</Top>
+								<Width>11.493cm</Width>
+								<OverflowName>OverflowPlaceHolder3</OverflowName>
+							</OverflowPlaceHolder>
+							<OverflowPlaceHolder Name="OverflowPlaceHolder3">
+								<Height>12cm</Height>
+								<Left>4.933531in</Left>
+								<Top>2.7905cm</Top>
+								<Width>11.493cm</Width>
+							</OverflowPlaceHolder>
+							<Textbox Name="TextBox46">
+								<Height>0.2917in</Height>
+								<Left>18.42417cm</Left>
+								<Value>=Fields!SalesNo.Value</Value>
+								<Style>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>8pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+									<VerticalAlign>Middle</VerticalAlign>
+									<dd:ShrinkToFit xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">true</dd:ShrinkToFit>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>1.0389cm</Top>
+								<Width>2.804574cm</Width>
+							</Textbox>
+							<Textbox Name="TextBox45">
+								<Height>0.2917in</Height>
+								<Left>15.621cm</Left>
+								<Value>=Fields!Pdate.Value</Value>
+								<Style>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>8pt</FontSize>
+									<Format>D</Format>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+									<VerticalAlign>Middle</VerticalAlign>
+									<dd:ShrinkToFit xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">true</dd:ShrinkToFit>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>1.0389cm</Top>
+								<Width>1.104167in</Width>
+							</Textbox>
+							<Textbox Name="TextBox51">
+								<Height>0.2953in</Height>
+								<Left>8.079161in</Left>
+								<Value>=Sum(Fields!Price.Value * Fields!Quantity.Value)</Value>
+								<Style>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>8pt</FontSize>
+									<Format>c</Format>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Right</TextAlign>
+									<VerticalAlign>Middle</VerticalAlign>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>14.7905cm</Top>
+								<Visibility>
+									<Hidden>=IIF((Globals!TotalPages&lt;&gt;Globals!PageNumber),True,False)</Hidden>
+								</Visibility>
+								<Width>3.5cm</Width>
+							</Textbox>
+							<Textbox Name="TextBox52">
+								<Height>0.75cm</Height>
+								<Left>7.557311in</Left>
+								<Value>合計</Value>
+								<Style>
+									<BackgroundColor>LavenderBlush</BackgroundColor>
+									<FontFamily>メイリオ</FontFamily>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+									<VerticalAlign>Middle</VerticalAlign>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>14.7905cm</Top>
+								<Visibility>
+									<Hidden>=IIF((Globals!TotalPages&lt;&gt;Globals!PageNumber),True,False)</Hidden>
+								</Visibility>
+								<Width>1.3255cm</Width>
+								<ZIndex>4</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox54">
+								<Height>0.75cm</Height>
+								<Left>11.049cm</Left>
+								<Value>=Globals!PageNumber &amp; " / " &amp; Globals!TotalPages</Value>
+								<Style>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+								</Style>
+								<Top>15.113cm</Top>
+								<Width>2.5cm</Width>
+								<ZIndex>5</ZIndex>
+							</Textbox>
+						</ReportItems>
+						<Style />
+						<ThrowIfPlaceHoldersEmpty>True</ThrowIfPlaceHoldersEmpty>
+					</Page>
+				</Pages>
+			</FixedPage>
+		</ReportItems>
+		<Style />
+	</Body>
+	<BottomMargin>2.5cm</BottomMargin>
+	<LeftMargin>2.5cm</LeftMargin>
+	<PageHeight>21cm</PageHeight>
+	<PageWidth>29.7cm</PageWidth>
+	<RightMargin>2.5cm</RightMargin>
+	<TopMargin>2.5cm</TopMargin>
+	<Width>29.7cm</Width>
+	<DataSources>
+		<DataSource Name="DataSource1">
+			<ConnectionProperties>
+				<ConnectString>jsondata=[
+  {
+    "Pdate": "2012-01-09T00:00:00",
+    "SalesNo": "00000003",
+    "SalesEdaNo": "014",
+    "Quantity": 5,
+    "PName": "宮城　花子",
+    "Address": "宮城県仙台市泉区寺岡８－８－８",
+    "Postalcode": "980-0821",
+    "TEL": "022-999-8888",
+    "FAX": "022-999-0123",
+    "CorporateNm": "株式会社　ＢＢＢ電気",
+    "DepartmentNm": "営業部",
+    "ProductNm": "CalendarSheet for .NET",
+    "Price": 120000,
+    "PKG": "ダウンロード版",
+    "MyCorporateNm": "株式会社　葡萄商事",
+    "MyAddress": "宮城県仙台市泉区紫山Ｘ－Ｘ－Ｘ",
+    "MyPostalcode": "981-3205",
+    "MyTEL": "022-000-9999",
+    "MyFAX": "022-000-8888"
+  },
+  {
+    "Pdate": "2012-01-09T00:00:00",
+    "SalesNo": "00000003",
+    "SalesEdaNo": "015",
+    "Quantity": 12,
+    "PName": "宮城　花子",
+    "Address": "宮城県仙台市泉区寺岡８－８－８",
+    "Postalcode": "980-0821",
+    "TEL": "022-999-8888",
+    "FAX": "022-999-0123",
+    "CorporateNm": "株式会社　ＢＢＢ電気",
+    "DepartmentNm": "営業部",
+    "ProductNm": "Wijx Enterprise",
+    "Price": 98000,
+    "PKG": "ダウンロード版",
+    "MyCorporateNm": "株式会社　葡萄商事",
+    "MyAddress": "宮城県仙台市泉区紫山Ｘ－Ｘ－Ｘ",
+    "MyPostalcode": "981-3205",
+    "MyTEL": "022-000-9999",
+    "MyFAX": "022-000-8888"
+  },
+  {
+    "Pdate": "2012-01-09T00:00:00",
+    "SalesNo": "00000003",
+    "SalesEdaNo": "016",
+    "Quantity": 1,
+    "PName": "宮城　花子",
+    "Address": "宮城県仙台市泉区寺岡８－８－８",
+    "Postalcode": "980-0821",
+    "TEL": "022-999-8888",
+    "FAX": "022-999-0123",
+    "CorporateNm": "株式会社　ＢＢＢ電気",
+    "DepartmentNm": "営業部",
+    "ProductNm": "Reports for .NET 3.0J Professionalff",
+    "Price": 273000,
+    "PKG": "ダウンロード版",
+    "MyCorporateNm": "株式会社　葡萄商事",
+    "MyAddress": "宮城県仙台市泉区紫山Ｘ－Ｘ－Ｘ",
+    "MyPostalcode": "981-3205",
+    "MyTEL": "022-000-9999",
+    "MyFAX": "022-000-8888"
+  },
+  {
+    "Pdate": "2012-01-09T00:00:00",
+    "SalesNo": "00000003",
+    "SalesEdaNo": "017",
+    "Quantity": 5,
+    "PName": "宮城　花子",
+    "Address": "宮城県仙台市泉区寺岡８－８－８",
+    "Postalcode": "980-0821",
+    "TEL": "022-999-8888",
+    "FAX": "022-999-0123",
+    "CorporateNm": "株式会社　ＢＢＢ電気",
+    "DepartmentNm": "営業部",
+    "ProductNm": "Grid for Windows Forms 5.0J",
+    "Price": 85050,
+    "PKG": "ダウンロード版",
+    "MyCorporateNm": "株式会社　葡萄商事",
+    "MyAddress": "宮城県仙台市泉区紫山Ｘ－Ｘ－Ｘ",
+    "MyPostalcode": "981-3205",
+    "MyTEL": "022-000-9999",
+    "MyFAX": "022-000-8888"
+  },
+  {
+    "Pdate": "2012-01-09T00:00:00",
+    "SalesNo": "00000003",
+    "SalesEdaNo": "018",
+    "Quantity": 1,
+    "PName": "宮城　花子",
+    "Address": "宮城県仙台市泉区寺岡８－８－８",
+    "Postalcode": "980-0821",
+    "TEL": "022-999-8888",
+    "FAX": "022-999-0123",
+    "CorporateNm": "株式会社　ＢＢＢ電気",
+    "DepartmentNm": "営業部",
+    "ProductNm": "AllComponent Studio 2005 Vol.1",
+    "Price": 378000,
+    "PKG": "ダウンロード版",
+    "MyCorporateNm": "株式会社　葡萄商事",
+    "MyAddress": "宮城県仙台市泉区紫山Ｘ－Ｘ－Ｘ",
+    "MyPostalcode": "981-3205",
+    "MyTEL": "022-000-9999",
+    "MyFAX": "022-000-8888"
+  },
+  {
+    "Pdate": "2012-01-09T00:00:00",
+    "SalesNo": "00000003",
+    "SalesEdaNo": "019",
+    "Quantity": 5,
+    "PName": "宮城　花子",
+    "Address": "宮城県仙台市泉区寺岡８－８－８",
+    "Postalcode": "980-0821",
+    "TEL": "022-999-8888",
+    "FAX": "022-999-0123",
+    "CorporateNm": "株式会社　ＢＢＢ電気",
+    "DepartmentNm": "営業部",
+    "ProductNm": "KindInput for ASP.NET 3.0J",
+    "Price": 11340,
+    "PKG": "ダウンロード版",
+    "MyCorporateNm": "株式会社　葡萄商事",
+    "MyAddress": "宮城県仙台市泉区紫山Ｘ－Ｘ－Ｘ",
+    "MyPostalcode": "981-3205",
+    "MyTEL": "022-000-9999",
+    "MyFAX": "022-000-8888"
+  },
+  {
+    "Pdate": "2012-01-09T00:00:00",
+    "SalesNo": "00000003",
+    "SalesEdaNo": "020",
+    "Quantity": 1,
+    "PName": "宮城　花子",
+    "Address": "宮城県仙台市泉区寺岡８－８－８",
+    "Postalcode": "980-0821",
+    "TEL": "022-999-8888",
+    "FAX": "022-999-0123",
+    "CorporateNm": "株式会社　ＢＢＢ電気",
+    "DepartmentNm": "営業部",
+    "ProductNm": "CommunicationSuite for .NET",
+    "Price": 81900,
+    "PKG": "ダウンロード版",
+    "MyCorporateNm": "株式会社　葡萄商事",
+    "MyAddress": "宮城県仙台市泉区紫山Ｘ－Ｘ－Ｘ",
+    "MyPostalcode": "981-3205",
+    "MyTEL": "022-000-9999",
+    "MyFAX": "022-000-8888"
+  },
+  {
+    "Pdate": "2012-01-09T00:00:00",
+    "SalesNo": "00000003",
+    "SalesEdaNo": "021",
+    "Quantity": 3,
+    "PName": "宮城　花子",
+    "Address": "宮城県仙台市泉区寺岡８－８－８",
+    "Postalcode": "980-0821",
+    "TEL": "022-999-8888",
+    "FAX": "022-999-0123",
+    "CorporateNm": "株式会社　ＢＢＢ電気",
+    "DepartmentNm": "営業部",
+    "ProductNm": "ImageView for .NET 14.0J Raster Imaging Pro",
+    "Price": 126000,
+    "PKG": "ダウンロード版",
+    "MyCorporateNm": "株式会社　葡萄商事",
+    "MyAddress": "宮城県仙台市泉区紫山Ｘ－Ｘ－Ｘ",
+    "MyPostalcode": "981-3205",
+    "MyTEL": "022-000-9999",
+    "MyFAX": "022-000-8888"
+  },
+  {
+    "Pdate": "2012-01-09T00:00:00",
+    "SalesNo": "00000003",
+    "SalesEdaNo": "022",
+    "Quantity": 5,
+    "PName": "宮城　花子",
+    "Address": "宮城県仙台市泉区寺岡８－８－８",
+    "Postalcode": "980-0821",
+    "TEL": "022-999-8888",
+    "FAX": "022-999-0123",
+    "CorporateNm": "株式会社　ＢＢＢ電気",
+    "DepartmentNm": "営業部",
+    "ProductNm": "AllInChart ASP for .NET 4.0J",
+    "Price": 93450,
+    "PKG": "ダウンロード版",
+    "MyCorporateNm": "株式会社　葡萄商事",
+    "MyAddress": "宮城県仙台市泉区紫山Ｘ－Ｘ－Ｘ",
+    "MyPostalcode": "981-3205",
+    "MyTEL": "022-000-9999",
+    "MyFAX": "022-000-8888"
+  },
+  {
+    "Pdate": "2012-01-09T00:00:00",
+    "SalesNo": "00000003",
+    "SalesEdaNo": "013",
+    "Quantity": 3,
+    "PName": "宮城　花子",
+    "Address": "宮城県仙台市泉区寺岡８－８－８",
+    "Postalcode": "980-0821",
+    "TEL": "022-999-8888",
+    "FAX": "022-999-0123",
+    "CorporateNm": "株式会社　ＢＢＢ電気",
+    "DepartmentNm": "営業部",
+    "ProductNm": "AllComponent 2007 Enterprise",
+    "Price": 283500,
+    "PKG": "ダウンロード版",
+    "MyCorporateNm": "株式会社　葡萄商事",
+    "MyAddress": "宮城県仙台市泉区紫山Ｘ－Ｘ－Ｘ",
+    "MyPostalcode": "981-3205",
+    "MyTEL": "022-000-9999",
+    "MyFAX": "022-000-8888"
+  },
+  {
+    "Pdate": "2012-01-09T00:00:00",
+    "SalesNo": "00000003",
+    "SalesEdaNo": "001",
+    "Quantity": 30,
+    "PName": "宮城　花子",
+    "Address": "宮城県仙台市泉区寺岡８－８－８",
+    "Postalcode": "980-0821",
+    "TEL": "022-999-8888",
+    "FAX": "022-999-0123",
+    "CorporateNm": "株式会社　ＢＢＢ電気",
+    "DepartmentNm": "営業部",
+    "ProductNm": "KindInput for Windows Forms 6.0J",
+    "Price": 113400,
+    "PKG": "ダウンロード版",
+    "MyCorporateNm": "株式会社　葡萄商事",
+    "MyAddress": "宮城県仙台市泉区紫山Ｘ－Ｘ－Ｘ",
+    "MyPostalcode": "981-3205",
+    "MyTEL": "022-000-9999",
+    "MyFAX": "022-000-8888"
+  },
+  {
+    "Pdate": "2012-01-09T00:00:00",
+    "SalesNo": "00000003",
+    "SalesEdaNo": "002",
+    "Quantity": 15,
+    "PName": "宮城　花子",
+    "Address": "宮城県仙台市泉区寺岡８－８－８",
+    "Postalcode": "980-0821",
+    "TEL": "022-999-8888",
+    "FAX": "022-999-0123",
+    "CorporateNm": "株式会社　ＢＢＢ電気",
+    "DepartmentNm": "営業部",
+    "ProductNm": "AllComponent Studio 2005 Vol.1",
+    "Price": 378000,
+    "PKG": "ダウンロード版",
+    "MyCorporateNm": "株式会社　葡萄商事",
+    "MyAddress": "宮城県仙台市泉区紫山Ｘ－Ｘ－Ｘ",
+    "MyPostalcode": "981-3205",
+    "MyTEL": "022-000-9999",
+    "MyFAX": "022-000-8888"
+  },
+  {
+    "Pdate": "2012-01-09T00:00:00",
+    "SalesNo": "00000003",
+    "SalesEdaNo": "003",
+    "Quantity": 7,
+    "PName": "宮城　花子",
+    "Address": "宮城県仙台市泉区寺岡８－８－８",
+    "Postalcode": "980-0821",
+    "TEL": "022-999-8888",
+    "FAX": "022-999-0123",
+    "CorporateNm": "株式会社　ＢＢＢ電気",
+    "DepartmentNm": "営業部",
+    "ProductNm": "Gsheet for .NET 3.0J",
+    "Price": 73500,
+    "PKG": "ダウンロード版",
+    "MyCorporateNm": "株式会社　葡萄商事",
+    "MyAddress": "宮城県仙台市泉区紫山Ｘ－Ｘ－Ｘ",
+    "MyPostalcode": "981-3205",
+    "MyTEL": "022-000-9999",
+    "MyFAX": "022-000-8888"
+  },
+  {
+    "Pdate": "2012-01-09T00:00:00",
+    "SalesNo": "00000003",
+    "SalesEdaNo": "004",
+    "Quantity": 10,
+    "PName": "宮城　花子",
+    "Address": "宮城県仙台市泉区寺岡８－８－８",
+    "Postalcode": "980-0821",
+    "TEL": "022-999-8888",
+    "FAX": "022-999-0123",
+    "CorporateNm": "株式会社　ＢＢＢ電気",
+    "DepartmentNm": "営業部",
+    "ProductNm": "SpeedGrid for .NET 2.0J",
+    "Price": 56700,
+    "PKG": "ダウンロード版",
+    "MyCorporateNm": "株式会社　葡萄商事",
+    "MyAddress": "宮城県仙台市泉区紫山Ｘ－Ｘ－Ｘ",
+    "MyPostalcode": "981-3205",
+    "MyTEL": "022-000-9999",
+    "MyFAX": "022-000-8888"
+  },
+  {
+    "Pdate": "2012-01-09T00:00:00",
+    "SalesNo": "00000003",
+    "SalesEdaNo": "005",
+    "Quantity": 4,
+    "PName": "宮城　花子",
+    "Address": "宮城県仙台市泉区寺岡８－８－８",
+    "Postalcode": "980-0821",
+    "TEL": "022-999-8888",
+    "FAX": "022-999-0123",
+    "CorporateNm": "株式会社　ＢＢＢ電気",
+    "DepartmentNm": "営業部",
+    "ProductNm": "ImageView 16.5J Imaging Pro",
+    "Price": 132300,
+    "PKG": "ダウンロード版",
+    "MyCorporateNm": "株式会社　葡萄商事",
+    "MyAddress": "宮城県仙台市泉区紫山Ｘ－Ｘ－Ｘ",
+    "MyPostalcode": "981-3205",
+    "MyTEL": "022-000-9999",
+    "MyFAX": "022-000-8888"
+  },
+  {
+    "Pdate": "2012-01-09T00:00:00",
+    "SalesNo": "00000003",
+    "SalesEdaNo": "006",
+    "Quantity": 3,
+    "PName": "宮城　花子",
+    "Address": "宮城県仙台市泉区寺岡８－８－８",
+    "Postalcode": "980-0821",
+    "TEL": "022-999-8888",
+    "FAX": "022-999-0123",
+    "CorporateNm": "株式会社　ＢＢＢ電気",
+    "DepartmentNm": "営業部",
+    "ProductNm": "AnotherPak for Windows Forms 6.0J",
+    "Price": 63000,
+    "PKG": "ダウンロード版",
+    "MyCorporateNm": "株式会社　葡萄商事",
+    "MyAddress": "宮城県仙台市泉区紫山Ｘ－Ｘ－Ｘ",
+    "MyPostalcode": "981-3205",
+    "MyTEL": "022-000-9999",
+    "MyFAX": "022-000-8888"
+  },
+  {
+    "Pdate": "2012-01-09T00:00:00",
+    "SalesNo": "00000003",
+    "SalesEdaNo": "007",
+    "Quantity": 5,
+    "PName": "宮城　花子",
+    "Address": "宮城県仙台市泉区寺岡８－８－８",
+    "Postalcode": "980-0821",
+    "TEL": "022-999-8888",
+    "FAX": "022-999-0123",
+    "CorporateNm": "株式会社　ＢＢＢ電気",
+    "DepartmentNm": "営業部",
+    "ProductNm": "AllInChart for ASP.NET 5.0J",
+    "Price": 85050,
+    "PKG": "ダウンロード版",
+    "MyCorporateNm": "株式会社　葡萄商事",
+    "MyAddress": "宮城県仙台市泉区紫山Ｘ－Ｘ－Ｘ",
+    "MyPostalcode": "981-3205",
+    "MyTEL": "022-000-9999",
+    "MyFAX": "022-000-8888"
+  },
+  {
+    "Pdate": "2012-01-09T00:00:00",
+    "SalesNo": "00000003",
+    "SalesEdaNo": "008",
+    "Quantity": 1,
+    "PName": "宮城　花子",
+    "Address": "宮城県仙台市泉区寺岡８－８－８",
+    "Postalcode": "980-0821",
+    "TEL": "022-999-8888",
+    "FAX": "022-999-0123",
+    "CorporateNm": "株式会社　ＢＢＢ電気",
+    "DepartmentNm": "営業部",
+    "ProductNm": "SpeedGrid for .NET",
+    "Price": 56700,
+    "PKG": "ダウンロード版",
+    "MyCorporateNm": "株式会社　葡萄商事",
+    "MyAddress": "宮城県仙台市泉区紫山Ｘ－Ｘ－Ｘ",
+    "MyPostalcode": "981-3205",
+    "MyTEL": "022-000-9999",
+    "MyFAX": "022-000-8888"
+  },
+  {
+    "Pdate": "2012-01-09T00:00:00",
+    "SalesNo": "00000003",
+    "SalesEdaNo": "009",
+    "Quantity": 20,
+    "PName": "宮城　花子",
+    "Address": "宮城県仙台市泉区寺岡８－８－８",
+    "Postalcode": "980-0821",
+    "TEL": "022-999-8888",
+    "FAX": "022-999-0123",
+    "CorporateNm": "株式会社　ＢＢＢ電気",
+    "DepartmentNm": "営業部",
+    "ProductNm": "Multi Reports for .NET 6.0J Professional",
+    "Price": 273000,
+    "PKG": "ダウンロード版",
+    "MyCorporateNm": "株式会社　葡萄商事",
+    "MyAddress": "宮城県仙台市泉区紫山Ｘ－Ｘ－Ｘ",
+    "MyPostalcode": "981-3205",
+    "MyTEL": "022-000-9999",
+    "MyFAX": "022-000-8888"
+  },
+  {
+    "Pdate": "2012-01-09T00:00:00",
+    "SalesNo": "00000003",
+    "SalesEdaNo": "010",
+    "Quantity": 5,
+    "PName": "宮城　花子",
+    "Address": "宮城県仙台市泉区寺岡８－８－８",
+    "Postalcode": "980-0821",
+    "TEL": "022-999-8888",
+    "FAX": "022-999-0123",
+    "CorporateNm": "株式会社　ＢＢＢ電気",
+    "DepartmentNm": "営業部",
+    "ProductNm": "CADHSuite 2.5J",
+    "Price": 143850,
+    "PKG": "ダウンロード版",
+    "MyCorporateNm": "株式会社　葡萄商事",
+    "MyAddress": "宮城県仙台市泉区紫山Ｘ－Ｘ－Ｘ",
+    "MyPostalcode": "981-3205",
+    "MyTEL": "022-000-9999",
+    "MyFAX": "022-000-8888"
+  },
+  {
+    "Pdate": "2012-01-09T00:00:00",
+    "SalesNo": "00000003",
+    "SalesEdaNo": "011",
+    "Quantity": 10,
+    "PName": "宮城　花子",
+    "Address": "宮城県仙台市泉区寺岡８－８－８",
+    "Postalcode": "980-0821",
+    "TEL": "022-999-8888",
+    "FAX": "022-999-0123",
+    "CorporateNm": "株式会社　ＢＢＢ電気",
+    "DepartmentNm": "営業部",
+    "ProductNm": "AnotherPak for Windows Forms 6.0J",
+    "Price": 63000,
+    "PKG": "ダウンロード版",
+    "MyCorporateNm": "株式会社　葡萄商事",
+    "MyAddress": "宮城県仙台市泉区紫山Ｘ－Ｘ－Ｘ",
+    "MyPostalcode": "981-3205",
+    "MyTEL": "022-000-9999",
+    "MyFAX": "022-000-8888"
+  },
+  {
+    "Pdate": "2012-01-09T00:00:00",
+    "SalesNo": "00000003",
+    "SalesEdaNo": "012",
+    "Quantity": 10,
+    "PName": "宮城　花子",
+    "Address": "宮城県仙台市泉区寺岡８－８－８",
+    "Postalcode": "980-0821",
+    "TEL": "022-999-8888",
+    "FAX": "022-999-0123",
+    "CorporateNm": "株式会社　ＢＢＢ電気",
+    "DepartmentNm": "営業部",
+    "ProductNm": "MaxGrid for Windows Forms 6.0J",
+    "Price": 113400,
+    "PKG": "ダウンロード版",
+    "MyCorporateNm": "株式会社　葡萄商事",
+    "MyAddress": "宮城県仙台市泉区紫山Ｘ－Ｘ－Ｘ",
+    "MyPostalcode": "981-3205",
+    "MyTEL": "022-000-9999",
+    "MyFAX": "022-000-8888"
+  }
+];schemadata={
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://example.com/example.json",
+    "items": {
+        "id": "/items",
+        "properties": {
+            "Address": {
+                "id": "/items/properties/Address",
+                "type": "string"
+            },
+            "CorporateNm": {
+                "id": "/items/properties/CorporateNm",
+                "type": "string"
+            },
+            "DepartmentNm": {
+                "id": "/items/properties/DepartmentNm",
+                "type": "string"
+            },
+            "FAX": {
+                "id": "/items/properties/FAX",
+                "type": "string"
+            },
+            "MyAddress": {
+                "id": "/items/properties/MyAddress",
+                "type": "string"
+            },
+            "MyCorporateNm": {
+                "id": "/items/properties/MyCorporateNm",
+                "type": "string"
+            },
+            "MyFAX": {
+                "id": "/items/properties/MyFAX",
+                "type": "string"
+            },
+            "MyPostalcode": {
+                "id": "/items/properties/MyPostalcode",
+                "type": "string"
+            },
+            "MyTEL": {
+                "id": "/items/properties/MyTEL",
+                "type": "string"
+            },
+            "PKG": {
+                "id": "/items/properties/PKG",
+                "type": "string"
+            },
+            "PName": {
+                "id": "/items/properties/PName",
+                "type": "string"
+            },
+            "Pdate": {
+                "id": "/items/properties/Pdate",
+                "type": "string"
+            },
+            "Postalcode": {
+                "id": "/items/properties/Postalcode",
+                "type": "string"
+            },
+            "Price": {
+                "id": "/items/properties/Price",
+                "type": "integer"
+            },
+            "ProductNm": {
+                "id": "/items/properties/ProductNm",
+                "type": "string"
+            },
+            "Quantity": {
+                "id": "/items/properties/Quantity",
+                "type": "integer"
+            },
+            "SalesEdaNo": {
+                "id": "/items/properties/SalesEdaNo",
+                "type": "string"
+            },
+            "SalesNo": {
+                "id": "/items/properties/SalesNo",
+                "type": "string"
+            },
+            "TEL": {
+                "id": "/items/properties/TEL",
+                "type": "string"
+            }
+        },
+        "type": "object"
+    },
+    "type": "array"
+}</ConnectString>
+				<DataProvider>JSON</DataProvider>
+			</ConnectionProperties>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="DataSet1">
+			<Fields>
+				<Field Name="Address">
+					<DataField>Address</DataField>
+				</Field>
+				<Field Name="CorporateNm">
+					<DataField>CorporateNm</DataField>
+				</Field>
+				<Field Name="DepartmentNm">
+					<DataField>DepartmentNm</DataField>
+				</Field>
+				<Field Name="FAX">
+					<DataField>FAX</DataField>
+				</Field>
+				<Field Name="MyAddress">
+					<DataField>MyAddress</DataField>
+				</Field>
+				<Field Name="MyCorporateNm">
+					<DataField>MyCorporateNm</DataField>
+				</Field>
+				<Field Name="MyFAX">
+					<DataField>MyFAX</DataField>
+				</Field>
+				<Field Name="MyPostalcode">
+					<DataField>MyPostalcode</DataField>
+				</Field>
+				<Field Name="MyTEL">
+					<DataField>MyTEL</DataField>
+				</Field>
+				<Field Name="PKG">
+					<DataField>PKG</DataField>
+				</Field>
+				<Field Name="PName">
+					<DataField>PName</DataField>
+				</Field>
+				<Field Name="Pdate">
+					<DataField>Pdate</DataField>
+				</Field>
+				<Field Name="Postalcode">
+					<DataField>Postalcode</DataField>
+				</Field>
+				<Field Name="Price">
+					<DataField>Price</DataField>
+				</Field>
+				<Field Name="ProductNm">
+					<DataField>ProductNm</DataField>
+				</Field>
+				<Field Name="Quantity">
+					<DataField>Quantity</DataField>
+				</Field>
+				<Field Name="SalesEdaNo">
+					<DataField>SalesEdaNo</DataField>
+				</Field>
+				<Field Name="SalesNo">
+					<DataField>SalesNo</DataField>
+				</Field>
+				<Field Name="TEL">
+					<DataField>TEL</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>$.[*]</CommandText>
+				<DataSourceName>DataSource1</DataSourceName>
+			</Query>
+		</DataSet>
+	</DataSets>
+	<CustomProperties>
+		<CustomProperty>
+			<Name>PaperOrientation</Name>
+			<Value>Landscape</Value>
+		</CustomProperty>
+	</CustomProperties>
+</Report>

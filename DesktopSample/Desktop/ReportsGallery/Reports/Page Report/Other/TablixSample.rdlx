@@ -1,0 +1,609 @@
+﻿<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+	<Body>
+		<Height>420mm</Height>
+		<ReportItems>
+			<FixedPage Name="FixedPage1">
+				<Pages>
+					<Page>
+						<ReportItems>
+							<Tablix Name="Tablix1">
+								<TablixCorner>
+									<TablixCornerRows>
+										<TablixCornerRow>
+											<TablixCornerCell>
+												<CellContents>
+													<Textbox Name="TextBox14">
+														<Height>0.8333333in</Height>
+														<Value />
+														<Style>
+															<BackgroundColor>Gainsboro</BackgroundColor>
+															<FontFamily>Times New Roman</FontFamily>
+															<FontSize>14pt</FontSize>
+															<FontStyle>Normal</FontStyle>
+															<FontWeight>700</FontWeight>
+															<PaddingBottom>2pt</PaddingBottom>
+															<PaddingLeft>2pt</PaddingLeft>
+															<PaddingRight>2pt</PaddingRight>
+															<PaddingTop>2pt</PaddingTop>
+															<TextAlign>Center</TextAlign>
+															<VerticalAlign>Middle</VerticalAlign>
+															<Border>
+																<Style>Solid</Style>
+															</Border>
+														</Style>
+														<Width>1.8125in</Width>
+													</Textbox>
+													<ColSpan>2</ColSpan>
+													<RowSpan>2</RowSpan>
+												</CellContents>
+											</TablixCornerCell>
+											<TablixCornerCell />
+										</TablixCornerRow>
+										<TablixCornerRow>
+											<TablixCornerCell />
+											<TablixCornerCell />
+										</TablixCornerRow>
+									</TablixCornerRows>
+								</TablixCorner>
+								<TablixBody>
+									<TablixColumns>
+										<TablixColumn>
+											<Width>2.293825cm</Width>
+										</TablixColumn>
+										<TablixColumn>
+											<Width>2.839717cm</Width>
+										</TablixColumn>
+										<TablixColumn>
+											<Width>2.2788cm</Width>
+										</TablixColumn>
+									</TablixColumns>
+									<TablixRows>
+										<TablixRow>
+											<Height>0.960067cm</Height>
+											<TablixCells>
+												<TablixCell>
+													<CellContents>
+														<Textbox Name="TextBox4">
+															<Height>0.375in</Height>
+															<Value>=SUM(Fields!受注金額.Value)</Value>
+															<Style>
+																<BackgroundColor>White</BackgroundColor>
+																<FontFamily>MS PGothic</FontFamily>
+																<Format>c</Format>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<VerticalAlign>Middle</VerticalAlign>
+																<Border>
+																	<Style>Solid</Style>
+																</Border>
+															</Style>
+															<Width>0.90625in</Width>
+														</Textbox>
+													</CellContents>
+												</TablixCell>
+												<TablixCell>
+													<CellContents>
+														<Textbox Name="TextBox17">
+															<Height>0.375in</Height>
+															<Value>=SUM(Fields!受注金額.Value)</Value>
+															<Style>
+																<BackgroundColor>White</BackgroundColor>
+																<FontFamily>MS PGothic</FontFamily>
+																<Format>c</Format>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<VerticalAlign>Middle</VerticalAlign>
+																<Border>
+																	<Style>Solid</Style>
+																</Border>
+															</Style>
+															<Width>1.114583in</Width>
+														</Textbox>
+													</CellContents>
+												</TablixCell>
+												<TablixCell>
+													<CellContents>
+														<Textbox Name="TextBox18">
+															<Height>0.375in</Height>
+															<Value>=SUM(Fields!受注金額.Value)</Value>
+															<Style>
+																<BackgroundColor>White</BackgroundColor>
+																<FontFamily>MS PGothic</FontFamily>
+																<Format>c</Format>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<VerticalAlign>Middle</VerticalAlign>
+																<Border>
+																	<Style>Solid</Style>
+																</Border>
+															</Style>
+															<Width>0.8958333in</Width>
+														</Textbox>
+													</CellContents>
+												</TablixCell>
+											</TablixCells>
+										</TablixRow>
+										<TablixRow>
+											<Height>0.960067cm</Height>
+											<TablixCells>
+												<TablixCell>
+													<CellContents>
+														<Textbox Name="TextBox11">
+															<Height>0.375in</Height>
+															<Value>=SUM(Fields!受注金額.Value)</Value>
+															<Style>
+																<BackgroundColor>White</BackgroundColor>
+																<FontFamily>MS PGothic</FontFamily>
+																<Format>c</Format>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<VerticalAlign>Middle</VerticalAlign>
+																<Border>
+																	<Style>Solid</Style>
+																</Border>
+															</Style>
+															<Width>0.90625in</Width>
+														</Textbox>
+													</CellContents>
+												</TablixCell>
+												<TablixCell>
+													<CellContents>
+														<Textbox Name="TextBox15">
+															<Height>0.375in</Height>
+															<Value>=SUM(Fields!受注金額.Value)</Value>
+															<Style>
+																<BackgroundColor>White</BackgroundColor>
+																<FontFamily>MS PGothic</FontFamily>
+																<Format>c</Format>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<VerticalAlign>Middle</VerticalAlign>
+																<Border>
+																	<Style>Solid</Style>
+																</Border>
+															</Style>
+															<Width>1.114583in</Width>
+														</Textbox>
+													</CellContents>
+												</TablixCell>
+												<TablixCell>
+													<CellContents>
+														<Textbox Name="TextBox19">
+															<Height>0.375in</Height>
+															<Value>=SUM(Fields!受注金額.Value)</Value>
+															<Style>
+																<BackgroundColor>White</BackgroundColor>
+																<FontFamily>MS PGothic</FontFamily>
+																<Format>c</Format>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<VerticalAlign>Middle</VerticalAlign>
+																<Border>
+																	<Style>Solid</Style>
+																</Border>
+															</Style>
+															<Width>0.8958333in</Width>
+														</Textbox>
+													</CellContents>
+												</TablixCell>
+											</TablixCells>
+										</TablixRow>
+										<TablixRow>
+											<Height>0.957045cm</Height>
+											<TablixCells>
+												<TablixCell>
+													<CellContents>
+														<Textbox Name="TextBox20">
+															<Height>0.375in</Height>
+															<Value>=SUM(Fields!受注金額.Value)</Value>
+															<Style>
+																<BackgroundColor>White</BackgroundColor>
+																<FontFamily>MS PGothic</FontFamily>
+																<Format>c</Format>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<VerticalAlign>Middle</VerticalAlign>
+																<Border>
+																	<Style>Solid</Style>
+																</Border>
+															</Style>
+															<Width>0.90625in</Width>
+														</Textbox>
+													</CellContents>
+												</TablixCell>
+												<TablixCell>
+													<CellContents>
+														<Textbox Name="TextBox12">
+															<Height>0.375in</Height>
+															<Value>=SUM(Fields!受注金額.Value)</Value>
+															<Style>
+																<BackgroundColor>White</BackgroundColor>
+																<FontFamily>MS PGothic</FontFamily>
+																<Format>c</Format>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<VerticalAlign>Middle</VerticalAlign>
+																<Border>
+																	<Style>Solid</Style>
+																</Border>
+															</Style>
+															<Width>1.114583in</Width>
+														</Textbox>
+													</CellContents>
+												</TablixCell>
+												<TablixCell>
+													<CellContents>
+														<Textbox Name="TextBox21">
+															<Height>0.375in</Height>
+															<Value>=SUM(Fields!受注金額.Value)</Value>
+															<Style>
+																<BackgroundColor>White</BackgroundColor>
+																<FontFamily>MS PGothic</FontFamily>
+																<Format>c</Format>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<VerticalAlign>Middle</VerticalAlign>
+																<Border>
+																	<Style>Solid</Style>
+																</Border>
+															</Style>
+															<Width>0.8958333in</Width>
+														</Textbox>
+													</CellContents>
+												</TablixCell>
+											</TablixCells>
+										</TablixRow>
+									</TablixRows>
+								</TablixBody>
+								<TablixColumnHierarchy>
+									<TablixMembers>
+										<TablixMember>
+											<Group Name="Tablix1_Years1">
+												<GroupExpressions>
+													<GroupExpression>=Fields!年.Value</GroupExpression>
+												</GroupExpressions>
+											</Group>
+											<TablixHeader>
+												<Size>0.457777in</Size>
+												<CellContents>
+													<Textbox Name="TextBox2">
+														<Height>0.4583333in</Height>
+														<Value>=Fields!年.Value</Value>
+														<Style>
+															<BackgroundColor>Gainsboro</BackgroundColor>
+															<FontFamily>MS PGothic</FontFamily>
+															<PaddingBottom>2pt</PaddingBottom>
+															<PaddingLeft>2pt</PaddingLeft>
+															<PaddingRight>2pt</PaddingRight>
+															<PaddingTop>2pt</PaddingTop>
+															<TextAlign>Center</TextAlign>
+															<VerticalAlign>Middle</VerticalAlign>
+															<Border>
+																<Style>Solid</Style>
+															</Border>
+														</Style>
+														<Width>2.020833in</Width>
+													</Textbox>
+												</CellContents>
+											</TablixHeader>
+											<TablixMembers>
+												<TablixMember>
+													<Group Name="Tablix1_Quarter1">
+														<GroupExpressions>
+															<GroupExpression>=Fields!四半期.Value</GroupExpression>
+														</GroupExpressions>
+													</Group>
+													<TablixHeader>
+														<Size>0.377979in</Size>
+														<CellContents>
+															<Textbox Name="TextBox5">
+																<Height>0.375in</Height>
+																<Value>=Fields!四半期.Value</Value>
+																<Style>
+																	<BackgroundColor>Gainsboro</BackgroundColor>
+																	<FontFamily>MS PGothic</FontFamily>
+																	<PaddingBottom>2pt</PaddingBottom>
+																	<PaddingLeft>2pt</PaddingLeft>
+																	<PaddingRight>2pt</PaddingRight>
+																	<PaddingTop>2pt</PaddingTop>
+																	<TextAlign>Center</TextAlign>
+																	<VerticalAlign>Middle</VerticalAlign>
+																	<Border>
+																		<Style>Solid</Style>
+																	</Border>
+																</Style>
+																<Width>0.90625in</Width>
+															</Textbox>
+														</CellContents>
+													</TablixHeader>
+												</TablixMember>
+												<TablixMember>
+													<TablixHeader>
+														<Size>0.377979in</Size>
+														<CellContents>
+															<Textbox Name="TextBox13">
+																<Height>0.375in</Height>
+																<Value>年度別小計</Value>
+																<Style>
+																	<BackgroundColor>#c0c0ff</BackgroundColor>
+																	<FontFamily>MS PGothic</FontFamily>
+																	<PaddingBottom>2pt</PaddingBottom>
+																	<PaddingLeft>2pt</PaddingLeft>
+																	<PaddingRight>2pt</PaddingRight>
+																	<PaddingTop>2pt</PaddingTop>
+																	<VerticalAlign>Middle</VerticalAlign>
+																	<Border>
+																		<Style>Solid</Style>
+																	</Border>
+																</Style>
+																<Width>1.114583in</Width>
+															</Textbox>
+														</CellContents>
+													</TablixHeader>
+												</TablixMember>
+											</TablixMembers>
+										</TablixMember>
+										<TablixMember>
+											<TablixHeader>
+												<Size>0.835756in</Size>
+												<CellContents>
+													<Textbox Name="TextBox16">
+														<Height>0.8333333in</Height>
+														<Value>商品別小計</Value>
+														<Style>
+															<BackgroundColor>#c0ffc0</BackgroundColor>
+															<FontFamily>MS PGothic</FontFamily>
+															<FontWeight>700</FontWeight>
+															<PaddingBottom>2pt</PaddingBottom>
+															<PaddingLeft>2pt</PaddingLeft>
+															<PaddingRight>2pt</PaddingRight>
+															<PaddingTop>2pt</PaddingTop>
+															<VerticalAlign>Middle</VerticalAlign>
+															<Border>
+																<Style>Solid</Style>
+															</Border>
+														</Style>
+														<Width>0.8958333in</Width>
+													</Textbox>
+												</CellContents>
+											</TablixHeader>
+										</TablixMember>
+									</TablixMembers>
+								</TablixColumnHierarchy>
+								<TablixRowHierarchy>
+									<TablixMembers>
+										<TablixMember>
+											<Group Name="Tablix1_CategoryName1">
+												<GroupExpressions>
+													<GroupExpression>=Fields!CategoryName.Value</GroupExpression>
+												</GroupExpressions>
+											</Group>
+											<TablixHeader>
+												<Size>0.903082in</Size>
+												<CellContents>
+													<Textbox Name="TextBox3">
+														<Height>0.75in</Height>
+														<Value>=Fields!CategoryName.Value</Value>
+														<Style>
+															<BackgroundColor>Gainsboro</BackgroundColor>
+															<FontFamily>Times New Roman</FontFamily>
+															<FontSize>10pt</FontSize>
+															<FontStyle>Normal</FontStyle>
+															<FontWeight>400</FontWeight>
+															<PaddingBottom>2pt</PaddingBottom>
+															<PaddingLeft>2pt</PaddingLeft>
+															<PaddingRight>2pt</PaddingRight>
+															<PaddingTop>2pt</PaddingTop>
+															<VerticalAlign>Middle</VerticalAlign>
+															<Border>
+																<Style>Solid</Style>
+															</Border>
+														</Style>
+														<Width>0.90625in</Width>
+													</Textbox>
+												</CellContents>
+											</TablixHeader>
+											<TablixMembers>
+												<TablixMember>
+													<Group Name="Tablix1_ProductName1">
+														<GroupExpressions>
+															<GroupExpression>=Fields!ProductName.Value</GroupExpression>
+														</GroupExpressions>
+													</Group>
+													<TablixHeader>
+														<Size>0.903082in</Size>
+														<CellContents>
+															<Textbox Name="TextBox7">
+																<Height>0.375in</Height>
+																<Value>=Fields!ProductName.Value</Value>
+																<Style>
+																	<BackgroundColor>Gainsboro</BackgroundColor>
+																	<FontFamily>Times New Roman</FontFamily>
+																	<FontSize>10pt</FontSize>
+																	<FontStyle>Normal</FontStyle>
+																	<FontWeight>400</FontWeight>
+																	<PaddingBottom>2pt</PaddingBottom>
+																	<PaddingLeft>2pt</PaddingLeft>
+																	<PaddingRight>2pt</PaddingRight>
+																	<PaddingTop>2pt</PaddingTop>
+																	<TextAlign>Center</TextAlign>
+																	<VerticalAlign>Middle</VerticalAlign>
+																	<Border>
+																		<Style>Solid</Style>
+																	</Border>
+																</Style>
+																<Width>0.90625in</Width>
+															</Textbox>
+														</CellContents>
+													</TablixHeader>
+												</TablixMember>
+												<TablixMember>
+													<TablixHeader>
+														<Size>0.903082in</Size>
+														<CellContents>
+															<Textbox Name="TextBox1">
+																<Height>0.375in</Height>
+																<Value>カテゴリ別小計</Value>
+																<Style>
+																	<BackgroundColor>#ffffc0</BackgroundColor>
+																	<FontFamily>MS PGothic</FontFamily>
+																	<FontWeight>700</FontWeight>
+																	<PaddingBottom>2pt</PaddingBottom>
+																	<PaddingLeft>2pt</PaddingLeft>
+																	<PaddingRight>2pt</PaddingRight>
+																	<PaddingTop>2pt</PaddingTop>
+																	<VerticalAlign>Middle</VerticalAlign>
+																	<Border>
+																		<Style>Solid</Style>
+																	</Border>
+																</Style>
+																<Width>0.90625in</Width>
+															</Textbox>
+														</CellContents>
+													</TablixHeader>
+												</TablixMember>
+											</TablixMembers>
+										</TablixMember>
+										<TablixMember>
+											<TablixHeader>
+												<Size>1.806164in</Size>
+												<CellContents>
+													<Textbox Name="TextBox10">
+														<Height>0.375in</Height>
+														<Value>合計</Value>
+														<Style>
+															<BackgroundColor>#ffc0c0</BackgroundColor>
+															<FontFamily>MS PGothic</FontFamily>
+															<FontWeight>700</FontWeight>
+															<PaddingBottom>2pt</PaddingBottom>
+															<PaddingLeft>2pt</PaddingLeft>
+															<PaddingRight>2pt</PaddingRight>
+															<PaddingTop>2pt</PaddingTop>
+															<VerticalAlign>Middle</VerticalAlign>
+															<Border>
+																<Style>Solid</Style>
+															</Border>
+														</Style>
+														<Width>1.8125in</Width>
+													</Textbox>
+												</CellContents>
+											</TablixHeader>
+										</TablixMember>
+									</TablixMembers>
+								</TablixRowHierarchy>
+								<RepeatColumnHeaders>true</RepeatColumnHeaders>
+								<RepeatRowHeaders>true</RepeatRowHeaders>
+								<DataSetName>DataSet1</DataSetName>
+								<Left>4.037221E-07mm</Left>
+								<Height>5cm</Height>
+								<Width>12cm</Width>
+								<ZIndex>1</ZIndex>
+								<dd:FixedHeight xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">36.8cm</dd:FixedHeight>
+								<dd:FixedWidth xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">27.6cm</dd:FixedWidth>
+								<Style>
+									<Border>
+										<Style>Solid</Style>
+									</Border>
+								</Style>
+							</Tablix>
+						</ReportItems>
+					</Page>
+				</Pages>
+				<DataSetName>DataSet1</DataSetName>
+			</FixedPage>
+		</ReportItems>
+	</Body>
+	<BottomMargin>2.5cm</BottomMargin>
+	<LeftMargin>1cm</LeftMargin>
+	<PageHeight>420mm</PageHeight>
+	<PageWidth>297mm</PageWidth>
+	<RightMargin>1cm</RightMargin>
+	<TopMargin>2.5cm</TopMargin>
+	<Width>297mm</Width>
+	<DataSources>
+		<DataSource Name="DataSource1">
+			<ConnectionProperties>
+				<DataProvider>SQLITE</DataProvider>
+				<ConnectString>Data Source=..\\..\\..\\..\\..\\..\\..\\Data\\NWIND.db</ConnectString>
+			</ConnectionProperties>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="DataSet1">
+			<Fields>
+				<Field Name="OrderDate">
+					<DataField>OrderDate</DataField>
+				</Field>
+				<Field Name="年">
+					<DataField>年</DataField>
+				</Field>
+				<Field Name="四半期">
+					<DataField>四半期</DataField>
+				</Field>
+				<Field Name="月">
+					<DataField>月</DataField>
+				</Field>
+				<Field Name="Quantity">
+					<DataField>Quantity</DataField>
+				</Field>
+				<Field Name="受注金額">
+					<DataField>受注金額</DataField>
+				</Field>
+				<Field Name="CategoryName">
+					<DataField>CategoryName</DataField>
+				</Field>
+				<Field Name="ProductName">
+					<DataField>ProductName</DataField>
+				</Field>
+				<Field Name="Region">
+					<DataField>Region</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>SELECT *,
+       ( ( (3 - (月 % 3) ) % 3) + 月) / 3 AS 四半期
+  FROM (
+           SELECT Orders.OrderDate,
+                  strftime('%Y', Orders.OrderDate) AS 年,
+                  strftime('%m', Orders.OrderDate) AS 月,
+                  Order_Details.Quantity,
+                  Order_Details.Quantity * Order_Details.UnitPrice AS 受注金額,
+                  Categories.CategoryName,
+                  Products.ProductName,
+                  Employees.Region
+             FROM Products
+                  JOIN Categories ON Products.CategoryID = Categories.CategoryID
+                  JOIN Order_Details ON Products.ProductID = Order_Details.ProductID
+                  JOIN Orders ON Orders.OrderID = Order_Details.OrderID
+                  JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID
+            ORDER BY Orders.OrderDate
+       )</CommandText>
+				<DataSourceName>DataSource1</DataSourceName>
+			</Query>
+		</DataSet>
+	</DataSets>
+	<CustomProperties>
+		<CustomProperty>
+			<Name>PaperOrientation</Name>
+			<Value>Portrait</Value>
+		</CustomProperty>
+	</CustomProperties>
+</Report>

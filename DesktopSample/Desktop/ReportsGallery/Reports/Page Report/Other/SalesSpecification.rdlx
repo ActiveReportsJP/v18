@@ -1,0 +1,1496 @@
+﻿<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+	<Body>
+		<Height>21cm</Height>
+		<ReportItems>
+			<FixedPage Name="FixedPage1">
+				<Pages>
+					<Page>
+						<ReportItems>
+							<Textbox Name="TextBox1">
+								<Height>1.5cm</Height>
+								<Value>販売明細書</Value>
+								<Style>
+									<FontFamily>ＭＳ 明朝</FontFamily>
+									<FontSize>24pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+									<TextDecoration>Underline</TextDecoration>
+									<VerticalAlign>Middle</VerticalAlign>
+									<dd:CharacterSpacing xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">3pt</dd:CharacterSpacing>
+								</Style>
+								<Width>24.7cm</Width>
+								<ZIndex>1</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox2">
+								<Height>0.75cm</Height>
+								<Value>販売先：</Value>
+								<Style>
+									<FontFamily>ＭＳ 明朝</FontFamily>
+									<FontSize>11pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Right</TextAlign>
+									<VerticalAlign>Middle</VerticalAlign>
+								</Style>
+								<Top>1.5cm</Top>
+								<Width>2cm</Width>
+								<ZIndex>2</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox3">
+								<Height>0.75cm</Height>
+								<Left>2.010833cm</Left>
+								<Value>=Lookup( Fields!CompanyID.Value ,  Fields!CompanyID.Value ,  Fields!CompanyName.Value, "Companies")</Value>
+								<Style>
+									<FontFamily>ＭＳ 明朝</FontFamily>
+									<FontSize>11pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<VerticalAlign>Middle</VerticalAlign>
+								</Style>
+								<Top>1.5cm</Top>
+								<Width>22.68917cm</Width>
+								<ZIndex>2</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox93">
+								<Height>0.75cm</Height>
+								<Value>=Globals!PageNumberInSection &amp; "／" &amp; Globals!TotalPagesInSection &amp; "ページ"</Value>
+								<Style>
+									<FontFamily>ＭＳ 明朝</FontFamily>
+									<FontSize>10pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+								</Style>
+								<Top>15.25cm</Top>
+								<Width>8cm</Width>
+								<ZIndex>4</ZIndex>
+							</Textbox>
+							<Tablix Name="Tablix1">
+								<TablixCorner>
+									<TablixCornerRows>
+										<TablixCornerRow>
+											<TablixCornerCell>
+												<CellContents>
+													<Textbox Name="TextBox4">
+														<Value>日付</Value>
+														<Style>
+															<BackgroundColor>#c0ffff</BackgroundColor>
+															<FontFamily>ＭＳ 明朝</FontFamily>
+															<FontSize>9pt</FontSize>
+															<FontStyle>Normal</FontStyle>
+															<FontWeight>400</FontWeight>
+															<PaddingBottom>2pt</PaddingBottom>
+															<PaddingLeft>2pt</PaddingLeft>
+															<PaddingRight>2pt</PaddingRight>
+															<PaddingTop>2pt</PaddingTop>
+															<TextAlign>Center</TextAlign>
+															<VerticalAlign>Middle</VerticalAlign>
+															<TopBorder>
+																<Style>Solid</Style>
+																<Width>2pt</Width>
+															</TopBorder>
+															<BottomBorder>
+																<Style>Solid</Style>
+																<Width>2pt</Width>
+															</BottomBorder>
+														</Style>
+													</Textbox>
+												</CellContents>
+											</TablixCornerCell>
+											<TablixCornerCell>
+												<CellContents>
+													<Textbox Name="TextBox9">
+														<Value>伝票番号</Value>
+														<Style>
+															<BackgroundColor>#c0ffff</BackgroundColor>
+															<FontFamily>ＭＳ 明朝</FontFamily>
+															<FontSize>9pt</FontSize>
+															<FontStyle>Normal</FontStyle>
+															<FontWeight>400</FontWeight>
+															<PaddingBottom>2pt</PaddingBottom>
+															<PaddingLeft>2pt</PaddingLeft>
+															<PaddingRight>2pt</PaddingRight>
+															<PaddingTop>2pt</PaddingTop>
+															<TextAlign>Center</TextAlign>
+															<VerticalAlign>Middle</VerticalAlign>
+															<TopBorder>
+																<Style>Solid</Style>
+																<Width>2pt</Width>
+															</TopBorder>
+															<BottomBorder>
+																<Style>Solid</Style>
+																<Width>2pt</Width>
+															</BottomBorder>
+														</Style>
+													</Textbox>
+												</CellContents>
+											</TablixCornerCell>
+											<TablixCornerCell>
+												<CellContents>
+													<Textbox Name="TextBox11">
+														<Value>#</Value>
+														<Style>
+															<BackgroundColor>#c0ffff</BackgroundColor>
+															<FontFamily>ＭＳ 明朝</FontFamily>
+															<FontSize>9pt</FontSize>
+															<FontStyle>Normal</FontStyle>
+															<FontWeight>400</FontWeight>
+															<PaddingBottom>2pt</PaddingBottom>
+															<PaddingLeft>2pt</PaddingLeft>
+															<PaddingRight>2pt</PaddingRight>
+															<PaddingTop>2pt</PaddingTop>
+															<TextAlign>Center</TextAlign>
+															<VerticalAlign>Middle</VerticalAlign>
+															<TopBorder>
+																<Style>Solid</Style>
+																<Width>2pt</Width>
+															</TopBorder>
+															<BottomBorder>
+																<Style>Solid</Style>
+																<Width>2pt</Width>
+															</BottomBorder>
+														</Style>
+													</Textbox>
+												</CellContents>
+											</TablixCornerCell>
+											<TablixCornerCell>
+												<CellContents>
+													<Textbox Name="TextBox13">
+														<Value>商品名</Value>
+														<Style>
+															<BackgroundColor>#c0ffff</BackgroundColor>
+															<FontFamily>ＭＳ 明朝</FontFamily>
+															<FontSize>9pt</FontSize>
+															<FontStyle>Normal</FontStyle>
+															<FontWeight>400</FontWeight>
+															<PaddingBottom>2pt</PaddingBottom>
+															<PaddingLeft>2pt</PaddingLeft>
+															<PaddingRight>2pt</PaddingRight>
+															<PaddingTop>2pt</PaddingTop>
+															<TextAlign>Center</TextAlign>
+															<VerticalAlign>Middle</VerticalAlign>
+															<TopBorder>
+																<Style>Solid</Style>
+																<Width>2pt</Width>
+															</TopBorder>
+															<BottomBorder>
+																<Style>Solid</Style>
+																<Width>2pt</Width>
+															</BottomBorder>
+														</Style>
+													</Textbox>
+												</CellContents>
+											</TablixCornerCell>
+											<TablixCornerCell>
+												<CellContents>
+													<Textbox Name="TextBox15">
+														<Value>数量</Value>
+														<Style>
+															<BackgroundColor>#c0ffff</BackgroundColor>
+															<FontFamily>ＭＳ 明朝</FontFamily>
+															<FontSize>9pt</FontSize>
+															<FontStyle>Normal</FontStyle>
+															<FontWeight>400</FontWeight>
+															<PaddingBottom>2pt</PaddingBottom>
+															<PaddingLeft>2pt</PaddingLeft>
+															<PaddingRight>2pt</PaddingRight>
+															<PaddingTop>2pt</PaddingTop>
+															<TextAlign>Center</TextAlign>
+															<VerticalAlign>Middle</VerticalAlign>
+															<TopBorder>
+																<Style>Solid</Style>
+																<Width>2pt</Width>
+															</TopBorder>
+															<BottomBorder>
+																<Style>Solid</Style>
+																<Width>2pt</Width>
+															</BottomBorder>
+														</Style>
+													</Textbox>
+												</CellContents>
+											</TablixCornerCell>
+											<TablixCornerCell>
+												<CellContents>
+													<Textbox Name="TextBox17">
+														<Value>税抜単価</Value>
+														<Style>
+															<BackgroundColor>#c0ffff</BackgroundColor>
+															<FontFamily>ＭＳ 明朝</FontFamily>
+															<FontSize>9pt</FontSize>
+															<FontStyle>Normal</FontStyle>
+															<FontWeight>400</FontWeight>
+															<PaddingBottom>2pt</PaddingBottom>
+															<PaddingLeft>2pt</PaddingLeft>
+															<PaddingRight>2pt</PaddingRight>
+															<PaddingTop>2pt</PaddingTop>
+															<TextAlign>Center</TextAlign>
+															<VerticalAlign>Middle</VerticalAlign>
+															<TopBorder>
+																<Style>Solid</Style>
+																<Width>2pt</Width>
+															</TopBorder>
+															<BottomBorder>
+																<Style>Solid</Style>
+																<Width>2pt</Width>
+															</BottomBorder>
+														</Style>
+													</Textbox>
+												</CellContents>
+											</TablixCornerCell>
+											<TablixCornerCell>
+												<CellContents>
+													<Textbox Name="TextBox26">
+														<Value>税抜売上高</Value>
+														<Style>
+															<BackgroundColor>#c0ffff</BackgroundColor>
+															<FontFamily>ＭＳ 明朝</FontFamily>
+															<FontSize>9pt</FontSize>
+															<FontStyle>Normal</FontStyle>
+															<FontWeight>400</FontWeight>
+															<PaddingBottom>2pt</PaddingBottom>
+															<PaddingLeft>2pt</PaddingLeft>
+															<PaddingRight>2pt</PaddingRight>
+															<PaddingTop>2pt</PaddingTop>
+															<TextAlign>Center</TextAlign>
+															<VerticalAlign>Middle</VerticalAlign>
+															<TopBorder>
+																<Style>Solid</Style>
+																<Width>2pt</Width>
+															</TopBorder>
+															<BottomBorder>
+																<Style>Solid</Style>
+																<Width>2pt</Width>
+															</BottomBorder>
+														</Style>
+													</Textbox>
+												</CellContents>
+											</TablixCornerCell>
+											<TablixCornerCell>
+												<CellContents>
+													<Textbox Name="TextBox19">
+														<Value>消費税</Value>
+														<Style>
+															<BackgroundColor>#c0ffff</BackgroundColor>
+															<FontFamily>ＭＳ 明朝</FontFamily>
+															<FontSize>9pt</FontSize>
+															<FontStyle>Normal</FontStyle>
+															<FontWeight>400</FontWeight>
+															<PaddingBottom>2pt</PaddingBottom>
+															<PaddingLeft>2pt</PaddingLeft>
+															<PaddingRight>2pt</PaddingRight>
+															<PaddingTop>2pt</PaddingTop>
+															<TextAlign>Center</TextAlign>
+															<VerticalAlign>Middle</VerticalAlign>
+															<TopBorder>
+																<Style>Solid</Style>
+																<Width>2pt</Width>
+															</TopBorder>
+															<BottomBorder>
+																<Style>Solid</Style>
+																<Width>2pt</Width>
+															</BottomBorder>
+														</Style>
+													</Textbox>
+												</CellContents>
+											</TablixCornerCell>
+											<TablixCornerCell>
+												<CellContents>
+													<Textbox Name="TextBox21">
+														<Value>税込売上高</Value>
+														<Style>
+															<BackgroundColor>#c0ffff</BackgroundColor>
+															<FontFamily>ＭＳ 明朝</FontFamily>
+															<FontSize>9pt</FontSize>
+															<FontStyle>Normal</FontStyle>
+															<FontWeight>400</FontWeight>
+															<PaddingBottom>2pt</PaddingBottom>
+															<PaddingLeft>2pt</PaddingLeft>
+															<PaddingRight>2pt</PaddingRight>
+															<PaddingTop>2pt</PaddingTop>
+															<TextAlign>Center</TextAlign>
+															<VerticalAlign>Middle</VerticalAlign>
+															<TopBorder>
+																<Style>Solid</Style>
+																<Width>2pt</Width>
+															</TopBorder>
+															<BottomBorder>
+																<Style>Solid</Style>
+																<Width>2pt</Width>
+															</BottomBorder>
+														</Style>
+													</Textbox>
+												</CellContents>
+											</TablixCornerCell>
+										</TablixCornerRow>
+									</TablixCornerRows>
+								</TablixCorner>
+								<TablixBody>
+									<TablixColumns>
+										<TablixColumn>
+											<Width>0.239999cm</Width>
+										</TablixColumn>
+									</TablixColumns>
+									<TablixRows>
+										<TablixRow>
+											<Height>0.7cm</Height>
+											<TablixCells>
+												<TablixCell>
+													<CellContents>
+														<Textbox Name="TextBox7">
+															<Value />
+															<Style>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+														</Textbox>
+													</CellContents>
+												</TablixCell>
+											</TablixCells>
+										</TablixRow>
+										<TablixRow>
+											<Height>0.7cm</Height>
+											<TablixCells>
+												<TablixCell>
+													<CellContents>
+														<Textbox Name="TextBox67">
+															<Value />
+															<Style>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+														</Textbox>
+													</CellContents>
+												</TablixCell>
+											</TablixCells>
+										</TablixRow>
+										<TablixRow>
+											<Height>0.7cm</Height>
+											<TablixCells>
+												<TablixCell>
+													<CellContents>
+														<Textbox Name="TextBox60">
+															<Value />
+															<Style>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+														</Textbox>
+													</CellContents>
+												</TablixCell>
+											</TablixCells>
+										</TablixRow>
+										<TablixRow>
+											<Height>0.7cm</Height>
+											<TablixCells>
+												<TablixCell>
+													<CellContents>
+														<Textbox Name="TextBox52">
+															<Value />
+															<Style>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+														</Textbox>
+													</CellContents>
+												</TablixCell>
+											</TablixCells>
+										</TablixRow>
+									</TablixRows>
+								</TablixBody>
+								<TablixColumnHierarchy>
+									<TablixMembers>
+										<TablixMember>
+											<Group Name="Tablix1_ColumnGroup1">
+												<GroupExpressions>
+													<GroupExpression />
+												</GroupExpressions>
+											</Group>
+											<TablixHeader>
+												<Size>0.7cm</Size>
+												<CellContents>
+													<Textbox Name="TextBox5">
+														<Value />
+														<Style>
+															<PaddingBottom>2pt</PaddingBottom>
+															<PaddingLeft>2pt</PaddingLeft>
+															<PaddingRight>2pt</PaddingRight>
+															<PaddingTop>2pt</PaddingTop>
+														</Style>
+													</Textbox>
+												</CellContents>
+											</TablixHeader>
+										</TablixMember>
+									</TablixMembers>
+								</TablixColumnHierarchy>
+								<TablixRowHierarchy>
+									<TablixMembers>
+										<TablixMember>
+											<Group Name="Tablix1_SalesDate1">
+												<GroupExpressions>
+													<GroupExpression>=Fields!SalesDate.Value</GroupExpression>
+												</GroupExpressions>
+											</Group>
+											<TablixMembers>
+												<TablixMember>
+													<TablixHeader>
+														<Size>1.5cm</Size>
+														<CellContents>
+															<Textbox Name="TextBox6">
+																<Value>=ToDateTime(Fields!SalesDate.Value)</Value>
+																<Style>
+																	<FontFamily>ＭＳ 明朝</FontFamily>
+																	<FontSize>9pt</FontSize>
+																	<FontStyle>Normal</FontStyle>
+																	<FontWeight>400</FontWeight>
+																	<Format>MM/dd</Format>
+																	<PaddingBottom>2pt</PaddingBottom>
+																	<PaddingLeft>2pt</PaddingLeft>
+																	<PaddingRight>2pt</PaddingRight>
+																	<PaddingTop>4pt</PaddingTop>
+																	<TextAlign>Center</TextAlign>
+																	<VerticalAlign>Top</VerticalAlign>
+																</Style>
+															</Textbox>
+														</CellContents>
+													</TablixHeader>
+													<TablixMembers>
+														<TablixMember>
+															<Group Name="Tablix1_SlipID1">
+																<GroupExpressions>
+																	<GroupExpression>=Fields!SlipID.Value</GroupExpression>
+																</GroupExpressions>
+															</Group>
+															<TablixMembers>
+																<TablixMember>
+																	<TablixHeader>
+																		<Size>2.5cm</Size>
+																		<CellContents>
+																			<Textbox Name="TextBox8">
+																				<Value>=Fields!SlipID.Value</Value>
+																				<Style>
+																					<FontFamily>ＭＳ 明朝</FontFamily>
+																					<FontSize>9pt</FontSize>
+																					<FontStyle>Normal</FontStyle>
+																					<FontWeight>400</FontWeight>
+																					<PaddingBottom>2pt</PaddingBottom>
+																					<PaddingLeft>2pt</PaddingLeft>
+																					<PaddingRight>2pt</PaddingRight>
+																					<PaddingTop>4pt</PaddingTop>
+																					<TextAlign>Center</TextAlign>
+																					<VerticalAlign>Top</VerticalAlign>
+																				</Style>
+																			</Textbox>
+																		</CellContents>
+																	</TablixHeader>
+																	<TablixMembers>
+																		<TablixMember>
+																			<Group Name="Tablix1_OrderID1">
+																				<GroupExpressions>
+																					<GroupExpression>=Fields!OrderID.Value</GroupExpression>
+																				</GroupExpressions>
+																			</Group>
+																			<TablixHeader>
+																				<Size>0.75cm</Size>
+																				<CellContents>
+																					<Textbox Name="TextBox10">
+																						<Value>=Fields!OrderID.Value</Value>
+																						<Style>
+																							<FontFamily>ＭＳ 明朝</FontFamily>
+																							<FontSize>9pt</FontSize>
+																							<FontStyle>Normal</FontStyle>
+																							<FontWeight>400</FontWeight>
+																							<PaddingBottom>2pt</PaddingBottom>
+																							<PaddingLeft>2pt</PaddingLeft>
+																							<PaddingRight>2pt</PaddingRight>
+																							<PaddingTop>2pt</PaddingTop>
+																							<TextAlign>Center</TextAlign>
+																							<VerticalAlign>Middle</VerticalAlign>
+																							<dd:ShrinkToFit xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">True</dd:ShrinkToFit>
+																						</Style>
+																					</Textbox>
+																				</CellContents>
+																			</TablixHeader>
+																			<TablixMembers>
+																				<TablixMember>
+																					<TablixHeader>
+																						<Size>6.2cm</Size>
+																						<CellContents>
+																							<Textbox Name="TextBox12">
+																								<Value>=Fields!OrderItem.Value</Value>
+																								<Style>
+																									<FontFamily>ＭＳ 明朝</FontFamily>
+																									<FontSize>9pt</FontSize>
+																									<FontStyle>Normal</FontStyle>
+																									<FontWeight>400</FontWeight>
+																									<PaddingBottom>2pt</PaddingBottom>
+																									<PaddingLeft>2pt</PaddingLeft>
+																									<PaddingRight>2pt</PaddingRight>
+																									<PaddingTop>2pt</PaddingTop>
+																									<VerticalAlign>Middle</VerticalAlign>
+																								</Style>
+																							</Textbox>
+																						</CellContents>
+																					</TablixHeader>
+																					<TablixMembers>
+																						<TablixMember>
+																							<TablixHeader>
+																								<Size>2cm</Size>
+																								<CellContents>
+																									<Textbox Name="TextBox14">
+																										<Value>=Fields!Quantity.Value</Value>
+																										<Style>
+																											<FontFamily>ＭＳ 明朝</FontFamily>
+																											<FontSize>9pt</FontSize>
+																											<FontStyle>Normal</FontStyle>
+																											<FontWeight>400</FontWeight>
+																											<Format>c</Format>
+																											<PaddingBottom>2pt</PaddingBottom>
+																											<PaddingLeft>2pt</PaddingLeft>
+																											<PaddingRight>2pt</PaddingRight>
+																											<PaddingTop>2pt</PaddingTop>
+																											<TextAlign>Center</TextAlign>
+																											<VerticalAlign>Middle</VerticalAlign>
+																										</Style>
+																									</Textbox>
+																								</CellContents>
+																							</TablixHeader>
+																							<TablixMembers>
+																								<TablixMember>
+																									<TablixHeader>
+																										<Size>2.5cm</Size>
+																										<CellContents>
+																											<Textbox Name="TextBox16">
+																												<Value>=ToInt32(Fields!UnitPrice.Value)</Value>
+																												<Style>
+																													<FontFamily>ＭＳ 明朝</FontFamily>
+																													<FontSize>9pt</FontSize>
+																													<FontStyle>Normal</FontStyle>
+																													<FontWeight>400</FontWeight>
+																													<Format>c</Format>
+																													<PaddingBottom>2pt</PaddingBottom>
+																													<PaddingLeft>2pt</PaddingLeft>
+																													<PaddingRight>2pt</PaddingRight>
+																													<PaddingTop>2pt</PaddingTop>
+																													<TextAlign>Right</TextAlign>
+																													<VerticalAlign>Middle</VerticalAlign>
+																												</Style>
+																											</Textbox>
+																										</CellContents>
+																									</TablixHeader>
+																									<TablixMembers>
+																										<TablixMember>
+																											<TablixHeader>
+																												<Size>3cm</Size>
+																												<CellContents>
+																													<Textbox Name="TextBox22">
+																														<Value>=ToInt32(Fields!Price.Value)</Value>
+																														<Style>
+																															<FontFamily>ＭＳ 明朝</FontFamily>
+																															<FontSize>9pt</FontSize>
+																															<FontStyle>Normal</FontStyle>
+																															<FontWeight>400</FontWeight>
+																															<Format>c</Format>
+																															<PaddingBottom>2pt</PaddingBottom>
+																															<PaddingLeft>2pt</PaddingLeft>
+																															<PaddingRight>2pt</PaddingRight>
+																															<PaddingTop>2pt</PaddingTop>
+																															<TextAlign>Right</TextAlign>
+																															<VerticalAlign>Middle</VerticalAlign>
+																														</Style>
+																													</Textbox>
+																												</CellContents>
+																											</TablixHeader>
+																											<TablixMembers>
+																												<TablixMember>
+																													<TablixHeader>
+																														<Size>2.5cm</Size>
+																														<CellContents>
+																															<Textbox Name="TextBox18">
+																																<Value>=ToInt32(Fields!Tax.Value)</Value>
+																																<Style>
+																																	<FontFamily>ＭＳ 明朝</FontFamily>
+																																	<FontSize>9pt</FontSize>
+																																	<FontStyle>Normal</FontStyle>
+																																	<FontWeight>400</FontWeight>
+																																	<Format>c</Format>
+																																	<PaddingBottom>2pt</PaddingBottom>
+																																	<PaddingLeft>2pt</PaddingLeft>
+																																	<PaddingRight>2pt</PaddingRight>
+																																	<PaddingTop>2pt</PaddingTop>
+																																	<TextAlign>Right</TextAlign>
+																																	<VerticalAlign>Middle</VerticalAlign>
+																																</Style>
+																															</Textbox>
+																														</CellContents>
+																													</TablixHeader>
+																													<TablixMembers>
+																														<TablixMember>
+																															<TablixHeader>
+																																<Size>3cm</Size>
+																																<CellContents>
+																																	<Textbox Name="TextBox20">
+																																		<Value>=ToInt32(Fields!Price.Value) + ToInt32(Fields!Tax.Value)</Value>
+																																		<Style>
+																																			<FontFamily>ＭＳ 明朝</FontFamily>
+																																			<FontSize>9pt</FontSize>
+																																			<FontStyle>Normal</FontStyle>
+																																			<FontWeight>400</FontWeight>
+																																			<Format>c</Format>
+																																			<PaddingBottom>2pt</PaddingBottom>
+																																			<PaddingLeft>2pt</PaddingLeft>
+																																			<PaddingRight>2pt</PaddingRight>
+																																			<PaddingTop>2pt</PaddingTop>
+																																			<TextAlign>Right</TextAlign>
+																																			<VerticalAlign>Middle</VerticalAlign>
+																																		</Style>
+																																	</Textbox>
+																																</CellContents>
+																															</TablixHeader>
+																														</TablixMember>
+																													</TablixMembers>
+																												</TablixMember>
+																											</TablixMembers>
+																										</TablixMember>
+																									</TablixMembers>
+																								</TablixMember>
+																							</TablixMembers>
+																						</TablixMember>
+																					</TablixMembers>
+																				</TablixMember>
+																			</TablixMembers>
+																		</TablixMember>
+																	</TablixMembers>
+																</TablixMember>
+																<TablixMember>
+																	<TablixHeader>
+																		<Size>2.5cm</Size>
+																		<CellContents>
+																			<Textbox Name="TextBox68">
+																				<Value />
+																				<Style>
+																					<FontFamily>ＭＳ 明朝</FontFamily>
+																					<FontSize>9pt</FontSize>
+																					<FontStyle>Normal</FontStyle>
+																					<FontWeight>400</FontWeight>
+																					<PaddingBottom>2pt</PaddingBottom>
+																					<PaddingLeft>2pt</PaddingLeft>
+																					<PaddingRight>2pt</PaddingRight>
+																					<PaddingTop>2pt</PaddingTop>
+																					<VerticalAlign>Top</VerticalAlign>
+																					<BottomBorder>
+																						<Style>Solid</Style>
+																					</BottomBorder>
+																				</Style>
+																			</Textbox>
+																		</CellContents>
+																	</TablixHeader>
+																	<TablixMembers>
+																		<TablixMember>
+																			<TablixHeader>
+																				<Size>6.95cm</Size>
+																				<CellContents>
+																					<Textbox Name="TextBox61">
+																						<Value>＜伝票合計＞</Value>
+																						<Style>
+																							<FontFamily>ＭＳ 明朝</FontFamily>
+																							<FontSize>9pt</FontSize>
+																							<FontStyle>Normal</FontStyle>
+																							<FontWeight>400</FontWeight>
+																							<PaddingBottom>2pt</PaddingBottom>
+																							<PaddingLeft>2pt</PaddingLeft>
+																							<PaddingRight>2pt</PaddingRight>
+																							<PaddingTop>2pt</PaddingTop>
+																							<VerticalAlign>Middle</VerticalAlign>
+																							<TopBorder>
+																								<Style>Solid</Style>
+																							</TopBorder>
+																							<BottomBorder>
+																								<Style>Solid</Style>
+																							</BottomBorder>
+																						</Style>
+																					</Textbox>
+																				</CellContents>
+																			</TablixHeader>
+																			<TablixMembers>
+																				<TablixMember>
+																					<TablixHeader>
+																						<Size>2cm</Size>
+																						<CellContents>
+																							<Textbox Name="TextBox63">
+																								<Value />
+																								<Style>
+																									<FontFamily>ＭＳ 明朝</FontFamily>
+																									<FontSize>9pt</FontSize>
+																									<FontStyle>Normal</FontStyle>
+																									<FontWeight>400</FontWeight>
+																									<PaddingBottom>2pt</PaddingBottom>
+																									<PaddingLeft>2pt</PaddingLeft>
+																									<PaddingRight>2pt</PaddingRight>
+																									<PaddingTop>2pt</PaddingTop>
+																									<VerticalAlign>Middle</VerticalAlign>
+																									<TopBorder>
+																										<Style>Solid</Style>
+																									</TopBorder>
+																									<BottomBorder>
+																										<Style>Solid</Style>
+																									</BottomBorder>
+																								</Style>
+																							</Textbox>
+																						</CellContents>
+																					</TablixHeader>
+																					<TablixMembers>
+																						<TablixMember>
+																							<TablixHeader>
+																								<Size>2.5cm</Size>
+																								<CellContents>
+																									<Textbox Name="TextBox64">
+																										<Value />
+																										<Style>
+																											<FontFamily>ＭＳ 明朝</FontFamily>
+																											<FontSize>9pt</FontSize>
+																											<FontStyle>Normal</FontStyle>
+																											<FontWeight>400</FontWeight>
+																											<PaddingBottom>2pt</PaddingBottom>
+																											<PaddingLeft>2pt</PaddingLeft>
+																											<PaddingRight>2pt</PaddingRight>
+																											<PaddingTop>2pt</PaddingTop>
+																											<VerticalAlign>Middle</VerticalAlign>
+																											<TopBorder>
+																												<Style>Solid</Style>
+																											</TopBorder>
+																											<BottomBorder>
+																												<Style>Solid</Style>
+																											</BottomBorder>
+																										</Style>
+																									</Textbox>
+																								</CellContents>
+																							</TablixHeader>
+																							<TablixMembers>
+																								<TablixMember>
+																									<TablixHeader>
+																										<Size>3cm</Size>
+																										<CellContents>
+																											<Textbox Name="TextBox23">
+																												<Value />
+																												<Style>
+																													<FontFamily>ＭＳ 明朝</FontFamily>
+																													<FontSize>9pt</FontSize>
+																													<FontStyle>Normal</FontStyle>
+																													<FontWeight>400</FontWeight>
+																													<PaddingBottom>2pt</PaddingBottom>
+																													<PaddingLeft>2pt</PaddingLeft>
+																													<PaddingRight>2pt</PaddingRight>
+																													<PaddingTop>2pt</PaddingTop>
+																													<VerticalAlign>Middle</VerticalAlign>
+																													<TopBorder>
+																														<Style>Solid</Style>
+																													</TopBorder>
+																													<BottomBorder>
+																														<Style>Solid</Style>
+																													</BottomBorder>
+																												</Style>
+																											</Textbox>
+																										</CellContents>
+																									</TablixHeader>
+																									<TablixMembers>
+																										<TablixMember>
+																											<TablixHeader>
+																												<Size>2.5cm</Size>
+																												<CellContents>
+																													<Textbox Name="TextBox65">
+																														<Value />
+																														<Style>
+																															<FontFamily>ＭＳ 明朝</FontFamily>
+																															<FontSize>9pt</FontSize>
+																															<FontStyle>Normal</FontStyle>
+																															<FontWeight>400</FontWeight>
+																															<PaddingBottom>2pt</PaddingBottom>
+																															<PaddingLeft>2pt</PaddingLeft>
+																															<PaddingRight>2pt</PaddingRight>
+																															<PaddingTop>2pt</PaddingTop>
+																															<VerticalAlign>Middle</VerticalAlign>
+																															<TopBorder>
+																																<Style>Solid</Style>
+																															</TopBorder>
+																															<BottomBorder>
+																																<Style>Solid</Style>
+																															</BottomBorder>
+																														</Style>
+																													</Textbox>
+																												</CellContents>
+																											</TablixHeader>
+																											<TablixMembers>
+																												<TablixMember>
+																													<TablixHeader>
+																														<Size>3cm</Size>
+																														<CellContents>
+																															<Textbox Name="TextBox66">
+																																<Value>=SUM(ToInt32(Fields!Price.Value) + ToInt32(Fields!Tax.Value))</Value>
+																																<Style>
+																																	<FontFamily>ＭＳ 明朝</FontFamily>
+																																	<FontSize>9pt</FontSize>
+																																	<FontStyle>Normal</FontStyle>
+																																	<FontWeight>400</FontWeight>
+																																	<Format>c</Format>
+																																	<PaddingBottom>2pt</PaddingBottom>
+																																	<PaddingLeft>2pt</PaddingLeft>
+																																	<PaddingRight>2pt</PaddingRight>
+																																	<PaddingTop>2pt</PaddingTop>
+																																	<TextAlign>Right</TextAlign>
+																																	<VerticalAlign>Middle</VerticalAlign>
+																																	<TopBorder>
+																																		<Style>Solid</Style>
+																																	</TopBorder>
+																																	<BottomBorder>
+																																		<Style>Solid</Style>
+																																	</BottomBorder>
+																																</Style>
+																															</Textbox>
+																														</CellContents>
+																													</TablixHeader>
+																												</TablixMember>
+																											</TablixMembers>
+																										</TablixMember>
+																									</TablixMembers>
+																								</TablixMember>
+																							</TablixMembers>
+																						</TablixMember>
+																					</TablixMembers>
+																				</TablixMember>
+																			</TablixMembers>
+																		</TablixMember>
+																	</TablixMembers>
+																</TablixMember>
+															</TablixMembers>
+														</TablixMember>
+													</TablixMembers>
+												</TablixMember>
+												<TablixMember>
+													<TablixHeader>
+														<Size>1.5cm</Size>
+														<CellContents>
+															<Textbox Name="TextBox69">
+																<Value />
+																<Style>
+																	<FontFamily>ＭＳ 明朝</FontFamily>
+																	<FontSize>9pt</FontSize>
+																	<FontStyle>Normal</FontStyle>
+																	<FontWeight>400</FontWeight>
+																	<Format>yy/MM</Format>
+																	<PaddingBottom>2pt</PaddingBottom>
+																	<PaddingLeft>2pt</PaddingLeft>
+																	<PaddingRight>2pt</PaddingRight>
+																	<PaddingTop>2pt</PaddingTop>
+																	<VerticalAlign>Top</VerticalAlign>
+																	<BottomBorder>
+																		<Style>Solid</Style>
+																	</BottomBorder>
+																</Style>
+															</Textbox>
+														</CellContents>
+													</TablixHeader>
+													<TablixMembers>
+														<TablixMember>
+															<TablixHeader>
+																<Size>2.5cm</Size>
+																<CellContents>
+																	<Textbox Name="TextBox53">
+																		<Value />
+																		<Style>
+																			<FontFamily>ＭＳ 明朝</FontFamily>
+																			<FontSize>9pt</FontSize>
+																			<FontStyle>Normal</FontStyle>
+																			<FontWeight>400</FontWeight>
+																			<PaddingBottom>2pt</PaddingBottom>
+																			<PaddingLeft>2pt</PaddingLeft>
+																			<PaddingRight>2pt</PaddingRight>
+																			<PaddingTop>2pt</PaddingTop>
+																			<VerticalAlign>Middle</VerticalAlign>
+																			<BottomBorder>
+																				<Style>Solid</Style>
+																			</BottomBorder>
+																		</Style>
+																	</Textbox>
+																</CellContents>
+															</TablixHeader>
+															<TablixMembers>
+																<TablixMember>
+																	<TablixHeader>
+																		<Size>6.95cm</Size>
+																		<CellContents>
+																			<Textbox Name="TextBox54">
+																				<Value>＜日別合計＞</Value>
+																				<Style>
+																					<FontFamily>ＭＳ 明朝</FontFamily>
+																					<FontSize>9pt</FontSize>
+																					<FontStyle>Normal</FontStyle>
+																					<FontWeight>400</FontWeight>
+																					<PaddingBottom>2pt</PaddingBottom>
+																					<PaddingLeft>2pt</PaddingLeft>
+																					<PaddingRight>2pt</PaddingRight>
+																					<PaddingTop>2pt</PaddingTop>
+																					<VerticalAlign>Middle</VerticalAlign>
+																					<BottomBorder>
+																						<Style>Solid</Style>
+																					</BottomBorder>
+																				</Style>
+																			</Textbox>
+																		</CellContents>
+																	</TablixHeader>
+																	<TablixMembers>
+																		<TablixMember>
+																			<TablixHeader>
+																				<Size>2cm</Size>
+																				<CellContents>
+																					<Textbox Name="TextBox56">
+																						<Value />
+																						<Style>
+																							<FontFamily>ＭＳ 明朝</FontFamily>
+																							<FontSize>9pt</FontSize>
+																							<FontStyle>Normal</FontStyle>
+																							<FontWeight>400</FontWeight>
+																							<PaddingBottom>2pt</PaddingBottom>
+																							<PaddingLeft>2pt</PaddingLeft>
+																							<PaddingRight>2pt</PaddingRight>
+																							<PaddingTop>2pt</PaddingTop>
+																							<VerticalAlign>Middle</VerticalAlign>
+																							<BottomBorder>
+																								<Style>Solid</Style>
+																							</BottomBorder>
+																						</Style>
+																					</Textbox>
+																				</CellContents>
+																			</TablixHeader>
+																			<TablixMembers>
+																				<TablixMember>
+																					<TablixHeader>
+																						<Size>2.5cm</Size>
+																						<CellContents>
+																							<Textbox Name="TextBox57">
+																								<Value />
+																								<Style>
+																									<FontFamily>ＭＳ 明朝</FontFamily>
+																									<FontSize>9pt</FontSize>
+																									<FontStyle>Normal</FontStyle>
+																									<FontWeight>400</FontWeight>
+																									<PaddingBottom>2pt</PaddingBottom>
+																									<PaddingLeft>2pt</PaddingLeft>
+																									<PaddingRight>2pt</PaddingRight>
+																									<PaddingTop>2pt</PaddingTop>
+																									<VerticalAlign>Middle</VerticalAlign>
+																									<BottomBorder>
+																										<Style>Solid</Style>
+																									</BottomBorder>
+																								</Style>
+																							</Textbox>
+																						</CellContents>
+																					</TablixHeader>
+																					<TablixMembers>
+																						<TablixMember>
+																							<TablixHeader>
+																								<Size>3cm</Size>
+																								<CellContents>
+																									<Textbox Name="TextBox24">
+																										<Value />
+																										<Style>
+																											<FontFamily>ＭＳ 明朝</FontFamily>
+																											<FontSize>9pt</FontSize>
+																											<FontStyle>Normal</FontStyle>
+																											<FontWeight>400</FontWeight>
+																											<PaddingBottom>2pt</PaddingBottom>
+																											<PaddingLeft>2pt</PaddingLeft>
+																											<PaddingRight>2pt</PaddingRight>
+																											<PaddingTop>2pt</PaddingTop>
+																											<VerticalAlign>Middle</VerticalAlign>
+																											<BottomBorder>
+																												<Style>Solid</Style>
+																											</BottomBorder>
+																										</Style>
+																									</Textbox>
+																								</CellContents>
+																							</TablixHeader>
+																							<TablixMembers>
+																								<TablixMember>
+																									<TablixHeader>
+																										<Size>2.5cm</Size>
+																										<CellContents>
+																											<Textbox Name="TextBox58">
+																												<Value />
+																												<Style>
+																													<FontFamily>ＭＳ 明朝</FontFamily>
+																													<FontSize>9pt</FontSize>
+																													<FontStyle>Normal</FontStyle>
+																													<FontWeight>400</FontWeight>
+																													<PaddingBottom>2pt</PaddingBottom>
+																													<PaddingLeft>2pt</PaddingLeft>
+																													<PaddingRight>2pt</PaddingRight>
+																													<PaddingTop>2pt</PaddingTop>
+																													<VerticalAlign>Middle</VerticalAlign>
+																													<BottomBorder>
+																														<Style>Solid</Style>
+																													</BottomBorder>
+																												</Style>
+																											</Textbox>
+																										</CellContents>
+																									</TablixHeader>
+																									<TablixMembers>
+																										<TablixMember>
+																											<TablixHeader>
+																												<Size>3cm</Size>
+																												<CellContents>
+																													<Textbox Name="TextBox59">
+																														<Value>=SUM(ToInt32(Fields!Price.Value) + ToInt32(Fields!Tax.Value))</Value>
+																														<Style>
+																															<FontFamily>ＭＳ 明朝</FontFamily>
+																															<FontSize>9pt</FontSize>
+																															<FontStyle>Normal</FontStyle>
+																															<FontWeight>400</FontWeight>
+																															<Format>c</Format>
+																															<PaddingBottom>2pt</PaddingBottom>
+																															<PaddingLeft>2pt</PaddingLeft>
+																															<PaddingRight>2pt</PaddingRight>
+																															<PaddingTop>2pt</PaddingTop>
+																															<TextAlign>Right</TextAlign>
+																															<VerticalAlign>Middle</VerticalAlign>
+																															<BottomBorder>
+																																<Style>Solid</Style>
+																															</BottomBorder>
+																														</Style>
+																													</Textbox>
+																												</CellContents>
+																											</TablixHeader>
+																										</TablixMember>
+																									</TablixMembers>
+																								</TablixMember>
+																							</TablixMembers>
+																						</TablixMember>
+																					</TablixMembers>
+																				</TablixMember>
+																			</TablixMembers>
+																		</TablixMember>
+																	</TablixMembers>
+																</TablixMember>
+															</TablixMembers>
+														</TablixMember>
+													</TablixMembers>
+												</TablixMember>
+											</TablixMembers>
+										</TablixMember>
+										<TablixMember>
+											<TablixHeader>
+												<Size>1.5cm</Size>
+												<CellContents>
+													<Textbox Name="TextBox44">
+														<Value />
+														<Style>
+															<FontFamily>ＭＳ 明朝</FontFamily>
+															<FontSize>9pt</FontSize>
+															<FontStyle>Normal</FontStyle>
+															<FontWeight>400</FontWeight>
+															<PaddingBottom>2pt</PaddingBottom>
+															<PaddingLeft>2pt</PaddingLeft>
+															<PaddingRight>2pt</PaddingRight>
+															<PaddingTop>2pt</PaddingTop>
+															<VerticalAlign>Middle</VerticalAlign>
+														</Style>
+													</Textbox>
+												</CellContents>
+											</TablixHeader>
+											<TablixMembers>
+												<TablixMember>
+													<TablixHeader>
+														<Size>2.5cm</Size>
+														<CellContents>
+															<Textbox Name="TextBox45">
+																<Value />
+																<Style>
+																	<FontFamily>ＭＳ 明朝</FontFamily>
+																	<FontSize>9pt</FontSize>
+																	<FontStyle>Normal</FontStyle>
+																	<FontWeight>400</FontWeight>
+																	<PaddingBottom>2pt</PaddingBottom>
+																	<PaddingLeft>2pt</PaddingLeft>
+																	<PaddingRight>2pt</PaddingRight>
+																	<PaddingTop>2pt</PaddingTop>
+																	<VerticalAlign>Middle</VerticalAlign>
+																</Style>
+															</Textbox>
+														</CellContents>
+													</TablixHeader>
+													<TablixMembers>
+														<TablixMember>
+															<TablixHeader>
+																<Size>6.95cm</Size>
+																<CellContents>
+																	<Textbox Name="TextBox46">
+																		<Value>＜月別合計＞</Value>
+																		<Style>
+																			<FontFamily>ＭＳ 明朝</FontFamily>
+																			<FontSize>9pt</FontSize>
+																			<FontStyle>Normal</FontStyle>
+																			<FontWeight>400</FontWeight>
+																			<PaddingBottom>2pt</PaddingBottom>
+																			<PaddingLeft>2pt</PaddingLeft>
+																			<PaddingRight>2pt</PaddingRight>
+																			<PaddingTop>2pt</PaddingTop>
+																			<VerticalAlign>Middle</VerticalAlign>
+																		</Style>
+																	</Textbox>
+																</CellContents>
+															</TablixHeader>
+															<TablixMembers>
+																<TablixMember>
+																	<TablixHeader>
+																		<Size>2cm</Size>
+																		<CellContents>
+																			<Textbox Name="TextBox48">
+																				<Value />
+																				<Style>
+																					<FontFamily>ＭＳ 明朝</FontFamily>
+																					<FontSize>9pt</FontSize>
+																					<FontStyle>Normal</FontStyle>
+																					<FontWeight>400</FontWeight>
+																					<PaddingBottom>2pt</PaddingBottom>
+																					<PaddingLeft>2pt</PaddingLeft>
+																					<PaddingRight>2pt</PaddingRight>
+																					<PaddingTop>2pt</PaddingTop>
+																					<VerticalAlign>Middle</VerticalAlign>
+																				</Style>
+																			</Textbox>
+																		</CellContents>
+																	</TablixHeader>
+																	<TablixMembers>
+																		<TablixMember>
+																			<TablixHeader>
+																				<Size>2.5cm</Size>
+																				<CellContents>
+																					<Textbox Name="TextBox49">
+																						<Value />
+																						<Style>
+																							<FontFamily>ＭＳ 明朝</FontFamily>
+																							<FontSize>9pt</FontSize>
+																							<FontStyle>Normal</FontStyle>
+																							<FontWeight>400</FontWeight>
+																							<PaddingBottom>2pt</PaddingBottom>
+																							<PaddingLeft>2pt</PaddingLeft>
+																							<PaddingRight>2pt</PaddingRight>
+																							<PaddingTop>2pt</PaddingTop>
+																							<VerticalAlign>Middle</VerticalAlign>
+																						</Style>
+																					</Textbox>
+																				</CellContents>
+																			</TablixHeader>
+																			<TablixMembers>
+																				<TablixMember>
+																					<TablixHeader>
+																						<Size>3cm</Size>
+																						<CellContents>
+																							<Textbox Name="TextBox25">
+																								<Value />
+																								<Style>
+																									<FontFamily>ＭＳ 明朝</FontFamily>
+																									<FontSize>9pt</FontSize>
+																									<FontStyle>Normal</FontStyle>
+																									<FontWeight>400</FontWeight>
+																									<PaddingBottom>2pt</PaddingBottom>
+																									<PaddingLeft>2pt</PaddingLeft>
+																									<PaddingRight>2pt</PaddingRight>
+																									<PaddingTop>2pt</PaddingTop>
+																									<VerticalAlign>Middle</VerticalAlign>
+																								</Style>
+																							</Textbox>
+																						</CellContents>
+																					</TablixHeader>
+																					<TablixMembers>
+																						<TablixMember>
+																							<TablixHeader>
+																								<Size>2.5cm</Size>
+																								<CellContents>
+																									<Textbox Name="TextBox50">
+																										<Value />
+																										<Style>
+																											<FontFamily>ＭＳ 明朝</FontFamily>
+																											<FontSize>9pt</FontSize>
+																											<FontStyle>Normal</FontStyle>
+																											<FontWeight>400</FontWeight>
+																											<PaddingBottom>2pt</PaddingBottom>
+																											<PaddingLeft>2pt</PaddingLeft>
+																											<PaddingRight>2pt</PaddingRight>
+																											<PaddingTop>2pt</PaddingTop>
+																											<VerticalAlign>Middle</VerticalAlign>
+																										</Style>
+																									</Textbox>
+																								</CellContents>
+																							</TablixHeader>
+																							<TablixMembers>
+																								<TablixMember>
+																									<TablixHeader>
+																										<Size>3cm</Size>
+																										<CellContents>
+																											<Textbox Name="TextBox51">
+																												<Value>=SUM(ToInt32(Fields!Price.Value) + ToInt32(Fields!Tax.Value))</Value>
+																												<Style>
+																													<FontFamily>ＭＳ 明朝</FontFamily>
+																													<FontSize>9pt</FontSize>
+																													<FontStyle>Normal</FontStyle>
+																													<FontWeight>400</FontWeight>
+																													<Format>c</Format>
+																													<PaddingBottom>2pt</PaddingBottom>
+																													<PaddingLeft>2pt</PaddingLeft>
+																													<PaddingRight>2pt</PaddingRight>
+																													<PaddingTop>2pt</PaddingTop>
+																													<TextAlign>Right</TextAlign>
+																													<VerticalAlign>Middle</VerticalAlign>
+																												</Style>
+																											</Textbox>
+																										</CellContents>
+																									</TablixHeader>
+																								</TablixMember>
+																							</TablixMembers>
+																						</TablixMember>
+																					</TablixMembers>
+																				</TablixMember>
+																			</TablixMembers>
+																		</TablixMember>
+																	</TablixMembers>
+																</TablixMember>
+															</TablixMembers>
+														</TablixMember>
+													</TablixMembers>
+												</TablixMember>
+											</TablixMembers>
+										</TablixMember>
+									</TablixMembers>
+								</TablixRowHierarchy>
+								<RepeatColumnHeaders>true</RepeatColumnHeaders>
+								<DataSetName>Sales</DataSetName>
+								<Top>3.5cm</Top>
+								<Left>0.5cm</Left>
+								<Height>3.5cm</Height>
+								<Width>24.19cm</Width>
+								<ZIndex>5</ZIndex>
+								<dd:FixedHeight xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">11.5cm</dd:FixedHeight>
+								<dd:FixedWidth xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">22.5cm</dd:FixedWidth>
+							</Tablix>
+							<Textbox Name="TextBox47">
+								<Height>0.75cm</Height>
+								<Left>2.010833cm</Left>
+								<Value>=Year(ToDatetime(Fields!SalesDate.Value)) &amp; "年" &amp; Month(ToDatetime(Fields!SalesDate.Value)) &amp; "月"</Value>
+								<Style>
+									<FontFamily>ＭＳ 明朝</FontFamily>
+									<FontSize>11pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<VerticalAlign>Middle</VerticalAlign>
+								</Style>
+								<Top>2.25cm</Top>
+								<Width>6.5cm</Width>
+								<ZIndex>6</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox55">
+								<Height>0.75cm</Height>
+								<Left>0.010833cm</Left>
+								<Value>年月：</Value>
+								<Style>
+									<FontFamily>ＭＳ 明朝</FontFamily>
+									<FontSize>11pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Right</TextAlign>
+									<VerticalAlign>Middle</VerticalAlign>
+								</Style>
+								<Top>2.25cm</Top>
+								<Width>2cm</Width>
+								<ZIndex>2</ZIndex>
+							</Textbox>
+						</ReportItems>
+					</Page>
+				</Pages>
+				<DataSetName>Sales</DataSetName>
+				<Grouping Name="FixedPage1_Group">
+					<GroupExpressions>
+						<GroupExpression>=Fields!CompanyID.Value</GroupExpression>
+						<GroupExpression>=Year(ToDatetime(Fields!SalesDate.Value)) &amp; "" &amp; Month(ToDatetime(Fields!SalesDate.Value))</GroupExpression>
+					</GroupExpressions>
+					<dd:NewSection xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">true</dd:NewSection>
+				</Grouping>
+			</FixedPage>
+		</ReportItems>
+	</Body>
+	<BottomMargin>2.5cm</BottomMargin>
+	<LeftMargin>2.5cm</LeftMargin>
+	<PageHeight>21cm</PageHeight>
+	<PageWidth>29.7cm</PageWidth>
+	<RightMargin>2.5cm</RightMargin>
+	<TopMargin>2.5cm</TopMargin>
+	<Width>29.7cm</Width>
+	<DataSources>
+		<DataSource Name="dsrSales">
+			<ConnectionProperties>
+				<ConnectString>jsondata={"Sales":[{"SlipID":"S000001","CompanyID":"1","SalesDate":"2017/10/01","OrderID":"1","OrderItem":"商品００１","Quantity":"1","UnitPrice":"100","Price":"100","Tax":"8"},{"SlipID":"S000001","CompanyID":"1","SalesDate":"2017/10/01","OrderID":"2","OrderItem":"商品００２","Quantity":"1","UnitPrice":"200","Price":"200","Tax":"16"},{"SlipID":"S000001","CompanyID":"1","SalesDate":"2017/10/01","OrderID":"3","OrderItem":"商品００３","Quantity":"1","UnitPrice":"500","Price":"500","Tax":"40"},{"SlipID":"S000001","CompanyID":"1","SalesDate":"2017/10/01","OrderID":"4","OrderItem":"商品００４","Quantity":"2","UnitPrice":"1000","Price":"2000","Tax":"160"},{"SlipID":"S000001","CompanyID":"1","SalesDate":"2017/10/01","OrderID":"5","OrderItem":"商品００５","Quantity":"3","UnitPrice":"1200","Price":"3600","Tax":"288"},{"SlipID":"S000001","CompanyID":"1","SalesDate":"2017/10/01","OrderID":"6","OrderItem":"商品００６","Quantity":"1","UnitPrice":"230","Price":"230","Tax":"18"},{"SlipID":"S000001","CompanyID":"1","SalesDate":"2017/10/01","OrderID":"7","OrderItem":"商品００７","Quantity":"1","UnitPrice":"510","Price":"510","Tax":"40"},{"SlipID":"S000001","CompanyID":"1","SalesDate":"2017/10/01","OrderID":"8","OrderItem":"商品００８","Quantity":"1","UnitPrice":"1500","Price":"1500","Tax":"120"},{"SlipID":"S000001","CompanyID":"1","SalesDate":"2017/10/01","OrderID":"9","OrderItem":"商品００９","Quantity":"3","UnitPrice":"1620","Price":"4860","Tax":"388"},{"SlipID":"S000001","CompanyID":"1","SalesDate":"2017/10/01","OrderID":"10","OrderItem":"商品０１０","Quantity":"4","UnitPrice":"300","Price":"1200","Tax":"96"},{"SlipID":"S000002","CompanyID":"1","SalesDate":"2017/10/05","OrderID":"1","OrderItem":"商品０１１","Quantity":"10","UnitPrice":"115","Price":"1150","Tax":"92"},{"SlipID":"S000002","CompanyID":"1","SalesDate":"2017/10/05","OrderID":"2","OrderItem":"商品０１２","Quantity":"7","UnitPrice":"381","Price":"2667","Tax":"213"},{"SlipID":"S000002","CompanyID":"1","SalesDate":"2017/10/05","OrderID":"3","OrderItem":"商品０１３","Quantity":"1","UnitPrice":"1780","Price":"1780","Tax":"142"},{"SlipID":"S000002","CompanyID":"1","SalesDate":"2017/10/05","OrderID":"4","OrderItem":"商品０１４","Quantity":"3","UnitPrice":"640","Price":"1920","Tax":"153"},{"SlipID":"S000002","CompanyID":"1","SalesDate":"2017/10/05","OrderID":"5","OrderItem":"商品０１５","Quantity":"2","UnitPrice":"941","Price":"1882","Tax":"150"},{"SlipID":"S000003","CompanyID":"1","SalesDate":"2017/10/05","OrderID":"1","OrderItem":"商品０１６","Quantity":"1","UnitPrice":"640","Price":"640","Tax":"51"},{"SlipID":"S000003","CompanyID":"1","SalesDate":"2017/10/05","OrderID":"2","OrderItem":"商品０１７","Quantity":"1","UnitPrice":"510","Price":"510","Tax":"40"},{"SlipID":"S000003","CompanyID":"1","SalesDate":"2017/10/05","OrderID":"3","OrderItem":"商品０１８","Quantity":"1","UnitPrice":"100","Price":"100","Tax":"8"},{"SlipID":"S000003","CompanyID":"1","SalesDate":"2017/10/05","OrderID":"4","OrderItem":"商品０１９","Quantity":"1","UnitPrice":"170","Price":"170","Tax":"13"},{"SlipID":"S000003","CompanyID":"1","SalesDate":"2017/10/05","OrderID":"5","OrderItem":"商品０２０","Quantity":"2","UnitPrice":"260","Price":"520","Tax":"41"},{"SlipID":"S000003","CompanyID":"1","SalesDate":"2017/10/05","OrderID":"6","OrderItem":"商品０２１","Quantity":"2","UnitPrice":"4000","Price":"8000","Tax":"640"},{"SlipID":"S000003","CompanyID":"1","SalesDate":"2017/10/05","OrderID":"7","OrderItem":"商品０２２","Quantity":"2","UnitPrice":"1840","Price":"3680","Tax":"294"},{"SlipID":"S000003","CompanyID":"1","SalesDate":"2017/10/05","OrderID":"8","OrderItem":"商品０２３","Quantity":"2","UnitPrice":"510","Price":"1020","Tax":"81"},{"SlipID":"S000003","CompanyID":"1","SalesDate":"2017/10/05","OrderID":"9","OrderItem":"商品０２４","Quantity":"2","UnitPrice":"730","Price":"1460","Tax":"116"},{"SlipID":"S000003","CompanyID":"1","SalesDate":"2017/10/05","OrderID":"10","OrderItem":"商品０２５","Quantity":"3","UnitPrice":"690","Price":"2070","Tax":"165"},{"SlipID":"S000003","CompanyID":"1","SalesDate":"2017/10/05","OrderID":"11","OrderItem":"商品０２６","Quantity":"3","UnitPrice":"270","Price":"810","Tax":"64"},{"SlipID":"S000003","CompanyID":"1","SalesDate":"2017/10/05","OrderID":"12","OrderItem":"商品０２７","Quantity":"3","UnitPrice":"280","Price":"840","Tax":"67"},{"SlipID":"S000003","CompanyID":"1","SalesDate":"2017/10/05","OrderID":"13","OrderItem":"商品０２８","Quantity":"3","UnitPrice":"390","Price":"1170","Tax":"93"},{"SlipID":"S000003","CompanyID":"1","SalesDate":"2017/10/05","OrderID":"14","OrderItem":"商品０２９","Quantity":"3","UnitPrice":"359","Price":"1077","Tax":"86"},{"SlipID":"S000003","CompanyID":"1","SalesDate":"2017/10/05","OrderID":"15","OrderItem":"商品０３０","Quantity":"5","UnitPrice":"419","Price":"2095","Tax":"167"},{"SlipID":"S000003","CompanyID":"1","SalesDate":"2017/10/05","OrderID":"16","OrderItem":"商品０３１","Quantity":"5","UnitPrice":"500","Price":"2500","Tax":"200"},{"SlipID":"S000003","CompanyID":"1","SalesDate":"2017/10/05","OrderID":"17","OrderItem":"商品０３２","Quantity":"10","UnitPrice":"301","Price":"3010","Tax":"240"},{"SlipID":"S000003","CompanyID":"1","SalesDate":"2017/10/05","OrderID":"18","OrderItem":"商品０３３","Quantity":"1","UnitPrice":"10500","Price":"10500","Tax":"840"},{"SlipID":"S000004","CompanyID":"1","SalesDate":"2017/11/05","OrderID":"1","OrderItem":"商品０３４","Quantity":"1","UnitPrice":"3290","Price":"3290","Tax":"263"},{"SlipID":"S000004","CompanyID":"1","SalesDate":"2017/11/05","OrderID":"2","OrderItem":"商品０３５","Quantity":"1","UnitPrice":"1110","Price":"1110","Tax":"88"},{"SlipID":"S000004","CompanyID":"1","SalesDate":"2017/11/05","OrderID":"3","OrderItem":"商品０３６","Quantity":"1","UnitPrice":"980","Price":"980","Tax":"78"},{"SlipID":"S000004","CompanyID":"1","SalesDate":"2017/11/05","OrderID":"4","OrderItem":"商品０３７","Quantity":"1","UnitPrice":"777","Price":"777","Tax":"62"},{"SlipID":"S000004","CompanyID":"1","SalesDate":"2017/11/05","OrderID":"5","OrderItem":"商品０３８","Quantity":"5","UnitPrice":"344","Price":"1720","Tax":"137"},{"SlipID":"S000004","CompanyID":"1","SalesDate":"2017/11/05","OrderID":"6","OrderItem":"商品０３９","Quantity":"1","UnitPrice":"222","Price":"222","Tax":"17"},{"SlipID":"S000004","CompanyID":"1","SalesDate":"2017/11/05","OrderID":"7","OrderItem":"商品０４０","Quantity":"1","UnitPrice":"100","Price":"100","Tax":"8"},{"SlipID":"S000004","CompanyID":"1","SalesDate":"2017/11/05","OrderID":"8","OrderItem":"商品０４１","Quantity":"2","UnitPrice":"663","Price":"1326","Tax":"106"},{"SlipID":"S000004","CompanyID":"1","SalesDate":"2017/11/05","OrderID":"9","OrderItem":"商品０４２","Quantity":"3","UnitPrice":"500","Price":"1500","Tax":"120"},{"SlipID":"S000005","CompanyID":"2","SalesDate":"2017/10/05","OrderID":"1","OrderItem":"商品０４３","Quantity":"1","UnitPrice":"100","Price":"100","Tax":"8"},{"SlipID":"S000005","CompanyID":"2","SalesDate":"2017/10/05","OrderID":"2","OrderItem":"商品０４４","Quantity":"1","UnitPrice":"100","Price":"100","Tax":"8"},{"SlipID":"S000005","CompanyID":"2","SalesDate":"2017/10/05","OrderID":"3","OrderItem":"商品０４５","Quantity":"1","UnitPrice":"100","Price":"100","Tax":"8"},{"SlipID":"S000005","CompanyID":"2","SalesDate":"2017/10/05","OrderID":"4","OrderItem":"商品０４６","Quantity":"1","UnitPrice":"100","Price":"100","Tax":"8"},{"SlipID":"S000005","CompanyID":"2","SalesDate":"2017/10/05","OrderID":"5","OrderItem":"商品０４７","Quantity":"1","UnitPrice":"200","Price":"200","Tax":"16"},{"SlipID":"S000005","CompanyID":"2","SalesDate":"2017/10/05","OrderID":"6","OrderItem":"商品０４８","Quantity":"1","UnitPrice":"200","Price":"200","Tax":"16"},{"SlipID":"S000005","CompanyID":"2","SalesDate":"2017/10/05","OrderID":"7","OrderItem":"商品０４９","Quantity":"1","UnitPrice":"200","Price":"200","Tax":"16"},{"SlipID":"S000006","CompanyID":"2","SalesDate":"2017/10/20","OrderID":"1","OrderItem":"商品０５０","Quantity":"2","UnitPrice":"300","Price":"600","Tax":"48"},{"SlipID":"S000006","CompanyID":"2","SalesDate":"2017/10/20","OrderID":"2","OrderItem":"商品０５１","Quantity":"2","UnitPrice":"350","Price":"700","Tax":"56"},{"SlipID":"S000006","CompanyID":"2","SalesDate":"2017/10/20","OrderID":"3","OrderItem":"商品０５２","Quantity":"2","UnitPrice":"400","Price":"800","Tax":"64"},{"SlipID":"S000006","CompanyID":"2","SalesDate":"2017/10/20","OrderID":"4","OrderItem":"商品０５３","Quantity":"2","UnitPrice":"450","Price":"900","Tax":"72"},{"SlipID":"S000006","CompanyID":"2","SalesDate":"2017/10/20","OrderID":"5","OrderItem":"商品０５４","Quantity":"2","UnitPrice":"500","Price":"1000","Tax":"80"}]}
+;schemadata={
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://example.com/example.json",
+    "properties": {
+        "Sales": {
+            "id": "/properties/Sales",
+            "items": {
+                "id": "/properties/Sales/items",
+                "properties": {
+                    "CompanyID": {
+                        "id": "/properties/Sales/items/properties/CompanyID",
+                        "type": "string"
+                    },
+                    "OrderID": {
+                        "id": "/properties/Sales/items/properties/OrderID",
+                        "type": "string"
+                    },
+                    "OrderItem": {
+                        "id": "/properties/Sales/items/properties/OrderItem",
+                        "type": "string"
+                    },
+                    "Price": {
+                        "id": "/properties/Sales/items/properties/Price",
+                        "type": "string"
+                    },
+                    "Quantity": {
+                        "id": "/properties/Sales/items/properties/Quantity",
+                        "type": "string"
+                    },
+                    "SalesDate": {
+                        "id": "/properties/Sales/items/properties/SalesDate",
+                        "type": "string"
+                    },
+                    "SlipID": {
+                        "id": "/properties/Sales/items/properties/SlipID",
+                        "type": "string"
+                    },
+                    "Tax": {
+                        "id": "/properties/Sales/items/properties/Tax",
+                        "type": "string"
+                    },
+                    "UnitPrice": {
+                        "id": "/properties/Sales/items/properties/UnitPrice",
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
+        }
+    },
+    "type": "object"
+}</ConnectString>
+				<DataProvider>JSON</DataProvider>
+			</ConnectionProperties>
+		</DataSource>
+		<DataSource Name="dsrCompanies">
+			<ConnectionProperties>
+				<ConnectString>jsondata={"Companies":[{"CompanyID":"1","CompanyName":"有限会社　紫山","ZipCode":"981-3205","Address":"宮城県仙台市泉区紫山99-99","SectionName":"","ContactName":"紫山　一郎"},{"CompanyID":"2","CompanyName":"グレープワイン株式会社","ZipCode":"332-0012","Address":"埼玉県川口市本町9-88-7","SectionName":"総務部","ContactName":"葡萄　好男"},{"CompanyID":"3","CompanyName":"財団法人　中島明泉会","ZipCode":"530-0005","Address":"大阪府大阪市北区中之島9-9-99","SectionName":"総務課","ContactName":""}]};schemadata={    "$schema": "http://json-schema.org/draft-04/schema#",    "definitions": {},    "id": "http://example.com/example.json",    "properties": {        "Companies": {            "id": "/properties/Companies",            "items": {                "id": "/properties/Companies/items",                "properties": {                    "Address": {                        "id": "/properties/Companies/items/properties/Address",                        "type": "string"                    },                    "CompanyID": {                        "id": "/properties/Companies/items/properties/CompanyID",                        "type": "string"                    },                    "CompanyName": {                        "id": "/properties/Companies/items/properties/CompanyName",                        "type": "string"                    },                    "ContactName": {                        "id": "/properties/Companies/items/properties/ContactName",                        "type": "string"                    },                    "SectionName": {                        "id": "/properties/Companies/items/properties/SectionName",                        "type": "string"                    },                    "ZipCode": {                        "id": "/properties/Companies/items/properties/ZipCode",                        "type": "string"                    }                },                "type": "object"            },            "type": "array"        }    },    "type": "object"}</ConnectString>
+				<DataProvider>JSON</DataProvider>
+			</ConnectionProperties>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="Sales">
+			<Fields>
+				<Field Name="CompanyID">
+					<DataField>CompanyID</DataField>
+				</Field>
+				<Field Name="OrderID">
+					<DataField>OrderID</DataField>
+				</Field>
+				<Field Name="OrderItem">
+					<DataField>OrderItem</DataField>
+				</Field>
+				<Field Name="Price">
+					<DataField>Price</DataField>
+				</Field>
+				<Field Name="Quantity">
+					<DataField>Quantity</DataField>
+				</Field>
+				<Field Name="SalesDate">
+					<DataField>SalesDate</DataField>
+				</Field>
+				<Field Name="SlipID">
+					<DataField>SlipID</DataField>
+				</Field>
+				<Field Name="Tax">
+					<DataField>Tax</DataField>
+				</Field>
+				<Field Name="UnitPrice">
+					<DataField>UnitPrice</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>$.Sales[*]</CommandText>
+				<DataSourceName>dsrSales</DataSourceName>
+			</Query>
+		</DataSet>
+		<DataSet Name="Companies">
+			<Fields>
+				<Field Name="Address">
+					<DataField>Address</DataField>
+				</Field>
+				<Field Name="CompanyID">
+					<DataField>CompanyID</DataField>
+				</Field>
+				<Field Name="CompanyName">
+					<DataField>CompanyName</DataField>
+				</Field>
+				<Field Name="ContactName">
+					<DataField>ContactName</DataField>
+				</Field>
+				<Field Name="SectionName">
+					<DataField>SectionName</DataField>
+				</Field>
+				<Field Name="ZipCode">
+					<DataField>ZipCode</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>$.Companies[*]</CommandText>
+				<DataSourceName>dsrCompanies</DataSourceName>
+			</Query>
+		</DataSet>
+	</DataSets>
+	<CustomProperties>
+		<CustomProperty>
+			<Name>PaperOrientation</Name>
+			<Value>Landscape</Value>
+		</CustomProperty>
+	</CustomProperties>
+</Report>

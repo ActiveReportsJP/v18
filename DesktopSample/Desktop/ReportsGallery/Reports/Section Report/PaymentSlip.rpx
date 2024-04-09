@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ActiveReportsLayout Version="3.5" PrintWidth="11281.89" DocumentName="ARNet Document" ScriptLang="C#" MasterReport="0" CompatibilityMode="CrossPlatform">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-style: normal; text-decoration: none; font-weight: normal; color: Black; font-size: 10pt; vertical-align: top; font-family: &quot;ＭＳ Ｐ明朝&quot;; ddo-char-set: 128" />
+    <Style Name="見出し1" Value="font-size: 12pt; font-weight: bold; ddo-char-set: 128" />
+    <Style Name="見出し2" Value="font-size: 14pt; font-weight: bold; ddo-char-set: 128" />
+    <Style Name="見出し3" Value="font-size: 12pt; font-weight: bold; font-style: italic; ddo-char-set: 128" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="GroupHeader" Name="GroupHeader1" Height="0" BackColor="16777215" />
+    <Section Type="Detail" Name="Detail" Height="6471" BackColor="16777215" KeepTogether="1">
+      <Control Type="AR.Field" Name="txtKanyusha1" DataField="Kanyusha" Left="453.5433" Top="1190.551" Width="5782.676" Height="623.6221" Text="株式会社" CanGrow="0" Style="font-family: ＭＳ Ｐゴシック; font-size: 14.25pt; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Shape" Name="Shape1" Left="9751.182" Top="4705.512" Width="1247.244" Height="1247.244" BackColor="16777215" LineStyle="2" LineWeight="2" Shape="1" RoundingRadius="0.1" />
+      <Control Type="AR.Label" Name="Label33" Left="9977.953" Top="4932.284" Width="907.087" Height="907.0865" Caption="金額訂正された払込票は、コンビニエンスストアではお取り扱いできません。" Style="color: LightGrey; font-family: ＭＳ ゴシック; font-size: 6.75pt; text-align: left; ddo-char-set: 128" />
+      <Control Type="AR.Line" Name="Line4" X1="6349.607" Y1="1870.865" X2="0" Y2="1870.865" />
+      <Control Type="AR.Label" Name="Label2" Left="56.6929" Top="1927.56" Width="226.7716" Height="2664.567" Caption="払込人住所氏名・通信欄" Style="color: Black; font-family: ＭＳ 明朝; font-size: 8.25pt; text-align: left; vertical-align: middle" />
+      <Control Type="AR.Label" Name="Label1" Left="56.6929" Top="1133.858" Width="226.7716" Height="737.0077" Caption="加入者名" Style="color: Black; font-family: ＭＳ 明朝; font-size: 8.25pt; text-align: left; vertical-align: middle" />
+      <Control Type="AR.Line" Name="Line1" X1="6462.994" Y1="56.6929" X2="6462.994" Y2="6406.3" LineStyle="2" />
+      <Control Type="AR.Line" Name="Line3" X1="9411.024" Y1="56.6929" X2="9411.024" Y2="6406.3" LineStyle="2" />
+      <Control Type="AR.Label" Name="Label3" Left="1133.858" Top="226.7716" Width="2721.26" Height="283.4646" Caption="払込取扱票" Style="color: Black; font-family: ＭＳ 明朝; font-size: 14.25pt; text-align: justify; text-justify: distribute-all-lines; ddo-char-set: 128" />
+      <Control Type="AR.Label" Name="Label4" Left="1133.858" Top="566.929" Width="2721.26" Height="226.7716" Caption="（コンビニエンスストア用）" Style="color: Black; font-family: ＭＳ 明朝; font-size: 9.75pt; text-align: center" />
+      <Control Type="AR.Line" Name="Line5" X1="4648.818" Y1="4195.276" X2="6349.607" Y2="4195.276" />
+      <Control Type="AR.Line" Name="Line6" X1="6066.142" Y1="453.5433" X2="6066.142" Y2="1133.858" LineStyle="2" />
+      <Control Type="AR.Line" Name="Line7" X1="4648.818" Y1="680.315" X2="6349.607" Y2="680.315" />
+      <Control Type="AR.Line" Name="Line8" X1="5782.676" Y1="453.5433" X2="5782.676" Y2="1133.858" LineStyle="2" />
+      <Control Type="AR.Line" Name="Line9" X1="5499.213" Y1="453.5433" X2="5499.213" Y2="1133.858" />
+      <Control Type="AR.Line" Name="Line10" X1="5215.748" Y1="453.5433" X2="5215.748" Y2="1133.858" LineStyle="2" />
+      <Control Type="AR.Line" Name="Line11" X1="4932.284" Y1="453.5433" X2="4932.284" Y2="1133.858" LineStyle="2" />
+      <Control Type="AR.Line" Name="Line12" X1="4648.818" Y1="453.5433" X2="4648.818" Y2="1133.858" />
+      <Control Type="AR.Line" Name="Line13" X1="6349.607" Y1="453.5433" X2="6349.607" Y2="6179.527" LineWeight="3" />
+      <Control Type="AR.Line" Name="Line14" X1="4308.662" Y1="453.5433" X2="6349.607" Y2="453.5433" LineWeight="3" />
+      <Control Type="AR.Line" Name="Line15" X1="6349.607" Y1="6179.527" X2="0" Y2="6179.527" LineWeight="3" />
+      <Control Type="AR.Line" Name="Line16" X1="6349.607" Y1="1133.858" X2="0" Y2="1133.858" LineWeight="3" />
+      <Control Type="AR.Line" Name="Line17" X1="0" Y1="1133.858" X2="8.447901E-06" Y2="6179.527" LineWeight="3" />
+      <Control Type="AR.Line" Name="Line18" X1="4648.818" Y1="4478.74" X2="6349.607" Y2="4478.74" />
+      <Control Type="AR.Line" Name="Line19" X1="4648.818" Y1="4195.276" X2="4648.818" Y2="6179.527" />
+      <Control Type="AR.Line" Name="Line20" X1="340.1575" Y1="1133.858" X2="340.1575" Y2="4648.818" />
+      <Control Type="AR.Line" Name="Line21" X1="0" Y1="4648.818" X2="340.1575" Y2="4648.818" />
+      <Control Type="AR.Line" Name="Line22" X1="4308.662" Y1="453.5433" X2="4308.662" Y2="1133.858" LineWeight="3" />
+      <Control Type="AR.Label" Name="Label5" Left="4365.354" Top="510.2362" Width="226.7719" Height="566.929" Caption="金額" Style="color: Black; font-family: ＭＳ 明朝; font-size: 8.25pt; text-align: left; vertical-align: middle" />
+      <Control Type="AR.Label" Name="Label6" Left="4705.512" Top="4251.969" Width="1587.403" Height="170.079" Caption="領収・日附印" Style="color: Black; font-family: ＭＳ 明朝; font-size: 8.25pt; text-align: center; ddo-char-set: 128" />
+      <Control Type="AR.Label" Name="Label7" Left="56.6929" Top="6236.221" Width="1247.244" Height="170.0787" Caption="（本部控え）" Style="color: Black; font-family: ＭＳ 明朝; font-size: 8.25pt; text-align: center; ddo-char-set: 128" />
+      <Control Type="AR.Line" Name="Line23" X1="6576.376" Y1="1133.858" X2="9297.638" Y2="1133.858" LineWeight="3" />
+      <Control Type="AR.Line" Name="Line24" X1="6576.376" Y1="1133.858" X2="6576.376" Y2="6179.527" LineWeight="3" />
+      <Control Type="AR.Line" Name="Line25" X1="9297.638" Y1="1133.858" X2="9297.638" Y2="6179.527" LineWeight="3" />
+      <Control Type="AR.Line" Name="Line26" X1="6576.376" Y1="6179.527" X2="9297.638" Y2="6179.527" LineWeight="3" />
+      <Control Type="AR.Line" Name="Line27" X1="6576.376" Y1="1870.865" X2="9297.638" Y2="1870.865" />
+      <Control Type="AR.Line" Name="Line28" X1="6916.536" Y1="1133.858" X2="6916.536" Y2="6179.527" />
+      <Control Type="AR.Line" Name="Line29" X1="6576.376" Y1="2607.875" X2="9297.638" Y2="2607.875" />
+      <Control Type="AR.Line" Name="Line30" X1="6916.536" Y1="2097.638" X2="9297.638" Y2="2097.638" />
+      <Control Type="AR.Label" Name="Label8" Left="4648.818" Top="453.5433" Width="283.4649" Height="226.7716" Caption="十" Style="color: Black; font-family: ＭＳ 明朝; font-size: 8.25pt; text-align: center; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Label" Name="Label9" Left="4932.284" Top="453.5433" Width="283.4644" Height="226.7716" Caption="万" Style="color: Black; font-family: ＭＳ 明朝; font-size: 8.25pt; text-align: center; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Label" Name="Label10" Left="5215.748" Top="453.5433" Width="283.4649" Height="226.7716" Caption="千" Style="color: Black; font-family: ＭＳ 明朝; font-size: 8.25pt; text-align: center; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Label" Name="Label11" Left="5499.213" Top="453.5433" Width="283.4644" Height="226.7716" Caption="百" Style="color: Black; font-family: ＭＳ 明朝; font-size: 8.25pt; text-align: center; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Label" Name="Label12" Left="5782.676" Top="453.5433" Width="283.4649" Height="226.7716" Caption="十" Style="color: Black; font-family: ＭＳ 明朝; font-size: 8.25pt; text-align: center; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Label" Name="Label13" Left="6066.142" Top="453.5433" Width="283.4649" Height="226.7716" Caption="円" Style="color: Black; font-family: ＭＳ 明朝; font-size: 8.25pt; text-align: center; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Line" Name="Line31" X1="8900.785" Y1="1870.865" X2="8900.785" Y2="2607.875" LineStyle="2" />
+      <Control Type="AR.Line" Name="Line32" X1="8503.938" Y1="1870.865" X2="8503.938" Y2="2607.875" LineStyle="2" />
+      <Control Type="AR.Line" Name="Line33" X1="8107.086" Y1="1870.865" X2="8107.086" Y2="2607.875" />
+      <Control Type="AR.Line" Name="Line34" X1="7710.237" Y1="1870.865" X2="7710.237" Y2="2607.875" LineStyle="2" />
+      <Control Type="AR.Line" Name="Line35" X1="7313.387" Y1="1870.865" X2="7313.387" Y2="2607.875" LineStyle="2" />
+      <Control Type="AR.Field" Name="txtBarcode" DataField="BarCode" Left="680.315" Top="5442.52" Width="3061.417" Height="396.8502" Text="(91)912345-0123456789012345678901 031221-0-123000-3" Style="font-family: ＭＳ ゴシック; font-size: 9pt; white-space: inherit" />
+      <Control Type="AR.Label" Name="Label14" Left="7029.92" Top="690.315" Width="1814.174" Height="283.4646" Caption="払込票兼受領証" Style="color: Black; font-family: ＭＳ 明朝; font-size: 12pt; text-align: center; ddo-char-set: 128" />
+      <Control Type="AR.Label" Name="Label15" Left="6916.536" Top="1870.865" Width="396.8502" Height="226.7716" Caption="十" Style="color: Black; font-family: ＭＳ 明朝; font-size: 8.25pt; text-align: center; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Label" Name="Label16" Left="7313.387" Top="1870.865" Width="396.8509" Height="226.7716" Caption="万" Style="color: Black; font-family: ＭＳ 明朝; font-size: 8.25pt; text-align: center; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Label" Name="Label17" Left="7710.237" Top="1870.865" Width="396.8502" Height="226.7716" Caption="千" Style="color: Black; font-family: ＭＳ 明朝; font-size: 8.25pt; text-align: center; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Label" Name="Label18" Left="8107.086" Top="1870.865" Width="396.8502" Height="226.7716" Caption="百" Style="color: Black; font-family: ＭＳ 明朝; font-size: 8.25pt; text-align: center; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Label" Name="Label19" Left="8503.938" Top="1870.865" Width="396.8502" Height="226.7716" Caption="十" Style="color: Black; font-family: ＭＳ 明朝; font-size: 8.25pt; text-align: center; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Label" Name="Label20" Left="8900.785" Top="1870.865" Width="396.8502" Height="226.7716" Caption="円" Style="color: Black; font-family: ＭＳ 明朝; font-size: 8.25pt; text-align: center; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Label" Name="Label21" Left="6643.07" Top="1143.858" Width="226.7716" Height="737.0077" Caption="加入者名" Style="color: Black; font-family: ＭＳ 明朝; font-size: 8.25pt; text-align: left; vertical-align: middle" />
+      <Control Type="AR.Label" Name="Label22" Left="6643.07" Top="2674.567" Width="226.7716" Height="1747.48" Caption="払込人住所・氏名" Style="color: Black; font-family: ＭＳ 明朝; font-size: 8.25pt; text-align: left; vertical-align: middle" />
+      <Control Type="AR.Line" Name="Line36" X1="6576.376" Y1="4478.74" X2="9297.638" Y2="4478.74" />
+      <Control Type="AR.Label" Name="Label24" Left="6643.07" Top="1937.559" Width="226.7715" Height="623.6218" Caption="金額" Style="color: Black; font-family: ＭＳ 明朝; font-size: 8.25pt; text-align: left; vertical-align: middle" />
+      <Control Type="AR.Line" Name="Line37" X1="9524.409" Y1="1133.858" X2="9524.409" Y2="6179.527" LineWeight="3" />
+      <Control Type="AR.Line" Name="Line38" X1="9524.409" Y1="6179.527" X2="11225.2" Y2="6179.527" LineWeight="3" />
+      <Control Type="AR.Line" Name="Line39" X1="9524.409" Y1="1133.858" X2="11225.2" Y2="1133.858" LineWeight="3" />
+      <Control Type="AR.Line" Name="Line40" X1="11225.2" Y1="1133.858" X2="11225.2" Y2="6179.527" LineWeight="3" />
+      <Control Type="AR.Line" Name="Line41" X1="9524.409" Y1="4478.74" X2="11225.2" Y2="4478.74" />
+      <Control Type="AR.Label" Name="Label23" Left="6643.07" Top="4535.433" Width="226.7716" Height="1587.403" Caption="領収・日附印" Style="color: Black; font-family: ＭＳ 明朝; font-size: 8.25pt; text-align: left; vertical-align: middle" />
+      <Control Type="AR.Label" Name="Label25" Left="9524.409" Top="4592.125" Width="170.0793" Height="1474.016" Caption="収入印紙貼付欄" Style="color: Black; font-family: ＭＳ 明朝; font-size: 6.75pt; text-align: left; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Label" Name="Label26" Left="11055.12" Top="4592.125" Width="170.0793" Height="1474.016" Caption="領収・日付印" Style="color: Black; font-family: ＭＳ 明朝; font-size: 6.75pt; text-align: left; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Label" Name="Label27" Left="9751.182" Top="680.315" Width="1247.245" Height="283.4646" Caption="払込受領票" Style="color: Black; font-family: ＭＳ 明朝; font-size: 12pt; text-align: center; ddo-char-set: 128" />
+      <Control Type="AR.Label" Name="Label28" Left="7370.08" Top="6236.221" Width="1247.244" Height="170.0787" Caption="（店舗控え）" Style="color: Black; font-family: ＭＳ 明朝; font-size: 8.25pt; text-align: center; ddo-char-set: 128" />
+      <Control Type="AR.Label" Name="Label29" Left="9751.182" Top="6236.221" Width="1247.244" Height="170.079" Caption="（お客様控え）" Style="color: Black; font-family: ＭＳ 明朝; font-size: 8.25pt; text-align: center; ddo-char-set: 128" />
+      <Control Type="AR.Label" Name="Label30" Left="9524.409" Top="1133.858" Width="1190.551" Height="170.0788" Caption="払込人氏名" Style="color: Black; font-family: ＭＳ 明朝; font-size: 8.25pt; text-align: left; ddo-char-set: 128" />
+      <Control Type="AR.Line" Name="Line42" X1="9534.41" Y1="1880.866" X2="11235.2" Y2="1880.866" />
+      <Control Type="AR.Line" Name="Line43" X1="9524.409" Y1="2721.26" X2="11225.2" Y2="2721.26" />
+      <Control Type="AR.Label" Name="Label31" Left="9524.409" Top="1870.865" Width="1190.551" Height="170.0788" Caption="受取人" Style="color: Black; font-family: ＭＳ 明朝; font-size: 8.25pt; text-align: left; ddo-char-set: 128" />
+      <Control Type="AR.Line" Name="Line44" X1="9524.409" Y1="3231.497" X2="11225.2" Y2="3231.497" />
+      <Control Type="AR.Label" Name="Label32" Left="9524.409" Top="2721.26" Width="1190.551" Height="170.0787" Caption="金額" Style="color: Black; font-family: ＭＳ 明朝; font-size: 8.25pt; text-align: left; ddo-char-set: 128" />
+      <Control Type="AR.Field" Name="txtKingaku1_1" DataField="Kingaku" Left="6066.142" Top="680.315" Width="283.4644" Height="453.5433" Text="0" Style="font-family: ＭＳ ゴシック; font-size: 12pt; text-align: center; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Field" Name="txtKingaku1_2" Left="5782.676" Top="680.315" Width="283.4644" Height="453.5433" Text="0" Style="font-family: ＭＳ ゴシック; font-size: 12pt; text-align: center; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Field" Name="txtKingaku1_6" Left="4648.818" Top="680.315" Width="283.4649" Height="453.5433" Text="0" Style="font-family: ＭＳ ゴシック; font-size: 12pt; text-align: center; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Field" Name="txtKingaku1_5" Left="4932.284" Top="680.315" Width="283.4644" Height="453.5433" Text="0" Style="font-family: ＭＳ ゴシック; font-size: 12pt; text-align: center; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Field" Name="txtKingaku1_4" Left="5215.748" Top="680.315" Width="283.4649" Height="453.5433" Text="0" Style="font-family: ＭＳ ゴシック; font-size: 12pt; text-align: center; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Field" Name="txtKingaku1_3" Left="5499.213" Top="680.315" Width="283.4644" Height="453.5433" Text="0" Style="font-family: ＭＳ ゴシック; font-size: 12pt; text-align: center; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Field" Name="txtKingaku2_6" Left="6973.229" Top="2154.331" Width="283.4644" Height="396.8505" Text="0" Style="font-family: ＭＳ ゴシック; font-size: 14.25pt; text-align: center; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Field" Name="txtKingaku2_5" Left="7369.92" Top="2154.24" Width="283.4644" Height="396.8505" Text="0" Style="font-family: ＭＳ ゴシック; font-size: 14.25pt; text-align: center; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Field" Name="txtKingaku2_4" Left="7766.931" Top="2154.331" Width="283.4651" Height="396.8505" Text="0" Style="font-family: ＭＳ ゴシック; font-size: 14.25pt; text-align: center; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Field" Name="txtKingaku2_3" Left="8163.779" Top="2154.331" Width="283.4644" Height="396.8505" Text="0" Style="font-family: ＭＳ ゴシック; font-size: 14.25pt; text-align: center; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Field" Name="txtKingaku2_2" Left="8560.63" Top="2154.331" Width="283.4651" Height="396.8505" Text="0" Style="font-family: ＭＳ ゴシック; font-size: 14.25pt; text-align: center; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Field" Name="txtKingaku2_1" Left="8957.479" Top="2154.331" Width="283.4637" Height="396.8505" Text="0" Style="font-family: ＭＳ ゴシック; font-size: 14.25pt; text-align: center; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Field" Name="txtKanyusha2" DataField="Kanyusha" Left="6973.229" Top="1190.551" Width="2267.716" Height="623.6221" Text="株式会社" CanGrow="0" Style="font-family: ＭＳ Ｐゴシック; font-size: 11.25pt; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Field" Name="txtYuubin1" DataField="Yuubin" Left="566.929" Top="2097.638" Width="2097.638" Height="283.4649" Text="〒981-3205" Style="font-family: ＭＳ Ｐゴシック; font-size: 9.75pt; ddo-char-set: 128" />
+      <Control Type="AR.Field" Name="txtAddress1" DataField="Address" Left="566.929" Top="2437.795" Width="4023.071" Height="1133.858" Text="宮城県仙台市泉区紫山3-1-4" Style="font-family: ＭＳ Ｐゴシック; font-size: 9.75pt; ddo-char-set: 128" />
+      <Control Type="AR.Label" Name="Label34" Left="10998.43" Top="1644.096" Width="226.7709" Height="226.7716" Caption="様" Style="font-family: ＭＳ 明朝; font-size: 8.25pt; ddo-char-set: 128" />
+      <Control Type="AR.Field" Name="txtKanyusha3" DataField="Kanyusha" Left="9581.102" Top="2097.638" Width="1587.403" Height="566.929" Text="株式会社" CanGrow="0" Style="font-family: ＭＳ Ｐゴシック; font-size: 9pt; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Label" Name="Label35" Left="10998.43" Top="3004.726" Width="226.7709" Height="226.7712" Caption="円" Style="font-family: ＭＳ 明朝; font-size: 8.25pt; ddo-char-set: 128" />
+      <Control Type="AR.Field" Name="txtName3" DataField="Name" Left="9581.102" Top="1360.63" Width="1417.322" Height="453.5433" Text="葡萄　都市子" Style="font-family: ＭＳ Ｐゴシック; font-size: 9.75pt; text-align: right; vertical-align: bottom; ddo-char-set: 128" />
+      <Control Type="AR.Field" Name="txtName1" DataField="Name" Left="566.929" Top="3628.346" Width="4023.071" Height="510.2362" Text="葡萄　都市子　様" Style="font-family: ＭＳ Ｐゴシック; font-size: 9.75pt; text-align: left; vertical-align: top; ddo-char-set: 128" />
+      <Control Type="AR.Field" Name="txtKingaku3" DataField="Kingaku" Left="9581.102" Top="2834.646" Width="1360.629" Height="396.8502" Text="0" OutputFormat="¥#,##0" Style="font-family: ＭＳ ゴシック; font-size: 9.75pt; text-align: right; vertical-align: middle; ddo-char-set: 128" />
+      <Control Type="AR.Field" Name="txtYuubin2" DataField="Yuubin" Left="6973.229" Top="2664.567" Width="2267.716" Height="226.7716" Text="〒981-3205" Style="font-family: ＭＳ Ｐゴシック; font-size: 9pt; ddo-char-set: 128" />
+      <Control Type="AR.Field" Name="txtAddress2" DataField="Address" Left="6973.229" Top="2948.031" Width="2267.716" Height="963.7798" Text="宮城県仙台市泉区紫山3-1-4" Style="font-family: ＭＳ Ｐゴシック; font-size: 9pt; ddo-char-set: 128" />
+      <Control Type="AR.Field" Name="txtName2" DataField="Name" Left="6973.92" Top="3968.64" Width="2267.716" Height="453.5434" Text="葡萄　都市子　様" Style="font-family: ＭＳ Ｐゴシック; font-size: 9.75pt; text-align: left; vertical-align: top; ddo-char-set: 128" />
+      <Control Type="AR.Line" Name="Line2" X1="8.447901E-06" Y1="6462.994" X2="11225.2" Y2="6462.994" LineStyle="3" />
+      <Control Type="AR.Barcode" Name="Barcode1" DataField="BarCode" Left="705" Top="4815" Width="2966.4" Height="630.72" BackColor="16777215" BarStyle="28" Text="91912345012345678901234567890104123100000003" AutoSize="0" Font="Courier New" FontSize="8" QRCode="EncodingCodePage=65001" PDF417="EncodingCodePage=65001" MicroPDF417="EncodingCodePage=65001" CODE128="0;0;0" DataMatrix="EncodingCodePage=65001" />
+    </Section>
+    <Section Type="GroupFooter" Name="GroupFooter1" Height="0" BackColor="16777215" />
+  </Sections>
+  <ReportComponentTray />
+  <DataSources>
+    <DbDataSource Name="sqlite" Connect="Data Source=..\\..\\..\\..\\..\\..\\..\\Data\\BILL.db;" SQL="Select * from Billconveni ORDER BY ID" />
+  </DataSources>
+  <Script><![CDATA[public void ActiveReport_ReportStart()
+{
+	// 固定部分の色を、一括でオレンジ色に設定します。
+	System.Drawing.Color clr = System.Drawing.Color.Orange;
+	// 固定部分が台紙に既に印刷されている場合は、
+	// Color.Transparentに設定することで、
+	// 透明（出力させない）にすることも可能です。
+	int i;
+
+	// Lineのカラーを設定します。
+	for (i = 1; i <= 44; i++)
+	{
+		((GrapeCity.ActiveReports.SectionReportModel.Line) (rpt.Sections["Detail"].Controls["Line" + i.ToString()])).LineColor = clr;
+	}
+	// Labelのカラーを設定します。
+	for (i = 1; i <= 35; i++)
+	{
+		((GrapeCity.ActiveReports.SectionReportModel.Label) (rpt.Sections["Detail"].Controls["Label" + i.ToString()])).ForeColor = clr;
+	}
+	// Shapeのカラーを設定します。
+	this.Shape1.LineColor = clr;
+}
+
+
+public void Detail_Format()
+{
+	int i;
+	string strKingaku = "******" + txtKingaku1_1.Text;
+	string strData;
+	// TextBoxに金額を一桁ずつセットします。
+	// 数字のない桁は、"*"で埋めます。
+	for (i = 1; i <= 6; i++)
+	{
+		strData = strKingaku.Substring(strKingaku.Length - i, 1);
+		((GrapeCity.ActiveReports.SectionReportModel.TextBox) (rpt.Sections["Detail"].Controls["txtKingaku1_" + i.ToString()])).Text = strData;
+		((GrapeCity.ActiveReports.SectionReportModel.TextBox) (rpt.Sections["Detail"].Controls["txtKingaku2_" + i.ToString()])).Text = strData;
+	}
+	// バーコードのキャプション作成し、
+	// TextBoxにセットし直します。
+	// AI（データ項目用）
+	strData = "(" + txtBarcode.Text.Substring(0, 2) + ")";
+	// メーカーコード
+	strData += txtBarcode.Text.Substring(2, 6) + "-";
+	// 自由使用欄
+	strData += txtBarcode.Text.Substring(8, 22) + "\r\n";
+	// 支払期限年月日
+	strData += txtBarcode.Text.Substring(30, 6) + "-";
+	// 収入印紙の要不要
+	strData += txtBarcode.Text.Substring(36, 1) + "-";
+	// 請求金額
+	strData += txtBarcode.Text.Substring(37, 6) + "-";
+	// チェックディジット
+	strData += txtBarcode.Text.Substring(43, 1);
+	txtBarcode.Text = strData;
+
+	//
+	// バーコードの設定を行います。
+	// 
+
+	//*--- 注意 ---------------------------------------------*
+	// 「UCC／EAN－128による標準料金代理収納ガイドライン」に基づくバーコード
+	// を出力する為には、300dpi 以上の出力解像度を持ったプリンタを使用する
+	// 必要があります。読み取り精度を考慮すると 600dpi 以上が望ましいといえます。
+	//また、インクのにじみや、反射率等も読み取り精度に大きく影響します。
+	// バーコードが上手く読み取れない場合は、黒バーのドット補正をお試しください。
+	//*------------------------------------------------------*
+
+	// 黒バーのドット補正を行います。
+	// 実際に印刷を行うプリンタの解像度と最小モジュールサイズを指定し、
+	// 最小モジュール幅をドット単位で補正します。
+
+	// 解像度と最小モジュールサイズの推奨値は次のとおりです。
+	//---------------------------------
+	// 解像度 | 最小モジュール幅
+	// 1200   | 8
+	// 720    | 4 または 5
+	// 600    | 4
+	// 480    | 3
+	// 400    | 3
+	// 360    | 2
+	// 300    | 2
+	//---------------------------------
+
+	// サイズの自動調整を不可に設定します。
+	this.Barcode1.AutoSize = false;
+
+	// プリンタの解像度(dpi)を指定します。
+	this.Barcode1.Code128.Dpi = 600;
+
+	// 最小モジュール幅を指定します。600dpiの場合は4ドットを指定します。
+	this.Barcode1.Code128.ModuleSize = 4;
+
+	// 黒バーを-1ドット補正します。
+	this.Barcode1.Code128.BarAdjust = -1;
+}
+
+
+public void Detail_BeforePrint()
+{
+	
+}
+
+
+public void Detail_AfterPrint()
+{
+	int i;
+	// 名前の後ろに"　様"を追加します。
+	for (i = 1; i <= 2; i++)
+	{
+		((GrapeCity.ActiveReports.SectionReportModel.TextBox) (rpt.Sections["Detail"].Controls["txtName" + i.ToString()])).Text += "　様";
+	}
+}
+
+
+]]></Script>
+  <PageSettings LeftMargin="340" RightMargin="283" TopMargin="567" BottomMargin="567" PaperSize="9" PaperWidth="11906" PaperHeight="16838" PaperName="" Orientation="1" />
+  <Parameters />
+</ActiveReportsLayout>

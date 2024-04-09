@@ -1,0 +1,322 @@
+﻿<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+	<Body>
+		<Height>27.9cm</Height>
+		<ReportItems>
+			<FixedPage Name="FixedPage1">
+				<Pages>
+					<Page>
+						<ReportItems>
+							<Tablix Name="Tablix1">
+								<TablixCorner>
+									<TablixCornerRows>
+										<TablixCornerRow>
+											<TablixCornerCell>
+												<CellContents>
+													<Textbox Name="TextBox11">
+														<Height>0.2395833in</Height>
+														<Value>県名</Value>
+														<Style>
+															<BackgroundColor>LightGreen</BackgroundColor>
+															<FontFamily>Arial</FontFamily>
+															<FontSize>9pt</FontSize>
+															<FontStyle>Normal</FontStyle>
+															<FontWeight>700</FontWeight>
+															<PaddingBottom>2pt</PaddingBottom>
+															<PaddingLeft>2pt</PaddingLeft>
+															<PaddingRight>2pt</PaddingRight>
+															<PaddingTop>2pt</PaddingTop>
+															<Border>
+																<Style>Solid</Style>
+															</Border>
+														</Style>
+														<Width>1.854167in</Width>
+													</Textbox>
+												</CellContents>
+											</TablixCornerCell>
+											<TablixCornerCell>
+												<CellContents>
+													<Textbox Name="TextBox16">
+														<Height>0.2395833in</Height>
+														<Value>市町村名</Value>
+														<Style>
+															<BackgroundColor>LightGreen</BackgroundColor>
+															<FontFamily>Arial</FontFamily>
+															<FontSize>9pt</FontSize>
+															<FontStyle>Normal</FontStyle>
+															<FontWeight>700</FontWeight>
+															<PaddingBottom>2pt</PaddingBottom>
+															<PaddingLeft>2pt</PaddingLeft>
+															<PaddingRight>2pt</PaddingRight>
+															<PaddingTop>2pt</PaddingTop>
+															<Border>
+																<Style>Solid</Style>
+															</Border>
+														</Style>
+														<Width>1.854167in</Width>
+													</Textbox>
+												</CellContents>
+											</TablixCornerCell>
+											<TablixCornerCell>
+												<CellContents>
+													<Textbox Name="TextBox18">
+														<Height>0.2395833in</Height>
+														<Value>氏名</Value>
+														<Style>
+															<BackgroundColor>LightGreen</BackgroundColor>
+															<FontFamily>Arial</FontFamily>
+															<FontSize>9pt</FontSize>
+															<FontStyle>Normal</FontStyle>
+															<FontWeight>700</FontWeight>
+															<PaddingBottom>2pt</PaddingBottom>
+															<PaddingLeft>2pt</PaddingLeft>
+															<PaddingRight>2pt</PaddingRight>
+															<PaddingTop>2pt</PaddingTop>
+															<Border>
+																<Style>Solid</Style>
+															</Border>
+														</Style>
+														<Width>1.854167in</Width>
+													</Textbox>
+												</CellContents>
+											</TablixCornerCell>
+										</TablixCornerRow>
+									</TablixCornerRows>
+								</TablixCorner>
+								<TablixBody>
+									<TablixColumns>
+										<TablixColumn>
+											<Width>4.69282cm</Width>
+										</TablixColumn>
+									</TablixColumns>
+									<TablixRows>
+										<TablixRow>
+											<Height>0.5975884cm</Height>
+											<TablixCells>
+												<TablixCell>
+													<CellContents>
+														<Textbox Name="TextBox14">
+															<Height>0.2395833in</Height>
+															<Value>=First(Fields!PostalCode.Value)</Value>
+															<Style>
+																<FontFamily>Arial</FontFamily>
+																<FontSize>9pt</FontSize>
+																<FontStyle>Normal</FontStyle>
+																<FontWeight>400</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<Border>
+																	<Style>Solid</Style>
+																</Border>
+															</Style>
+															<Width>1.84375in</Width>
+														</Textbox>
+													</CellContents>
+												</TablixCell>
+											</TablixCells>
+										</TablixRow>
+									</TablixRows>
+								</TablixBody>
+								<TablixColumnHierarchy>
+									<TablixMembers>
+										<TablixMember>
+											<TablixHeader>
+												<Size>0.235271in</Size>
+												<CellContents>
+													<Textbox Name="TextBox12">
+														<Height>0.2395833in</Height>
+														<Value>郵便番号</Value>
+														<Style>
+															<BackgroundColor>LightGreen</BackgroundColor>
+															<FontFamily>Arial</FontFamily>
+															<FontSize>9pt</FontSize>
+															<FontStyle>Normal</FontStyle>
+															<FontWeight>700</FontWeight>
+															<PaddingBottom>2pt</PaddingBottom>
+															<PaddingLeft>2pt</PaddingLeft>
+															<PaddingRight>2pt</PaddingRight>
+															<PaddingTop>2pt</PaddingTop>
+															<Border>
+																<Style>Solid</Style>
+															</Border>
+														</Style>
+														<Width>1.84375in</Width>
+													</Textbox>
+												</CellContents>
+											</TablixHeader>
+										</TablixMember>
+									</TablixMembers>
+								</TablixColumnHierarchy>
+								<TablixRowHierarchy>
+									<TablixMembers>
+										<TablixMember>
+											<Group Name="Tablix1_Country1">
+												<GroupExpressions>
+													<GroupExpression>=Fields!Country.Value</GroupExpression>
+												</GroupExpressions>
+											</Group>
+											<TablixHeader>
+												<Size>1.851336in</Size>
+												<CellContents>
+													<Textbox Name="TextBox13">
+														<Height>0.2395833in</Height>
+														<Value>=Fields!Country.Value</Value>
+														<Style>
+															<FontFamily>Arial</FontFamily>
+															<FontSize>9pt</FontSize>
+															<FontStyle>Normal</FontStyle>
+															<FontWeight>400</FontWeight>
+															<PaddingBottom>2pt</PaddingBottom>
+															<PaddingLeft>2pt</PaddingLeft>
+															<PaddingRight>2pt</PaddingRight>
+															<PaddingTop>2pt</PaddingTop>
+															<Border>
+																<Style>Solid</Style>
+															</Border>
+														</Style>
+														<Width>1.854167in</Width>
+													</Textbox>
+												</CellContents>
+											</TablixHeader>
+											<TablixMembers>
+												<TablixMember>
+													<Group Name="Tablix1_City1">
+														<GroupExpressions>
+															<GroupExpression>=Fields!City.Value</GroupExpression>
+														</GroupExpressions>
+													</Group>
+													<TablixHeader>
+														<Size>1.851336in</Size>
+														<CellContents>
+															<Textbox Name="TextBox15">
+																<Height>0.2395833in</Height>
+																<Value>=Fields!City.Value</Value>
+																<Style>
+																	<FontFamily>Arial</FontFamily>
+																	<FontSize>9pt</FontSize>
+																	<FontStyle>Normal</FontStyle>
+																	<FontWeight>400</FontWeight>
+																	<PaddingBottom>2pt</PaddingBottom>
+																	<PaddingLeft>2pt</PaddingLeft>
+																	<PaddingRight>2pt</PaddingRight>
+																	<PaddingTop>2pt</PaddingTop>
+																	<Border>
+																		<Style>Solid</Style>
+																	</Border>
+																</Style>
+																<Width>1.854167in</Width>
+															</Textbox>
+														</CellContents>
+													</TablixHeader>
+													<TablixMembers>
+														<TablixMember>
+															<Group Name="Tablix1_ContactName1">
+																<GroupExpressions>
+																	<GroupExpression>=Fields!ContactName.Value</GroupExpression>
+																</GroupExpressions>
+															</Group>
+															<TablixHeader>
+																<Size>1.851336in</Size>
+																<CellContents>
+																	<Textbox Name="TextBox17">
+																		<Height>0.2395833in</Height>
+																		<Value>=Fields!ContactName.Value</Value>
+																		<Style>
+																			<FontFamily>Arial</FontFamily>
+																			<FontSize>9pt</FontSize>
+																			<FontStyle>Normal</FontStyle>
+																			<FontWeight>400</FontWeight>
+																			<PaddingBottom>2pt</PaddingBottom>
+																			<PaddingLeft>2pt</PaddingLeft>
+																			<PaddingRight>2pt</PaddingRight>
+																			<PaddingTop>2pt</PaddingTop>
+																			<Border>
+																				<Style>Solid</Style>
+																			</Border>
+																		</Style>
+																		<Width>1.854167in</Width>
+																	</Textbox>
+																</CellContents>
+															</TablixHeader>
+														</TablixMember>
+													</TablixMembers>
+												</TablixMember>
+											</TablixMembers>
+										</TablixMember>
+									</TablixMembers>
+								</TablixRowHierarchy>
+								<RepeatColumnHeaders>true</RepeatColumnHeaders>
+								<DataSetName>DataSet1</DataSetName>
+								<Height>1.2cm</Height>
+								<Width>18.8cm</Width>
+								<ZIndex>1</ZIndex>
+								<dd:FixedHeight xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">25.2cm</dd:FixedHeight>
+								<dd:FixedWidth xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">18.8cm</dd:FixedWidth>
+							</Tablix>
+						</ReportItems>
+					</Page>
+				</Pages>
+				<DataSetName>DataSet1</DataSetName>
+			</FixedPage>
+		</ReportItems>
+	</Body>
+	<BottomMargin>0.5in</BottomMargin>
+	<LeftMargin>0.5in</LeftMargin>
+	<PageHeight>27.9cm</PageHeight>
+	<PageWidth>21.6cm</PageWidth>
+	<RightMargin>0.5in</RightMargin>
+	<TopMargin>0.5in</TopMargin>
+	<Width>21.6cm</Width>
+	<DataSources>
+		<DataSource Name="DataSource1">
+			<ConnectionProperties>
+				<DataProvider>SQLITE</DataProvider>
+				<ConnectString>Data Source=..\\..\\..\\..\\..\\..\\..\\Data\\NWIND.db</ConnectString>
+			</ConnectionProperties>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="DataSet1">
+			<Fields>
+				<Field Name="CustomerID">
+					<DataField>CustomerID</DataField>
+				</Field>
+				<Field Name="CompanyName">
+					<DataField>CompanyName</DataField>
+				</Field>
+				<Field Name="ContactName">
+					<DataField>ContactName</DataField>
+				</Field>
+				<Field Name="ContactTitle">
+					<DataField>ContactTitle</DataField>
+				</Field>
+				<Field Name="Address">
+					<DataField>Address</DataField>
+				</Field>
+				<Field Name="City">
+					<DataField>City</DataField>
+				</Field>
+				<Field Name="Region">
+					<DataField>Region</DataField>
+				</Field>
+				<Field Name="PostalCode">
+					<DataField>PostalCode</DataField>
+				</Field>
+				<Field Name="Country">
+					<DataField>Country</DataField>
+				</Field>
+				<Field Name="Phone">
+					<DataField>Phone</DataField>
+				</Field>
+				<Field Name="Fax">
+					<DataField>Fax</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>SELECT * FROM customers ORDER BY Country</CommandText>
+				<DataSourceName>DataSource1</DataSourceName>
+			</Query>
+		</DataSet>
+	</DataSets>
+</Report>

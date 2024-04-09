@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.5" PrintWidth="9360" DocumentName="ActiveReports Document" ScriptLang="C#" MasterReport="0" CompatibilityMode="CrossPlatform">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-style: normal; text-decoration: none; font-weight: normal; color: Black; font-size: 10pt; vertical-align: top; font-family: &quot;ＭＳ Ｐゴシック&quot;; ddo-char-set: 128" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="299" BackStyle="1" BackColor="14745599" CanGrow="0">
+      <Control Type="AR.Label" Name="Label3" Left="4677" Top="0" Width="2693" Height="283" Caption="氏名" />
+      <Control Type="AR.Label" Name="Label2" Left="2126" Top="0" Width="2551" Height="283" Caption="市町村名" />
+      <Control Type="AR.Label" Name="Label1" Left="11.52" Top="0" Width="2126" Height="283" Caption="県名" />
+      <Control Type="AR.Label" Name="Label4" Left="7369.999" Top="0" Width="1984" Height="299.9999" Caption="郵便番号" />
+      <Control Type="AR.Line" Name="Line5" X1="11.52" Y1="0" X2="11.52" Y2="299.9999" />
+      <Control Type="AR.Line" Name="Line6" X1="9353.998" Y1="283" X2="8.64" Y2="283" />
+      <Control Type="AR.Line" Name="Line7" X1="9353.998" Y1="2.88" X2="5.76" Y2="2.88" />
+      <Control Type="AR.Line" Name="Line8" X1="2126" Y1="0" X2="2126" Y2="299.9999" />
+      <Control Type="AR.Line" Name="Line9" X1="4677" Y1="0" X2="4677" Y2="299.9999" />
+      <Control Type="AR.Line" Name="Line10" X1="7369.999" Y1="0" X2="7369.999" Y2="299.9999" />
+      <Control Type="AR.Line" Name="Line11" X1="9353.998" Y1="0" X2="9353.998" Y2="299.9999" />
+    </Section>
+    <Section Type="GroupHeader" Name="GroupHeader1" Height="299" UnderlayNext="1" DataField="Country" GroupKeepTogether="2" RepeatStyle="4" BackStyle="1" BackColor="13353215" CanGrow="0">
+      <Control Type="AR.Field" Name="Field2" DataField="Country" Left="15" Top="0" Width="2126" Height="283" Text="Country" Style="ddo-char-set: 0" />
+      <Control Type="AR.CrossSectionLine" Name="crossSectionLine1" Left="9360" Top="0" Right="9360" Bottom="0" />
+      <Control Type="AR.CrossSectionLine" Name="crossSectionLine2" Left="7372.8" Top="0" Right="7372.8" Bottom="0" />
+      <Control Type="AR.CrossSectionLine" Name="crossSectionLine3" Left="4680" Top="0" Right="4680" Bottom="0" />
+      <Control Type="AR.CrossSectionLine" Name="crossSectionLine4" Left="2131.2" Top="0" Right="2131.2" Bottom="0" />
+      <Control Type="AR.CrossSectionLine" Name="crossSectionLine5" Left="15" Top="0" Right="15" Bottom="0" />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="299" BackColor="16777215" CanGrow="0">
+      <Control Type="AR.Field" Name="txtCity" DataField="City" Left="2126" Top="0" Width="2551" Height="283" Text="City" Style="ddo-char-set: 0" />
+      <Control Type="AR.Field" Name="txtCountry" DataField="ContactName" Left="4680" Top="0" Width="2693" Height="283" Text="ContactName" Style="ddo-char-set: 0" />
+      <Control Type="AR.Field" Name="txtPostalCode" DataField="PostalCode" Left="7369.999" Top="0" Width="1984" Height="283" Text="PostalCode" Style="ddo-char-set: 0" />
+    </Section>
+    <Section Type="GroupFooter" Name="GroupFooter1" Height="0" BackColor="16777215">
+      <Control Type="AR.Line" Name="Line4" X1="5.76" Y1="0" X2="9360" Y2="0" />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="0" BackColor="16777215" />
+  </Sections>
+  <ReportComponentTray />
+  <DataSources>
+    <DbDataSource Name="sqlite" Connect="Data Source=..\\..\\..\\..\\..\\..\\..\\Data\\NWIND.db;" SQL="SELECT * FROM customers ORDER BY Country" />
+  </DataSources>
+  <PageSettings LeftMargin="1080" RightMargin="1080" TopMargin="1080" BottomMargin="1120" />
+  <Parameters />
+</ActiveReportsLayout>

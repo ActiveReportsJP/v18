@@ -1,0 +1,1008 @@
+﻿<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+	<Body>
+		<Height>29.7cm</Height>
+		<ReportItems>
+			<FixedPage Name="FixedPage1">
+				<Pages>
+					<Page>
+						<ReportItems>
+							<Textbox Name="TextBox1">
+								<Height>1.2cm</Height>
+								<Value>生産指示書</Value>
+								<Style>
+									<FontFamily>ＭＳ 明朝</FontFamily>
+									<FontSize>26pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+									<TextDecoration>Underline</TextDecoration>
+									<dd:CharacterSpacing xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">12pt</dd:CharacterSpacing>
+									<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DistributeAllLines</dd:TextJustify>
+								</Style>
+								<Top>0.4cm</Top>
+								<Width>16cm</Width>
+								<ZIndex>1</ZIndex>
+							</Textbox>
+							<CustomReportItem Name="Barcode1">
+								<Type>Barcode</Type>
+								<Top>3.2cm</Top>
+								<Left>9.4cm</Left>
+								<Width>4.9575cm</Width>
+								<Height>1.5cm</Height>
+								<ZIndex>2</ZIndex>
+								<Style>
+									<FontFamily>Courier New</FontFamily>
+									<FontSize>8pt</FontSize>
+									<TextAlign>General</TextAlign>
+								</Style>
+								<CustomProperties>
+									<CustomProperty>
+										<Name>dd:Symbology</Name>
+										<Value>Code39</Value>
+									</CustomProperty>
+									<CustomProperty>
+										<Name>dd:CaptionLocation</Name>
+										<Value>Below</Value>
+									</CustomProperty>
+									<CustomProperty>
+										<Name>dd:Value</Name>
+										<Value>=Fields!生産指示番号.Value</Value>
+									</CustomProperty>
+								</CustomProperties>
+							</CustomReportItem>
+							<Textbox Name="TextBox30">
+								<Height>0.6cm</Height>
+								<Left>4.2cm</Left>
+								<Value>=Fields!製造部門.Value</Value>
+								<Style>
+									<FontFamily>ＭＳ 明朝</FontFamily>
+									<FontSize>10pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Right</TextAlign>
+								</Style>
+								<Top>4.84cm</Top>
+								<Width>3cm</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox24">
+								<Height>0.6cm</Height>
+								<Left>0.8cm</Left>
+								<Value>生産指示日</Value>
+								<Style>
+									<FontFamily>ＭＳ 明朝</FontFamily>
+									<FontSize>10pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Justify</TextAlign>
+									<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DistributeAllLines</dd:TextJustify>
+									<dd:WrapMode xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">WordWrap</dd:WrapMode>
+								</Style>
+								<Top>3.04cm</Top>
+								<Width>2.8cm</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox2">
+								<Height>0.6cm</Height>
+								<Left>0.8cm</Left>
+								<Value>生産指示番号</Value>
+								<Style>
+									<FontFamily>ＭＳ 明朝</FontFamily>
+									<FontSize>10pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Justify</TextAlign>
+									<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DistributeAllLines</dd:TextJustify>
+								</Style>
+								<Top>2.44cm</Top>
+								<Width>2.8cm</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox3">
+								<Height>0.6cm</Height>
+								<Left>4.2cm</Left>
+								<Value>=Fields!生産指示番号.Value</Value>
+								<Style>
+									<FontFamily>ＭＳ 明朝</FontFamily>
+									<FontSize>10pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Right</TextAlign>
+								</Style>
+								<Top>2.44cm</Top>
+								<Width>3cm</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+							<Table Name="Table1">
+								<DataSetName>DataSet1</DataSetName>
+								<Header>
+									<TableRows>
+										<TableRow>
+											<Height>1cm</Height>
+											<TableCells>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox4">
+															<Value>No</Value>
+															<Style>
+																<BackgroundColor>Khaki</BackgroundColor>
+																<FontFamily>ＭＳ 明朝</FontFamily>
+																<FontSize>10pt</FontSize>
+																<FontStyle>Normal</FontStyle>
+																<FontWeight>400</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Center</TextAlign>
+																<VerticalAlign>Middle</VerticalAlign>
+																<BorderStyle>
+																	<Default>Solid</Default>
+																</BorderStyle>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox21">
+															<Value>製品コード</Value>
+															<Style>
+																<BackgroundColor>Khaki</BackgroundColor>
+																<FontFamily>ＭＳ 明朝</FontFamily>
+																<FontSize>10pt</FontSize>
+																<FontStyle>Normal</FontStyle>
+																<FontWeight>400</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Center</TextAlign>
+																<VerticalAlign>Middle</VerticalAlign>
+																<BorderStyle>
+																	<Default>Solid</Default>
+																</BorderStyle>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox18">
+															<Value>製品名</Value>
+															<Style>
+																<BackgroundColor>Khaki</BackgroundColor>
+																<FontFamily>ＭＳ 明朝</FontFamily>
+																<FontSize>10pt</FontSize>
+																<FontStyle>Normal</FontStyle>
+																<FontWeight>400</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Center</TextAlign>
+																<VerticalAlign>Middle</VerticalAlign>
+																<BorderStyle>
+																	<Default>Solid</Default>
+																</BorderStyle>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox32">
+															<Value>数量</Value>
+															<Style>
+																<BackgroundColor>Khaki</BackgroundColor>
+																<FontFamily>ＭＳ 明朝</FontFamily>
+																<FontSize>10pt</FontSize>
+																<FontStyle>Normal</FontStyle>
+																<FontWeight>400</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Center</TextAlign>
+																<VerticalAlign>Middle</VerticalAlign>
+																<BorderStyle>
+																	<Default>Solid</Default>
+																</BorderStyle>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox5">
+															<Value>生産着手日</Value>
+															<Style>
+																<BackgroundColor>Khaki</BackgroundColor>
+																<FontFamily>ＭＳ 明朝</FontFamily>
+																<FontSize>10pt</FontSize>
+																<FontStyle>Normal</FontStyle>
+																<FontWeight>400</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Center</TextAlign>
+																<VerticalAlign>Middle</VerticalAlign>
+																<BorderStyle>
+																	<Default>Solid</Default>
+																</BorderStyle>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox6">
+															<Value>生産納期</Value>
+															<Style>
+																<BackgroundColor>Khaki</BackgroundColor>
+																<FontFamily>ＭＳ 明朝</FontFamily>
+																<FontSize>10pt</FontSize>
+																<FontStyle>Normal</FontStyle>
+																<FontWeight>400</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Center</TextAlign>
+																<VerticalAlign>Middle</VerticalAlign>
+																<BorderStyle>
+																	<Default>Solid</Default>
+																</BorderStyle>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+											</TableCells>
+										</TableRow>
+									</TableRows>
+								</Header>
+								<Details>
+									<TableRows>
+										<TableRow>
+											<Height>0.694161cm</Height>
+											<TableCells>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox7">
+															<Value>=Fields!生産指示明細番号.Value</Value>
+															<Style>
+																<FontFamily>ＭＳ 明朝</FontFamily>
+																<FontSize>10pt</FontSize>
+																<FontStyle>Normal</FontStyle>
+																<FontWeight>400</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<BorderStyle>
+																	<Default>Solid</Default>
+																</BorderStyle>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox22">
+															<Value>=Fields!製品コード.Value</Value>
+															<Style>
+																<FontFamily>ＭＳ 明朝</FontFamily>
+																<FontSize>10pt</FontSize>
+																<FontStyle>Normal</FontStyle>
+																<FontWeight>400</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<BorderStyle>
+																	<Default>Solid</Default>
+																</BorderStyle>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox19">
+															<Value>=Fields!製品名.Value</Value>
+															<Style>
+																<FontFamily>ＭＳ 明朝</FontFamily>
+																<FontSize>10pt</FontSize>
+																<FontStyle>Normal</FontStyle>
+																<FontWeight>400</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<BorderStyle>
+																	<Default>Solid</Default>
+																</BorderStyle>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox33">
+															<Value>=Fields!数量.Value</Value>
+															<Style>
+																<FontFamily>ＭＳ 明朝</FontFamily>
+																<FontSize>10pt</FontSize>
+																<FontStyle>Normal</FontStyle>
+																<FontWeight>400</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Right</TextAlign>
+																<BorderStyle>
+																	<Default>Solid</Default>
+																</BorderStyle>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox8">
+															<Value>=Fields!生産着手日.Value</Value>
+															<Style>
+																<FontFamily>ＭＳ 明朝</FontFamily>
+																<FontSize>10pt</FontSize>
+																<FontStyle>Normal</FontStyle>
+																<FontWeight>400</FontWeight>
+																<Format>d</Format>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<BorderStyle>
+																	<Default>Solid</Default>
+																</BorderStyle>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox9">
+															<Value>=Fields!生産納期.Value</Value>
+															<Style>
+																<FontFamily>ＭＳ 明朝</FontFamily>
+																<FontSize>10pt</FontSize>
+																<FontStyle>Normal</FontStyle>
+																<FontWeight>400</FontWeight>
+																<Format>d</Format>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<BorderStyle>
+																	<Default>Solid</Default>
+																</BorderStyle>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+											</TableCells>
+										</TableRow>
+									</TableRows>
+								</Details>
+								<Height>1.694161cm</Height>
+								<Left>0.8cm</Left>
+								<dd:FixedHeight xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">15cm</dd:FixedHeight>
+								<dd:FixedWidth xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">14.2cm</dd:FixedWidth>
+								<dd:RepeatToFill xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">true</dd:RepeatToFill>
+								<Style>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>10pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<TableColumns>
+									<TableColumn>
+										<Width>1.03588cm</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>2.589685cm</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>4.047667cm</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>1.349222cm</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>2.589685cm</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>2.587861cm</Width>
+									</TableColumn>
+								</TableColumns>
+								<Top>6.6cm</Top>
+								<Width>14.2cm</Width>
+								<ZIndex>4</ZIndex>
+							</Table>
+							<Textbox Name="TextBox13">
+								<Height>2.6cm</Height>
+								<Left>0.8cm</Left>
+								<Value>備考：</Value>
+								<Style>
+									<FontFamily>ＭＳ 明朝</FontFamily>
+									<FontSize>10pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>21.80167cm</Top>
+								<Width>9cm</Width>
+								<ZIndex>5</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox14">
+								<Height>2.2cm</Height>
+								<Left>10.4cm</Left>
+								<Value />
+								<Style>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>22.2cm</Top>
+								<Width>2.2cm</Width>
+								<ZIndex>6</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox16">
+								<Height>0.4cm</Height>
+								<Left>10.4cm</Left>
+								<Value>作成</Value>
+								<Style>
+									<BackgroundColor>Khaki</BackgroundColor>
+									<FontFamily>ＭＳ 明朝</FontFamily>
+									<FontSize>6pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+									<dd:CharacterSpacing xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">5pt</dd:CharacterSpacing>
+									<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Auto</dd:TextJustify>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>21.8cm</Top>
+								<Width>2.2cm</Width>
+								<ZIndex>7</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox25">
+								<Height>0.6cm</Height>
+								<Left>4.2cm</Left>
+								<Value>=Fields!生産指示日.Value</Value>
+								<Style>
+									<FontFamily>ＭＳ 明朝</FontFamily>
+									<FontSize>10pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<Format>d</Format>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Right</TextAlign>
+								</Style>
+								<Top>3.04cm</Top>
+								<Width>3cm</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox26">
+								<Height>0.6cm</Height>
+								<Left>0.8cm</Left>
+								<Value>客先納期</Value>
+								<Style>
+									<FontFamily>ＭＳ 明朝</FontFamily>
+									<FontSize>10pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Justify</TextAlign>
+									<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DistributeAllLines</dd:TextJustify>
+								</Style>
+								<Top>3.64cm</Top>
+								<Width>2.8cm</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox27">
+								<Height>0.6cm</Height>
+								<Left>4.2cm</Left>
+								<Value>=Fields!客先納期.Value</Value>
+								<Style>
+									<FontFamily>ＭＳ 明朝</FontFamily>
+									<FontSize>10pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<Format>d</Format>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Right</TextAlign>
+								</Style>
+								<Top>3.64cm</Top>
+								<Width>3cm</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox28">
+								<Height>0.6cm</Height>
+								<Left>0.8cm</Left>
+								<Value>製造部門コード</Value>
+								<Style>
+									<FontFamily>ＭＳ 明朝</FontFamily>
+									<FontSize>10pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Justify</TextAlign>
+									<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DistributeAllLines</dd:TextJustify>
+								</Style>
+								<Top>4.24cm</Top>
+								<Width>2.8cm</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox29">
+								<Height>0.6cm</Height>
+								<Left>0.8cm</Left>
+								<Value>製造部門</Value>
+								<Style>
+									<FontFamily>ＭＳ 明朝</FontFamily>
+									<FontSize>10pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Justify</TextAlign>
+									<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DistributeAllLines</dd:TextJustify>
+								</Style>
+								<Top>4.84cm</Top>
+								<Width>2.8cm</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox31">
+								<Height>0.6cm</Height>
+								<Left>4.2cm</Left>
+								<Value>=Fields!製造部門コード.Value</Value>
+								<Style>
+									<FontFamily>ＭＳ 明朝</FontFamily>
+									<FontSize>10pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Right</TextAlign>
+								</Style>
+								<Top>4.24cm</Top>
+								<Width>3cm</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox10">
+								<Height>0.6cm</Height>
+								<Left>3.6cm</Left>
+								<Value>：</Value>
+								<Style>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>10pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Justify</TextAlign>
+									<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DistributeAllLines</dd:TextJustify>
+								</Style>
+								<Top>4.84cm</Top>
+								<Width>0.6cm</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox11">
+								<Height>0.6cm</Height>
+								<Left>3.6cm</Left>
+								<Value>：</Value>
+								<Style>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>10pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Justify</TextAlign>
+									<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DistributeAllLines</dd:TextJustify>
+								</Style>
+								<Top>4.24cm</Top>
+								<Width>0.6cm</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox12">
+								<Height>0.6cm</Height>
+								<Left>3.6cm</Left>
+								<Value>：</Value>
+								<Style>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>10pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Justify</TextAlign>
+									<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DistributeAllLines</dd:TextJustify>
+								</Style>
+								<Top>3.64cm</Top>
+								<Width>0.6cm</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox20">
+								<Height>0.6cm</Height>
+								<Left>3.6cm</Left>
+								<Value>：</Value>
+								<Style>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>10pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Justify</TextAlign>
+									<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DistributeAllLines</dd:TextJustify>
+								</Style>
+								<Top>3.04cm</Top>
+								<Width>0.6cm</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox23">
+								<Height>0.6cm</Height>
+								<Left>3.6cm</Left>
+								<Value>：</Value>
+								<Style>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>10pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Justify</TextAlign>
+									<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DistributeAllLines</dd:TextJustify>
+								</Style>
+								<Top>2.44cm</Top>
+								<Width>0.6cm</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox15">
+								<Height>2.2cm</Height>
+								<Left>12.99104cm</Left>
+								<Value />
+								<Style>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>22.19854cm</Top>
+								<Width>2.2cm</Width>
+								<ZIndex>6</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox17">
+								<Height>0.4cm</Height>
+								<Left>12.99104cm</Left>
+								<Value>承認</Value>
+								<Style>
+									<BackgroundColor>Khaki</BackgroundColor>
+									<FontFamily>ＭＳ 明朝</FontFamily>
+									<FontSize>6pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+									<dd:CharacterSpacing xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">5pt</dd:CharacterSpacing>
+									<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Auto</dd:TextJustify>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>21.80167cm</Top>
+								<Width>2.2cm</Width>
+								<ZIndex>7</ZIndex>
+							</Textbox>
+						</ReportItems>
+						<Style />
+					</Page>
+				</Pages>
+				<DataSetName>DataSet1</DataSetName>
+				<Grouping Name="FixedPage1_Group">
+					<GroupExpressions>
+						<GroupExpression>=Fields!生産指示番号.Value</GroupExpression>
+					</GroupExpressions>
+				</Grouping>
+			</FixedPage>
+		</ReportItems>
+		<Style />
+	</Body>
+	<BottomMargin>2.5cm</BottomMargin>
+	<LeftMargin>2.5cm</LeftMargin>
+	<PageHeight>29.7cm</PageHeight>
+	<PageWidth>21cm</PageWidth>
+	<RightMargin>2.5cm</RightMargin>
+	<TopMargin>2.5cm</TopMargin>
+	<Width>21cm</Width>
+	<DataSources>
+		<DataSource Name="DataSource1">
+			<ConnectionProperties>
+				<ConnectString>jsondata=[{
+  "生産指示番号": "00000001",
+  "生産指示明細番号": "001",
+  "生産指示日": "2017-10-13T00:00:00",
+  "客先納期": "2017-10-30T00:00:00",
+  "製造部門コード": "CCC000001",
+  "製造部門": "製造１課",
+  "製品コード": "AZ7989879",
+  "製品名": "AZ-887",
+  "数量": 10,
+  "生産着手日": "2017-10-16T00:00:00",
+  "生産納期": "2017-10-19T00:00:00"
+},
+{
+  "生産指示番号": "00000001",
+  "生産指示明細番号": "002",
+  "生産指示日": "2017-10-13T00:00:00",
+  "客先納期": "2017-10-30T00:00:00",
+  "製造部門コード": "CCC000001",
+  "製造部門": "製造１課",
+  "製品コード": "AZ965465",
+  "製品名": "AZ-990(W)",
+  "数量": 3,
+  "生産着手日": "2017-10-16T00:00:00",
+  "生産納期": "2017-10-20T00:00:00"
+},
+{
+  "生産指示番号": "00000001",
+  "生産指示明細番号": "003",
+  "生産指示日": "2017-10-13T00:00:00",
+  "客先納期": "2017-10-30T00:00:00",
+  "製造部門コード": "CCC000001",
+  "製造部門": "製造１課",
+  "製品コード": "AZ965466",
+  "製品名": "AZ-990(B)",
+  "数量": 3,
+  "生産着手日": "2017-10-16T00:00:00",
+  "生産納期": "2017-10-20T00:00:00"
+},
+{
+  "生産指示番号": "00000001",
+  "生産指示明細番号": "004",
+  "生産指示日": "2017-10-13T00:00:00",
+  "客先納期": "2017-10-30T00:00:00",
+  "製造部門コード": "CCC000001",
+  "製造部門": "製造１課",
+  "製品コード": "COL5464",
+  "製品名": "CO-1000",
+  "数量": 20,
+  "生産着手日": "2017-10-20T00:00:00",
+  "生産納期": "2017-10-23T00:00:00"
+},
+{
+  "生産指示番号": "00000001",
+  "生産指示明細番号": "005",
+  "生産指示日": "2017-10-13T00:00:00",
+  "客先納期": "2017-10-30T00:00:00",
+  "製造部門コード": "CCC000001",
+  "製造部門": "製造１課",
+  "製品コード": "TY99877",
+  "製品名": "TY-99",
+  "数量": 15,
+  "生産着手日": "2017-10-23T00:00:00",
+  "生産納期": "2017-10-24T00:00:00"
+},
+{
+  "生産指示番号": "00000002",
+  "生産指示明細番号": "001",
+  "生産指示日": "2017-10-20T00:00:00",
+  "客先納期": "2017-11-10T00:00:00",
+  "製造部門コード": "CCC000003",
+  "製造部門": "製造３課",
+  "製品コード": "AZ7989879",
+  "製品名": "AZ-887",
+  "数量": 15,
+  "生産着手日": "2017-10-23T00:00:00",
+  "生産納期": "2017-10-30T00:00:00"
+},
+{
+  "生産指示番号": "00000002",
+  "生産指示明細番号": "002",
+  "生産指示日": "2017-10-20T00:00:00",
+  "客先納期": "2017-11-10T00:00:00",
+  "製造部門コード": "CCC000003",
+  "製造部門": "製造３課",
+  "製品コード": "AZ965466",
+  "製品名": "AZ-990(B)",
+  "数量": 10,
+  "生産着手日": "2017-11-02T00:00:00",
+  "生産納期": "2017-11-08T00:00:00"
+},
+{
+  "生産指示番号": "00000002",
+  "生産指示明細番号": "003",
+  "生産指示日": "2017-10-20T00:00:00",
+  "客先納期": "2017-11-10T00:00:00",
+  "製造部門コード": "CCC000003",
+  "製造部門": "製造３課",
+  "製品コード": "TY99877",
+  "製品名": "TY-99",
+  "数量": 5,
+  "生産着手日": "2017-11-02T00:00:00",
+  "生産納期": "2017-11-08T00:00:00"
+},
+{
+  "生産指示番号": "00000003",
+  "生産指示明細番号": "001",
+  "生産指示日": "2017-10-23T00:00:00",
+  "客先納期": "2017-11-15T00:00:00",
+  "製造部門コード": "CCC000001",
+  "製造部門": "製造１課",
+  "製品コード": "AZ965465",
+  "製品名": "AZ-990(W)",
+  "数量": 5,
+  "生産着手日": "2017-10-23T00:00:00",
+  "生産納期": "2017-10-27T00:00:00"
+},
+{
+  "生産指示番号": "00000003",
+  "生産指示明細番号": "002",
+  "生産指示日": "2017-10-23T00:00:00",
+  "客先納期": "2017-11-15T00:00:00",
+  "製造部門コード": "CCC000001",
+  "製造部門": "製造１課",
+  "製品コード": "AZ965466",
+  "製品名": "AZ-990(B)",
+  "数量": 5,
+  "生産着手日": "2017-10-23T00:00:00",
+  "生産納期": "2017-10-27T00:00:00"
+},
+{
+  "生産指示番号": "00000003",
+  "生産指示明細番号": "003",
+  "生産指示日": "2017-10-23T00:00:00",
+  "客先納期": "2017-11-15T00:00:00",
+  "製造部門コード": "CCC000001",
+  "製造部門": "製造１課",
+  "製品コード": "COL5464",
+  "製品名": "CO-1000",
+  "数量": 40,
+  "生産着手日": "2017-10-30T00:00:00",
+  "生産納期": "2017-11-14T00:00:00"
+},
+{
+  "生産指示番号": "00000003",
+  "生産指示明細番号": "004",
+  "生産指示日": "2017-10-23T00:00:00",
+  "客先納期": "2017-11-15T00:00:00",
+  "製造部門コード": "CCC000001",
+  "製造部門": "製造１課",
+  "製品コード": "TY99877",
+  "製品名": "TY-99",
+  "数量": 30,
+  "生産着手日": "2017-10-30T00:00:00",
+  "生産納期": "2017-11-14T00:00:00"
+},
+]
+;schemadata={    "$schema": "http://json-schema.org/draft-04/schema#",    "definitions": {},    "id": "http://example.com/example.json",    "items": {        "id": "/items",        "properties": {            "客先納期": {                "id": "/items/properties/客先納期",                "type": "string"            },            "数量": {                "id": "/items/properties/数量",                "type": "integer"            },            "生産指示日": {                "id": "/items/properties/生産指示日",                "type": "string"            },            "生産指示明細番号": {                "id": "/items/properties/生産指示明細番号",                "type": "string"            },            "生産指示番号": {                "id": "/items/properties/生産指示番号",                "type": "string"            },            "生産着手日": {                "id": "/items/properties/生産着手日",                "type": "string"            },            "生産納期": {                "id": "/items/properties/生産納期",                "type": "string"            },            "製品コード": {                "id": "/items/properties/製品コード",                "type": "string"            },            "製品名": {                "id": "/items/properties/製品名",                "type": "string"            },            "製造部門": {                "id": "/items/properties/製造部門",                "type": "string"            },            "製造部門コード": {                "id": "/items/properties/製造部門コード",                "type": "string"            }        },        "type": "object"    },    "type": "array"}</ConnectString>
+				<DataProvider>JSON</DataProvider>
+			</ConnectionProperties>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="DataSet1">
+			<Fields>
+				<Field Name="客先納期">
+					<DataField>客先納期</DataField>
+				</Field>
+				<Field Name="数量">
+					<DataField>数量</DataField>
+				</Field>
+				<Field Name="生産指示日">
+					<DataField>生産指示日</DataField>
+				</Field>
+				<Field Name="生産指示明細番号">
+					<DataField>生産指示明細番号</DataField>
+				</Field>
+				<Field Name="生産指示番号">
+					<DataField>生産指示番号</DataField>
+				</Field>
+				<Field Name="生産着手日">
+					<DataField>生産着手日</DataField>
+				</Field>
+				<Field Name="生産納期">
+					<DataField>生産納期</DataField>
+				</Field>
+				<Field Name="製品コード">
+					<DataField>製品コード</DataField>
+				</Field>
+				<Field Name="製品名">
+					<DataField>製品名</DataField>
+				</Field>
+				<Field Name="製造部門">
+					<DataField>製造部門</DataField>
+				</Field>
+				<Field Name="製造部門コード">
+					<DataField>製造部門コード</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>$.[*]</CommandText>
+				<DataSourceName>DataSource1</DataSourceName>
+			</Query>
+		</DataSet>
+	</DataSets>
+</Report>

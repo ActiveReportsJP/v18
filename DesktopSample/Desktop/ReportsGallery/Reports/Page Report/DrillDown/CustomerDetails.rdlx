@@ -1,0 +1,337 @@
+﻿<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+	<Body>
+		<Height>11.69in</Height>
+		<ReportItems>
+			<FixedPage Name="FixedPage1">
+				<Pages>
+					<Page>
+						<ReportItems>
+							<Table Name="Table1">
+								<DataSetName>Orders</DataSetName>
+								<Header>
+									<TableRows>
+										<TableRow>
+											<Height>0.25in</Height>
+											<TableCells>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox1">
+															<Style>
+																<BackgroundColor>Lavender</BackgroundColor>
+																<Color>DarkSlateBlue</Color>
+																<FontFamily>Meiryo</FontFamily>
+																<FontWeight>700</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Left</TextAlign>
+															</Style>
+															<Value>注文ID</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox3">
+															<Style>
+																<BackgroundColor>Lavender</BackgroundColor>
+																<Color>DarkSlateBlue</Color>
+																<FontFamily>Meiryo</FontFamily>
+																<FontWeight>700</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Left</TextAlign>
+															</Style>
+															<Value>社員ID</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox10">
+															<Style>
+																<BackgroundColor>Lavender</BackgroundColor>
+																<Color>DarkSlateBlue</Color>
+																<FontFamily>Meiryo</FontFamily>
+																<FontWeight>700</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Center</TextAlign>
+															</Style>
+															<Value>注文日時</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox13">
+															<Style>
+																<BackgroundColor>Lavender</BackgroundColor>
+																<Color>DarkSlateBlue</Color>
+																<FontFamily>Meiryo</FontFamily>
+																<FontWeight>700</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Center</TextAlign>
+															</Style>
+															<Value>出荷日時</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox2">
+															<Style>
+																<BackgroundColor>Lavender</BackgroundColor>
+																<Color>DarkSlateBlue</Color>
+																<FontFamily>Meiryo</FontFamily>
+																<FontWeight>700</FontWeight>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Right</TextAlign>
+															</Style>
+															<Value>出荷経由</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+											</TableCells>
+										</TableRow>
+									</TableRows>
+								</Header>
+								<Details>
+									<TableRows>
+										<TableRow>
+											<Height>0.25in</Height>
+											<TableCells>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox4">
+															<Action>
+																<Drillthrough>
+																	<Parameters>
+																		<Parameter Name="OrderID">
+																			<Value>=Fields!OrderID.Value</Value>
+																		</Parameter>
+																	</Parameters>
+																	<ReportName>OrderDetails.rdlx</ReportName>
+																</Drillthrough>
+															</Action>
+															<Style>
+																<Color>Blue</Color>
+																<FontFamily>Meiryo</FontFamily>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Left</TextAlign>
+																<TextDecoration>Underline</TextDecoration>
+															</Style>
+															<Value>=Fields!OrderID.Value</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox6">
+															<Style>
+																<FontFamily>Meiryo</FontFamily>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Left</TextAlign>
+															</Style>
+															<Value>=Fields!EmployeeID.Value</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox11">
+															<Style>
+																<FontFamily>Meiryo</FontFamily>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Center</TextAlign>
+															</Style>
+															<Value>=(Fields!OrderDate.Value).ToShortDateString()</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox14">
+															<Style>
+																<FontFamily>Meiryo</FontFamily>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Center</TextAlign>
+															</Style>
+															<Value>=(Fields!ShippedDate.Value).ToShortDateString()</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox5">
+															<Style>
+																<FontFamily>Meiryo</FontFamily>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Right</TextAlign>
+															</Style>
+															<Value>=Fields!ShipVia.Value</Value>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+											</TableCells>
+										</TableRow>
+									</TableRows>
+								</Details>
+								<Height>0.5in</Height>
+								<dd:FixedHeight xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">8.916667in</dd:FixedHeight>
+								<dd:FixedWidth xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">6.270833in</dd:FixedWidth>
+								<TableColumns>
+									<TableColumn>
+										<Width>1.15467in</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>0.990711in</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>1.15467in</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>1.486067in</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>1.483882in</Width>
+									</TableColumn>
+								</TableColumns>
+								<Top>0.52in</Top>
+								<Width>6.27in</Width>
+								<ZIndex>1</ZIndex>
+							</Table>
+							<Textbox Name="TextBox8">
+								<Height>0.52in</Height>
+								<Style>
+									<Color>DarkSlateBlue</Color>
+									<FontFamily>Meiryo</FontFamily>
+									<FontSize>18pt</FontSize>
+									<FontWeight>700</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+								</Style>
+								<Value>=Fields!CompanyName.Value + " の注文"</Value>
+								<Width>6.27in</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox7">
+								<Height>0.25in</Height>
+								<Style>
+									<FontFamily>Meiryo</FontFamily>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Center</TextAlign>
+								</Style>
+								<Top>9.4375in</Top>
+								<Value>="顧客ID: " + Fields!CustomerID.Value</Value>
+								<Width>6.27in</Width>
+								<ZIndex>4</ZIndex>
+							</Textbox>
+						</ReportItems>
+					</Page>
+				</Pages>
+				<DataSetName>Orders</DataSetName>
+				<Grouping Name="FixedPage1_Group">
+					<GroupExpressions>
+						<GroupExpression>=1</GroupExpression>
+					</GroupExpressions>
+				</Grouping>
+			</FixedPage>
+		</ReportItems>
+	</Body>
+	<BottomMargin>1in</BottomMargin>
+	<LeftMargin>1in</LeftMargin>
+	<PageHeight>11.69in</PageHeight>
+	<PageWidth>8.27in</PageWidth>
+	<RightMargin>1in</RightMargin>
+	<TopMargin>1in</TopMargin>
+	<Width>8.27in</Width>
+	<ReportParameters>
+		<ReportParameter Name="CustomerID">
+			<DataType>String</DataType>
+			<Prompt>CustomerID</Prompt>
+			<Hidden>true</Hidden>
+		</ReportParameter>
+	</ReportParameters>
+	<DataSources>
+		<DataSource Name="NWind">
+			<ConnectionProperties>
+				<DataProvider>SQLITE</DataProvider>
+				<ConnectString>Data Source=..\\..\\..\\..\\..\\..\\..\\Data\\NWIND.db</ConnectString>
+			</ConnectionProperties>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="Orders">
+			<Fields>
+				<Field Name="CustomerID">
+					<DataField>CustomerID</DataField>
+				</Field>
+				<Field Name="OrderID">
+					<DataField>OrderID</DataField>
+				</Field>
+				<Field Name="EmployeeID">
+					<DataField>EmployeeID</DataField>
+				</Field>
+				<Field Name="OrderDate">
+					<DataField>OrderDate</DataField>
+				</Field>
+				<Field Name="ShippedDate">
+					<DataField>ShippedDate</DataField>
+				</Field>
+				<Field Name="CompanyName">
+					<DataField>CompanyName</DataField>
+				</Field>
+				<Field Name="ContactName">
+					<DataField>ContactName</DataField>
+				</Field>
+				<Field Name="ShipVia">
+					<DataField>ShipVia</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>select Orders.CustomerID, OrderID, EmployeeID, OrderDate, ShippedDate, Customers.CompanyName, Customers.ContactName, Orders.ShipVia
+from Orders inner join Customers on Orders.CustomerID = Customers.CustomerID
+where Orders.CustomerID in (@CustomerID)</CommandText>
+				<DataSourceName>NWind</DataSourceName>
+				<QueryParameters>
+					<QueryParameter Name="@CustomerID">
+						<Value>=Parameters!CustomerID.Value</Value>
+					</QueryParameter>
+				</QueryParameters>
+			</Query>
+		</DataSet>
+	</DataSets>
+</Report>

@@ -1,0 +1,1973 @@
+﻿<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+	<Body>
+		<Height>16cm</Height>
+		<ReportItems>
+			<FixedPage Name="FixedPage1">
+				<Pages>
+					<Page>
+						<ReportItems>
+							<Rectangle Name="cont_head">
+								<Height>2.4cm</Height>
+								<dd:RoundingRadius xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+									<Default>0.3cm</Default>
+								</dd:RoundingRadius>
+								<Style>
+									<BorderColor>
+										<Default>CornflowerBlue</Default>
+									</BorderColor>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Width>9cm</Width>
+								<ZIndex>3</ZIndex>
+								<ReportItems>
+									<Textbox Name="txt_reportname">
+										<Height>0.75cm</Height>
+										<Left>6.217708cm</Left>
+										<Value>明細書</Value>
+										<Style>
+											<Color>CornflowerBlue</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>12pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<Top>0.47625cm</Top>
+										<Width>1.8256cm</Width>
+										<ZIndex>2</ZIndex>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Textbox>
+									<Textbox Name="txt_employee_name">
+										<Height>0.6cm</Height>
+										<Left>0.2cm</Left>
+										<Value>従業員氏名</Value>
+										<Style>
+											<Color>CornflowerBlue</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>10pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<Top>1.2cm</Top>
+										<Width>1.908958cm</Width>
+										<ZIndex>2</ZIndex>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Textbox>
+									<Textbox Name="txt_employee_code">
+										<Height>0.6cm</Height>
+										<Left>0.2cm</Left>
+										<Value>従業員コード</Value>
+										<Style>
+											<Color>CornflowerBlue</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>10pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<Top>1.8cm</Top>
+										<Width>2.4cm</Width>
+										<ZIndex>2</ZIndex>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Textbox>
+									<Textbox Name="value_companyname">
+										<Height>0.6cm</Height>
+										<Left>0.2cm</Left>
+										<Value>=Fields!CompanyName.Value</Value>
+										<Style>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<Top>0.6cm</Top>
+										<Width>3.8cm</Width>
+										<ZIndex>3</ZIndex>
+									</Textbox>
+									<Textbox Name="value_yearmonth">
+										<Height>0.6cm</Height>
+										<Left>0.2cm</Left>
+										<Value>=Format(Fields!PayDate.Value, "yyyy年MM月")  + "分給与"</Value>
+										<Style>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<Format>y</Format>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Left</TextAlign>
+											<VerticalAlign>Bottom</VerticalAlign>
+										</Style>
+										<Width>3.8cm</Width>
+										<ZIndex>3</ZIndex>
+									</Textbox>
+									<Textbox Name="value_employee_code">
+										<Height>0.6cm</Height>
+										<Left>2.6cm</Left>
+										<Value>=Fields!EmployeeNumber.Value</Value>
+										<Style>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Left</TextAlign>
+										</Style>
+										<Top>1.8cm</Top>
+										<Width>3.8cm</Width>
+										<ZIndex>3</ZIndex>
+									</Textbox>
+									<Textbox Name="value_employee_name">
+										<Height>0.6cm</Height>
+										<Left>2.108958cm</Left>
+										<Value>=Fields!EmployeeName.Value</Value>
+										<Style>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<Top>1.2cm</Top>
+										<Width>3.8cm</Width>
+										<ZIndex>3</ZIndex>
+									</Textbox>
+								</ReportItems>
+								<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+							</Rectangle>
+							<Rectangle Name="cont_shikyu">
+								<Height>9.2cm</Height>
+								<Left>4.4cm</Left>
+								<dd:RoundingRadius xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+									<Default>0.3cm</Default>
+								</dd:RoundingRadius>
+								<Style>
+									<BackgroundColor>LightCyan</BackgroundColor>
+									<BorderColor>
+										<Default>CornflowerBlue</Default>
+									</BorderColor>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>2.8cm</Top>
+								<Width>4.6cm</Width>
+								<ZIndex>3</ZIndex>
+								<ReportItems>
+									<Textbox Name="txt_sikyu">
+										<Height>0.6cm</Height>
+										<Left>1cm</Left>
+										<Value>支給</Value>
+										<Style>
+											<Color>CornflowerBlue</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>11pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Justify</TextAlign>
+											<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DistributeAllLines</dd:TextJustify>
+										</Style>
+										<Width>2.4cm</Width>
+										<ZIndex>2</ZIndex>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Textbox>
+									<Line Name="Line3">
+										<Height>0cm</Height>
+										<Style>
+											<BorderColor>
+												<Default>CornflowerBlue</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Solid</Default>
+											</BorderStyle>
+										</Style>
+										<Top>0.6cm</Top>
+										<Width>4.6cm</Width>
+										<ZIndex>3</ZIndex>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Line>
+									<Shape Name="Shape4">
+										<Height>8.6cm</Height>
+										<Left>2.2cm</Left>
+										<dd:RoundingRadius xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+											<BottomRight>0.3cm</BottomRight>
+										</dd:RoundingRadius>
+										<Style>
+											<BackgroundColor>White</BackgroundColor>
+											<BorderColor>
+												<Default>CornflowerBlue</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Solid</Default>
+											</BorderStyle>
+										</Style>
+										<Top>0.6cm</Top>
+										<Width>2.4cm</Width>
+										<ZIndex>4</ZIndex>
+										<dd:ShapeStyle xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Rectangle</dd:ShapeStyle>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Shape>
+									<Textbox Name="txt_kihonkyu">
+										<Height>0.6cm</Height>
+										<Value>基本給</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<Top>0.8cm</Top>
+										<Width>2cm</Width>
+										<ZIndex>2</ZIndex>
+									</Textbox>
+									<Textbox Name="txt_zangyoteate">
+										<Height>0.6cm</Height>
+										<Value>残業手当</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<Top>1.4cm</Top>
+										<Width>2cm</Width>
+										<ZIndex>2</ZIndex>
+									</Textbox>
+									<Textbox Name="txt_tukinhi">
+										<Height>0.6cm</Height>
+										<Value>通勤費</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<Top>2cm</Top>
+										<Width>2cm</Width>
+										<ZIndex>2</ZIndex>
+									</Textbox>
+									<Line Name="Line7">
+										<Height>0cm</Height>
+										<Style>
+											<BorderColor>
+												<Default>CornflowerBlue</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Solid</Default>
+											</BorderStyle>
+										</Style>
+										<Top>8.6cm</Top>
+										<Width>4.6cm</Width>
+										<ZIndex>5</ZIndex>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Line>
+									<Textbox Name="txt_sum_sikyu">
+										<Height>0.6cm</Height>
+										<Value>合計</Value>
+										<Style>
+											<Color>CornflowerBlue</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>11pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>4pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Justify</TextAlign>
+											<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DistributeAllLines</dd:TextJustify>
+										</Style>
+										<Top>8.6cm</Top>
+										<Width>2.2cm</Width>
+										<ZIndex>2</ZIndex>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Textbox>
+									<Textbox Name="value_kihonkyu">
+										<Height>0.6cm</Height>
+										<Left>2.4cm</Left>
+										<Value>=Fields!BaseSalary.Value</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<Format>n0</Format>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Right</TextAlign>
+										</Style>
+										<Top>0.8cm</Top>
+										<Width>2.2cm</Width>
+										<ZIndex>6</ZIndex>
+									</Textbox>
+									<Textbox Name="value_zangyoteate">
+										<Height>0.6cm</Height>
+										<Left>2.4cm</Left>
+										<Value>=Fields!OverTimeSalary.Value</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<Format>n0</Format>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Right</TextAlign>
+										</Style>
+										<Top>1.4cm</Top>
+										<Width>2.1981cm</Width>
+										<ZIndex>6</ZIndex>
+									</Textbox>
+									<Textbox Name="value_tukinhi">
+										<Height>0.6cm</Height>
+										<Left>2.4cm</Left>
+										<Value>=Fields!TravelAllowance.Value</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<Format>n0</Format>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Right</TextAlign>
+										</Style>
+										<Top>2cm</Top>
+										<Width>2.1981cm</Width>
+										<ZIndex>6</ZIndex>
+									</Textbox>
+									<Textbox Name="value_sum_sikyu">
+										<Height>0.6cm</Height>
+										<Left>2.4cm</Left>
+										<Value>=ReportItems!value_kihonkyu.value+ReportItems!value_zangyoteate.value+ReportItems!value_tukinhi.value</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<Format>n0</Format>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Right</TextAlign>
+										</Style>
+										<Top>8.6cm</Top>
+										<Width>2.2cm</Width>
+										<ZIndex>7</ZIndex>
+									</Textbox>
+								</ReportItems>
+								<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+							</Rectangle>
+							<Rectangle Name="cont_kojyo">
+								<Height>9.2cm</Height>
+								<Left>9.2cm</Left>
+								<dd:RoundingRadius xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+									<Default>0.3cm</Default>
+								</dd:RoundingRadius>
+								<Style>
+									<BackgroundColor>LightCyan</BackgroundColor>
+									<BorderColor>
+										<Default>CornflowerBlue</Default>
+									</BorderColor>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>2.8cm</Top>
+								<Width>4.6cm</Width>
+								<ZIndex>3</ZIndex>
+								<ReportItems>
+									<Textbox Name="txt_kojyo">
+										<Height>0.6cm</Height>
+										<Left>1cm</Left>
+										<Value>控除</Value>
+										<Style>
+											<Color>CornflowerBlue</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>11pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Justify</TextAlign>
+											<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DistributeAllLines</dd:TextJustify>
+										</Style>
+										<Width>2.4cm</Width>
+										<ZIndex>2</ZIndex>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Textbox>
+									<Line Name="Line4">
+										<Height>0cm</Height>
+										<Style>
+											<BorderColor>
+												<Default>CornflowerBlue</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Solid</Default>
+											</BorderStyle>
+										</Style>
+										<Top>0.6cm</Top>
+										<Width>4.6cm</Width>
+										<ZIndex>3</ZIndex>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Line>
+									<Shape Name="Shape5">
+										<Height>8.6cm</Height>
+										<Left>2.2cm</Left>
+										<dd:RoundingRadius xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+											<BottomRight>0.3cm</BottomRight>
+										</dd:RoundingRadius>
+										<Style>
+											<BackgroundColor>White</BackgroundColor>
+											<BorderColor>
+												<Default>CornflowerBlue</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Solid</Default>
+											</BorderStyle>
+										</Style>
+										<Top>0.6cm</Top>
+										<Width>2.4cm</Width>
+										<ZIndex>4</ZIndex>
+										<dd:ShapeStyle xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Rectangle</dd:ShapeStyle>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Shape>
+									<Textbox Name="txt_kenkohoken">
+										<Height>0.6cm</Height>
+										<Value>健康保険料</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<Top>0.8cm</Top>
+										<Width>2cm</Width>
+										<ZIndex>2</ZIndex>
+									</Textbox>
+									<Textbox Name="txt_koseinenkinhoken">
+										<Height>0.6cm</Height>
+										<Value>厚生年金保険</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<Top>2cm</Top>
+										<Width>2.2cm</Width>
+										<ZIndex>2</ZIndex>
+									</Textbox>
+									<Textbox Name="txt_koyohoken">
+										<Height>0.6cm</Height>
+										<Value>雇用保険料</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<Top>2.6cm</Top>
+										<Width>2cm</Width>
+										<ZIndex>2</ZIndex>
+									</Textbox>
+									<Textbox Name="txt_shotokuzei">
+										<Height>0.6cm</Height>
+										<Value>所得税</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<Top>3.2cm</Top>
+										<Width>2cm</Width>
+										<ZIndex>2</ZIndex>
+									</Textbox>
+									<Textbox Name="txt_jyuminzei">
+										<Height>0.6cm</Height>
+										<Value>住民税</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<Top>3.8cm</Top>
+										<Width>2cm</Width>
+										<ZIndex>2</ZIndex>
+									</Textbox>
+									<Textbox Name="txt_kaigohoken">
+										<Height>0.6cm</Height>
+										<Value>介護保険料</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<Top>1.4cm</Top>
+										<Width>2cm</Width>
+										<ZIndex>2</ZIndex>
+									</Textbox>
+									<Textbox Name="txt_sum_kojyo">
+										<Height>0.6cm</Height>
+										<Value>合計</Value>
+										<Style>
+											<Color>CornflowerBlue</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>11pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>4pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Justify</TextAlign>
+											<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DistributeAllLines</dd:TextJustify>
+										</Style>
+										<Top>8.6cm</Top>
+										<Width>2.2cm</Width>
+										<ZIndex>2</ZIndex>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Textbox>
+									<Textbox Name="value_sum_kojyo">
+										<Height>0.6cm</Height>
+										<Left>2.4cm</Left>
+										<Value>=ReportItems!value_kenkohoken.value+ReportItems!value_kaigohoken.value+ReportItems!value_koseinenkinhoken.value+ReportItems!value_koyohoken.value+ReportItems!value_shotokuzei.value+ReportItems!value_jyuminzei.value</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<Format>n0</Format>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Right</TextAlign>
+										</Style>
+										<Top>8.6cm</Top>
+										<Width>2.2cm</Width>
+										<ZIndex>7</ZIndex>
+									</Textbox>
+									<Line Name="Line1">
+										<Height>0cm</Height>
+										<Style>
+											<BorderColor>
+												<Default>CornflowerBlue</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Solid</Default>
+											</BorderStyle>
+										</Style>
+										<Top>8.6cm</Top>
+										<Width>4.6cm</Width>
+										<ZIndex>8</ZIndex>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Line>
+									<Textbox Name="value_kenkohoken">
+										<Height>0.6cm</Height>
+										<Left>2.4cm</Left>
+										<Value>=Fields!HealthInsurance.Value</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<Format>n0</Format>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Right</TextAlign>
+										</Style>
+										<Top>0.8cm</Top>
+										<Width>2.2cm</Width>
+										<ZIndex>6</ZIndex>
+									</Textbox>
+									<Textbox Name="value_kaigohoken">
+										<Height>0.6cm</Height>
+										<Left>2.4cm</Left>
+										<Value>=Fields!NursingCareInsurance.Value</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<Format>n0</Format>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Right</TextAlign>
+										</Style>
+										<Top>1.4cm</Top>
+										<Width>2.2cm</Width>
+										<ZIndex>6</ZIndex>
+									</Textbox>
+									<Textbox Name="value_koseinenkinhoken">
+										<Height>0.6cm</Height>
+										<Left>2.4cm</Left>
+										<Value>=Fields!EmployeePensionInsurance.Value</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<Format>n0</Format>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Right</TextAlign>
+										</Style>
+										<Top>2cm</Top>
+										<Width>2.2cm</Width>
+										<ZIndex>6</ZIndex>
+									</Textbox>
+									<Textbox Name="value_koyohoken">
+										<Height>0.6cm</Height>
+										<Left>2.4cm</Left>
+										<Value>=Fields!EmployeeInsuarance.Value</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<Format>n0</Format>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Right</TextAlign>
+										</Style>
+										<Top>2.6cm</Top>
+										<Width>2.2cm</Width>
+										<ZIndex>6</ZIndex>
+									</Textbox>
+									<Textbox Name="value_shotokuzei">
+										<Height>0.6cm</Height>
+										<Left>2.4cm</Left>
+										<Value>=Fields!IncomeTax.Value</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<Format>n0</Format>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Right</TextAlign>
+										</Style>
+										<Top>3.2cm</Top>
+										<Width>2.2cm</Width>
+										<ZIndex>6</ZIndex>
+									</Textbox>
+									<Textbox Name="value_jyuminzei">
+										<Height>0.6cm</Height>
+										<Left>2.4cm</Left>
+										<Value>=Fields!ResidenceTax.Value</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<Format>n0</Format>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Right</TextAlign>
+										</Style>
+										<Top>3.8cm</Top>
+										<Width>2.2cm</Width>
+										<ZIndex>6</ZIndex>
+									</Textbox>
+								</ReportItems>
+								<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+							</Rectangle>
+							<Rectangle Name="cont_sonota">
+								<Height>3.8cm</Height>
+								<Left>14cm</Left>
+								<dd:RoundingRadius xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+									<Default>0.3cm</Default>
+								</dd:RoundingRadius>
+								<Style>
+									<BackgroundColor>LightCyan</BackgroundColor>
+									<BorderColor>
+										<Default>CornflowerBlue</Default>
+									</BorderColor>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>2.8cm</Top>
+								<Width>4.6cm</Width>
+								<ZIndex>3</ZIndex>
+								<ReportItems>
+									<Textbox Name="txt_sonota">
+										<Height>0.6cm</Height>
+										<Left>1cm</Left>
+										<Value>その他</Value>
+										<Style>
+											<Color>CornflowerBlue</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>11pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Justify</TextAlign>
+											<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DistributeAllLines</dd:TextJustify>
+										</Style>
+										<Width>2.6cm</Width>
+										<ZIndex>2</ZIndex>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Textbox>
+									<Line Name="Line5">
+										<Height>0cm</Height>
+										<Style>
+											<BorderColor>
+												<Default>CornflowerBlue</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Solid</Default>
+											</BorderStyle>
+										</Style>
+										<Top>0.6cm</Top>
+										<Width>4.6cm</Width>
+										<ZIndex>3</ZIndex>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Line>
+									<Textbox Name="txt_nenkanpu">
+										<Height>0.6cm</Height>
+										<Value>年末調整還付</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<Top>0.8cm</Top>
+										<Width>2.199998cm</Width>
+										<ZIndex>2</ZIndex>
+									</Textbox>
+									<Shape Name="Shape6">
+										<Height>3.2cm</Height>
+										<Left>2.2cm</Left>
+										<dd:RoundingRadius xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+											<BottomRight>0.3cm</BottomRight>
+										</dd:RoundingRadius>
+										<Style>
+											<BackgroundColor>White</BackgroundColor>
+											<BorderColor>
+												<Default>CornflowerBlue</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Solid</Default>
+											</BorderStyle>
+										</Style>
+										<Top>0.6cm</Top>
+										<Width>2.4cm</Width>
+										<ZIndex>4</ZIndex>
+										<dd:ShapeStyle xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Rectangle</dd:ShapeStyle>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Shape>
+									<Textbox Name="txt_sum_sonota">
+										<Height>0.6cm</Height>
+										<Value>合計</Value>
+										<Style>
+											<Color>CornflowerBlue</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>11pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>4pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Justify</TextAlign>
+											<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DistributeAllLines</dd:TextJustify>
+										</Style>
+										<Top>3.2cm</Top>
+										<Width>2.2cm</Width>
+										<ZIndex>2</ZIndex>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Textbox>
+									<Textbox Name="value_sum_sonota">
+										<Height>0.6cm</Height>
+										<Left>2.4cm</Left>
+										<Value>=ReportItems!value_nenkanpu.value</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<Format>n0</Format>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Right</TextAlign>
+										</Style>
+										<Top>3.2cm</Top>
+										<Width>2.2cm</Width>
+										<ZIndex>7</ZIndex>
+									</Textbox>
+									<Line Name="Line8">
+										<Height>0cm</Height>
+										<Style>
+											<BorderColor>
+												<Default>CornflowerBlue</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Solid</Default>
+											</BorderStyle>
+										</Style>
+										<Top>3.2cm</Top>
+										<Width>4.6cm</Width>
+										<ZIndex>8</ZIndex>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Line>
+									<Textbox Name="value_nenkanpu">
+										<Height>0.6cm</Height>
+										<Left>2.4cm</Left>
+										<Value>=Fields!AnnualAdjustmentRefund.Value</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<Format>n0</Format>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Right</TextAlign>
+										</Style>
+										<Top>0.8cm</Top>
+										<Width>2.2cm</Width>
+										<ZIndex>6</ZIndex>
+									</Textbox>
+								</ReportItems>
+								<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+							</Rectangle>
+							<Rectangle Name="con_zeigakuhyo">
+								<Height>1.2cm</Height>
+								<dd:RoundingRadius xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+									<Default>0.3cm</Default>
+								</dd:RoundingRadius>
+								<Style>
+									<BackgroundColor>LightCyan</BackgroundColor>
+									<BorderColor>
+										<Default>CornflowerBlue</Default>
+									</BorderColor>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>10.8cm</Top>
+								<Width>4.2cm</Width>
+								<ZIndex>3</ZIndex>
+								<ReportItems>
+									<Line Name="Line6">
+										<Height>0cm</Height>
+										<Style>
+											<BorderColor>
+												<Default>CornflowerBlue</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Solid</Default>
+											</BorderStyle>
+										</Style>
+										<Top>0.6cm</Top>
+										<Width>4.2cm</Width>
+										<ZIndex>11</ZIndex>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Line>
+									<Shape Name="Shape1">
+										<Height>1.2cm</Height>
+										<Left>2.2cm</Left>
+										<dd:RoundingRadius xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+											<TopRight>0.3cm</TopRight>
+											<BottomRight>0.3cm</BottomRight>
+										</dd:RoundingRadius>
+										<Style>
+											<BackgroundColor>White</BackgroundColor>
+											<BorderColor>
+												<Default>CornflowerBlue</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Solid</Default>
+											</BorderStyle>
+										</Style>
+										<Width>2cm</Width>
+										<ZIndex>4</ZIndex>
+										<dd:ShapeStyle xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Rectangle</dd:ShapeStyle>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Shape>
+									<Textbox Name="txt_zeigakuhyo">
+										<Height>0.6cm</Height>
+										<Value>税額表</Value>
+										<Style>
+											<Color>CornflowerBlue</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>11pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>4pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Justify</TextAlign>
+											<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DistributeAllLines</dd:TextJustify>
+										</Style>
+										<Width>2.2cm</Width>
+										<ZIndex>2</ZIndex>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Textbox>
+									<Textbox Name="txt_fuyoninzu">
+										<Height>0.6cm</Height>
+										<Value>扶養人数</Value>
+										<Style>
+											<Color>CornflowerBlue</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>11pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>4pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Justify</TextAlign>
+											<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DistributeAllLines</dd:TextJustify>
+										</Style>
+										<Top>0.6cm</Top>
+										<Width>2.2cm</Width>
+										<ZIndex>2</ZIndex>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Textbox>
+									<Textbox Name="value_zeigakuhyo">
+										<Height>0.6cm</Height>
+										<Left>2.4cm</Left>
+										<Value>=iif(Fields!NumerOfDependents.Value&gt;0, "甲欄" , "乙欄")</Value>
+										<Style>
+											<BackgroundColor>Transparent</BackgroundColor>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<Format>=""</Format>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Center</TextAlign>
+										</Style>
+										<Top>1E-06cm</Top>
+										<Width>1.4cm</Width>
+										<ZIndex>10</ZIndex>
+									</Textbox>
+									<Textbox Name="value_fuyoninzu">
+										<Height>0.6cm</Height>
+										<Left>2.4cm</Left>
+										<Value>=Fields!NumerOfDependents.Value</Value>
+										<Style>
+											<BackgroundColor>Transparent</BackgroundColor>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<Format>=""</Format>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Center</TextAlign>
+										</Style>
+										<Top>0.6cm</Top>
+										<Width>1.4cm</Width>
+										<ZIndex>10</ZIndex>
+									</Textbox>
+								</ReportItems>
+								<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+							</Rectangle>
+							<Rectangle Name="cont_kintai">
+								<Height>7.8cm</Height>
+								<Left>0.02204861cm</Left>
+								<dd:RoundingRadius xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+									<Default>0.3cm</Default>
+								</dd:RoundingRadius>
+								<Style>
+									<BackgroundColor>LightCyan</BackgroundColor>
+									<BorderColor>
+										<Default>CornflowerBlue</Default>
+									</BorderColor>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>2.822222cm</Top>
+								<Width>4.2cm</Width>
+								<ZIndex>3</ZIndex>
+								<ReportItems>
+									<Textbox Name="txt_kintai">
+										<Height>0.6cm</Height>
+										<Left>1cm</Left>
+										<Value>勤怠</Value>
+										<Style>
+											<Color>CornflowerBlue</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>11pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Justify</TextAlign>
+											<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DistributeAllLines</dd:TextJustify>
+										</Style>
+										<Width>2.2cm</Width>
+										<ZIndex>2</ZIndex>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Textbox>
+									<Line Name="Line2">
+										<Height>0cm</Height>
+										<Style>
+											<BorderColor>
+												<Default>CornflowerBlue</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Solid</Default>
+											</BorderStyle>
+										</Style>
+										<Top>0.6cm</Top>
+										<Width>4.2cm</Width>
+										<ZIndex>3</ZIndex>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Line>
+									<Shape Name="Shape3">
+										<Height>7.2cm</Height>
+										<Left>2.2cm</Left>
+										<dd:RoundingRadius xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+											<BottomRight>0.3cm</BottomRight>
+										</dd:RoundingRadius>
+										<Style>
+											<BackgroundColor>White</BackgroundColor>
+											<BorderColor>
+												<Default>CornflowerBlue</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Solid</Default>
+											</BorderStyle>
+										</Style>
+										<Top>0.6cm</Top>
+										<Width>2cm</Width>
+										<ZIndex>4</ZIndex>
+										<dd:ShapeStyle xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Rectangle</dd:ShapeStyle>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Shape>
+									<Textbox Name="txt_shukkin">
+										<Height>0.6cm</Height>
+										<Value>出勤日数</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<Top>0.8cm</Top>
+										<Width>2cm</Width>
+										<ZIndex>2</ZIndex>
+									</Textbox>
+									<Textbox Name="txt_kekkin">
+										<Height>0.6cm</Height>
+										<Value>欠勤日数</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<Top>1.4cm</Top>
+										<Width>2cm</Width>
+										<ZIndex>2</ZIndex>
+									</Textbox>
+									<Textbox Name="txt_yukyu">
+										<Height>0.6cm</Height>
+										<Value>有給日数</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<Top>2cm</Top>
+										<Width>2cm</Width>
+										<ZIndex>2</ZIndex>
+									</Textbox>
+									<Textbox Name="txt_yukyuzan">
+										<Height>0.6cm</Height>
+										<Value>有給残日数</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<Top>2.6cm</Top>
+										<Width>2cm</Width>
+										<ZIndex>2</ZIndex>
+									</Textbox>
+									<Textbox Name="txt_zangyo">
+										<Height>0.6cm</Height>
+										<Value>残業時間</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<Top>3.2cm</Top>
+										<Width>2cm</Width>
+										<ZIndex>2</ZIndex>
+									</Textbox>
+									<Textbox Name="txt_souroudou">
+										<Height>0.6cm</Height>
+										<Value>総労働時間</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<Top>3.8cm</Top>
+										<Width>2cm</Width>
+										<ZIndex>2</ZIndex>
+									</Textbox>
+									<Textbox Name="value_shukkin">
+										<Height>0.6cm</Height>
+										<Left>2.4cm</Left>
+										<Value>=Fields!WorkDays.Value</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<Format>n</Format>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Right</TextAlign>
+										</Style>
+										<Top>0.8cm</Top>
+										<Width>1.8cm</Width>
+										<ZIndex>5</ZIndex>
+									</Textbox>
+									<Textbox Name="value_yukyu">
+										<Height>0.6cm</Height>
+										<Left>2.4cm</Left>
+										<Value>=Fields!PaidLeaveDays.Value</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<Format>n</Format>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Right</TextAlign>
+										</Style>
+										<Top>2cm</Top>
+										<Width>1.8cm</Width>
+										<ZIndex>6</ZIndex>
+									</Textbox>
+									<Textbox Name="value_kekkin">
+										<Height>0.6cm</Height>
+										<Left>2.4cm</Left>
+										<Value>=Fields!NonPaidLeaveDays.Value</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<Format>n</Format>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Right</TextAlign>
+										</Style>
+										<Top>1.4cm</Top>
+										<Width>1.8cm</Width>
+										<ZIndex>7</ZIndex>
+									</Textbox>
+									<Textbox Name="value_zangyo">
+										<Height>0.6cm</Height>
+										<Left>2.4cm</Left>
+										<Value>=Fields!OverTimeHours.Value</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<Format>n</Format>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Right</TextAlign>
+										</Style>
+										<Top>3.2cm</Top>
+										<Width>1.8cm</Width>
+										<ZIndex>8</ZIndex>
+									</Textbox>
+									<Textbox Name="value_yukyuzan">
+										<Height>0.6cm</Height>
+										<Left>2.4cm</Left>
+										<Value>=Fields!PaidLeaveDaysLeft.Value</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<Format>n</Format>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Right</TextAlign>
+										</Style>
+										<Top>2.6cm</Top>
+										<Width>1.8cm</Width>
+										<ZIndex>9</ZIndex>
+									</Textbox>
+									<Textbox Name="value_souroudou">
+										<Height>0.6cm</Height>
+										<Left>2.4cm</Left>
+										<Value>=Fields!TotalWorkHours.Value</Value>
+										<Style>
+											<BackgroundColor>Transparent</BackgroundColor>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<Format>n</Format>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Right</TextAlign>
+										</Style>
+										<Top>3.8cm</Top>
+										<Width>1.8cm</Width>
+										<ZIndex>10</ZIndex>
+									</Textbox>
+								</ReportItems>
+								<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+							</Rectangle>
+							<Rectangle Name="cont_tekiyo">
+								<Height>1.4cm</Height>
+								<dd:RoundingRadius xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+									<Default>0.3cm</Default>
+								</dd:RoundingRadius>
+								<Style>
+									<BorderColor>
+										<Default>CornflowerBlue</Default>
+									</BorderColor>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>12.2cm</Top>
+								<Width>18.6cm</Width>
+								<ZIndex>3</ZIndex>
+								<ReportItems>
+									<Textbox Name="value_tekiyo">
+										<Height>1.2cm</Height>
+										<Left>0.3052885cm</Left>
+										<Value>=Fields!Note.Value</Value>
+										<Style>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<Top>0.2cm</Top>
+										<Width>17.89471cm</Width>
+										<ZIndex>3</ZIndex>
+									</Textbox>
+								</ReportItems>
+								<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+							</Rectangle>
+							<Rectangle Name="cont_sashihikigaku">
+								<Height>0.6cm</Height>
+								<Left>14cm</Left>
+								<dd:RoundingRadius xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+									<Default>0.2cm</Default>
+								</dd:RoundingRadius>
+								<Style>
+									<BackgroundColor>LightCyan</BackgroundColor>
+									<BorderColor>
+										<Default>CornflowerBlue</Default>
+									</BorderColor>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>6.8cm</Top>
+								<Width>4.6cm</Width>
+								<ZIndex>3</ZIndex>
+								<ReportItems>
+									<Shape Name="Shape2">
+										<Height>0.6cm</Height>
+										<Left>2.2cm</Left>
+										<dd:RoundingRadius xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+											<TopRight>0.2cm</TopRight>
+											<BottomRight>0.2cm</BottomRight>
+										</dd:RoundingRadius>
+										<Style>
+											<BackgroundColor>White</BackgroundColor>
+											<BorderColor>
+												<Default>CornflowerBlue</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Solid</Default>
+											</BorderStyle>
+										</Style>
+										<Width>2.4cm</Width>
+										<ZIndex>4</ZIndex>
+										<dd:ShapeStyle xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Rectangle</dd:ShapeStyle>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Shape>
+									<Textbox Name="txt_sashihikigaku">
+										<Height>0.6cm</Height>
+										<Value>差引支給額</Value>
+										<Style>
+											<Color>CornflowerBlue</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>10pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>4pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Justify</TextAlign>
+											<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DistributeAllLines</dd:TextJustify>
+										</Style>
+										<Width>2.2cm</Width>
+										<ZIndex>2</ZIndex>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Textbox>
+									<Textbox Name="value_sashihikigaku">
+										<Height>0.6cm</Height>
+										<Left>2.4cm</Left>
+										<Value>=ReportItems!value_sum_sikyu.value-ReportItems!value_sum_kojyo.value+ReportItems!value_sum_sonota.value</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<Format>n0</Format>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Right</TextAlign>
+										</Style>
+										<Width>2.2cm</Width>
+										<ZIndex>7</ZIndex>
+									</Textbox>
+								</ReportItems>
+								<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+							</Rectangle>
+							<Rectangle Name="cont_shikyugaku">
+								<Height>2.8cm</Height>
+								<Left>14cm</Left>
+								<dd:RoundingRadius xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+									<Default>0.3cm</Default>
+								</dd:RoundingRadius>
+								<Style>
+									<BackgroundColor>LightCyan</BackgroundColor>
+									<BorderColor>
+										<Default>CornflowerBlue</Default>
+									</BorderColor>
+									<BorderStyle>
+										<Default>Solid</Default>
+									</BorderStyle>
+								</Style>
+								<Top>7.600001cm</Top>
+								<Width>4.6cm</Width>
+								<ZIndex>3</ZIndex>
+								<ReportItems>
+									<Textbox Name="txt_shikyu">
+										<Height>0.6cm</Height>
+										<Left>1cm</Left>
+										<Value>支給額</Value>
+										<Style>
+											<Color>CornflowerBlue</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>11pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Justify</TextAlign>
+											<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DistributeAllLines</dd:TextJustify>
+										</Style>
+										<Width>2.6cm</Width>
+										<ZIndex>2</ZIndex>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Textbox>
+									<Line Name="Line9">
+										<Height>0cm</Height>
+										<Style>
+											<BorderColor>
+												<Default>CornflowerBlue</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Solid</Default>
+											</BorderStyle>
+										</Style>
+										<Top>0.6cm</Top>
+										<Width>4.6cm</Width>
+										<ZIndex>3</ZIndex>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Line>
+									<Shape Name="Shape7">
+										<Height>2.2cm</Height>
+										<Left>2.2cm</Left>
+										<dd:RoundingRadius xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+											<BottomRight>0.3cm</BottomRight>
+										</dd:RoundingRadius>
+										<Style>
+											<BackgroundColor>White</BackgroundColor>
+											<BorderColor>
+												<Default>CornflowerBlue</Default>
+											</BorderColor>
+											<BorderStyle>
+												<Default>Solid</Default>
+											</BorderStyle>
+										</Style>
+										<Top>0.6cm</Top>
+										<Width>2.4cm</Width>
+										<ZIndex>4</ZIndex>
+										<dd:ShapeStyle xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Rectangle</dd:ShapeStyle>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Shape>
+									<Textbox Name="txt_furishikyu">
+										<Height>0.6cm</Height>
+										<Value>振込支給額</Value>
+										<Style>
+											<Color>CornflowerBlue</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>10pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>4pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Justify</TextAlign>
+											<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DistributeAllLines</dd:TextJustify>
+										</Style>
+										<Top>0.8cm</Top>
+										<Width>2.2cm</Width>
+										<ZIndex>2</ZIndex>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Textbox>
+									<Textbox Name="value_furishikyu">
+										<Height>0.6cm</Height>
+										<Left>2.4cm</Left>
+										<Value>=ReportItems!value_sashihikigaku.value</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<Format>n0</Format>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Right</TextAlign>
+										</Style>
+										<Top>0.8cm</Top>
+										<Width>2.2cm</Width>
+										<ZIndex>7</ZIndex>
+									</Textbox>
+									<Textbox Name="txt_genshikyu">
+										<Height>0.6cm</Height>
+										<Value>現金支給額</Value>
+										<Style>
+											<Color>CornflowerBlue</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>10pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>4pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Justify</TextAlign>
+											<dd:TextJustify xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">DistributeAllLines</dd:TextJustify>
+										</Style>
+										<Top>1.4cm</Top>
+										<Width>2.2cm</Width>
+										<ZIndex>2</ZIndex>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Textbox>
+									<Textbox Name="value_genshikyu">
+										<Height>0.6cm</Height>
+										<Left>2.4cm</Left>
+										<Value>=ReportItems!value_sashihikigaku.value-ReportItems!value_furishikyu.value</Value>
+										<Style>
+											<Color>Black</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<Format>n0</Format>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Right</TextAlign>
+										</Style>
+										<Top>1.4cm</Top>
+										<Width>2.2cm</Width>
+										<ZIndex>7</ZIndex>
+									</Textbox>
+								</ReportItems>
+								<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+							</Rectangle>
+							<Rectangle Name="cont_shikyubi">
+								<Height>1cm</Height>
+								<Left>10cm</Left>
+								<Style>
+									<BorderColor>
+										<Bottom>CornflowerBlue</Bottom>
+									</BorderColor>
+									<BorderStyle>
+										<Bottom>Solid</Bottom>
+									</BorderStyle>
+								</Style>
+								<Top>1cm</Top>
+								<Width>6.2cm</Width>
+								<ZIndex>4</ZIndex>
+								<ReportItems>
+									<Textbox Name="txt_shikyubi">
+										<Height>0.6cm</Height>
+										<Value>支給日</Value>
+										<Style>
+											<Color>CornflowerBlue</Color>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>10pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<Top>0.4cm</Top>
+										<Width>1.2cm</Width>
+										<ZIndex>2</ZIndex>
+										<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+									</Textbox>
+									<Textbox Name="value_shikyubi">
+										<Height>0.6cm</Height>
+										<Left>1.8cm</Left>
+										<Value>=Fields!PayDate.Value</Value>
+										<Style>
+											<FontFamily>ＭＳ 明朝</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<Format>yyyy年M月d日</Format>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<Top>0.4cm</Top>
+										<Width>3.8cm</Width>
+										<ZIndex>3</ZIndex>
+									</Textbox>
+								</ReportItems>
+								<dd:LayerName xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">PrePrint</dd:LayerName>
+							</Rectangle>
+						</ReportItems>
+						<Style />
+					</Page>
+				</Pages>
+				<DataSetName>DataSet1</DataSetName>
+				<Grouping Name="FixedPage1_Group">
+					<GroupExpressions>
+						<GroupExpression>=Fields!EmployeeNumber.Value</GroupExpression>
+					</GroupExpressions>
+				</Grouping>
+			</FixedPage>
+		</ReportItems>
+		<Style />
+	</Body>
+	<BottomMargin>1cm</BottomMargin>
+	<LeftMargin>1cm</LeftMargin>
+	<PageHeight>16cm</PageHeight>
+	<PageWidth>21cm</PageWidth>
+	<RightMargin>1cm</RightMargin>
+	<TopMargin>1cm</TopMargin>
+	<Width>21cm</Width>
+	<DataSources>
+		<DataSource Name="DataSource1">
+			<ConnectionProperties>
+				<ConnectString>jsondata=[{"EmployeeNumber":100,"EmployeeName":"伊達政宗","CompanyName":"グレープ株式会社","PayDate":"2017-12-25T00:00:00","WorkDays":20,"NonPaidLeaveDays":0,"PaidLeaveDays":0,"PaidLeaveDaysLeft":9,"OverTimeHours":3,"TotalWorkHours":163,"BaseSalary":480000,"OverTimeSalary":11250,"TravelAllowance":8000,"HealthInsurance":28850,"NursingCareInsurance":4125,"EmployeePensionInsurance":44570,"EmployeeInsuarance":1960,"IncomeTax":8170,"ResidenceTax":15800,"AnnualAdjustmentRefund":99871,"NumerOfDependents":3,"Note":"今月もたいへんご苦労さまでした。"},{"EmployeeNumber":101,"EmployeeName":"真田幸村","CompanyName":"グレープ株式会社","PayDate":"2017-12-25T00:00:00","WorkDays":18,"NonPaidLeaveDays":0,"PaidLeaveDays":2,"PaidLeaveDaysLeft":15,"OverTimeHours":10,"TotalWorkHours":154,"BaseSalary":500000,"OverTimeSalary":39062,"TravelAllowance":12050,"HealthInsurance":30581,"NursingCareInsurance":6021,"EmployeePensionInsurance":47244,"EmployeeInsuarance":2156,"IncomeTax":12800,"ResidenceTax":19991,"AnnualAdjustmentRefund":134001,"NumerOfDependents":2,"Note":"今月もたいへんご苦労さまでした。"},{"EmployeeNumber":102,"EmployeeName":"加藤清正","CompanyName":"グレープ株式会社","PayDate":"2017-12-25T00:00:00","WorkDays":15,"NonPaidLeaveDays":1,"PaidLeaveDays":4,"PaidLeaveDaysLeft":31,"OverTimeHours":20,"TotalWorkHours":140,"BaseSalary":330000,"OverTimeSalary":51562,"TravelAllowance":5700,"HealthInsurance":18924,"NursingCareInsurance":0,"EmployeePensionInsurance":33873,"EmployeeInsuarance":1524,"IncomeTax":7720,"ResidenceTax":14300,"AnnualAdjustmentRefund":58000,"NumerOfDependents":0,"Note":"今月もたいへんご苦労さまでした。"}];schemadata={
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://example.com/example.json",
+    "items": {
+        "id": "/items",
+        "properties": {
+            "AnnualAdjustmentRefund": {
+                "id": "/items/properties/AnnualAdjustmentRefund",
+                "type": "integer"
+            },
+            "BaseSalary": {
+                "id": "/items/properties/BaseSalary",
+                "type": "integer"
+            },
+            "CompanyName": {
+                "id": "/items/properties/CompanyName",
+                "type": "string"
+            },
+            "EmployeeInsuarance": {
+                "id": "/items/properties/EmployeeInsuarance",
+                "type": "integer"
+            },
+            "EmployeeName": {
+                "id": "/items/properties/EmployeeName",
+                "type": "string"
+            },
+            "EmployeeNumber": {
+                "id": "/items/properties/EmployeeNumber",
+                "type": "integer"
+            },
+            "EmployeePensionInsurance": {
+                "id": "/items/properties/EmployeePensionInsurance",
+                "type": "integer"
+            },
+            "HealthInsurance": {
+                "id": "/items/properties/HealthInsurance",
+                "type": "integer"
+            },
+            "IncomeTax": {
+                "id": "/items/properties/IncomeTax",
+                "type": "integer"
+            },
+            "NonPaidLeaveDays": {
+                "id": "/items/properties/NonPaidLeaveDays",
+                "type": "integer"
+            },
+            "Note": {
+                "id": "/items/properties/Note",
+                "type": "string"
+            },
+            "NumerOfDependents": {
+                "id": "/items/properties/NumerOfDependents",
+                "type": "integer"
+            },
+            "NursingCareInsurance": {
+                "id": "/items/properties/NursingCareInsurance",
+                "type": "integer"
+            },
+            "OverTimeHours": {
+                "id": "/items/properties/OverTimeHours",
+                "type": "integer"
+            },
+            "OverTimeSalary": {
+                "id": "/items/properties/OverTimeSalary",
+                "type": "integer"
+            },
+            "PaidLeaveDays": {
+                "id": "/items/properties/PaidLeaveDays",
+                "type": "integer"
+            },
+            "PaidLeaveDaysLeft": {
+                "id": "/items/properties/PaidLeaveDaysLeft",
+                "type": "integer"
+            },
+            "PayDate": {
+                "id": "/items/properties/PayDate",
+                "type": "string"
+            },
+            "ResidenceTax": {
+                "id": "/items/properties/ResidenceTax",
+                "type": "integer"
+            },
+            "TotalWorkHours": {
+                "id": "/items/properties/TotalWorkHours",
+                "type": "integer"
+            },
+            "TravelAllowance": {
+                "id": "/items/properties/TravelAllowance",
+                "type": "integer"
+            },
+            "WorkDays": {
+                "id": "/items/properties/WorkDays",
+                "type": "integer"
+            }
+        },
+        "type": "object"
+    },
+    "type": "array"
+}</ConnectString>
+				<DataProvider>JSON</DataProvider>
+			</ConnectionProperties>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="DataSet1">
+			<Fields>
+				<Field Name="AnnualAdjustmentRefund">
+					<DataField>AnnualAdjustmentRefund</DataField>
+				</Field>
+				<Field Name="BaseSalary">
+					<DataField>BaseSalary</DataField>
+				</Field>
+				<Field Name="CompanyName">
+					<DataField>CompanyName</DataField>
+				</Field>
+				<Field Name="EmployeeInsuarance">
+					<DataField>EmployeeInsuarance</DataField>
+				</Field>
+				<Field Name="EmployeeName">
+					<DataField>EmployeeName</DataField>
+				</Field>
+				<Field Name="EmployeeNumber">
+					<DataField>EmployeeNumber</DataField>
+				</Field>
+				<Field Name="EmployeePensionInsurance">
+					<DataField>EmployeePensionInsurance</DataField>
+				</Field>
+				<Field Name="HealthInsurance">
+					<DataField>HealthInsurance</DataField>
+				</Field>
+				<Field Name="IncomeTax">
+					<DataField>IncomeTax</DataField>
+				</Field>
+				<Field Name="NonPaidLeaveDays">
+					<DataField>NonPaidLeaveDays</DataField>
+				</Field>
+				<Field Name="Note">
+					<DataField>Note</DataField>
+				</Field>
+				<Field Name="NumerOfDependents">
+					<DataField>NumerOfDependents</DataField>
+				</Field>
+				<Field Name="NursingCareInsurance">
+					<DataField>NursingCareInsurance</DataField>
+				</Field>
+				<Field Name="OverTimeHours">
+					<DataField>OverTimeHours</DataField>
+				</Field>
+				<Field Name="OverTimeSalary">
+					<DataField>OverTimeSalary</DataField>
+				</Field>
+				<Field Name="PaidLeaveDays">
+					<DataField>PaidLeaveDays</DataField>
+				</Field>
+				<Field Name="PaidLeaveDaysLeft">
+					<DataField>PaidLeaveDaysLeft</DataField>
+				</Field>
+				<Field Name="PayDate">
+					<DataField>PayDate</DataField>
+				</Field>
+				<Field Name="ResidenceTax">
+					<DataField>ResidenceTax</DataField>
+				</Field>
+				<Field Name="TotalWorkHours">
+					<DataField>TotalWorkHours</DataField>
+				</Field>
+				<Field Name="TravelAllowance">
+					<DataField>TravelAllowance</DataField>
+				</Field>
+				<Field Name="WorkDays">
+					<DataField>WorkDays</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>$.[*]</CommandText>
+				<DataSourceName>DataSource1</DataSourceName>
+			</Query>
+		</DataSet>
+	</DataSets>
+	<dd:Layers xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+		<dd:Layer>
+			<dd:Name>PrePrint</dd:Name>
+			<dd:TargetDevice>Screen, Export</dd:TargetDevice>
+		</dd:Layer>
+	</dd:Layers>
+	<CustomProperties>
+		<CustomProperty>
+			<Name>PaperOrientation</Name>
+			<Value>Landscape</Value>
+		</CustomProperty>
+	</CustomProperties>
+</Report>

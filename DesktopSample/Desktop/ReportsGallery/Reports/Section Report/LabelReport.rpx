@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.5" PrintWidth="11250" DocumentName="ARNet Document" ScriptLang="C#" MasterReport="0" CompatibilityMode="CrossPlatform">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-style: normal; text-decoration: none; font-weight: normal; color: Black; font-size: 10pt; vertical-align: top; font-family: &quot;ＭＳ Ｐゴシック&quot;; ddo-char-set: 128" />
+    <Style Name="見出し1" Value="font-size: 12pt; font-weight: bold; ddo-char-set: 128" />
+    <Style Name="見出し2" Value="font-size: 14pt; font-weight: bold; ddo-char-set: 128" />
+    <Style Name="見出し3" Value="font-size: 12pt; font-weight: bold; font-style: italic; ddo-char-set: 128" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="373" BackColor="16777215">
+      <Control Type="AR.Label" Name="Label1" Left="0" Top="0" Width="2740.157" Height="377.9528" Caption="タックシールサンプル" Style="color: DeepPink; font-family: MS UI Gothic; font-size: 14.25pt; font-weight: bold; ddo-char-set: 0" />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="2443" ColumnCount="3" BackStyle="1" BackColor="16118015" KeepTogether="1">
+      <Control Type="AR.Shape" Name="Shape1" Left="0" Top="0" Width="3741.732" Height="2437.795" BackColor="16777215" LineColor="4678655" RoundingRadius="0" />
+      <Control Type="AR.Field" Name="TextBox1" DataField="郵便番号" Left="94.4882" Top="94.4882" Width="1440" Height="288" Text="郵便番号" OutputFormat="000-0000" Style="font-family: MS UI Gothic; ddo-char-set: 0" />
+      <Control Type="AR.Field" Name="TextBox3" DataField="住所1" Left="90" Top="420" Width="3401.574" Height="288" Text="住所1" Style="font-family: MS UI Gothic; ddo-char-set: 0" />
+      <Control Type="AR.Field" Name="TextBox4" DataField="住所2" Left="378.72" Top="708.48" Width="3117.223" Height="288" Text="住所2" Style="font-family: MS UI Gothic; ddo-char-set: 0" />
+      <Control Type="AR.Field" Name="TextBox5" DataField="会社名" Left="95.04" Top="1087.2" Width="3401.574" Height="288" Text="会社名" Style="font-family: MS UI Gothic; ddo-char-set: 0" />
+      <Control Type="AR.Field" Name="TextBox6" DataField="部署名" Left="378.72" Top="1375.2" Width="3118.11" Height="288.0002" Text="部署名" Style="font-family: MS UI Gothic; ddo-char-set: 0" />
+      <Control Type="AR.Field" Name="TextBox7" DataField="名前" Left="378.72" Top="1663.2" Width="1889.764" Height="288" Text="名前" Style="font-family: MS UI Gothic; ddo-char-set: 0" />
+      <Control Type="AR.Label" Name="Label2" Left="3015.36" Top="1663.2" Width="476.6401" Height="287.9998" Caption="様" Style="font-family: MS UI Gothic; font-size: 12pt; font-weight: bold; ddo-char-set: 0" />
+      <Control Type="AR.Barcode" Name="Barcode1" DataField="住所表示番号" Left="57.6" Top="2098.08" Width="3650.457" Height="159.874" BackColor="16777215" BarStyle="26" Text="Barcode1" Font="Courier New" FontSize="8" QRCode="EncodingCodePage=65001" PDF417="EncodingCodePage=65001" MicroPDF417="EncodingCodePage=65001" CODE128="0;0;0" DataMatrix="EncodingCodePage=65001" />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="360" BackColor="16777215" />
+  </Sections>
+  <ReportComponentTray />
+  <DataSources>
+    <DbDataSource Name="sqlite" Connect="Data Source=..\\..\\..\\..\\..\\..\\..\\Data\\Catalog.db" SQL="Select * from 顧客マスタ order by CustomerID" />
+  </DataSources>
+  <PageSettings LeftMargin="283" RightMargin="227" TopMargin="567" BottomMargin="567" />
+  <Parameters />
+</ActiveReportsLayout>
