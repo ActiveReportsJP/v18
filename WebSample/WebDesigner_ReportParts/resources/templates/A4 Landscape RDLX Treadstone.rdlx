@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://cdn.grapecity.com/ActiveReports/reporting/2023/08/reportdefinition">
+  <Name>A4.rdlx</Name>
+  <ReportSections>
+    <ReportSection Name="ContinuousSection1">
+      <Body>
+        <Height>4.9708in</Height>
+      </Body>
+      <Page>
+        <PageHeader>
+          <Height>0.625in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <PartItem Name="Item1">
+              <Width>3.27in</Width>
+              <Height>0.625in</Height>
+              <Library>Treadstone</Library>
+              <ReportPart>Logo</ReportPart>
+            </PartItem>
+          </ReportItems>
+        </PageHeader>
+        <PageFooter>
+          <Height>0.7813in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <PartItem Name="Item2">
+              <Top>0.0273in</Top>
+              <Width>4.3221in</Width>
+              <Height>0.4542in</Height>
+              <Library>Treadstone</Library>
+              <ReportPart>Copyright</ReportPart>
+            </PartItem>
+            <PartItem Name="Item3">
+              <Left>6.6732in</Left>
+              <Width>3.9938in</Width>
+              <Height>0.6043in</Height>
+              <Library>Treadstone</Library>
+              <ReportPart>Contacts</ReportPart>
+              <ZIndex>1</ZIndex>
+            </PartItem>
+          </ReportItems>
+        </PageFooter>
+        <ColumnSpacing>0in</ColumnSpacing>
+        <PageHeight>8.27in</PageHeight>
+        <PageWidth>11.69in</PageWidth>
+        <TopMargin>0.5in</TopMargin>
+        <BottomMargin>0.5in</BottomMargin>
+        <LeftMargin>0.5in</LeftMargin>
+        <RightMargin>0.5in</RightMargin>
+      </Page>
+      <Width>10.667in</Width>
+    </ReportSection>
+  </ReportSections>
+  <CustomProperties>
+    <CustomProperty>
+      <Name>DisplayType</Name>
+      <Value>Page</Value>
+    </CustomProperty>
+    <CustomProperty>
+      <Name>SizeType</Name>
+      <Value>Default</Value>
+    </CustomProperty>
+    <CustomProperty>
+      <Name>PaperOrientation</Name>
+      <Value>Portrait</Value>
+    </CustomProperty>
+  </CustomProperties>
+  <Libraries>
+    <Library Name="Treadstone">
+      <Path>libraries/Treadstone.rdlx</Path>
+    </Library>
+  </Libraries>
+</Report>

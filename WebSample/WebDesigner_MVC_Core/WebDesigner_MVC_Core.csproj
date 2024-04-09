@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <EnableDefaultContentItems>false</EnableDefaultContentItems>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>NU1701</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>NU1701</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MESCIUS.ActiveReports.Aspnetcore.Viewer.ja" Version="18.0.0" />
+    <PackageReference Include="MESCIUS.ActiveReports.Aspnetcore.Designer.ja" Version="18.0.0" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="6.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="App.config" />
+    <Content Remove="appsettings.Development.json" />
+    <Content Remove="appsettings.json" />
+    <Content Remove="ActiveReports.config" />
+    <Content Include="resources\**\*" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="wwwroot\**\*" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Target Name="ClientBuild" BeforeTargets="BeforeBuild">
+    <Exec WorkingDirectory="ClientApp" Command="npm install" />
+    <Exec WorkingDirectory="ClientApp" Command="npm run build" />
+  </Target>
+</Project>

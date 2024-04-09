@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+  <dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">a4 page.rdlx</dd:Name>
+  <Body>
+    <Height>11.69in</Height>
+    <ReportItems>
+      <FixedPage Name="FixedPage1">
+        <Pages>
+          <Page>
+            <ReportItems>
+              <dd:PartItem Name="Item1" xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+                <dd:Left>5in</dd:Left>
+                <dd:Width>3.27in</dd:Width>
+                <dd:Height>0.625in</dd:Height>
+                <dd:Library>Treadstone</dd:Library>
+                <dd:ReportPart>Logo</dd:ReportPart>
+                <dd:ZIndex>23</dd:ZIndex>
+              </dd:PartItem>
+              <dd:PartItem Name="Item10" xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+                <dd:Left>4.2762in</dd:Left>
+                <dd:Top>11.0313in</dd:Top>
+                <dd:Width>3.9938in</dd:Width>
+                <dd:Height>0.6043in</dd:Height>
+                <dd:Library>Treadstone</dd:Library>
+                <dd:ReportPart>Contacts</dd:ReportPart>
+                <dd:FixedHeight>1.535cm</dd:FixedHeight>
+              </dd:PartItem>
+              <dd:PartItem Name="Item11" xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+                <dd:Left>0.0416in</dd:Left>
+                <dd:Top>11.0312in</dd:Top>
+                <dd:Width>4.2179in</dd:Width>
+                <dd:Height>0.6in</dd:Height>
+                <dd:Library>Treadstone</dd:Library>
+                <dd:ReportPart>Copyright</dd:ReportPart>
+                <dd:ZIndex>1</dd:ZIndex>
+              </dd:PartItem>
+            </ReportItems>
+          </Page>
+        </Pages>
+        <Grouping Name="FixedPage1_Group">
+          <GroupExpressions>
+            <GroupExpression>=Fields!OrderID.Value</GroupExpression>
+          </GroupExpressions>
+        </Grouping>
+      </FixedPage>
+    </ReportItems>
+  </Body>
+  <PageHeight>11.69in</PageHeight>
+  <PageWidth>8.27in</PageWidth>
+  <Width>8.27in</Width>
+  <CustomProperties>
+    <CustomProperty>
+      <Name>DisplayType</Name>
+      <Value>Page</Value>
+    </CustomProperty>
+    <CustomProperty>
+      <Name>SizeType</Name>
+      <Value>Default</Value>
+    </CustomProperty>
+    <CustomProperty>
+      <Name>PaperOrientation</Name>
+      <Value>Portrait</Value>
+    </CustomProperty>
+  </CustomProperties>
+  <dd:Libraries xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+    <dd:Library Name="Treadstone">
+      <dd:Path>libraries/Treadstone.rdlx</dd:Path>
+    </dd:Library>
+  </dd:Libraries>
+</Report>
