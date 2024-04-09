@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>NU1701</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>NU1701</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.AdoNet.OData" Version="1.0.20211.49" />
+    <PackageReference Include="MESCIUS.ActiveReports.Aspnetcore.Viewer.ja" Version="18.0.0" />
+    <PackageReference Include="MESCIUS.ActiveReports.Aspnetcore.Designer.ja" Version="18.0.0" />
+    <PackageReference Include="MESCIUS.ActiveReports.Core.Rendering" Version="3.8.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.118" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="6.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="App.config" />
+    <Content Remove="appsettings.Development.json" />
+    <Content Remove="appsettings.json" />
+    <Content Remove="ActiveReports.config" />
+    <Content Include="resources\**" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="wwwwroot\**" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+  <Target Name="ClientBuild" BeforeTargets="BeforeBuild">
+    <Exec WorkingDirectory="ClientApp" Command="npm install" />
+    <Exec WorkingDirectory="ClientApp" Command="npm run build" />
+  </Target>
+</Project>

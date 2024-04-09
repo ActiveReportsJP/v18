@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Name>Invoice.rdsx</Name>
+    <ConnectionProperties>
+        <ConnectString>Data Source=resources\Invoice.db;</ConnectString>
+        <Extension>SQLITE</Extension>
+    </ConnectionProperties>
+</RptDataSource>

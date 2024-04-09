@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Name>Sales.rdsx</Name>
+    <ConnectionProperties>
+        <ConnectString>Path=Sales.csv;Locale=ru-RU;TextQualifier=";ColumnsSeparator=,;RowsSeparator=\r\n;HasHeaders=True</ConnectString>
+        <Extension>CSV</Extension>
+    </ConnectionProperties>
+</RptDataSource>

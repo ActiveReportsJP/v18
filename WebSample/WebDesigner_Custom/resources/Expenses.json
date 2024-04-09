@@ -1,0 +1,184 @@
+[
+    {
+      "employeeId": "5f19472915aa0980660d6fd9",
+      "date": "2020-01-30",
+      "category": "Commuting",
+      "description": "Taxi Drive",
+      "amount": 19.84
+    },
+    {
+      "employeeId": "5f194729c7a8148c55583a9b",
+      "date": "2020-01-23",
+      "category": "Flight",
+      "description": "IAH-MIA",
+      "amount": 1454.05
+    },
+    {
+      "employeeId": "5f194729c7a8148c55583a9b",
+      "date": "2020-01-03",
+      "category": "Hotel",
+      "description": "Ramada by Wyndham Barstow",
+      "amount": 386.68
+    },
+    {
+      "employeeId": "5f19472900369a802bb3356a",
+      "date": "2020-01-11",
+      "category": "Meals",
+      "description": "Business lanch",
+      "amount": 76.26
+    },
+    {
+      "employeeId": "5f19472900369a802bb3356a",
+      "date": "2020-01-23",
+      "category": "Commuting",
+      "description": "Taxi Drive",
+      "amount": 15.89
+    },
+    {
+      "employeeId": "5f194729c5ea7513cb8a06f5",
+      "date": "2020-01-18",
+      "category": "Hotel",
+      "description": "Ramada by Wyndham Barstow",
+      "amount": 474.11
+    },
+    {
+      "employeeId": "5f194729c5ea7513cb8a06f5",
+      "date": "2020-01-10",
+      "category": "Meals",
+      "description": "Dinner",
+      "amount": 91.72
+    },
+    {
+      "employeeId": "5f19472900369a802bb3356a",
+      "date": "2020-01-17",
+      "category": "Meals",
+      "description": "Business lanch",
+      "amount": 60.76
+    },
+    {
+      "employeeId": "5f19472900369a802bb3356a",
+      "date": "2020-01-07",
+      "category": "Commuting",
+      "description": "Taxi Drive",
+      "amount": 11.69
+    },
+    {
+      "employeeId": "5f194729fbf659a612d58be6",
+      "date": "2020-01-18",
+      "category": "Hotel",
+      "description": "Little Rock Marriott",
+      "amount": 360.43
+    },
+    {
+      "employeeId": "5f19472900369a802bb3356a",
+      "date": "2020-01-24",
+      "category": "Meals",
+      "description": "Dinner",
+      "amount": 71.76
+    },
+    {
+      "employeeId": "5f19472915aa0980660d6fd9",
+      "date": "2020-01-01",
+      "category": "Commuting",
+      "description": "Taxi Drive",
+      "amount": 18.66
+    },
+    {
+      "employeeId": "5f19472900369a802bb3356a",
+      "date": "2020-01-18",
+      "category": "Hotel",
+      "description": "Ramada by Wyndham Barstow",
+      "amount": 526.35
+    },
+    {
+      "employeeId": "5f19472915aa0980660d6fd9",
+      "date": "2020-01-28",
+      "category": "Meals",
+      "description": "Business lanch",
+      "amount": 93.32
+    },
+    {
+      "employeeId": "5f19472900369a802bb3356a",
+      "date": "2020-01-09",
+      "category": "Flight",
+      "description": "ATL-LAX",
+      "amount": 1301.96
+    },
+    {
+      "employeeId": "5f19472915aa0980660d6fd9",
+      "date": "2020-01-20",
+      "category": "Flight",
+      "description": "BOS-MSP",
+      "amount": 1235.38
+    },
+    {
+      "employeeId": "5f194729c5ea7513cb8a06f5",
+      "date": "2020-01-13",
+      "category": "Hotel",
+      "description": "Little Rock Marriott",
+      "amount": 502.74
+    },
+    {
+      "employeeId": "5f19472915aa0980660d6fd9",
+      "date": "2020-01-24",
+      "category": "Flight",
+      "description": "IAH-MIA",
+      "amount": 1029.72
+    },
+    {
+      "employeeId": "5f19472915aa0980660d6fd9",
+      "date": "2020-01-28",
+      "category": "Hotel",
+      "description": "Little Rock Marriott",
+      "amount": 294.9
+    },
+    {
+      "employeeId": "5f194729fbf659a612d58be6",
+      "date": "2020-01-23",
+      "category": "Commuting",
+      "description": "Taxi Drive",
+      "amount": 18.26
+    },
+    {
+      "employeeId": "5f194729c5ea7513cb8a06f5",
+      "date": "2020-01-24",
+      "category": "Commuting",
+      "description": "Uber Drive",
+      "amount": 18.92
+    },
+    {
+      "employeeId": "5f194729fbf659a612d58be6",
+      "date": "2020-01-01",
+      "category": "Flight",
+      "description": "BOS-MSP",
+      "amount": 1713.9
+    },
+    {
+      "employeeId": "5f194729fbf659a612d58be6",
+      "date": "2020-01-26",
+      "category": "Hotel",
+      "description": "Little Rock Marriott",
+      "amount": 528.38
+    },
+    {
+      "employeeId": "5f194729fbf659a612d58be6",
+      "date": "2020-01-25",
+      "category": "Flight",
+      "description": "ATL-LAX",
+      "amount": 1449.98
+    },
+    {
+      "employeeId": "5f194729fbf659a612d58be6",
+      "date": "2020-01-03",
+      "category": "Flight",
+      "description": "ATL-LAX",
+      "amount": 1131.88
+    },
+    {
+      "employeeId": "5f19472915aa0980660d6fd9",
+      "date": "2020-01-02",
+      "category": "Commuting",
+      "description": "Taxi Drive",
+      "amount": 18.09
+    }
+  ]

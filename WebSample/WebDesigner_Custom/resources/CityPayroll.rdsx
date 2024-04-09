@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Name>CityPayroll</Name>
+    <ConnectionProperties>
+        <ConnectString>Path=PolicePayroll.csv;Locale=en-US;TextQualifier=";ColumnsSeparator=,;RowsSeparator=\r\n;Columns=NAME,DEPARTMENT_NAME,TITLE,REGULAR(Float),RETRO(Float),OTHER(Float),OVERTIME(Float),INJURED(Float),DETAIL(Float),QUINN/EDUCATION INCENTIVE(Float),TOTAL EARNINGS(Float);HasHeaders=True</ConnectString>
+        <Extension>CSV</Extension>
+    </ConnectionProperties>
+</RptDataSource>

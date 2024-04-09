@@ -1,0 +1,2698 @@
+[
+  {
+    "TransactionNumber": 4,
+    "Category": "Bills &amp; Utilities",
+    "Date": "11/15/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 73.77
+  },
+  {
+    "TransactionNumber": 4,
+    "Category": "Entertainment",
+    "Date": "11/14/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 44.34
+  },
+  {
+    "TransactionNumber": 4,
+    "Category": "Shopping",
+    "Date": "11/13/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 88.15
+  },
+  {
+    "TransactionNumber": 1,
+    "Category": "Bills &amp; Utilities",
+    "Date": "11/12/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 11.34
+  },
+  {
+    "TransactionNumber": 4,
+    "Category": "Health &amp; Wellness",
+    "Date": "11/12/2020",
+    "Retailer": "University Medical Center",
+    "LineItem": "Medical Exam",
+    "Total": 45.82
+  },
+  {
+    "TransactionNumber": 1,
+    "Category": "Shopping",
+    "Date": "11/11/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 75.83
+  },
+  {
+    "TransactionNumber": 4,
+    "Category": "Gas",
+    "Date": "11/11/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Gas",
+    "Total": 63.25
+  },
+  {
+    "TransactionNumber": 1,
+    "Category": "Shopping",
+    "Date": "11/10/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Pizza &amp; Drinks",
+    "Total": 78.55
+  },
+  {
+    "TransactionNumber": 4,
+    "Category": "Food &amp; Drink",
+    "Date": "11/10/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Pizza",
+    "Total": 13.78
+  },
+  {
+    "TransactionNumber": 6,
+    "Category": "Entertainment",
+    "Date": "11/10/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 24.97
+  },
+  {
+    "TransactionNumber": 57,
+    "Category": "Home",
+    "Date": "11/10/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 70.56
+  },
+  {
+    "TransactionNumber": 57,
+    "Category": "Shopping",
+    "Date": "11/10/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Drinks",
+    "Total": 83.91
+  },
+  {
+    "TransactionNumber": 57,
+    "Category": "Food &amp; Drink",
+    "Date": "11/10/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Snacks",
+    "Total": 45.1
+  },
+  {
+    "TransactionNumber": 57,
+    "Category": "Gifts &amp; Donations",
+    "Date": "11/10/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 35.86
+  },
+  {
+    "TransactionNumber": 59,
+    "Category": "Shopping",
+    "Date": "11/10/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Pizza &amp; Drinks",
+    "Total": 76.12
+  },
+  {
+    "TransactionNumber": 59,
+    "Category": "Gifts &amp; Donations",
+    "Date": "11/10/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 80.95
+  },
+  {
+    "TransactionNumber": 59,
+    "Category": "Shopping",
+    "Date": "11/10/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Oil Change",
+    "Total": 95.14
+  },
+  {
+    "TransactionNumber": 1,
+    "Category": "Entertainment",
+    "Date": "11/9/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 19.72
+  },
+  {
+    "TransactionNumber": 4,
+    "Category": "Food &amp; Drink",
+    "Date": "11/9/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Pizza",
+    "Total": 51
+  },
+  {
+    "TransactionNumber": 6,
+    "Category": "Gas",
+    "Date": "11/9/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Gas",
+    "Total": 32.85
+  },
+  {
+    "TransactionNumber": 20,
+    "Category": "Bills &amp; Utilities",
+    "Date": "11/9/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 29.73
+  },
+  {
+    "TransactionNumber": 20,
+    "Category": "Entertainment",
+    "Date": "11/9/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 64.82
+  },
+  {
+    "TransactionNumber": 20,
+    "Category": "Food &amp; Drink",
+    "Date": "11/9/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Pizza &amp; Drinks",
+    "Total": 63.35
+  },
+  {
+    "TransactionNumber": 20,
+    "Category": "Bills &amp; Utilities",
+    "Date": "11/9/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 97.13
+  },
+  {
+    "TransactionNumber": 20,
+    "Category": "Entertainment",
+    "Date": "11/9/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 45.89
+  },
+  {
+    "TransactionNumber": 45,
+    "Category": "Shopping",
+    "Date": "11/9/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Car Service",
+    "Total": 30.35
+  },
+  {
+    "TransactionNumber": 45,
+    "Category": "Entertainment",
+    "Date": "11/9/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 50.2
+  },
+  {
+    "TransactionNumber": 45,
+    "Category": "Home",
+    "Date": "11/9/2020",
+    "Retailer": "Lowes",
+    "LineItem": "Lumber",
+    "Total": 72.17
+  },
+  {
+    "TransactionNumber": 45,
+    "Category": "Food &amp; Drink",
+    "Date": "11/9/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Pizza",
+    "Total": 24.6
+  },
+  {
+    "TransactionNumber": 45,
+    "Category": "Home",
+    "Date": "11/9/2020",
+    "Retailer": "Lowes",
+    "LineItem": "Lumber",
+    "Total": 12.26
+  },
+  {
+    "TransactionNumber": 45,
+    "Category": "Entertainment",
+    "Date": "11/9/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 97.51
+  },
+  {
+    "TransactionNumber": 45,
+    "Category": "Health &amp; Wellness",
+    "Date": "11/9/2020",
+    "Retailer": "University Medical Center",
+    "LineItem": "Gym Membership",
+    "Total": 44.46
+  },
+  {
+    "TransactionNumber": 45,
+    "Category": "Food &amp; Drink",
+    "Date": "11/9/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Pizza",
+    "Total": 29.88
+  },
+  {
+    "TransactionNumber": 45,
+    "Category": "Home",
+    "Date": "11/9/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 51.46
+  },
+  {
+    "TransactionNumber": 1,
+    "Category": "Gas",
+    "Date": "11/8/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Gas",
+    "Total": 14.43
+  },
+  {
+    "TransactionNumber": 4,
+    "Category": "Food &amp; Drink",
+    "Date": "11/8/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Pizza &amp; Drinks",
+    "Total": 60.33
+  },
+  {
+    "TransactionNumber": 6,
+    "Category": "Gifts &amp; Donations",
+    "Date": "11/8/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 38.22
+  },
+  {
+    "TransactionNumber": 1,
+    "Category": "Gas",
+    "Date": "11/7/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Gas",
+    "Total": 25.69
+  },
+  {
+    "TransactionNumber": 3,
+    "Category": "Automotive",
+    "Date": "11/7/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Car Service",
+    "Total": 16.71
+  },
+  {
+    "TransactionNumber": 6,
+    "Category": "Food &amp; Drink",
+    "Date": "11/7/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Pizza",
+    "Total": 95.92
+  },
+  {
+    "TransactionNumber": 1,
+    "Category": "Shopping",
+    "Date": "11/6/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 38.4
+  },
+  {
+    "TransactionNumber": 3,
+    "Category": "Gifts &amp; Donations",
+    "Date": "11/6/2020",
+    "Retailer": "HHRD",
+    "LineItem": "Donation - Thank You!",
+    "Total": 25.16
+  },
+  {
+    "TransactionNumber": 6,
+    "Category": "Home",
+    "Date": "11/6/2020",
+    "Retailer": "Lowes",
+    "LineItem": "Lumber",
+    "Total": 20.49
+  },
+  {
+    "TransactionNumber": 67,
+    "Category": "Shopping",
+    "Date": "11/6/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 69.54
+  },
+  {
+    "TransactionNumber": 67,
+    "Category": "Home",
+    "Date": "11/6/2020",
+    "Retailer": "Lowes",
+    "LineItem": "Hardware",
+    "Total": 82.48
+  },
+  {
+    "TransactionNumber": 68,
+    "Category": "Shopping",
+    "Date": "11/6/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 39.95
+  },
+  {
+    "TransactionNumber": 68,
+    "Category": "Groceries",
+    "Date": "11/6/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 37.73
+  },
+  {
+    "TransactionNumber": 68,
+    "Category": "Shopping",
+    "Date": "11/6/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Drinks",
+    "Total": 15.3
+  },
+  {
+    "TransactionNumber": 68,
+    "Category": "Food &amp; Drink",
+    "Date": "11/6/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Snacks",
+    "Total": 13.59
+  },
+  {
+    "TransactionNumber": 68,
+    "Category": "Health &amp; Wellness",
+    "Date": "11/6/2020",
+    "Retailer": "University Medical Center",
+    "LineItem": "Gym Membership",
+    "Total": 20.12
+  },
+  {
+    "TransactionNumber": 68,
+    "Category": "Gifts &amp; Donations",
+    "Date": "11/6/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 51.17
+  },
+  {
+    "TransactionNumber": 68,
+    "Category": "Automotive",
+    "Date": "11/6/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Car Service",
+    "Total": 13.79
+  },
+  {
+    "TransactionNumber": 1,
+    "Category": "Shopping",
+    "Date": "11/5/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 99.34
+  },
+  {
+    "TransactionNumber": 6,
+    "Category": "Bills &amp; Utilities",
+    "Date": "11/5/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 53.84
+  },
+  {
+    "TransactionNumber": 8,
+    "Category": "Shopping",
+    "Date": "11/5/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 30.6
+  },
+  {
+    "TransactionNumber": 8,
+    "Category": "Bills &amp; Utilities",
+    "Date": "11/5/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 98.5
+  },
+  {
+    "TransactionNumber": 8,
+    "Category": "Shopping",
+    "Date": "11/5/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 62.36
+  },
+  {
+    "TransactionNumber": 10,
+    "Category": "Shopping",
+    "Date": "11/5/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 39.11
+  },
+  {
+    "TransactionNumber": 10,
+    "Category": "Automotive",
+    "Date": "11/5/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Car Service",
+    "Total": 16.95
+  },
+  {
+    "TransactionNumber": 10,
+    "Category": "Gas",
+    "Date": "11/5/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Gas",
+    "Total": 30.5
+  },
+  {
+    "TransactionNumber": 10,
+    "Category": "Health &amp; Wellness",
+    "Date": "11/5/2020",
+    "Retailer": "University Medical Center",
+    "LineItem": "Gym Membership",
+    "Total": 22.98
+  },
+  {
+    "TransactionNumber": 10,
+    "Category": "Gifts &amp; Donations",
+    "Date": "11/5/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 13.08
+  },
+  {
+    "TransactionNumber": 10,
+    "Category": "Home",
+    "Date": "11/5/2020",
+    "Retailer": "Lowes",
+    "LineItem": "Hardware",
+    "Total": 96.83
+  },
+  {
+    "TransactionNumber": 10,
+    "Category": "Bills &amp; Utilities",
+    "Date": "11/5/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 65.97
+  },
+  {
+    "TransactionNumber": 14,
+    "Category": "Entertainment",
+    "Date": "11/5/2020",
+    "Retailer": "Hulu",
+    "LineItem": "Monthly Charges",
+    "Total": 15.5
+  },
+  {
+    "TransactionNumber": 14,
+    "Category": "Bills &amp; Utilities",
+    "Date": "11/5/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 39.69
+  },
+  {
+    "TransactionNumber": 39,
+    "Category": "Shopping",
+    "Date": "11/5/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 43.54
+  },
+  {
+    "TransactionNumber": 39,
+    "Category": "Food &amp; Drink",
+    "Date": "11/5/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Snacks",
+    "Total": 39.7
+  },
+  {
+    "TransactionNumber": 39,
+    "Category": "Bills &amp; Utilities",
+    "Date": "11/5/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 21.79
+  },
+  {
+    "TransactionNumber": 39,
+    "Category": "Home",
+    "Date": "11/5/2020",
+    "Retailer": "Lowes",
+    "LineItem": "Lumber",
+    "Total": 80.01
+  },
+  {
+    "TransactionNumber": 60,
+    "Category": "Shopping",
+    "Date": "11/5/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Oil Change",
+    "Total": 63.5
+  },
+  {
+    "TransactionNumber": 60,
+    "Category": "Home",
+    "Date": "11/5/2020",
+    "Retailer": "Lowes",
+    "LineItem": "Home Supplies",
+    "Total": 83.13
+  },
+  {
+    "TransactionNumber": 60,
+    "Category": "Home",
+    "Date": "11/5/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 49.59
+  },
+  {
+    "TransactionNumber": 60,
+    "Category": "Groceries",
+    "Date": "11/5/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 51.39
+  },
+  {
+    "TransactionNumber": 60,
+    "Category": "Home",
+    "Date": "11/5/2020",
+    "Retailer": "Lowes",
+    "LineItem": "Tools",
+    "Total": 45.08
+  },
+  {
+    "TransactionNumber": 60,
+    "Category": "Gifts &amp; Donations",
+    "Date": "11/5/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 73.68
+  },
+  {
+    "TransactionNumber": 60,
+    "Category": "Home",
+    "Date": "11/5/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 12.81
+  },
+  {
+    "TransactionNumber": 60,
+    "Category": "Home",
+    "Date": "11/5/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 20.99
+  },
+  {
+    "TransactionNumber": 60,
+    "Category": "Health &amp; Wellness",
+    "Date": "11/5/2020",
+    "Retailer": "University Medical Center",
+    "LineItem": "Medical Exam",
+    "Total": 97.05
+  },
+  {
+    "TransactionNumber": 62,
+    "Category": "Health &amp; Wellness",
+    "Date": "11/5/2020",
+    "Retailer": "University Medical Center",
+    "LineItem": "Medical Exam",
+    "Total": 10.19
+  },
+  {
+    "TransactionNumber": 62,
+    "Category": "Shopping",
+    "Date": "11/5/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Car Service",
+    "Total": 16.85
+  },
+  {
+    "TransactionNumber": 65,
+    "Category": "Shopping",
+    "Date": "11/5/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Pizza &amp; Drinks",
+    "Total": 74.46
+  },
+  {
+    "TransactionNumber": 65,
+    "Category": "Health &amp; Wellness",
+    "Date": "11/5/2020",
+    "Retailer": "University Medical Center",
+    "LineItem": "Medical Exam",
+    "Total": 42.51
+  },
+  {
+    "TransactionNumber": 65,
+    "Category": "Gifts &amp; Donations",
+    "Date": "11/5/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 34.22
+  },
+  {
+    "TransactionNumber": 65,
+    "Category": "Food &amp; Drink",
+    "Date": "11/5/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Snacks",
+    "Total": 67.85
+  },
+  {
+    "TransactionNumber": 65,
+    "Category": "Shopping",
+    "Date": "11/5/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Drinks",
+    "Total": 59.3
+  },
+  {
+    "TransactionNumber": 1,
+    "Category": "Shopping",
+    "Date": "11/4/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 74.54
+  },
+  {
+    "TransactionNumber": 6,
+    "Category": "Health &amp; Wellness",
+    "Date": "11/4/2020",
+    "Retailer": "University Medical Center",
+    "LineItem": "Medical Exam",
+    "Total": 59.84
+  },
+  {
+    "TransactionNumber": 11,
+    "Category": "Groceries",
+    "Date": "11/4/2020",
+    "Retailer": "Food Lion",
+    "LineItem": "Groceries",
+    "Total": 39.36
+  },
+  {
+    "TransactionNumber": 11,
+    "Category": "Food &amp; Drink",
+    "Date": "11/4/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Pizza &amp; Drinks",
+    "Total": 82.93
+  },
+  {
+    "TransactionNumber": 11,
+    "Category": "Bills &amp; Utilities",
+    "Date": "11/4/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 23.27
+  },
+  {
+    "TransactionNumber": 11,
+    "Category": "Gas",
+    "Date": "11/4/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Gas",
+    "Total": 40.67
+  },
+  {
+    "TransactionNumber": 11,
+    "Category": "Automotive",
+    "Date": "11/4/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Car Service",
+    "Total": 15.54
+  },
+  {
+    "TransactionNumber": 11,
+    "Category": "Food &amp; Drink",
+    "Date": "11/4/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Pizza &amp; Drinks",
+    "Total": 26.69
+  },
+  {
+    "TransactionNumber": 11,
+    "Category": "Gifts &amp; Donations",
+    "Date": "11/4/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 40.84
+  },
+  {
+    "TransactionNumber": 11,
+    "Category": "Gifts &amp; Donations",
+    "Date": "11/4/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 67.45
+  },
+  {
+    "TransactionNumber": 6,
+    "Category": "Gas",
+    "Date": "11/3/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Gas",
+    "Total": 42.71
+  },
+  {
+    "TransactionNumber": 32,
+    "Category": "Health &amp; Wellness",
+    "Date": "11/3/2020",
+    "Retailer": "University Medical Center",
+    "LineItem": "Training",
+    "Total": 18.97
+  },
+  {
+    "TransactionNumber": 32,
+    "Category": "Gifts &amp; Donations",
+    "Date": "11/3/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 20.09
+  },
+  {
+    "TransactionNumber": 32,
+    "Category": "Food &amp; Drink",
+    "Date": "11/3/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Snacks",
+    "Total": 76.64
+  },
+  {
+    "TransactionNumber": 32,
+    "Category": "Gifts &amp; Donations",
+    "Date": "11/3/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 89.96
+  },
+  {
+    "TransactionNumber": 32,
+    "Category": "Food &amp; Drink",
+    "Date": "11/3/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Snacks",
+    "Total": 68.51
+  },
+  {
+    "TransactionNumber": 32,
+    "Category": "Home",
+    "Date": "11/3/2020",
+    "Retailer": "Lowes",
+    "LineItem": "Tools",
+    "Total": 81.3
+  },
+  {
+    "TransactionNumber": 32,
+    "Category": "Food &amp; Drink",
+    "Date": "11/3/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Snacks",
+    "Total": 27.64
+  },
+  {
+    "TransactionNumber": 36,
+    "Category": "Gifts &amp; Donations",
+    "Date": "11/3/2020",
+    "Retailer": "Homeless Shelters of America",
+    "LineItem": "Donation - Thank You!",
+    "Total": 68.04
+  },
+  {
+    "TransactionNumber": 36,
+    "Category": "Health &amp; Wellness",
+    "Date": "11/3/2020",
+    "Retailer": "University Medical Center",
+    "LineItem": "Gym Membership",
+    "Total": 60.21
+  },
+  {
+    "TransactionNumber": 36,
+    "Category": "Home",
+    "Date": "11/3/2020",
+    "Retailer": "Lowes",
+    "LineItem": "Hardware",
+    "Total": 67.43
+  },
+  {
+    "TransactionNumber": 36,
+    "Category": "Automotive",
+    "Date": "11/3/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Tire Service",
+    "Total": 42.32
+  },
+  {
+    "TransactionNumber": 36,
+    "Category": "Food &amp; Drink",
+    "Date": "11/3/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Snacks",
+    "Total": 85.74
+  },
+  {
+    "TransactionNumber": 36,
+    "Category": "Bills &amp; Utilities",
+    "Date": "11/3/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 76.13
+  },
+  {
+    "TransactionNumber": 16,
+    "Category": "Shopping",
+    "Date": "11/2/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 77.73
+  },
+  {
+    "TransactionNumber": 16,
+    "Category": "Gas",
+    "Date": "11/2/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Gas",
+    "Total": 30.37
+  },
+  {
+    "TransactionNumber": 16,
+    "Category": "Shopping",
+    "Date": "11/2/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Pizza &amp; Drinks",
+    "Total": 79.3
+  },
+  {
+    "TransactionNumber": 16,
+    "Category": "Entertainment",
+    "Date": "11/2/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 93.53
+  },
+  {
+    "TransactionNumber": 28,
+    "Category": "Health &amp; Wellness",
+    "Date": "11/2/2020",
+    "Retailer": "University Medical Center",
+    "LineItem": "Training",
+    "Total": 15.57
+  },
+  {
+    "TransactionNumber": 28,
+    "Category": "Food &amp; Drink",
+    "Date": "11/2/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Pizza &amp; Drinks",
+    "Total": 85.19
+  },
+  {
+    "TransactionNumber": 28,
+    "Category": "Bills &amp; Utilities",
+    "Date": "11/2/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 25.61
+  },
+  {
+    "TransactionNumber": 28,
+    "Category": "Gifts &amp; Donations",
+    "Date": "11/2/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 21.86
+  },
+  {
+    "TransactionNumber": 28,
+    "Category": "Entertainment",
+    "Date": "11/2/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 12.94
+  },
+  {
+    "TransactionNumber": 28,
+    "Category": "Gifts &amp; Donations",
+    "Date": "11/2/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 87.3
+  },
+  {
+    "TransactionNumber": 28,
+    "Category": "Entertainment",
+    "Date": "11/2/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 95.72
+  },
+  {
+    "TransactionNumber": 28,
+    "Category": "Food &amp; Drink",
+    "Date": "11/2/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Snacks",
+    "Total": 30.42
+  },
+  {
+    "TransactionNumber": 28,
+    "Category": "Gifts &amp; Donations",
+    "Date": "11/2/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 97.47
+  },
+  {
+    "TransactionNumber": 43,
+    "Category": "Shopping",
+    "Date": "11/1/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Tire Service",
+    "Total": 28.79
+  },
+  {
+    "TransactionNumber": 43,
+    "Category": "Shopping",
+    "Date": "11/1/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Car Service",
+    "Total": 74.64
+  },
+  {
+    "TransactionNumber": 43,
+    "Category": "Gifts &amp; Donations",
+    "Date": "11/1/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 67.71
+  },
+  {
+    "TransactionNumber": 43,
+    "Category": "Groceries",
+    "Date": "11/1/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 90.52
+  },
+  {
+    "TransactionNumber": 43,
+    "Category": "Health &amp; Wellness",
+    "Date": "11/1/2020",
+    "Retailer": "University Medical Center",
+    "LineItem": "Gym Membership",
+    "Total": 90.1
+  },
+  {
+    "TransactionNumber": 51,
+    "Category": "Gifts &amp; Donations",
+    "Date": "10/31/2020",
+    "Retailer": "HHRD",
+    "LineItem": "Donation - Thank You!",
+    "Total": 29.23
+  },
+  {
+    "TransactionNumber": 22,
+    "Category": "Bills &amp; Utilities",
+    "Date": "10/30/2020",
+    "Retailer": "City Water",
+    "LineItem": "Water Bill",
+    "Total": 63.96
+  },
+  {
+    "TransactionNumber": 22,
+    "Category": "Groceries",
+    "Date": "10/30/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 91.29
+  },
+  {
+    "TransactionNumber": 22,
+    "Category": "Automotive",
+    "Date": "10/30/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Car Service",
+    "Total": 17.54
+  },
+  {
+    "TransactionNumber": 22,
+    "Category": "Gas",
+    "Date": "10/30/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Gas",
+    "Total": 84.72
+  },
+  {
+    "TransactionNumber": 22,
+    "Category": "Bills &amp; Utilities",
+    "Date": "10/30/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 34.56
+  },
+  {
+    "TransactionNumber": 22,
+    "Category": "Automotive",
+    "Date": "10/30/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Oil Change",
+    "Total": 74.62
+  },
+  {
+    "TransactionNumber": 22,
+    "Category": "Entertainment",
+    "Date": "10/30/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 86.71
+  },
+  {
+    "TransactionNumber": 22,
+    "Category": "Automotive",
+    "Date": "10/30/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Oil Change",
+    "Total": 51.92
+  },
+  {
+    "TransactionNumber": 54,
+    "Category": "Shopping",
+    "Date": "10/30/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Oil Change",
+    "Total": 82.4
+  },
+  {
+    "TransactionNumber": 54,
+    "Category": "Health &amp; Wellness",
+    "Date": "10/30/2020",
+    "Retailer": "University Medical Center",
+    "LineItem": "Medical Exam",
+    "Total": 20.93
+  },
+  {
+    "TransactionNumber": 54,
+    "Category": "Shopping",
+    "Date": "10/30/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Oil Change",
+    "Total": 61.34
+  },
+  {
+    "TransactionNumber": 2,
+    "Category": "Shopping",
+    "Date": "10/29/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 77.7
+  },
+  {
+    "TransactionNumber": 38,
+    "Category": "Home",
+    "Date": "10/29/2020",
+    "Retailer": "Lowes",
+    "LineItem": "Hardware",
+    "Total": 50.67
+  },
+  {
+    "TransactionNumber": 38,
+    "Category": "Automotive",
+    "Date": "10/29/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Tire Service",
+    "Total": 99.37
+  },
+  {
+    "TransactionNumber": 2,
+    "Category": "Entertainment",
+    "Date": "10/28/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 49.2
+  },
+  {
+    "TransactionNumber": 47,
+    "Category": "Entertainment",
+    "Date": "10/28/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 31.62
+  },
+  {
+    "TransactionNumber": 47,
+    "Category": "Shopping",
+    "Date": "10/28/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Oil Change",
+    "Total": 84.17
+  },
+  {
+    "TransactionNumber": 2,
+    "Category": "Gifts &amp; Donations",
+    "Date": "10/27/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 69.63
+  },
+  {
+    "TransactionNumber": 35,
+    "Category": "Home",
+    "Date": "10/27/2020",
+    "Retailer": "Lowes",
+    "LineItem": "Tools",
+    "Total": 18.26
+  },
+  {
+    "TransactionNumber": 12,
+    "Category": "Shopping",
+    "Date": "10/26/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 67.8
+  },
+  {
+    "TransactionNumber": 12,
+    "Category": "Gifts &amp; Donations",
+    "Date": "10/26/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 46.29
+  },
+  {
+    "TransactionNumber": 12,
+    "Category": "Bills &amp; Utilities",
+    "Date": "10/26/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 50.97
+  },
+  {
+    "TransactionNumber": 12,
+    "Category": "Automotive",
+    "Date": "10/26/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Car Service",
+    "Total": 73.46
+  },
+  {
+    "TransactionNumber": 17,
+    "Category": "Shopping",
+    "Date": "10/26/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 78.27
+  },
+  {
+    "TransactionNumber": 17,
+    "Category": "Groceries",
+    "Date": "10/26/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 73.64
+  },
+  {
+    "TransactionNumber": 27,
+    "Category": "Entertainment",
+    "Date": "10/26/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 34.39
+  },
+  {
+    "TransactionNumber": 27,
+    "Category": "Health &amp; Wellness",
+    "Date": "10/26/2020",
+    "Retailer": "University Medical Center",
+    "LineItem": "Training",
+    "Total": 87.38
+  },
+  {
+    "TransactionNumber": 27,
+    "Category": "Groceries",
+    "Date": "10/26/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 72.25
+  },
+  {
+    "TransactionNumber": 70,
+    "Category": "Entertainment",
+    "Date": "10/25/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 58
+  },
+  {
+    "TransactionNumber": 5,
+    "Category": "Health &amp; Wellness",
+    "Date": "10/25/2020",
+    "Retailer": "University Medical Center",
+    "LineItem": "Medical Exam",
+    "Total": 68.83
+  },
+  {
+    "TransactionNumber": 21,
+    "Category": "Food &amp; Drink",
+    "Date": "10/25/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Pizza &amp; Drinks",
+    "Total": 36.72
+  },
+  {
+    "TransactionNumber": 25,
+    "Category": "Bills &amp; Utilities",
+    "Date": "10/25/2020",
+    "Retailer": "City Water",
+    "LineItem": "Water Bill",
+    "Total": 97.75
+  },
+  {
+    "TransactionNumber": 25,
+    "Category": "Bills &amp; Utilities",
+    "Date": "10/25/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 62.94
+  },
+  {
+    "TransactionNumber": 25,
+    "Category": "Home",
+    "Date": "10/25/2020",
+    "Retailer": "Lowes",
+    "LineItem": "Home Supplies",
+    "Total": 11.38
+  },
+  {
+    "TransactionNumber": 25,
+    "Category": "Bills &amp; Utilities",
+    "Date": "10/25/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 70.45
+  },
+  {
+    "TransactionNumber": 25,
+    "Category": "Gas",
+    "Date": "10/25/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Gas",
+    "Total": 50.07
+  },
+  {
+    "TransactionNumber": 25,
+    "Category": "Gifts &amp; Donations",
+    "Date": "10/25/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 16.62
+  },
+  {
+    "TransactionNumber": 25,
+    "Category": "Gas",
+    "Date": "10/25/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Gas",
+    "Total": 58.15
+  },
+  {
+    "TransactionNumber": 25,
+    "Category": "Home",
+    "Date": "10/25/2020",
+    "Retailer": "Lowes",
+    "LineItem": "Home Supplies",
+    "Total": 78.08
+  },
+  {
+    "TransactionNumber": 30,
+    "Category": "Entertainment",
+    "Date": "10/25/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 37.88
+  },
+  {
+    "TransactionNumber": 30,
+    "Category": "Gifts &amp; Donations",
+    "Date": "10/25/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 40.51
+  },
+  {
+    "TransactionNumber": 30,
+    "Category": "Home",
+    "Date": "10/25/2020",
+    "Retailer": "Lowes",
+    "LineItem": "Home Supplies",
+    "Total": 93.1
+  },
+  {
+    "TransactionNumber": 30,
+    "Category": "Health &amp; Wellness",
+    "Date": "10/25/2020",
+    "Retailer": "University Medical Center",
+    "LineItem": "Training",
+    "Total": 65.73
+  },
+  {
+    "TransactionNumber": 42,
+    "Category": "Food &amp; Drink",
+    "Date": "10/25/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Snacks",
+    "Total": 55.4
+  },
+  {
+    "TransactionNumber": 42,
+    "Category": "Groceries",
+    "Date": "10/25/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 99.16
+  },
+  {
+    "TransactionNumber": 42,
+    "Category": "Home",
+    "Date": "10/25/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 70.23
+  },
+  {
+    "TransactionNumber": 42,
+    "Category": "Groceries",
+    "Date": "10/25/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 87.19
+  },
+  {
+    "TransactionNumber": 42,
+    "Category": "Food &amp; Drink",
+    "Date": "10/25/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Drinks",
+    "Total": 68.08
+  },
+  {
+    "TransactionNumber": 42,
+    "Category": "Groceries",
+    "Date": "10/25/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 61.68
+  },
+  {
+    "TransactionNumber": 42,
+    "Category": "Food &amp; Drink",
+    "Date": "10/25/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Drinks",
+    "Total": 88.19
+  },
+  {
+    "TransactionNumber": 42,
+    "Category": "Entertainment",
+    "Date": "10/25/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 22.25
+  },
+  {
+    "TransactionNumber": 42,
+    "Category": "Gifts &amp; Donations",
+    "Date": "10/25/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 72.54
+  },
+  {
+    "TransactionNumber": 61,
+    "Category": "Home",
+    "Date": "10/25/2020",
+    "Retailer": "Home Depot",
+    "LineItem": "Hardware",
+    "Total": 61.21
+  },
+  {
+    "TransactionNumber": 61,
+    "Category": "Entertainment",
+    "Date": "10/25/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 86.13
+  },
+  {
+    "TransactionNumber": 61,
+    "Category": "Entertainment",
+    "Date": "10/25/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 77.47
+  },
+  {
+    "TransactionNumber": 61,
+    "Category": "Home",
+    "Date": "10/25/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 96.67
+  },
+  {
+    "TransactionNumber": 61,
+    "Category": "Home",
+    "Date": "10/25/2020",
+    "Retailer": "Lowes",
+    "LineItem": "Hardware",
+    "Total": 77.41
+  },
+  {
+    "TransactionNumber": 70,
+    "Category": "Gifts &amp; Donations",
+    "Date": "10/24/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 65.28
+  },
+  {
+    "TransactionNumber": 5,
+    "Category": "Groceries",
+    "Date": "10/24/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 90.14
+  },
+  {
+    "TransactionNumber": 15,
+    "Category": "Food &amp; Drink",
+    "Date": "10/24/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Pizza &amp; Drinks",
+    "Total": 65.6
+  },
+  {
+    "TransactionNumber": 15,
+    "Category": "Shopping",
+    "Date": "10/24/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 50.85
+  },
+  {
+    "TransactionNumber": 15,
+    "Category": "Groceries",
+    "Date": "10/24/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 83.91
+  },
+  {
+    "TransactionNumber": 15,
+    "Category": "Gifts &amp; Donations",
+    "Date": "10/24/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 18.48
+  },
+  {
+    "TransactionNumber": 15,
+    "Category": "Bills &amp; Utilities",
+    "Date": "10/24/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 12.23
+  },
+  {
+    "TransactionNumber": 15,
+    "Category": "Groceries",
+    "Date": "10/24/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 18.03
+  },
+  {
+    "TransactionNumber": 15,
+    "Category": "Health &amp; Wellness",
+    "Date": "10/24/2020",
+    "Retailer": "University Medical Center",
+    "LineItem": "Gym Membership",
+    "Total": 91.69
+  },
+  {
+    "TransactionNumber": 49,
+    "Category": "Home",
+    "Date": "10/24/2020",
+    "Retailer": "Home Depot",
+    "LineItem": "Hardware",
+    "Total": 44.4
+  },
+  {
+    "TransactionNumber": 49,
+    "Category": "Entertainment",
+    "Date": "10/24/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 82.91
+  },
+  {
+    "TransactionNumber": 49,
+    "Category": "Gifts &amp; Donations",
+    "Date": "10/24/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 49.1
+  },
+  {
+    "TransactionNumber": 49,
+    "Category": "Entertainment",
+    "Date": "10/24/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 14.94
+  },
+  {
+    "TransactionNumber": 53,
+    "Category": "Bills &amp; Utilities",
+    "Date": "10/24/2020",
+    "Retailer": "City Water",
+    "LineItem": "Water Bill",
+    "Total": 18.93
+  },
+  {
+    "TransactionNumber": 53,
+    "Category": "Shopping",
+    "Date": "10/24/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 17.8
+  },
+  {
+    "TransactionNumber": 53,
+    "Category": "Groceries",
+    "Date": "10/24/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 80.78
+  },
+  {
+    "TransactionNumber": 53,
+    "Category": "Food &amp; Drink",
+    "Date": "10/24/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Snacks",
+    "Total": 32.58
+  },
+  {
+    "TransactionNumber": 53,
+    "Category": "Gifts &amp; Donations",
+    "Date": "10/24/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 84.47
+  },
+  {
+    "TransactionNumber": 53,
+    "Category": "Home",
+    "Date": "10/24/2020",
+    "Retailer": "Lowes",
+    "LineItem": "Home Supplies",
+    "Total": 63.97
+  },
+  {
+    "TransactionNumber": 53,
+    "Category": "Food &amp; Drink",
+    "Date": "10/24/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Snacks",
+    "Total": 99.45
+  },
+  {
+    "TransactionNumber": 53,
+    "Category": "Home",
+    "Date": "10/24/2020",
+    "Retailer": "Lowes",
+    "LineItem": "Home Supplies",
+    "Total": 77.18
+  },
+  {
+    "TransactionNumber": 58,
+    "Category": "Bills &amp; Utilities",
+    "Date": "10/24/2020",
+    "Retailer": "City Water",
+    "LineItem": "Water Bill",
+    "Total": 16.55
+  },
+  {
+    "TransactionNumber": 58,
+    "Category": "Gifts &amp; Donations",
+    "Date": "10/24/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 30.49
+  },
+  {
+    "TransactionNumber": 66,
+    "Category": "Health &amp; Wellness",
+    "Date": "10/24/2020",
+    "Retailer": "University Medical Center",
+    "LineItem": "Gym Membership",
+    "Total": 92.11
+  },
+  {
+    "TransactionNumber": 66,
+    "Category": "Entertainment",
+    "Date": "10/24/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 70.42
+  },
+  {
+    "TransactionNumber": 66,
+    "Category": "Shopping",
+    "Date": "10/24/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Car Service",
+    "Total": 16.8
+  },
+  {
+    "TransactionNumber": 66,
+    "Category": "Automotive",
+    "Date": "10/24/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Car Service",
+    "Total": 68.05
+  },
+  {
+    "TransactionNumber": 70,
+    "Category": "Bills &amp; Utilities",
+    "Date": "10/23/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 84.09
+  },
+  {
+    "TransactionNumber": 13,
+    "Category": "Bills &amp; Utilities",
+    "Date": "10/23/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 87.93
+  },
+  {
+    "TransactionNumber": 13,
+    "Category": "Bills &amp; Utilities",
+    "Date": "10/23/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 34.54
+  },
+  {
+    "TransactionNumber": 13,
+    "Category": "Bills &amp; Utilities",
+    "Date": "10/23/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 31.19
+  },
+  {
+    "TransactionNumber": 70,
+    "Category": "Bills &amp; Utilities",
+    "Date": "10/22/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 26.17
+  },
+  {
+    "TransactionNumber": 24,
+    "Category": "Home",
+    "Date": "10/22/2020",
+    "Retailer": "Lowes",
+    "LineItem": "Hardware",
+    "Total": 64.61
+  },
+  {
+    "TransactionNumber": 24,
+    "Category": "Bills &amp; Utilities",
+    "Date": "10/22/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 10.38
+  },
+  {
+    "TransactionNumber": 33,
+    "Category": "Food &amp; Drink",
+    "Date": "10/22/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Snacks",
+    "Total": 33.25
+  },
+  {
+    "TransactionNumber": 33,
+    "Category": "Food &amp; Drink",
+    "Date": "10/22/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Snacks",
+    "Total": 58.56
+  },
+  {
+    "TransactionNumber": 33,
+    "Category": "Entertainment",
+    "Date": "10/22/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 25.66
+  },
+  {
+    "TransactionNumber": 33,
+    "Category": "Entertainment",
+    "Date": "10/22/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 86.03
+  },
+  {
+    "TransactionNumber": 33,
+    "Category": "Food &amp; Drink",
+    "Date": "10/22/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Snacks",
+    "Total": 54.8
+  },
+  {
+    "TransactionNumber": 33,
+    "Category": "Groceries",
+    "Date": "10/22/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 41.81
+  },
+  {
+    "TransactionNumber": 34,
+    "Category": "Home",
+    "Date": "10/22/2020",
+    "Retailer": "Lowes",
+    "LineItem": "Tools",
+    "Total": 36.63
+  },
+  {
+    "TransactionNumber": 34,
+    "Category": "Entertainment",
+    "Date": "10/22/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 86.97
+  },
+  {
+    "TransactionNumber": 34,
+    "Category": "Health &amp; Wellness",
+    "Date": "10/22/2020",
+    "Retailer": "University Medical Center",
+    "LineItem": "Gym Membership",
+    "Total": 72.53
+  },
+  {
+    "TransactionNumber": 34,
+    "Category": "Food &amp; Drink",
+    "Date": "10/22/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Drinks",
+    "Total": 58.88
+  },
+  {
+    "TransactionNumber": 34,
+    "Category": "Gifts &amp; Donations",
+    "Date": "10/22/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 48.43
+  },
+  {
+    "TransactionNumber": 70,
+    "Category": "Entertainment",
+    "Date": "10/21/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 25.41
+  },
+  {
+    "TransactionNumber": 26,
+    "Category": "Automotive",
+    "Date": "10/21/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Oil Change",
+    "Total": 54.81
+  },
+  {
+    "TransactionNumber": 26,
+    "Category": "Food &amp; Drink",
+    "Date": "10/21/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Pizza &amp; Drinks",
+    "Total": 37.17
+  },
+  {
+    "TransactionNumber": 44,
+    "Category": "Food &amp; Drink",
+    "Date": "10/21/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Pizza &amp; Drinks",
+    "Total": 18.32
+  },
+  {
+    "TransactionNumber": 44,
+    "Category": "Gifts &amp; Donations",
+    "Date": "10/21/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 78.13
+  },
+  {
+    "TransactionNumber": 44,
+    "Category": "Home",
+    "Date": "10/21/2020",
+    "Retailer": "Lowes",
+    "LineItem": "Lumber",
+    "Total": 63.49
+  },
+  {
+    "TransactionNumber": 44,
+    "Category": "Shopping",
+    "Date": "10/21/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Car Service",
+    "Total": 18.51
+  },
+  {
+    "TransactionNumber": 44,
+    "Category": "Gifts &amp; Donations",
+    "Date": "10/21/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 42.73
+  },
+  {
+    "TransactionNumber": 44,
+    "Category": "Food &amp; Drink",
+    "Date": "10/21/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Snacks",
+    "Total": 45.31
+  },
+  {
+    "TransactionNumber": 70,
+    "Category": "Entertainment",
+    "Date": "10/20/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 82.93
+  },
+  {
+    "TransactionNumber": 7,
+    "Category": "Health &amp; Wellness",
+    "Date": "10/20/2020",
+    "Retailer": "University Medical Center",
+    "LineItem": "Medical Exam",
+    "Total": 36.34
+  },
+  {
+    "TransactionNumber": 18,
+    "Category": "Gas",
+    "Date": "10/20/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Gas",
+    "Total": 60.45
+  },
+  {
+    "TransactionNumber": 18,
+    "Category": "Groceries",
+    "Date": "10/20/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 79.92
+  },
+  {
+    "TransactionNumber": 18,
+    "Category": "Entertainment",
+    "Date": "10/20/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 89.32
+  },
+  {
+    "TransactionNumber": 46,
+    "Category": "Home",
+    "Date": "10/20/2020",
+    "Retailer": "Home Depot",
+    "LineItem": "Lumber",
+    "Total": 77.37
+  },
+  {
+    "TransactionNumber": 46,
+    "Category": "Food &amp; Drink",
+    "Date": "10/20/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Snacks",
+    "Total": 73.3
+  },
+  {
+    "TransactionNumber": 46,
+    "Category": "Shopping",
+    "Date": "10/20/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 75.32
+  },
+  {
+    "TransactionNumber": 46,
+    "Category": "Groceries",
+    "Date": "10/20/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 57.75
+  },
+  {
+    "TransactionNumber": 46,
+    "Category": "Food &amp; Drink",
+    "Date": "10/20/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Pizza",
+    "Total": 99.04
+  },
+  {
+    "TransactionNumber": 46,
+    "Category": "Food &amp; Drink",
+    "Date": "10/20/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Snacks",
+    "Total": 14.33
+  },
+  {
+    "TransactionNumber": 69,
+    "Category": "Home",
+    "Date": "10/20/2020",
+    "Retailer": "Home Depot",
+    "LineItem": "Hardware",
+    "Total": 42.43
+  },
+  {
+    "TransactionNumber": 69,
+    "Category": "Home",
+    "Date": "10/20/2020",
+    "Retailer": "Lowes",
+    "LineItem": "Hardware",
+    "Total": 67.59
+  },
+  {
+    "TransactionNumber": 69,
+    "Category": "Shopping",
+    "Date": "10/20/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Drinks",
+    "Total": 71.43
+  },
+  {
+    "TransactionNumber": 7,
+    "Category": "Automotive",
+    "Date": "10/19/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Car Service",
+    "Total": 41.11
+  },
+  {
+    "TransactionNumber": 9,
+    "Category": "Bills &amp; Utilities",
+    "Date": "10/19/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 57.44
+  },
+  {
+    "TransactionNumber": 9,
+    "Category": "Bills &amp; Utilities",
+    "Date": "10/19/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 54.04
+  },
+  {
+    "TransactionNumber": 9,
+    "Category": "Entertainment",
+    "Date": "10/19/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 87.01
+  },
+  {
+    "TransactionNumber": 9,
+    "Category": "Health &amp; Wellness",
+    "Date": "10/19/2020",
+    "Retailer": "University Medical Center",
+    "LineItem": "Gym Membership",
+    "Total": 39.48
+  },
+  {
+    "TransactionNumber": 9,
+    "Category": "Gas",
+    "Date": "10/19/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Gas",
+    "Total": 39.81
+  },
+  {
+    "TransactionNumber": 23,
+    "Category": "Health &amp; Wellness",
+    "Date": "10/19/2020",
+    "Retailer": "University Medical Center",
+    "LineItem": "Gym Membership",
+    "Total": 96.43
+  },
+  {
+    "TransactionNumber": 23,
+    "Category": "Home",
+    "Date": "10/19/2020",
+    "Retailer": "Lowes",
+    "LineItem": "Hardware",
+    "Total": 59.27
+  },
+  {
+    "TransactionNumber": 23,
+    "Category": "Gifts &amp; Donations",
+    "Date": "10/19/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 41.58
+  },
+  {
+    "TransactionNumber": 23,
+    "Category": "Groceries",
+    "Date": "10/19/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 64.88
+  },
+  {
+    "TransactionNumber": 23,
+    "Category": "Automotive",
+    "Date": "10/19/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Oil Change",
+    "Total": 27.37
+  },
+  {
+    "TransactionNumber": 23,
+    "Category": "Automotive",
+    "Date": "10/19/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Oil Change",
+    "Total": 91.49
+  },
+  {
+    "TransactionNumber": 37,
+    "Category": "Entertainment",
+    "Date": "10/19/2020",
+    "Retailer": "Hulu",
+    "LineItem": "Monthly Charges",
+    "Total": 42.26
+  },
+  {
+    "TransactionNumber": 37,
+    "Category": "Entertainment",
+    "Date": "10/19/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 23.41
+  },
+  {
+    "TransactionNumber": 37,
+    "Category": "Entertainment",
+    "Date": "10/19/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 20.24
+  },
+  {
+    "TransactionNumber": 37,
+    "Category": "Food &amp; Drink",
+    "Date": "10/19/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Drinks",
+    "Total": 19.25
+  },
+  {
+    "TransactionNumber": 37,
+    "Category": "Automotive",
+    "Date": "10/19/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Tire Service",
+    "Total": 81.79
+  },
+  {
+    "TransactionNumber": 40,
+    "Category": "Entertainment",
+    "Date": "10/19/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 92.35
+  },
+  {
+    "TransactionNumber": 40,
+    "Category": "Entertainment",
+    "Date": "10/19/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 80.8
+  },
+  {
+    "TransactionNumber": 40,
+    "Category": "Groceries",
+    "Date": "10/19/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 68.89
+  },
+  {
+    "TransactionNumber": 40,
+    "Category": "Groceries",
+    "Date": "10/19/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 99.42
+  },
+  {
+    "TransactionNumber": 40,
+    "Category": "Entertainment",
+    "Date": "10/19/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 71.52
+  },
+  {
+    "TransactionNumber": 40,
+    "Category": "Automotive",
+    "Date": "10/19/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Tire Service",
+    "Total": 23.09
+  },
+  {
+    "TransactionNumber": 40,
+    "Category": "Health &amp; Wellness",
+    "Date": "10/19/2020",
+    "Retailer": "University Medical Center",
+    "LineItem": "Gym Membership",
+    "Total": 76.55
+  },
+  {
+    "TransactionNumber": 40,
+    "Category": "Food &amp; Drink",
+    "Date": "10/19/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Drinks",
+    "Total": 79.28
+  },
+  {
+    "TransactionNumber": 7,
+    "Category": "Home",
+    "Date": "10/18/2020",
+    "Retailer": "Lowes",
+    "LineItem": "Hardware",
+    "Total": 97.72
+  },
+  {
+    "TransactionNumber": 56,
+    "Category": "Groceries",
+    "Date": "10/18/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 72.82
+  },
+  {
+    "TransactionNumber": 56,
+    "Category": "Shopping",
+    "Date": "10/18/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Pizza",
+    "Total": 23.19
+  },
+  {
+    "TransactionNumber": 56,
+    "Category": "Groceries",
+    "Date": "10/18/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 30.54
+  },
+  {
+    "TransactionNumber": 7,
+    "Category": "Groceries",
+    "Date": "10/17/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 17.45
+  },
+  {
+    "TransactionNumber": 55,
+    "Category": "Shopping",
+    "Date": "10/17/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Pizza &amp; Drinks",
+    "Total": 92.63
+  },
+  {
+    "TransactionNumber": 55,
+    "Category": "Shopping",
+    "Date": "10/17/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 97.25
+  },
+  {
+    "TransactionNumber": 55,
+    "Category": "Gifts &amp; Donations",
+    "Date": "10/17/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 19.93
+  },
+  {
+    "TransactionNumber": 55,
+    "Category": "Shopping",
+    "Date": "10/17/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 17.24
+  },
+  {
+    "TransactionNumber": 55,
+    "Category": "Groceries",
+    "Date": "10/15/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 39.13
+  },
+  {
+    "TransactionNumber": 55,
+    "Category": "Food &amp; Drink",
+    "Date": "10/15/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Snacks",
+    "Total": 79.29
+  },
+  {
+    "TransactionNumber": 55,
+    "Category": "Shopping",
+    "Date": "10/15/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Oil Change",
+    "Total": 98
+  },
+  {
+    "TransactionNumber": 64,
+    "Category": "Home",
+    "Date": "10/15/2020",
+    "Retailer": "Home Depot",
+    "LineItem": "Tools",
+    "Total": 37.51
+  },
+  {
+    "TransactionNumber": 64,
+    "Category": "Gifts &amp; Donations",
+    "Date": "10/15/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 56.27
+  },
+  {
+    "TransactionNumber": 64,
+    "Category": "Home",
+    "Date": "10/15/2020",
+    "Retailer": "Lowes",
+    "LineItem": "Hardware",
+    "Total": 53.4
+  },
+  {
+    "TransactionNumber": 64,
+    "Category": "Food &amp; Drink",
+    "Date": "10/15/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Snacks",
+    "Total": 58.84
+  },
+  {
+    "TransactionNumber": 7,
+    "Category": "Entertainment",
+    "Date": "10/15/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 66.93
+  },
+  {
+    "TransactionNumber": 50,
+    "Category": "Food &amp; Drink",
+    "Date": "10/15/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Pizza &amp; Drinks",
+    "Total": 15.01
+  },
+  {
+    "TransactionNumber": 50,
+    "Category": "Groceries",
+    "Date": "10/15/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 95.66
+  },
+  {
+    "TransactionNumber": 50,
+    "Category": "Home",
+    "Date": "10/15/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 90.8
+  },
+  {
+    "TransactionNumber": 50,
+    "Category": "Gifts &amp; Donations",
+    "Date": "10/15/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 99.87
+  },
+  {
+    "TransactionNumber": 7,
+    "Category": "Gas",
+    "Date": "10/15/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Gas",
+    "Total": 22.25
+  },
+  {
+    "TransactionNumber": 29,
+    "Category": "Food &amp; Drink",
+    "Date": "10/15/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Pizza &amp; Drinks",
+    "Total": 41.04
+  },
+  {
+    "TransactionNumber": 29,
+    "Category": "Groceries",
+    "Date": "10/15/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 92.48
+  },
+  {
+    "TransactionNumber": 29,
+    "Category": "Bills &amp; Utilities",
+    "Date": "10/15/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 40.99
+  },
+  {
+    "TransactionNumber": 29,
+    "Category": "Groceries",
+    "Date": "10/15/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 85.12
+  },
+  {
+    "TransactionNumber": 29,
+    "Category": "Entertainment",
+    "Date": "10/15/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 52.98
+  },
+  {
+    "TransactionNumber": 29,
+    "Category": "Food &amp; Drink",
+    "Date": "10/15/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Snacks",
+    "Total": 56.43
+  },
+  {
+    "TransactionNumber": 29,
+    "Category": "Food &amp; Drink",
+    "Date": "10/15/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Pizza &amp; Drinks",
+    "Total": 17.65
+  },
+  {
+    "TransactionNumber": 29,
+    "Category": "Bills &amp; Utilities",
+    "Date": "10/15/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 98.44
+  },
+  {
+    "TransactionNumber": 31,
+    "Category": "Food &amp; Drink",
+    "Date": "10/15/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Pizza &amp; Drinks",
+    "Total": 39.09
+  },
+  {
+    "TransactionNumber": 31,
+    "Category": "Automotive",
+    "Date": "10/15/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Tire Service",
+    "Total": 11.64
+  },
+  {
+    "TransactionNumber": 31,
+    "Category": "Entertainment",
+    "Date": "10/15/2020",
+    "Retailer": "Amazon",
+    "LineItem": "Amazon Shopping",
+    "Total": 88.84
+  },
+  {
+    "TransactionNumber": 31,
+    "Category": "Health &amp; Wellness",
+    "Date": "10/14/2020",
+    "Retailer": "University Medical Center",
+    "LineItem": "Training",
+    "Total": 51.95
+  },
+  {
+    "TransactionNumber": 48,
+    "Category": "Health &amp; Wellness",
+    "Date": "10/14/2020",
+    "Retailer": "University Medical Center",
+    "LineItem": "Gym Membership",
+    "Total": 96.75
+  },
+  {
+    "TransactionNumber": 48,
+    "Category": "Food &amp; Drink",
+    "Date": "10/14/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Snacks",
+    "Total": 35.24
+  },
+  {
+    "TransactionNumber": 48,
+    "Category": "Home",
+    "Date": "10/14/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 72.24
+  },
+  {
+    "TransactionNumber": 48,
+    "Category": "Home",
+    "Date": "10/14/2020",
+    "Retailer": "Lowes",
+    "LineItem": "Home Supplies",
+    "Total": 13.82
+  },
+  {
+    "TransactionNumber": 48,
+    "Category": "Gifts &amp; Donations",
+    "Date": "10/14/2020",
+    "Retailer": "SPCA",
+    "LineItem": "Donation - Thank You!",
+    "Total": 88.78
+  },
+  {
+    "TransactionNumber": 48,
+    "Category": "Entertainment",
+    "Date": "10/14/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 52.12
+  },
+  {
+    "TransactionNumber": 48,
+    "Category": "Shopping",
+    "Date": "10/14/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Oil Change",
+    "Total": 73.04
+  },
+  {
+    "TransactionNumber": 7,
+    "Category": "Home",
+    "Date": "10/14/2020",
+    "Retailer": "Lowes",
+    "LineItem": "Lumber",
+    "Total": 12.84
+  },
+  {
+    "TransactionNumber": 52,
+    "Category": "Health &amp; Wellness",
+    "Date": "10/14/2020",
+    "Retailer": "University Medical Center",
+    "LineItem": "Medical Exam",
+    "Total": 31
+  },
+  {
+    "TransactionNumber": 52,
+    "Category": "Health &amp; Wellness",
+    "Date": "10/14/2020",
+    "Retailer": "University Medical Center",
+    "LineItem": "Medical Exam",
+    "Total": 67.54
+  },
+  {
+    "TransactionNumber": 19,
+    "Category": "Groceries",
+    "Date": "10/12/2020",
+    "Retailer": "Walmart",
+    "LineItem": "Groceries",
+    "Total": 37.7
+  },
+  {
+    "TransactionNumber": 19,
+    "Category": "Shopping",
+    "Date": "10/12/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Pizza &amp; Drinks",
+    "Total": 28.18
+  },
+  {
+    "TransactionNumber": 19,
+    "Category": "Entertainment",
+    "Date": "10/12/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 65.73
+  },
+  {
+    "TransactionNumber": 19,
+    "Category": "Shopping",
+    "Date": "10/12/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Pizza &amp; Drinks",
+    "Total": 86.6
+  },
+  {
+    "TransactionNumber": 19,
+    "Category": "Shopping",
+    "Date": "10/12/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Pizza &amp; Drinks",
+    "Total": 31.46
+  },
+  {
+    "TransactionNumber": 41,
+    "Category": "Groceries",
+    "Date": "10/12/2020",
+    "Retailer": "Food Lion",
+    "LineItem": "Groceries",
+    "Total": 58.34
+  },
+  {
+    "TransactionNumber": 41,
+    "Category": "Home",
+    "Date": "10/12/2020",
+    "Retailer": "Lowes",
+    "LineItem": "Lumber",
+    "Total": 82.41
+  },
+  {
+    "TransactionNumber": 41,
+    "Category": "Groceries",
+    "Date": "10/12/2020",
+    "Retailer": "Wholefoods",
+    "LineItem": "Groceries",
+    "Total": 45.97
+  },
+  {
+    "TransactionNumber": 41,
+    "Category": "Bills &amp; Utilities",
+    "Date": "10/12/2020",
+    "Retailer": "G&amp;P Power",
+    "LineItem": "Electric Bill",
+    "Total": 92.89
+  },
+  {
+    "TransactionNumber": 41,
+    "Category": "Shopping",
+    "Date": "10/12/2020",
+    "Retailer": "Global Car Care",
+    "LineItem": "Tire Service",
+    "Total": 17.03
+  },
+  {
+    "TransactionNumber": 41,
+    "Category": "Entertainment",
+    "Date": "10/12/2020",
+    "Retailer": "Netflix",
+    "LineItem": "Monthly Charges",
+    "Total": 72.25
+  },
+  {
+    "TransactionNumber": 41,
+    "Category": "Food &amp; Drink",
+    "Date": "10/12/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Snacks",
+    "Total": 89
+  },
+  {
+    "TransactionNumber": 41,
+    "Category": "Food &amp; Drink",
+    "Date": "10/12/2020",
+    "Retailer": "Pizza Perfect",
+    "LineItem": "Drinks",
+    "Total": 39.72
+  },
+  {
+    "TransactionNumber": 63,
+    "Category": "Food &amp; Drink",
+    "Date": "10/12/2020",
+    "Retailer": "Sheetz",
+    "LineItem": "Snacks",
+    "Total": 49.74
+  }
+]
