@@ -1,0 +1,1021 @@
+﻿<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">ExpenseReport.rdlx</dd:Name>
+	<Body>
+		<Height>11.69in</Height>
+		<ReportItems>
+			<FixedPage Name="FixedPage1">
+				<Pages>
+					<Page>
+						<ReportItems>
+							<Textbox Name="TextBox11">
+								<Height>0.3in</Height>
+								<Left>0.4in</Left>
+								<Value>=Fields!name.Value</Value>
+								<Style>
+									<Color>Black</Color>
+									<FontFamily>Meiryo</FontFamily>
+									<FontSize>11pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>8pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<VerticalAlign>Middle</VerticalAlign>
+								</Style>
+								<Top>2.2in</Top>
+								<Width>3.5479in</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox12">
+								<Height>0.3in</Height>
+								<Left>0.4in</Left>
+								<Value>氏名</Value>
+								<Style>
+									<Color>DimGray</Color>
+									<FontFamily>Meiryo</FontFamily>
+									<FontSize>9pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>8pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<VerticalAlign>Middle</VerticalAlign>
+								</Style>
+								<Top>1.9in</Top>
+								<Width>3.5479in</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+							<Rectangle Name="Container3">
+								<Height>0.610433in</Height>
+								<Style>
+									<BackgroundColor>#f1f1f1</BackgroundColor>
+								</Style>
+								<Top>11.07957in</Top>
+								<Width>8.26in</Width>
+								<ZIndex>15</ZIndex>
+								<ReportItems>
+									<Image Name="Image2">
+										<DataElementName>Image3</DataElementName>
+										<Height>0.2in</Height>
+										<Left>5.405464in</Left>
+										<Sizing>Fit</Sizing>
+										<Source>Embedded</Source>
+										<Top>0.205216in</Top>
+										<Value>footer-phone</Value>
+										<Width>0.2in</Width>
+										<ZIndex>1</ZIndex>
+									</Image>
+									<Textbox Name="TextBox1">
+										<CanGrow>true</CanGrow>
+										<DataElementName>TextBox72</DataElementName>
+										<Height>0.6in</Height>
+										<Left>5.705464in</Left>
+										<Value>050-5490-4662</Value>
+										<Style>
+											<Color>Gray</Color>
+											<FontFamily>Meiryo</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>100</FontWeight>
+											<PaddingBottom>0pt</PaddingBottom>
+											<PaddingLeft>0pt</PaddingLeft>
+											<PaddingRight>0pt</PaddingRight>
+											<PaddingTop>0pt</PaddingTop>
+											<TextAlign>Left</TextAlign>
+											<VerticalAlign>Middle</VerticalAlign>
+										</Style>
+										<Top>0.005216492in</Top>
+										<Width>2.1in</Width>
+									</Textbox>
+									<Textbox Name="TextBox71">
+										<CanGrow>true</CanGrow>
+										<Height>0.6in</Height>
+										<Left>4.250057in</Left>
+										<Value>050-5490-4661</Value>
+										<Style>
+											<Color>Gray</Color>
+											<FontFamily>Meiryo</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>100</FontWeight>
+											<PaddingBottom>0pt</PaddingBottom>
+											<PaddingLeft>0pt</PaddingLeft>
+											<PaddingRight>0pt</PaddingRight>
+											<PaddingTop>0pt</PaddingTop>
+											<TextAlign>Left</TextAlign>
+											<VerticalAlign>Middle</VerticalAlign>
+										</Style>
+										<Top>0.005216492in</Top>
+										<Width>1.0433in</Width>
+									</Textbox>
+									<Textbox Name="TextBox27">
+										<CanGrow>true</CanGrow>
+										<DataElementName>TextBox70</DataElementName>
+										<Height>0.6in</Height>
+										<Left>0.454536in</Left>
+										<Value>="© MESCIUS inc. All rights reserved."</Value>
+										<Style>
+											<Color>Gray</Color>
+											<FontFamily>Meiryo</FontFamily>
+											<FontSize>9pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>100</FontWeight>
+											<PaddingBottom>0pt</PaddingBottom>
+											<PaddingLeft>0pt</PaddingLeft>
+											<PaddingRight>0pt</PaddingRight>
+											<PaddingTop>0pt</PaddingTop>
+											<TextAlign>Right</TextAlign>
+											<VerticalAlign>Middle</VerticalAlign>
+										</Style>
+										<Top>0.005216492in</Top>
+										<Width>3.375in</Width>
+									</Textbox>
+									<Image Name="Image3">
+										<DataElementName>Image2</DataElementName>
+										<Height>0.2in</Height>
+										<Left>3.952438in</Left>
+										<Sizing>Fit</Sizing>
+										<Source>Embedded</Source>
+										<Top>0.205216in</Top>
+										<Value>footer-phone</Value>
+										<Width>0.2in</Width>
+										<ZIndex>1</ZIndex>
+									</Image>
+								</ReportItems>
+							</Rectangle>
+							<Textbox Name="TextBox2">
+								<DataElementName>TextBox13</DataElementName>
+								<Height>0.3in</Height>
+								<Left>0.4in</Left>
+								<Value>上司</Value>
+								<Style>
+									<Color>DimGray</Color>
+									<FontFamily>Meiryo</FontFamily>
+									<FontSize>9pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>8pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<VerticalAlign>Middle</VerticalAlign>
+								</Style>
+								<Top>2.625in</Top>
+								<Width>3.5479in</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox3">
+								<DataElementName>TextBox14</DataElementName>
+								<Height>0.3in</Height>
+								<Left>0.4in</Left>
+								<Value>=Fields!managerName.Value</Value>
+								<Style>
+									<Color>Black</Color>
+									<FontFamily>Meiryo</FontFamily>
+									<FontSize>11pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>8pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<VerticalAlign>Middle</VerticalAlign>
+								</Style>
+								<Top>2.925in</Top>
+								<Width>3.5479in</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox4">
+								<DataElementName>TextBox16</DataElementName>
+								<Height>0.3in</Height>
+								<Left>4.3in</Left>
+								<Value>社員番号</Value>
+								<Style>
+									<Color>DimGray</Color>
+									<FontFamily>Meiryo</FontFamily>
+									<FontSize>9pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>6pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<VerticalAlign>Middle</VerticalAlign>
+								</Style>
+								<Top>1.9in</Top>
+								<Width>3.6in</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox5">
+								<DataElementName>TextBox17</DataElementName>
+								<Height>0.3in</Height>
+								<Left>4.3in</Left>
+								<Value>=Fields!id.Value</Value>
+								<Style>
+									<Color>Black</Color>
+									<FontFamily>Meiryo</FontFamily>
+									<FontSize>11pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>6pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<VerticalAlign>Middle</VerticalAlign>
+								</Style>
+								<Top>2.2in</Top>
+								<Width>3.6in</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox6">
+								<DataElementName>TextBox5</DataElementName>
+								<Height>0.3in</Height>
+								<Left>4.3in</Left>
+								<Value>=Fields!department.Value</Value>
+								<Style>
+									<Color>Black</Color>
+									<FontFamily>Meiryo</FontFamily>
+									<FontSize>11pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>6pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<VerticalAlign>Middle</VerticalAlign>
+								</Style>
+								<Top>2.925in</Top>
+								<Width>3.6in</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox7">
+								<DataElementName>TextBox4</DataElementName>
+								<Height>0.3in</Height>
+								<Left>4.3in</Left>
+								<Value>部署</Value>
+								<Style>
+									<Color>DimGray</Color>
+									<FontFamily>Meiryo</FontFamily>
+									<FontSize>9pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>6pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<VerticalAlign>Middle</VerticalAlign>
+								</Style>
+								<Top>2.625in</Top>
+								<Width>3.6in</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+							<Rectangle Name="Container5">
+								<Height>0.9in</Height>
+								<Style>
+									<BackgroundColor>#f1f1f1</BackgroundColor>
+								</Style>
+								<Width>8.27in</Width>
+								<ZIndex>19</ZIndex>
+								<ReportItems>
+									<Image Name="Image1">
+										<DataElementName>Image5</DataElementName>
+										<Height>0.625in</Height>
+										<Left>4.875in</Left>
+										<Sizing>FitProportional</Sizing>
+										<Source>Embedded</Source>
+										<Style>
+											<PaddingBottom>0pt</PaddingBottom>
+											<PaddingLeft>0pt</PaddingLeft>
+											<PaddingRight>0pt</PaddingRight>
+											<PaddingTop>0pt</PaddingTop>
+										</Style>
+										<Top>0.125in</Top>
+										<Value>treadstone-logo-full-color-rgb</Value>
+										<Width>3.27in</Width>
+										<ZIndex>30</ZIndex>
+										<dd:VerticalAlignment xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Middle</dd:VerticalAlignment>
+									</Image>
+									<Textbox Name="TextBox26">
+										<DataElementName>TextBox1</DataElementName>
+										<Height>0.9in</Height>
+										<Value>経費レポート</Value>
+										<Style>
+											<BackgroundColor>=""</BackgroundColor>
+											<Color>#3da7a8</Color>
+											<FontFamily>Meiryo</FontFamily>
+											<FontSize>24pt</FontSize>
+											<FontStyle>Normal</FontStyle>
+											<FontWeight>400</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>10pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Left</TextAlign>
+											<VerticalAlign>Middle</VerticalAlign>
+										</Style>
+										<Width>3.75in</Width>
+										<ZIndex>22</ZIndex>
+									</Textbox>
+								</ReportItems>
+							</Rectangle>
+							<Table Name="Table1">
+								<DataSetName>ExpensesDataSet</DataSetName>
+								<Header>
+									<TableRows>
+										<TableRow>
+											<Height>0.4in</Height>
+											<TableCells>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox8">
+															<Value>日付</Value>
+															<Style>
+																<BackgroundColor>#f1f1f1</BackgroundColor>
+																<Color>DarkCyan</Color>
+																<FontFamily>Meiryo</FontFamily>
+																<FontSize>10pt</FontSize>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>8pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Left</TextAlign>
+																<VerticalAlign>Middle</VerticalAlign>
+																<BorderColor>
+																	<Default>Gainsboro</Default>
+																</BorderColor>
+																<BorderStyle>
+																	<Bottom>Solid</Bottom>
+																</BorderStyle>
+																<BorderWidth>
+																	<Default>0.25pt</Default>
+																</BorderWidth>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox9">
+															<Value>カテゴリ</Value>
+															<Style>
+																<BackgroundColor>#f1f1f1</BackgroundColor>
+																<Color>DarkCyan</Color>
+																<FontFamily>Meiryo</FontFamily>
+																<FontSize>10pt</FontSize>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>12pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<VerticalAlign>Middle</VerticalAlign>
+																<BorderColor>
+																	<Default>Gainsboro</Default>
+																</BorderColor>
+																<BorderStyle>
+																	<Bottom>Solid</Bottom>
+																</BorderStyle>
+																<BorderWidth>
+																	<Default>0.25pt</Default>
+																</BorderWidth>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox10">
+															<Value>費目</Value>
+															<Style>
+																<BackgroundColor>#f1f1f1</BackgroundColor>
+																<Color>DarkCyan</Color>
+																<FontFamily>Meiryo</FontFamily>
+																<FontSize>10pt</FontSize>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>8pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<VerticalAlign>Middle</VerticalAlign>
+																<BorderColor>
+																	<Default>Gainsboro</Default>
+																</BorderColor>
+																<BorderStyle>
+																	<Bottom>Solid</Bottom>
+																</BorderStyle>
+																<BorderWidth>
+																	<Default>0.25pt</Default>
+																</BorderWidth>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox19">
+															<Value>金額</Value>
+															<Style>
+																<BackgroundColor>#f1f1f1</BackgroundColor>
+																<Color>DarkCyan</Color>
+																<FontFamily>Meiryo</FontFamily>
+																<FontSize>10pt</FontSize>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>8pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Right</TextAlign>
+																<VerticalAlign>Middle</VerticalAlign>
+																<BorderColor>
+																	<Default>Gainsboro</Default>
+																</BorderColor>
+																<BorderStyle>
+																	<Bottom>Solid</Bottom>
+																</BorderStyle>
+																<BorderWidth>
+																	<Default>0.25pt</Default>
+																</BorderWidth>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+											</TableCells>
+										</TableRow>
+									</TableRows>
+								</Header>
+								<Details>
+									<Sorting>
+										<SortBy>
+											<Direction>Ascending</Direction>
+											<SortExpression>=Fields!date.Value</SortExpression>
+										</SortBy>
+									</Sorting>
+									<TableRows>
+										<TableRow>
+											<Height>0.4in</Height>
+											<TableCells>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox13">
+															<DataElementName>date</DataElementName>
+															<Value>=Fields!date.Value</Value>
+															<Style>
+																<FontFamily>Meiryo</FontFamily>
+																<Format>d</Format>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>8pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Left</TextAlign>
+																<VerticalAlign>Middle</VerticalAlign>
+																<BorderColor>
+																	<Bottom>#e4e4e4</Bottom>
+																</BorderColor>
+																<BorderStyle>
+																	<Bottom>Solid</Bottom>
+																</BorderStyle>
+																<BorderWidth>
+																	<Default>0.25pt</Default>
+																</BorderWidth>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox14">
+															<DataElementName>category</DataElementName>
+															<Value>=Fields!category.Value</Value>
+															<Style>
+																<FontFamily>Meiryo</FontFamily>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>12pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<VerticalAlign>Middle</VerticalAlign>
+																<BorderColor>
+																	<Bottom>#e4e4e4</Bottom>
+																</BorderColor>
+																<BorderStyle>
+																	<Bottom>Solid</Bottom>
+																</BorderStyle>
+																<BorderWidth>
+																	<Default>0.25pt</Default>
+																</BorderWidth>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox15">
+															<DataElementName>description</DataElementName>
+															<Value>=Fields!description.Value</Value>
+															<Style>
+																<FontFamily>Meiryo</FontFamily>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>8pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<VerticalAlign>Middle</VerticalAlign>
+																<BorderColor>
+																	<Bottom>#e4e4e4</Bottom>
+																</BorderColor>
+																<BorderStyle>
+																	<Bottom>Solid</Bottom>
+																</BorderStyle>
+																<BorderWidth>
+																	<Default>0.25pt</Default>
+																</BorderWidth>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox20">
+															<DataElementName>amount</DataElementName>
+															<Value>=Fields!amount.Value</Value>
+															<Style>
+																<FontFamily>Meiryo</FontFamily>
+																<Format>c</Format>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>8pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Right</TextAlign>
+																<VerticalAlign>Middle</VerticalAlign>
+																<BorderColor>
+																	<Bottom>#e4e4e4</Bottom>
+																</BorderColor>
+																<BorderStyle>
+																	<Bottom>Solid</Bottom>
+																</BorderStyle>
+																<BorderWidth>
+																	<Default>0.25pt</Default>
+																</BorderWidth>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+											</TableCells>
+										</TableRow>
+									</TableRows>
+								</Details>
+								<Footer>
+									<TableRows>
+										<TableRow>
+											<Height>0.4in</Height>
+											<TableCells>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox16">
+															<Value />
+															<Style>
+																<BackgroundColor>#f1f1f1</BackgroundColor>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<VerticalAlign>Middle</VerticalAlign>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox17">
+															<Value />
+															<Style>
+																<BackgroundColor>#f1f1f1</BackgroundColor>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<VerticalAlign>Middle</VerticalAlign>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox18">
+															<Value />
+															<Style>
+																<BackgroundColor>#f1f1f1</BackgroundColor>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<VerticalAlign>Middle</VerticalAlign>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+												<TableCell>
+													<ReportItems>
+														<Textbox Name="TextBox21">
+															<DataElementName>amount</DataElementName>
+															<Value>=Sum(Fields!amount.Value)</Value>
+															<Style>
+																<BackgroundColor>#f1f1f1</BackgroundColor>
+																<Color>Black</Color>
+																<FontFamily>Meiryo</FontFamily>
+																<FontSize>10pt</FontSize>
+																<Format>c</Format>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>8pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<TextAlign>Right</TextAlign>
+																<VerticalAlign>Middle</VerticalAlign>
+															</Style>
+														</Textbox>
+													</ReportItems>
+												</TableCell>
+											</TableCells>
+										</TableRow>
+									</TableRows>
+								</Footer>
+								<Filters>
+									<Filter>
+										<FilterExpression>=Fields!employeeId.Value</FilterExpression>
+										<FilterValues>
+											<FilterValue>=Fields!id.Value</FilterValue>
+										</FilterValues>
+										<Operator>Equal</Operator>
+									</Filter>
+								</Filters>
+								<Height>1.2in</Height>
+								<Left>1.016cm</Left>
+								<dd:FixedHeight xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">13.462cm</dd:FixedHeight>
+								<dd:FixedWidth xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">0cm</dd:FixedWidth>
+								<dd:RepeatToFill xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">true</dd:RepeatToFill>
+								<TableColumns>
+									<TableColumn>
+										<Width>1.352459in</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>2.459016in</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>2.581967in</Width>
+									</TableColumn>
+									<TableColumn>
+										<Width>1.106557in</Width>
+									</TableColumn>
+								</TableColumns>
+								<Top>8.89cm</Top>
+								<Width>19.05cm</Width>
+								<ZIndex>20</ZIndex>
+							</Table>
+							<Textbox Name="TextBox22">
+								<DataElementName>TextBox20</DataElementName>
+								<Height>0.3in</Height>
+								<Left>0.4in</Left>
+								<Value>期間</Value>
+								<Style>
+									<Color>DimGray</Color>
+									<FontFamily>Meiryo</FontFamily>
+									<FontSize>9pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>8pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<VerticalAlign>Middle</VerticalAlign>
+								</Style>
+								<Top>1.2in</Top>
+								<Width>3.5479in</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox23">
+								<DataElementName>TextBox21</DataElementName>
+								<Height>0.3in</Height>
+								<Left>0.4in</Left>
+								<Value>2020/01/01 ～ 2020/01/31</Value>
+								<Style>
+									<Color>Black</Color>
+									<FontFamily>Meiryo</FontFamily>
+									<FontSize>11pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>8pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<VerticalAlign>Middle</VerticalAlign>
+								</Style>
+								<Top>1.5in</Top>
+								<Width>3.5479in</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox24">
+								<DataElementName>TextBox22</DataElementName>
+								<Height>0.3in</Height>
+								<Left>4.3in</Left>
+								<Value>目的</Value>
+								<Style>
+									<Color>DimGray</Color>
+									<FontFamily>Meiryo</FontFamily>
+									<FontSize>9pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>6pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<VerticalAlign>Middle</VerticalAlign>
+								</Style>
+								<Top>1.2in</Top>
+								<Width>3.6in</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+							<Textbox Name="TextBox25">
+								<DataElementName>TextBox23</DataElementName>
+								<Height>0.3in</Height>
+								<Left>4.3in</Left>
+								<Value>出張</Value>
+								<Style>
+									<Color>Black</Color>
+									<FontFamily>Meiryo</FontFamily>
+									<FontSize>11pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>6pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<VerticalAlign>Middle</VerticalAlign>
+								</Style>
+								<Top>1.5in</Top>
+								<Width>3.6in</Width>
+								<ZIndex>3</ZIndex>
+							</Textbox>
+						</ReportItems>
+					</Page>
+				</Pages>
+				<DataSetName>EmployeesDataSet</DataSetName>
+				<Grouping Name="FixedPage1_Group">
+					<GroupExpressions>
+						<GroupExpression>=Fields!id.Value</GroupExpression>
+					</GroupExpressions>
+				</Grouping>
+			</FixedPage>
+		</ReportItems>
+	</Body>
+	<PageHeight>11.69in</PageHeight>
+	<PageWidth>8.27in</PageWidth>
+	<Width>8.27in</Width>
+	<EmbeddedImages>
+		<EmbeddedImage Name="footer-phone">
+			<ImageData>iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAfpJREFUeNq8l00oRFEUx2d8UyhSClGW0jQREspGSSyUIjuTIllJ+Uj5SrJBahaUr0QpFj52JLKxYChEWdlZSAj5qOd/6kzdpnvnvTHvOvVr3pxz3vzvve/c8+44DcNwuN1ux3+az+dzRJjkVIFpUGq3eJTCHw1cYAvEglaQAZ7sElbN2Av2QSR/jwceO2csEy4ELSApIN4WZKBhCzvBpOAX47mgWpdwEygLkt+pQzgBTJjkl/EjsLWqPVy5MnsAMaALvNg949sgecsgBSzoWOpD8CrJuQCDdjcQUfgTrCr29LtOYbI5SQ4VXL5u4VNwFOBL5taZprtzDUh8OWCbK1ubMM14T+IvBvPc3bS9JLrBj8TfDPp0Cp+DGUVsBDToEibrBzcSPy31Ii+9FuEPXtoPSYz6+gbIVNybFaT9mgqTnYF2RYx+eIcHIVoJuOKOV/NXYbIlMK6I0fFoTTippIJakMjXtAXHhHhIwg6u5FlFrA6MgkpwyY/nS6iHXnAQuPRWhQ0++ngV8R7e++kgmwXF2iinUy3IC1XYL97BszNMHhudUuPAt5BLLbfgL8JiS20EbyZ5Th4AfT6DY7AbjjDZOijiqrdiU7zcj+EKk13z1hkSikm0exasAMNW/0lYtW8+nazwe9vFjWUTnChqwRZhv92B+lBu+BVgAOirV+Y3t0ZPAAAAAElFTkSuQmCC</ImageData>
+			<MIMEType>image/png</MIMEType>
+		</EmbeddedImage>
+		<EmbeddedImage Name="treadstone-logo-full-color-rgb">
+			<ImageData>iVBORw0KGgoAAAANSUhEUgAAA+AAAACgCAYAAAH7kDYaAAAACXBIWXMAAC4jAAAuIwF4pT92AAAgAElEQVR4nO2dS1LcWNeukxPu/zCCH0ZwcD8jCkZg08qtUMMwgjIjwIwA1wjAjYxUtqBGAI7IPnwjMN8I4IygTiy8RAmhy75ftN8ngiiXTWYqJW2tvW7v2polgCjKg/ooq9XyLoVjjpUPoij/kTm2arV8vTlkXtP8fZnXtH+/8bpvs9nsrPFXvTepxHHtVKvls+JriMP6RtM5X03m1br5+r2NWDx2/V7zc7req/Hvh81FMHZ8/0fm4ANzZvHjnzRfd2v6wXShWxeb+NXxd++Qvclk+DC0Evvu0iaqK1/2fU3pOy5RlPvVavkgc1xd30f1fDUv6EYstuq/a/65+f+uzkFNCiv8DZp3+1XjzxcODmsQupjtCzqv1i/7kuaFH3oPUZS6T6c3fLDxJgnw39CH2HFBb+v9CF10iUf7to3jiHqFi6L8HMFhGNP1WO9iXq2/uT6W2B/p1/UffNj9trmgz6x/TN63fqTXF7vj8V5/7uAG1cbmLTkbbhtV91GHoce1zC7dJsY2vMNPlnlN+0sejgRU3uyq6fU2Vzy9V2snb/X9+6gv9pgNbx6fKMrLarU8kXn/rps3iRVerZYfPXyG05Xed0E13LFjk+MwvuDVavmt9f8yNu+u9fPc/gVRlLumx6aKq4tuycfujB2M0D7Pd0Hcsmq1PJT4tV8eDuUdLh/vrQALXYCDkZe8Qk+5xmNdNsD17jwntWnzYVe7PsfGSm+v8o1YyNz01rFywXXCqyrQe9Y/jc+5d/Xe7e/kEpVduo1jStkt24/gGJTpusA+XTMnF9zW6rPIHyE/fOiC8qP+qu/fbWPtgrceN0arr52BshDxam6OjkyOTZWuDFkHtau1N/b2po/1ILt0mbSji8/gz3nnAo69xpQ6sNJc6fNq/TRrBV9sf66PwMvro8nVyaOqlcZnKCUbdG8qGzdj84LyRa6zX3saF1v7KRV9TRvq2eyyJbMSTataZOLtAzVtzc+7qVbLzrtbp85O53W6nzP7vbLvm/uboZU9VEkj+29dpOaWGeXH2yej+fRwScN+v9nM8t9/9XEMNR/67l7Verb26wc4b8ffbdP6TreSIcy7ZihyYNMnfb5a7tjzRix2Zo0dO//7xbxaX4ytdp19RHI1bTY2fpJxe5c8cPHD68WuP6ur1s012RdAeOB0Xq33e8qUX5EoYrSSPUzlgjcL7b3aPAuQSXmJPA6s6B2Jj7GSPUylAKL5WLZWZtxy8w6oZr3xb1bq2WZyj24rJcgy4JH+lnsqIfLxQfUjXCVxYmNPY6OmTfUgzkRRvvHJdf1jG7QLHiiuTeXR1Wop85iVoiOOfkMupmxNmy5dKd9kVrjL/DS/dzPGvm3xhnsXHdyIxVHjz8rurwlWL7ik3XvsqLVSomlrLR77TjtNafMp07WCdVwyxWN6d55tZMuu6vSeKMpf1Wo5luL7oRh46cpu3bvIA1D5ryjKv+pd9cxSTZurR/YYTmraWjXS1itNbdpSyc97sGw+ftZ/qFOijf/3Wt40i7WZkMOh9Z+drQyOpdefdecyKte3yl21Cvdhy4Y3c9Q2LpCXpIYnOhUemiis9O+mh2yrarW3igTMBv16ldVdrZanpqcz+v7wvoyc7GbKlz/fRVdpU5vkmglrWg1vQxfjXeBlZtnX1LzIBy5uDr7o+/XOv8dmf9+IhdTq7QgU9dL1e9GtcFGUr7Fy28GW9vtRLF0Upc2P6GQjFtQXttUVTvWdHpW+W2SQLFMy4Z3sVutzlFuX2+jcZDLFEjbeTxaVzxVFeTy2z5DBw7XXPp/zav3mO5osMpNr3fPawVZ50/OXmqbPU2yFtkMXwJeuQNfnziRuOlGU2zYW9yzgd+1ibB/swqLG9P2b5CLalSUSN12S7ZhN2ta5TVsFj32m152ezcXOSfUbw69klXe6m60Dtrr1VHkfyw6xk7pomeI6chtsfbbO+SIfVyM8N5hUULk2Lu+vDkt9tRGLUbWjjVjQ9fjG77FbFwtaaPK79rXDlD1HqGczQ6aY0qYS9BDnPf+WvJWW4JCLRF8X97xaX9Yh7VbH7htVbJIubxeY0mt1DyRkGL8LbNHBFLidV+uhr/Hc6MweyrrXv0fbfindwy5i8sexwDXpeVLv8A103fzLWAMwA1DOcLsvYxH5dznaiMU7P3herT+3r0sH243fN6pBIoUjH9qhY2CLbhFaELEFWYYYkdJ4YuE6I1FXXzS0yTvPf/Pv59X6zUIfq07RJArXKBcL3lld02JMuvsVHcUIek2M2jS1NR7wHS+5z+4hBovUh6LFfVEQaS9qw76B03ZMxuXOTVZyJvgCt1GcEoCu8WXNm//dxW7OsokRiYW+L5tfD8XYIm8uYNu58Gq1/N6syqsJ7Z5BNNsSzZF3dLFjPc4xGi2gvTL8XZrTgXndGalYYNvKOj6q+VQJbsEpR9y3fba4oK3lwakt1uC1T747InWpt+NDpawxWfQO67yzEQvvbVB9zQK2YxlJ5cFjfPIN0NUG3VUU0pWXtjJC0ifVannF16f3wcQW3YseTg8vbdgta9wnjvR6rbjIxQVdsYog5yemINtJ10lIJcXUEXi7iz220GqJb/Kuko1TZkN+ulHu2BZtS94xT+iukTOnke3WO7zIXfPRtSZDND44WYq+f4tlrvDAjuK250flPYAlWlVpo9WGjYo3a/dZLEYpqiDbwEkZK1AAeTO0UxrsF2hZb6v3WQyLPLo8+ECQIuhWXRRl58WXaMns+i7XfaM7DOi7yX9aefc4+dhU0uAjPNmIxRULHkkpbfO2ftuFqLGKQocLYi10ee4KSBkscplClxcG3t+mm6D1Xjo3imb2wIm8jW1q5ZTZvxqHL/3t7WaRebU+IN+76+NtKaCO8Ghbo1L2+kS5wCmVNND+uFutlqPSdp6QKUtVmgpuk7GHoS8JIx/UE2Rm3Yt2rBnFqZQSqQ2HemBGW+gycHNaGfShwkDf8ug2u6+v2uEFv1KZ02HJ7bmJKdPRKGDpKtZ5aNStb9kudukj1PlJqcMpSobq0jEXFYTmg2tRPIWpj1rv3/osb2KFDTrTYYzraRZdSDfNWPo8b8o8BqKLNmWZOtuEx8TDddRrbJy7pGrRA1dLpcKtgq6ylahxrAG5rjZQR62h3kYKqpJaP3gSvckxILnokiudHYNEGGUWMf/OlGaqdALBBwNYdrgXnb5xoAdprfGiVtnl3dqy5n11EqHBAjfjfuTVQ/65c3Ioi21Y666H6XlHLfo7n5ffw7TbMIpy6ja9ssmuJZNdT3Ro4jBF4aob6R0eJaatfpar+4uLWfpctj1SS+17LVeutRttzubV+sz3aCEdVO5nWPAJkJigoy3eLe5GXnu0EIoq23gxW+sZj3HHhAUOkmeoWIUnn/TCFXAfG78/KbcGC9wxY4E44IaGbz4adOOadit06bKFBLromnABT5vDjsAaBeL2UvhOqdNoONFhz1IZ9FcW3YwCWHB93kVte4KG3gJxudKw1n2Lu3fOWk3Tb5/SNh0LHEwVGkRYB92aqqvWh1C2iSnYhi06eMdQ333sEXuJNNdZPVm0CW/vJwcsOOgksSKZHZO2z3m1vrddthvLyCcscA16yhKHinaCVrQNMKjRntAil7G+nblxXtwu5ohF0RiFBa5HV1niSeu/TaKsSecWx8F5YxMqd30nzmFxcdvW17NGFj647KA2k8+oZaRI/jmltlbW8N4ZsoIpaNNLzCV7qGWbWGDxtrW4pUUaO/iz6y9dTbJRuZ9jGD4InfDA1EMNhq5FgjPOh2g/zEjG6XRerXUX+EGPsGLwIids0cErrhVzXKOZv6bFbTwWmYQVu/6eREJdf+8hUlvgXfO+vKJbipjKtl1mkU+o/PajjcU9gneR0CapjQ92XqQgQdc2TkbGORk1Gomt+JMoSheRZy1ao4qGrHhzrPOzzRp0JrpgW7RBNsv+nmt103bk/Dz2wYNjSEzkuBdFeTI0Uy4UFETrGh3c9LObOuoWz9lNl868ycjpHqTv5xgWeGcE12ZQp0+b3BbtGvShmecpIbHIL0VR/lGtllFNFeX7KaaAoFU/XOV+Dr5FH5ObBWGReMgei6KMwXVSwlVp6sD5CnKfR+2Dx1LuV2N6I6e4EGZyizyK3YqCLz4LkMIKEpiMYoEP3ECxRZ5Nb+Rkt+1TlIVqDym0SDRxCXSTWSBVeWRV4cPQo3BlaPriNNB/IxZDAyJJQ33fdqqMYhJoNnlPZ6rJQQTSBbcdPyA8Mlrl+1PTYWsSzQLvqwSCIgrwgYNFHoVMF0pVJbG15YotcDhRZNNIzrTTYplhH9sC7wxOROL32QrIYICiZebV+s0uryXR1DtxZCMW31MYdGBCVAs8hoIJkAxNC/lrIK896oe7WuQxZB6SiaJTpDrGgfo+RwoNfE52cYqNWOy1/ObtsZ7wHInRB++z4jFGpr+P/LvzfCgv7hQyDdbhxfzmHOsEyxxH0YNqpEdnwV0ooihY0ruuOt++PHe1Wg5evL58qM5uxGccIiURjo1YkEE4aS5S2QXbMyiB/HJri7JaLb/bnnaicn2SiqIHnMFse/fgZTeS01BCma15x5yyN4ublVmjmUpig1gXeF8OMcoZzJESRZrGJ7zI3/V4S8wpe3bpu4d80Ea5wGPJISbM80DhUJPogpamcNmpbOnpA1tt673hsZBcLfrExP+so3JuKN5gw9+O7XqwUkuzP7zJRwdKLjI8ONJfHyTa5gGVm4YHC8TS8NEZqFOFW0uDdp/5Wrg696DPh0qgNULZgVNfegnc8xEq3XquK8c2heeXTbjo65av5clGLIJ2NqpcH1vnTPGeONQtv4jh3kO3qH0O6gsLT2Ic3RqdWOueLHLMYjn1Oz7bnqHA4rgxzFw8qxXOsGbUYEmDvvaWy4bkwRVnlKNFFOV9tVq6FjmeFDDgDkE4UIp7zdfdRiar6JptBxvD6AYmuxr2NAXYu9adg3vcqAKxMurDAftUFhijTnOswICD0ExlRIo32JBfmbReRqwxhvuBmVfrC4NpmEM0JYyeIysCuYxJ0DB2oOYCgmFBgjpn4Yxj2w0sIBzkXVPjU11SzQZW1njfDZRZjxnn7cZnRhGRwbRpeT4oSFc1UW2Ecjo1SIOkCxd6oF3rjyiPrB/TIr3jAemAYCgWYNJDWtcQf/XYaq5dnOl4zST5/JpXa5Mi1aMRJfBXeDxfcxZIV3d0zXazsjukbspE04/W76MPOoasa3biEBMvNoqF/+Z4nmmAcbVahmgbsQJJQdSaQDqV4BTFiGSgdhBSfH4pagc9kjCZrc9uhsvn1fp+qPWpPs5QhpwibFNS6HTxfEYIHQSBKk4tfe5kxsdINu+3+cPtUQHPnLI4Qf1jZLzn1bq31oEK2erPGRJP4Fx8CChN5L23OiVQxAZCYWthTq3o6Tzl6bNAm8PmoI4xWv3eQxzIKDY1xFG6NDV8pmra3GfWbaIEPHDgHYWxbFKSfKbFcADEzLxaf20Wt3FoWzbdorQZ3IjFYde6Czl4F0Vt/cCAgxBIVY8rhJThsYLkmVdrKiK77TDWXkPYfWH7hiiMd7g+BLSAAQcAgPDcsrCOan/+m5x51y/Mq7VOuqqreEw2cuaCXe7YAA1gwIFXWLdehjrnJtUuY7EoDnRzwNKrIAwU1t5rFbjRT3uqcVe+W8dz7vT6Q4bS6ZhwD74FRWzAN1IeBrdX0X+PJHNgqFZVQ6f17olbsD6qtO5BTlgZ7anVlMPuMLLSa2OstSwCnlDU9i/wwIE3XMt3KhTHZQ9POdOddHZPmyqcb+ucuJpKP6/Wg8PWyXCz4Y9+I4yitn+BAQc+kQ2fn7f+X7a9JmdpVWV4aIjJUItLNuQ473a4bAwcMaG9fojrrveLzHBLpctmv4145/fJDRhwEB1tZTEb89VBNxQK5xC3yUCLYzbkqEMw53JIfEWGjViMtlVKGO4QCmgqEaHPEQ/k8QZy4NPhdaayIdo68UP48tJoZ055cx+fNSU4pL41MwtR7vNrrc8uzwxqJVMSdpGB+slns9mXEW/7dW54gLYxGiW6pXD/JTVS2Fbov1lTkr0BZxEQ9BG7RzY02BX+m3EYXWbHPZjrA+PUDwiDB46L2eW5YWrEjzrC5kP95DHNCN9joZpRJjr0RBqE0IFzVPSMBwZzSHvVCK3ZgR6M/HDULXabcWgdRUd63PLUMmVkp5VxxftWRMab7rtHlZngoiijGIMaAhhwh8D7eMU4N8ohXlkmM+AkBigczvey9tS32pCjj7eXux6jdcb65DoMrRlnFe82UJxCtp2rnDIMuELloyQnDc8FqNEXPq/BWNqAVKvlR76vTdbMExty9O234NxzlxE/4DneqvRFrUgQRtrDDYXiM/Qsx81h9jlwqsIVRfmg2EZxE2Gh1HmMc6FVdsYSx3+ikBvLek62S+p7XxTlBU+q0uGeRWFowxu9MfEFGfF5tZ511IyQTvpTc573GJQ/5/d6w0YspIYERcIOi7fIELXIiwunDh44exaKL/kMD0IaawWCnBvz/rmgm2q1POWHkknLEXrJWwx44mTEjYd6jIm6xASnzsYic6/kVm8BA85o7I7Q8zqCYkirrench3QeFvlWP5AHzevHpBDqOPNitzeb0wEjvqvY3iUt6hIrHEnTLqScMjDgb1Eq6EB17SjSxTfkzUn+qoq3h02WR2yIwmS8pv7b/gs24l0G+Fh2wlifqItmTj0Y0BXoBga8QT1AQwWE/gaxnmZQGaJB3ortzwfjUNgThZx2YAPctWk13Zxu87zxZJ5fuJ/ek30RWxtFJaAZh/7OFfOzk0d1dq8rz4uOQ2djNnW4V16lPelOR9JWYz2BFlQxPq/Wn9oiRapFbT0cs/76s4X38sEJZh78CzzwblRzecaFJRNkSPXJJ7EcBwDabMSiq+uFvGhbdR61R/6Pxfe0DncswFliYMA74DCtkmgFvAwAgGO6IkkuctlPHTPFo6FaLfdwo/0GBrwHjdayui82e0RRRqWEFtvxAKCDA9U00lpPMq+MfPhvYMAH0LhJvqJ16YXYtMihjQ5i54zD18riQ/NqrdUWVg9KYUnVrQRD09mPGUYR2zjniqIgUasBuUYUpZJIhMlOWiVtQUVbLsakOgACNNOna1JYDRny+h7Y2YhFu//5saO7woowy0YsXkLTXNQWfaEYrWdRlLJTCicJPPARdOQ4c56OoygS4VOcIfowumYdxQ8HhwIcQpPCGl7v0Bp4Yq+82TJmono3yLxaX3Due8h4RyWootMZMSXggUug0QqzHaB96Ysoyj8sv+eDgsCKDqZ68kOeTDAUxpl+UZiT3gl0xNOmbt1iYZa+3u79RlGZVYPFIXvZqE9XRCA4qbQquqjFgQGX56OieMKFgjyoDXZDC5eoitqYhrSr1fKGB2JIQcenOKZQF1/evo/vUnOATgt3bMTioU69kSc8MCSm894iQRZWbpNGptI8oSK3vQTaea2H+mHAJdGZWkYPvMyqJY28SQ8cezZ6LjmiDcxEvgtowNXmL5EvhXYuEmT5wd60qaHYS2xi2cugI1GUVwk8g6yCHLgCmq1lWYi8KISNa2wZUlX9+uSnyLFMqZHxjrigD5uSBo1cucx9fmtgvA/rz0rNeNd4iq5FBQy4Ihoe9a4oyhx2hUphY1u5W406g1R7wk9t64tHGB2Kcc5+FGzE4jsbclO50++cy95q/aTQoTFKbv3hCKHr8X0gR9XFZc9oQOCf2Pv0yfv5odP9oEP9wOMIymWAOoqrHD0nXbiI7NVI8TCStoNAxviU8+o5suNIoS46oGYDgqMRfn/gQf8AAJAtH2KtLFUJhUT2HQ5t5Bdj+E4+wlGcXlAVjSBxHS8eKrd++BaKIC/83FeLmOY1sAVtxPZ0NmQaE9V8oTW5zQaNtrC7jVgE7ZEWRanSohbkuan7jFP8bq44RA7cPreiKE1n9ebEF43vqvOalKAw9iU9jFzruPMDL6TqFqU0njBHwIx5tb7livXaqBzoSrMGAvMKNIABd8M+HkjS6Hi3QfvdPXPAhtx6IWRkioFfp9Ah4JN5td6lmeBsuPvW0VnsI0KBPjDg7lApcgNgjEubkR0euhPbQx2RKwlIq5yN9i+Fa0iGPmovV1UICsCAO0WjOAtIkunUt32LRhwPy8SginMJrfIh6rB6rJGOrERYbAAD7pY/p/zlTFGdXNYi18W+b3jeaqxMsLINNr3voWEmbLht3fP0flEKTImizCk9Zgz6wN2CvNMwJsVoXzxrzcfE9YRbQA+4jzlrKL/NKQVXz5Bd3hQc0XS0iM71vQWxmmyABw5CYuIFZl3wJIoyuilswBzN/LYJ11QIF9Glg9OjAAw4AGkSZQgc6CE5i7uPQ9ZG6EImSrUdU8sZ91gDCWDAAUgUtF2lT6N/W7Vr5Zmnhg3qmNNkM4WRoGcK089cElogJRk+aAyI3+dZ17I8qE6Mco2JwljEM5GDqi6pYqNYiXqjfamVKSCtKMUFO7cGfe0Xvq57pIpVD5E+vwZV5bgnWzdErqWwRkacwvMyHj4b8fONWATzhKnLZGJyyfSc+mH5PR8+qMrXiaJU/ZDniEcXToYEz7ENNbUvKQ+JoRnG5EVxS5xOHjLrim1+wKf4/NK51t95Trg2G7GgtXLFFehjm0byxj9txEJ5hLIlqJhtL9Bnu+C/Lp7RCKGDUNhoiZmEAWNDhMrbDJhXa+W5+RwmHzPe0sZhIxZkGGUM8z5Xw4cA7WQSwIADEAE63iSYNHV+20mEiUaNcm587P2Dqbe5kA+eGjDgAERCqAlWIBoopbLDhvtR8aC0UlIbsThhQ96Xbw7pCUMtcAQYcOAdm2pbllTJAAgNGW7yupUKt6ggjpTaTFNSG7HY6TPi82qNNRYpMOAgBJ8sfibkakHyaBjuum/8yZaoERvxLoJ5wq7H6aYOpFRBCGxOaoN2NsgC9oRdK/BddXjzIdXRsL4HgAcOAACRUofI2dt2Lp9LOfGuvw8ZRkearB8YcAAAiIzG6FCjELlG21ofIQvKoPvfAww48IqC/Kd0SxVGUIIpUA8ysTw6VGdtdOmqY8hIhMCAA9/IhsN+KKis2VB1AyAYBoNMaq64Da2NcsFon4TqvFoH094XRYmWsg5gwIFvpKrGWeP8b8ljg+ADyJGHhuDLSY/Wtk2jGzKUjTXeAQw48I10KK5aLW9wdQB4xxEb7Y8twReZ0aEmBJU3xfS998CAAwBGEUV5j7MUlHM22vTTubFV7SXvI2SofAT0hLdAHzjwBo/PdALtzqvV8gFX0xn7ZMSr1VJpOlW1WlI+NdhYysS52YjFkelXoEr0oZnhrd/d50lgxu/lABTStYAHDnwim8fSeUCgkM09ZMR1RmECeR4beW1j481IFbLxnPKoIy2iKFVmuU8eGHDgE1kj2yxek82D21R3ywHd+oJtGHEnXLHR3tMYZNKkq3NjdOPMxjuF64p13gAGHPhENoTefAjJVqIDNToVtyQhI/4PzrdVbFVZd1WiD4aeEzLeL7hMxaUGDDiIDp6N/QK3kwHL8Dk2qhmAEbcLCbmYvqFqfjo1482gmI2BAQeTATtzNbggzahyGUbcKl7FShI13rPQ7WwxAQMOvCCK0kfuCmIPilSrZe8caFlgxO1hwwvvYl6t36y/SI239H3o6XkSPTDgwBeyBWwmLSqYDa4BG3HjcLooSrT5mGPDC+9aQ6+V6JLGO0Sr2KHC72ZfjT5DH/h0sOUFVavllqOTIisO8bPj7+4khzLAgGhC4XQWazER8XgSRblXrZYmVdTZY6HX+u+O9fLy/zLGm6rh59Xae56ZdBxEUUr/Pm0Ym/UykXMmivLMwiEeVqvl670BDxzERlfRGirRPcA5cdOiwV+QvDTGyHhuxKJTUlXWeLv8YhKo3H/ZF7Nl74EjfxcXPd7blWzILLFdeXRUq+UJe0Emudh7UZRH0LLXx5Hi2VjYfMf291CF7z/Zey/7jSI8cOAchQXZiaJBRnGLIfQQNewTJ65Nr3vm+PYud2xpqfsk93sMBtwtyAX+xqfMqfL8Y/Ae7r83NeKXoiihg66Jq4r0DmIz3ir3XdZzwmHA3fLXlL+cAjIFaDPTSmgm+7CaLdiIq1QGd0HFO1k/ZA0wOW9So0VZvjUqzxviTfLAgDsE07GUGSpWCzUBKWu44lVpAlkHx6Iosy84GqHz/p5Xa10jPlb4+RxBwdoQ0tFLUZTXQY4wAmDA3WEafsyRoaKnrvYy4AHeiJoa8QPMFO9nIxZ9kQ6tMPpYAdxGLIIXrI2gEvn5HOQIIwAG3A1XCAP9RhSl9OIaiVhIn8/cC1tcwNfG9KGPcaTDdN7j82r9y/LnxG68+7pRehFFKZummxQw4HZ5echxFS/4jRV1NMUFjdngDuBuANOHf9bjSIc8441Y9D03drmH29YxpFJtLpXHZ7JM0WTfBz6bzU4VZfmeWXoyNmLNEYfYGWe5G/cBG/EtQ/2El3GkDlX/UuaqJ2z+S2Pz9NyhTphMLUm1Wp5OSPP80VJX0pvNV/YGvFotv4uiVDHgUcp1VqulabVwaNBylxBkfE1FkGDE30NeeE/72DZ54Yre81WHLsJka0m420FWdtk3P6rV0npLJULoGmASjhN+SLwpKtEjwobxhRJiJ331Hqq58K5KdFmdhFiMoIpjcpxbsSsM+G9Uc9aYhCOBYmGJjHGWXpwqxXNAHzbiGEdqkYFcuFL0ryffnpROQnNwhyRZRfJgwCEc4BLpAjbJhaqirY3Rop7ATHEn9FWk59iKp7Lus3KuYMD/RbVtAepS41j1ghWFcVDI5hFLRhx94syAF27sQc+rdVJGrlotjxR+PauRwjDg/6Jyk8wMpzUBMDnYiJuoD0IG9y19XrhpDQ5qeCYCDDijI3sqinLX1fFkBsZ/TgSeKa5txDFL/F8GvHBjD9pmX7knThM7Xi/AgL9F9cEDfeceFOmvDw0AABxsSURBVAvYVGoQVDSSEUYPABtx3boSXLO3nBu+vq+2JCkxHWr3jeAwogMG/C2qvdTwwPtRUUMbG7zQRKbdrAaKbIFgNUIdI55VDnOMjVh09g4rDDnp7dyYV+t/EvPEoRXRInshlyakMiWKUuk1pLuNKvZOlGoEFLxllXD7MYbKdKNa9a3T801GXBTlM3KuxpAXftZ6E1v39tO8Wsc2D7yPQ41e+EkDD/w9qsYY1ejm3Cr8oAc/Lf5f7ifAlD4vXBKZ9kwy4tGnLlQHnOQADHgLDCIBAKSA5Xaw20TayxDtbAADbgH0hL8lpkpiVDWDidBVhT2amhibC95+v9iFYuBgvQUGvBvVyk/0hL8lpuIxFLKB5NmIha8q7P15tcbM9kSAAe9AZ2qMKEpUz/5LTEVLKKACk8VRFXnszzJV0a3JAgNuD/SEAwB8Y7JBNVHNC0a1Wqpoo08aGPB+VHMtyLUCAHyjPbRnIxYmgjuhSXLzYRsY8B50ersxwjJOeVlI3oLYkSwe6/I8jcLdLNeaYmGYqujWJIEBH0ZV3ODa9wFGSIwFfSgyBLFDxWNj4jrS8/BV2IgFOSsfU7pDSHQrgsMIDgz4MNjlqRPjHG7MBgdJwPKmfek4lZYwJTZiQSHpncTuElOd+OSBlOoANKFMQ1r1m04V+4RQCemd654rUZQXCgU8SXQIIAUDmPt5tb5qTyMjIzuv1u/OEamoKfZ7z7qiiyynuiURCYgCenaIomxLzGYFPPBxVIslsr6hFDHxKFQGoKQCUjAZsBGLLYnnyrFCP7aODGrn58+rdWr3YNahdBjwcRBGl0S1F75aLbUNuOprY+/Tp8hNBIcBPMEV4GPFY9scUh8rwvzD9Kipn5w978EokIan75qsn88w4CPoFEuIoszVk4pZNCXaY+P7BZGbzODiMZm886+GTnnX88hoEMm8Wn+TnA8enbdLac4IDiMYyIHLcaVYyew9lymK0rqQTLVaqu5uY5Yt/TSbzXx4ufuSdRP7XFxn0uKGwQ6J08g7349oSZBOOT2D/rK02XupaFfId99sxCJWBbSbEM9cRb6IojSOlLR4gAGXgOcaq8633ve8O4xhHGDM/da+hHZ8TnTqGnDhBNX54UANCqnPq/XnkTqIbYuRmk/zai37XlHPC69Wy6ME7s9dF89HGHB33CbYluETG97jXSQblyCgF3ZabMTixnYV+ED+XGZDe244ixw4BjlweVR7DjHcZBgbVeQ/XB5g5GCs4kSRrFIfhIvSaMzxL53X0zEkZryzXA8w4JJoTijLZhKW6ne1MZBAVe5WNQ0SMzpSvyAdJKvUX6H8OBWjcdX6P1yUpnO/P/AGIilyXQ8w4G7xmQ8NTQpzt6cyG3zKqRlMmmIUqtSJSwv58VPeOKTKY8LHrgVy4Gqc8EIB70lhGtsU8uWHlnLf32Nsrcu9LaiNJ3W0u41YTKGf+lA3ZZAq8MAV0JxQBoMPbPHRRPymSbVaeqtgVwBFeT1wWNv2+TnlXPckxFCq1RIeOBjlWbFA7RgFR++wqeaUQyX6c7Vaugibn8ckIOPoO06GjVjsSPSLD/HIRnvKaYooI0uugAeujvJuderzqDWKw2zqmCuNWExsYAhtFvdcGTYuzPzu4r01gPGWgHPUKs+g2sumn72JG+9YI0vOgAeuiM6EMs6bT1mzV7U4zGbF6JWiF/ln5IVSdzylzYvmND/wTjnV47tKnzYoJzY6EnKC9cgpL37Az5a2g4D+7UzYgsKSGtVq6aTFgqVQsxUlaXDHob7/kKGNLa/FQ0ey1y13tQ5CQKqJNMLTw0cfTXGzMsFn1wNvLp/5OUT//5BLjp3Xw2cekrOdSIGyCo/8Q9f1Z6g1KYrygAXfgBx3GvLuYKI42os9VqvlXkxnzLGPdugrWFSDPfQrh4igg9hobuQvGtmKG462olAZ2MaXPEDs2Rvwm6bD+Voy08qcPvO1/OF7A2MbdrivIx9lYZNalp5szdfGdUVGD0QBZ0e/jGS16blzshGL7JpvHLJL1QQ0/miy3xBEAxxwkAq0Ef4sivLBopQJADOPpXsHoii3ce9Ogm2+b44bDtwdO3BJbIiRgX0HXdNrvp6n1WoZS38OmDA0tYIbX78oBsFo/f6aV+sZV3SccHkzMIOe6f/B+geuQRM4SA3K1jxNvbEe+IFFAXyODcxGYSRDXjbEVDJIWRQKtsR6CkRRXsD5HuSCWysAsAplt+fV+ro1derMsAKFXnvL7/lEk61w1Yy44MogAJyBDDhIlXsodwEL/On5JFKWAwIr06fOjkdXscOqmQgEjXOAclRggkF22wT6zMt5tb7ktoq/IOqlxa0oyj1UrAFXIAMOUmWbxRwA0IKrKHyLh+1y6S/Ig7piJ6aBlBcRHEMqHKPaCsjiKLttAjnjZ/XxzKv1BQcFwDjbrI0BgBOQAQcp8weuHjAgVJneF8vDdEH8HHO7Q9CMCgd/sAFX4xhVK6ANO7LHXEWVSpCGsvFfuW/8hvvGkeHth6pgLnKbbwn8AAccAJArvtTP29CmDWWt+bHN2XDvo18AAGZIKpOnxIuwbcMZP4WieidfWZTN5vx7AOCAAwDygzOBwbIWoii/QmU1W+reQmx2AYiQgNnt+pkg+5mPlo6v6YxjvNl7SFTzDs9sYBM44ACAHPEtvtaGMilwwPOFFLb3cj8JAMRAwOw2ZVXPm87uvFp/477xUTZisTf79/gvWHPClOZ4swd2xh+iuFBhwTMbWAUOeD7Qg/6/Ab6tlCEBwBc8Hupz4BO+T2NOqtUSG5txbD67/oc3qfuBe6FJjO9btVpOrbeYskSHPj+QxThhZ4AUgbPb51Tubbvvmud/f5z9/n70nS4tCYzSc/IezvgLu5iKAGzyoVott1yfUS73dDlT07vRT5AfIfoORVFiY6TG+QQ35bERywimL7ypAcM4f3bxaK4Lz075GcS98oXvaey/PMBO962lDLEsFDj8wc6xNzib/nI9+HtfWgo4t53xwwwF3I65HxzVa/GSzB4aY8gAALnxKZLvi1nMkUACO9VqucMB6RtfR4WRdAB44cmx811nt3c2YrHFPyeazre1oCw5yBuxOKLjoWOz2Pb0Ml6Ry+Vz4wLPbWADOOAAgGxgw+kzCzIIZ15BRFSr5VGdQfIANnIAOIT7o21zxxng2tne24jFN0sZYSdZZXbGT+tj5oCBKWeZOuHX3MoGgDZwwAEAORFq9FgfsR0P+Lc8+MjDufgD5xuAqHlmZ3Wv4XAfOiwtl3bsuN9bCw4YbDWy47oOOTnh0QS1PbHtuK0DZAAccABATsSWcT4QRRlsHBrop1otbzjTBQDIh0cWG6ud7R12Vp2PoJpXa7JP1wovsWI7ODv+reGMq35XlWOeCiSkepHh9waWgAo6ACALaPZ2pN/zGGJc0fITZeIAZAP1S3vRgJhX68+sR2ISFD6wHSTkMvo9Pj5Zx3p3Xq0vqe/d5rEkwFcWZbvK7HsDC8ABBwDkQizia23+hAMOAADBsd5/zUrkn/k5b7tU+38tv98rFIiYV2uae/1L8iXH82r9t68ARkRciqKkSQDOKyTAtIADDgCYPDRzO+JM5jaJw4UYEwgAAMAO3JP9JzvcPlqLnPZeU9n9vFofKvQ7X/qcIhERdH72MvzewAD0gAMAcsC22JltZ/lPy+8HAADAEVSiPa/W1/Nq/U/9w9nir56cb2KfM+zOYLG5U8n336ZSdJfHEym7oihz7IMHBsABBwDkgM3+7xeRHsvn7DPGmgAAQFxQVptGbc2r9a+Ws33Nme7QOD+GjVh8V5hPfsz947lBNhytZEAaOOAAgEkjitL2ZuAH93vZzoLHKhIHAAA5cEAZ3I6s9pnHrLYqvrRNVILOOWbBiTNqJ4vgOEACwAEHAEwd2+XdteP90/L7xioSBwAAOXAWaFTlTWv02ZZCL7WXbPNGLCgDLqv2TaXouY7oukU1G5ABDjgAYLLwjG2bEenHhliabbGZfUTPAQBgslDlFJVzf2w62xuxoPFnbef2L9mT4LHkW7YXnPg6r9ZOReIiRla0DmQMHHAAwJSxnc14dbqr1fJBoS9OFtticQD4ZBfZHwBeuOOy7Z2Go723EYtTziYPwuJnsqOtfNkNVUc/11J0Cqbn+t2BJBhDBgCYMrbLz//u+H+bUf5jBwJvAPiCKk6eRFGSg3FYrZbW5yq3qVbLb5ijDwLyzIHZv2Qca0V+cFn8GE4z4JzJpqyuanCNVNr3HZyXFDgWRfmzWi1ly/ZBZiADDgCYJFzObTMb99wxq9v6zFNRlCF6EAGwyT474vc8gx+AKfDAZdjNrDb9+cSRkyltX+bV2rrdoBFn82r9NJvN7g1sac4VMZfcBgfAO5ABBwBMFdvZ73eRbCpD52yfTSfji4LYDQDSUABJFOWzx00xrYt7/sxDbtsAIHbqrPbfG7GwHmSVhZz6ebWWtS/W7AbPFr+1bNdyhYIXO7mfBPAeZMABAJOD+1Btl+W1y8/H/l6XA2QNgUPOA5zcbXbEn1DhASLnsZHVDuZ8N5C1LzRCzSjbyhlvchif4HxbY1sU5fVEvguwCBxwAMAUsT1Tu6v8vMb2PPCZr9EyID+q1fJ7ICd8xo44lWX+A0ccRMruvFr/iujQviv8rtaaguPtnM+iKKFTAd4ABxwAMEVsq8L2ZkLYMZdVq5XFdvk8AK+wcNlHLrUNRe2IQy0YxEY0TvhGLJ4VgrxKdg+Ot1fORFEisA5egQMOAJgULL5mW/jkh+G/q7INYw1cQv3Y1Wq5E4EjfgxHHERITJlw2ZngdMwHY78Ex3sUVxos1xjTCGrggAMApob1magD5ec1LsrQkQUHzmk54rYrOVSoHfF7bFJBJJBDexv6UBR70T/1/YMlxztksM4X/3XohN/H93VBCOCAAwCmhu3e0lFD7KgM/QCOCPAFO+J7rNgbUq28OcIM9z8IzUEMTrhCL/g7+2fJ8SZRuq3AzwZf/FGtlieOvusuqn3ADGPIAIgO6hM6i+igDiWyv9EgitK2+NpMovy85saB+Bu9H8RbgDeq1ZIyXB/Z+Q05iqh2xDHCDITmxQnfiMVhwOP4W9K+kLN9sBGLO0vjxK5IEd7g9SlSl/EfctDCNlTt87NaLTFu1D7J7KHhgGcOK9FaL9kFIBAhys9rZDdIKnyBAw5CUDvis9924tJBZYks25glDiIgqBPODvWjpL7Jp3m1Pms4kjo8bMTio7tvFD/0DBRFeUS92w4OlkQoH/A8yxeUoINdfki7+gHACzw723a2Trr3jh112/1xuywqB0AwqByzWi23HPZFylA74hhhBkIRuhxdthrrq4HzTQ7hTu7Od021Wt4ojoJTIYbWBhAIOOAAgKngopJDVd3chYOCChUQBQ1HPHRJKmaJg1AccD91CFwGwF4dbx59BphqtTx1JLRK007ghGcKHHCQMn/j6oEG1vu/Ofqtgot7Ek4GiArqXYzMEYeoEfDJfogRZRuxeHTgCF7B8ZbiyJECPImtXjh4XxA5cMBBqjxWq6WrsiCQGI4yYarOt6sydFficgAY0XDEMUscTAGVe5hGlD2x0JlPbAV5X1TNSWANjvc4rInhqv//qyjKz47eG0QKHHCQIq/iQAAwMZSf1yg77hKgDB1ES2uWeAyOOEaYAR2oDHtP4XV0j5ET7lOnw7QM/SM73lDgVoQF004dvf21KEoZgT0wEeCAg9SgjMsORyMBmLHRsr4B0ig/r9F13IfYZ5E5AKKl4YhjljhIEi7zVnHCidt5tfbSKsTZap0y9Bt2vKG6bQBXXroIss8gypYXcMBBCpDBOaJSRxIBwhUDLVxsfLT77BzOTUcWHCQBBUir1fJjRI74EwJY2aIcrNd0wi/n1drXyEjVMvTvG7E4cnQs2VGtlq76wXfRRpMPcMAzp1otyWA8Oj4LdcR27Ieiiucs7LPHDvcWZ7xdRRxB+vzp4BuYZrFdlPehDxwkRe2IRzTCDI54ZuhmfDWd8DNPTrjKWnrciIWrsumccdUGeQzNlzz4kPsJAC+QsIRLRU/a/PwFJ1qKcw6KAAlYuMR6iSmJSxm+xQ8XmXkSm7NwbAB4h6uXTjjDE0rZv3bE6c8nWEtgCHLC59V6T3F/RE44vdaZHacy9Hm1vpNsvXLREpU91Wr5KIqSnmkuMtYXoijvuOf82cUeZ8Iks4dGBhy8PEg8jJO5Ri8ecICL7LdxCTnK0AHoJsJZ4sg2gV4izoT/lPy9PxwfR7ZwAM9VEO+W98zo2Z8ocMDBC/wgcZ2hhsAEsAYbJxfqs7YyBi7W0wGUUsEUiGiW+AVGmIEhDJxwl8EdWftyYHlUmk/F9+jhyh4XbZzbvGe2NXYORAYccPCKQ2GJGlJyvsAZB5Zwtbmx5Ti7Kv0LVb4LgHUwSxykgKYTfuFKHZ1722UdP+y73OJqPvg+KhimCxxw0MZ1NuIr9+0CYIqLcuw7WyPuHGoeuCi7ByAoEc4SR6YPvMFAHd3VvSRrY47n1Rr7Lkc4buPEdZsocMDBG9hp+O74rKAfHBjBm2MXpdi2y71cOOHbcA7AVIlolvgt1ll2jPZVG8wJd7Hnke0DnyEL7hbH/eBggsABB++oVstTD6PJ0A8OTHCVBbZtQF2VoSMLDiZNJLPEr3GXgTYNJ1ylUuPewYlUEfvc9TinPEu4HxyiaUAKOOCgD1c9LTXUDw5jAHRxUZZlrfy8xmEZ+mdUkYAcCDxLHNUmoBMNJ5wcYKv6AjSOTNHhO7N9DOAdrvfOYCLAAQedeBpNdobNDVDF4dggV2qjrkaSYXwSyIrGCDOfjjhsFOiEHeA9hYpBF73YqtWKdAz/wBF3Awfxj6b43YBdPuB8gj6op0UU5SfHIhDUD75nO/MIJo2rWdiustU/HG3iaW2iigRIwwFPl+0/VEXiPAPEpZ4nHIxDbysIRu2Ez6v1L0ldkkvLtuY/mnu0Y1Zopwz6IX8PYAGqfBNF+R1BcjAEHHAwCI0mE0X5xDMJXbDNBgkRQzAKOxD7js7UL1GUKV0EauM4qFZLVxl2AKKmWi2/cyvGGa4UCAzpFTxJHMI2ZZ83YmGrwvDO8P4ne/o0r9bP7Iijh9kCpKUkinIfFTSgD5SgAxlcl6J/dlhWDKbFJ1zPN7iqBgAAACAJZ5BlEwmUfXYVSNaFAln3XJ7uZHZ5hhwFHqkIIgYOOBjF02iyC44WAjAEAjVvwUYJAAAiYCMWNwrl5bZ6sF1MrLms+8QdjU/LAm6thCgb6AQOOJACo8lAaERRwtnsAOcFAACi4VzyQPZtCLKxGrsrjrk8/SnCjH0SVKsllfSf5n4ewHvggAMVXEfyaOQL5q6CPlBu3Q3OCwAARAD3UMvqcqSiXfBanh7BsSQHaVU4FHkFiQIHHEjDo8lcR/LQDw7eATGTQQ7QvgEAANEgO9LSShYcxA8JGqMfHDSBAw6U8BTJQz84aINNyjA4PwAAYIatiRIqc+r/DHDNqJpxh0eQAb/nHYAX4IADHU48RPJQig6ahNikpATODwAAmGFFdIwV0WWd+YN5tZaZH26TBzrGjVh83IjFlkLfOjCA+8FdTxUCiQAHHCjDyo6uHyK7oihtqYSChBFF+dnhHPqpsM3nCQAAgB67DdEx0+fpT4Xf9SqkyQGC5v9/Y0f8I8qk3VKtlleKFRJgosABB1p4Gk12DIVngOyuNDhP9vmfqX0hAMAoFPC95lFct5pZcZVy9k8xXBISkNuIxQ7K091SrZYnHqYKgcj5gAsEdKHRZJx1c1k+dSmK8o4F4EBmiKLcdSi+Fmo8yAWJ7zh4XxJj2+YKFWAHBAABSJ8rg7V8wFlx+vPpRiykEg8bsbjj18hAYmy7jkeKScMZcsqGz+bVmuwVhHHtQ/3gv6b2pYA8cMCBKT4eIjQffA9XKktcOkB/VaulLdEdaURR/u3IAZ/xRumbo/fOCm6Bcd36gGAJAI7ZiMXJvFr/YG0ZkzV9wQ7pSy8vjxwb4k4hgPzZQ1XhTFVobiMWp/NqTeX0Pp6H2UBJJVGUJ3xeQYagBB0Y4Wk0GfrB88XljOtQczld9n9hJrgFRFHeesp+/8fDZwCQPZSRbpRXmz6D9+u52PNqPbQ3UekD/78xXaN5tSZxuF88+9skcIHqxR7QD543cMCBMZ5Gk6EfPDNEUR44bG+4C1WqzUErV5n3XT5vQANRlN9EUf7jcea89woMAHKG1b9PGqJjpr3Ox+yIdwm3qWS0fSuhv6PldN9aOKarWMrqY4X7wdFvnyEoQQe2OOFNq8sSJfSD54VLUbG/A5/Jnw6dvC9w7OQQRbnP91mI4N5jiBYIAMBvuIS87nU+Zn0O3T1MLdw24+fvETn782p9w+XlYwQJnM6r9T6XQdtsi6Lg9qFEiT74DbVyPuFc5AUccGAFyiZyP4vr+d1T7wc/E0V5FsFxjEGBkENXb05iYpKbFl1ClZ/X0Oe7us7HE5s1eiuKMoLDsM4UZ+/uc/m+T4JnDkH6bMTipRyYFc8vDINyTeE26UorykBTqbzjk/mT545fW3a6H1mkLrRtTQ7ePx952D/nQDJ7aDjgwBo0mkwU5XfHiplUYntBCuy4cpPGZUYyeBVFtVo+iKJ8cCXGJoryK7eGgDi54f6/qbEdKpMHgA1YAZwCmCeWHFWVjPqBZvWSitjbmcXgr6wYHRjB0/4ZRAR6wIFV2DF27dx85fFnYLq4FBNTEcZxicsyeIixxQuVnh/lfhIAiB3qX96IxUfuFz/yMLVAaR44Zevn1frec9DrpWyfzgmfGzjfluD9M9qSMgEZcOACH6PJrkVR7mDm8fRgETFXY7pmEZSf19w5LEOnUuB9yrQ7en+gBznfGKkIQGJwafWNpRL1Pmge+H7bqaXSdHayPzm2jX08c6Yb5eXuOeL9M0a+TRw44MA6PN/wlI2US25rARUwKVxmbx9icUpJgEsU5aPDHtYvUFeNipsIMt8IWKqDNQReaZWo7/M+xKazdM+94zFww443nhueaPSD+9bSAJ5BCTpwgqfRZJTlc+3kA/+47P8OrX7exuUaQS9ZHNDm9WMMZeccfIJDqQD1ZiZzsMArlKm2OFs8Fuh+3+MS8yM43/7h6RjQOZo4cMCBS3woMaMffEJ4mPUeW3+V04AAZucHhTauR9VquRNZK8CUFPJdg3MFRmnNFj9JrNLkhkeGbTWcbox6DYynJBYICBxw4Azuz/aR9bnmsVUgfVyWn0c3d5mPx+VmDWJs/qFrusOOd3QbKA4GOBshOCFOJqpUDxxC48w4K/7RgyCtCnVWda/hbNcON4S/IoSrplCBMFHQAw6cwqMVrhyXFc94VAg2lQlDomGO1Vx/RHp2bhyujwNRlLuhx65lAD3jzlM5zxz42RJFeenh2ZwaLwEKCHwCE1hI7UVwcV6tvzkU3Kx5ZCebpnzcIYs9GWhfe5/7SZgicMCBc6rV8oSVrV2JTc3Y0fhWrZbfcEWTxXW2NtYo/w/HThC9N9aFPW64deAmdSeNns2U6eXn81nGM7wfOYCCjDewzkYsvtXP4Hm1Pua1prsfonv1L3r+wMmePlSxJIqSntOXuZ+LqeHLAXdd8jaFSPWp47EDoXsQP3oYn+HjPrjCnMYXXJzrHy57omMrP69hNfSUn4+un10heMypaoDXxpv1wW09IUYe+SCn64v9V0RQiXpbsI1Hm3WttWfM2e4lm70YBQZFUT44sLMh7i3soYnZ7Pn/A+ftzbS681+cAAAAAElFTkSuQmCC</ImageData>
+			<MIMEType>image/png</MIMEType>
+		</EmbeddedImage>
+	</EmbeddedImages>
+	<DataSources>
+		<DataSource Name="Employees">
+			<ConnectionProperties>
+				<ConnectString>jsondata=[  {    "id": "5f19472900369a802bb3356a",    "name": "Mcclain Waters",    "managerName": "Franks Salazar",    "department": "Sales"  },  {    "id": "5f194729fbf659a612d58be6",    "name": "Mcgee Mcneil",    "managerName": "Baxter Pierce",    "department": "Marketing"  },   {    "id": "5f19472915aa0980660d6fd9",    "name": "Evangeline Gillespie",    "managerName": "Elinor Miles",    "department": "Sales"  }]</ConnectString>
+				<DataProvider>JSON</DataProvider>
+			</ConnectionProperties>
+		</DataSource>
+		<DataSource Name="Expenses">
+			<ConnectionProperties>
+				<ConnectString>jsondata=[
+  {
+    "employeeId": "5f19472915aa0980660d6fd9",
+    "date": "2020-01-30",
+    "category": "Commuting",
+    "description": "Taxi Drive",
+    "amount": 19.84
+  },
+  {
+    "employeeId": "5f194729c7a8148c55583a9b",
+    "date": "2020-01-23",
+    "category": "Flight",
+    "description": "IAH-MIA",
+    "amount": 1454.05
+  },
+  {
+    "employeeId": "5f194729c7a8148c55583a9b",
+    "date": "2020-01-03",
+    "category": "Hotel",
+    "description": "Ramada by Wyndham Barstow",
+    "amount": 386.68
+  },
+  {
+    "employeeId": "5f19472900369a802bb3356a",
+    "date": "2020-01-11",
+    "category": "Meals",
+    "description": "Business lanch",
+    "amount": 76.26
+  },
+  {
+    "employeeId": "5f19472900369a802bb3356a",
+    "date": "2020-01-23",
+    "category": "Commuting",
+    "description": "Taxi Drive",
+    "amount": 15.89
+  },
+  {
+    "employeeId": "5f194729c5ea7513cb8a06f5",
+    "date": "2020-01-18",
+    "category": "Hotel",
+    "description": "Ramada by Wyndham Barstow",
+    "amount": 474.11
+  },
+  {
+    "employeeId": "5f194729c5ea7513cb8a06f5",
+    "date": "2020-01-10",
+    "category": "Meals",
+    "description": "Dinner",
+    "amount": 91.72
+  },
+  {
+    "employeeId": "5f19472900369a802bb3356a",
+    "date": "2020-01-17",
+    "category": "Meals",
+    "description": "Business lanch",
+    "amount": 60.76
+  },
+  {
+    "employeeId": "5f19472900369a802bb3356a",
+    "date": "2020-01-07",
+    "category": "Commuting",
+    "description": "Taxi Drive",
+    "amount": 11.69
+  },
+  {
+    "employeeId": "5f194729fbf659a612d58be6",
+    "date": "2020-01-18",
+    "category": "Hotel",
+    "description": "Little Rock Marriott",
+    "amount": 360.43
+  },
+  {
+    "employeeId": "5f19472900369a802bb3356a",
+    "date": "2020-01-24",
+    "category": "Meals",
+    "description": "Dinner",
+    "amount": 71.76
+  },
+  {
+    "employeeId": "5f19472915aa0980660d6fd9",
+    "date": "2020-01-01",
+    "category": "Commuting",
+    "description": "Taxi Drive",
+    "amount": 18.66
+  },
+  {
+    "employeeId": "5f19472900369a802bb3356a",
+    "date": "2020-01-18",
+    "category": "Hotel",
+    "description": "Ramada by Wyndham Barstow",
+    "amount": 526.35
+  },
+  {
+    "employeeId": "5f19472915aa0980660d6fd9",
+    "date": "2020-01-28",
+    "category": "Meals",
+    "description": "Business lanch",
+    "amount": 93.32
+  },
+  {
+    "employeeId": "5f19472900369a802bb3356a",
+    "date": "2020-01-09",
+    "category": "Flight",
+    "description": "ATL-LAX",
+    "amount": 1301.96
+  },
+  {
+    "employeeId": "5f19472915aa0980660d6fd9",
+    "date": "2020-01-20",
+    "category": "Flight",
+    "description": "BOS-MSP",
+    "amount": 1235.38
+  },
+  {
+    "employeeId": "5f194729c5ea7513cb8a06f5",
+    "date": "2020-01-13",
+    "category": "Hotel",
+    "description": "Little Rock Marriott",
+    "amount": 502.74
+  },
+  {
+    "employeeId": "5f19472915aa0980660d6fd9",
+    "date": "2020-01-24",
+    "category": "Flight",
+    "description": "IAH-MIA",
+    "amount": 1029.72
+  },
+  {
+    "employeeId": "5f19472915aa0980660d6fd9",
+    "date": "2020-01-28",
+    "category": "Hotel",
+    "description": "Little Rock Marriott",
+    "amount": 294.9
+  },
+  {
+    "employeeId": "5f194729fbf659a612d58be6",
+    "date": "2020-01-23",
+    "category": "Commuting",
+    "description": "Taxi Drive",
+    "amount": 18.26
+  },
+  {
+    "employeeId": "5f194729c5ea7513cb8a06f5",
+    "date": "2020-01-24",
+    "category": "Commuting",
+    "description": "Uber Drive",
+    "amount": 18.92
+  },
+  {
+    "employeeId": "5f194729fbf659a612d58be6",
+    "date": "2020-01-01",
+    "category": "Flight",
+    "description": "BOS-MSP",
+    "amount": 1713.9
+  },
+  {
+    "employeeId": "5f194729fbf659a612d58be6",
+    "date": "2020-01-26",
+    "category": "Hotel",
+    "description": "Little Rock Marriott",
+    "amount": 528.38
+  },
+  {
+    "employeeId": "5f194729fbf659a612d58be6",
+    "date": "2020-01-25",
+    "category": "Flight",
+    "description": "ATL-LAX",
+    "amount": 1449.98
+  },
+  {
+    "employeeId": "5f194729fbf659a612d58be6",
+    "date": "2020-01-03",
+    "category": "Flight",
+    "description": "ATL-LAX",
+    "amount": 1131.88
+  },
+  {
+    "employeeId": "5f19472915aa0980660d6fd9",
+    "date": "2020-01-02",
+    "category": "Commuting",
+    "description": "Taxi Drive",
+    "amount": 18.09
+  }
+]</ConnectString>
+				<DataProvider>JSON</DataProvider>
+			</ConnectionProperties>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="EmployeesDataSet">
+			<Fields>
+				<Field Name="id">
+					<DataField>id</DataField>
+				</Field>
+				<Field Name="name">
+					<DataField>name</DataField>
+				</Field>
+				<Field Name="managerName">
+					<DataField>managerName</DataField>
+				</Field>
+				<Field Name="department">
+					<DataField>department</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>$.[*]</CommandText>
+				<DataSourceName>Employees</DataSourceName>
+			</Query>
+		</DataSet>
+		<DataSet Name="ExpensesDataSet">
+			<Fields>
+				<Field Name="employeeId">
+					<DataField>employeeId</DataField>
+				</Field>
+				<Field Name="date">
+					<DataField>date</DataField>
+				</Field>
+				<Field Name="category">
+					<DataField>category</DataField>
+				</Field>
+				<Field Name="description">
+					<DataField>description</DataField>
+				</Field>
+				<Field Name="amount">
+					<DataField>amount</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>$.[*]</CommandText>
+				<DataSourceName>Expenses</DataSourceName>
+			</Query>
+		</DataSet>
+	</DataSets>
+</Report>
