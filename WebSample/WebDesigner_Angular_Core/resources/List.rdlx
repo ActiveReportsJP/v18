@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://cdn.grapecity.com/ActiveReports/reporting/2022/01/reportdefinition">
+	<Name>List.rdlx</Name>
+	<ReportSections>
+		<ReportSection Name="レポートエリア1">
+			<Body>
+				<ColumnSpacing>0in</ColumnSpacing>
+				<Height>1.25in</Height>
+				<ReportItems>
+					<List Name="List1">
+						<Width>3.25in</Width>
+						<Height>1.25in</Height>
+						<ReportItems>
+							<Rectangle Name="Container1">
+								<Top>0.125in</Top>
+								<Left>0.125in</Left>
+								<Width>3in</Width>
+								<Height>1in</Height>
+								<Style>
+									<BackgroundColor>=IIF(RowNumber() Mod 3 = 0, Theme.Colors(1,8), IIF(RowNumber() Mod 3 = 1, Theme.Colors(1,7), Theme.Colors(1,6))</BackgroundColor>
+									<Border>
+										<Style>Solid</Style>
+										<Color>=Theme.Colors!Dark2</Color>
+									</Border>
+								</Style>
+								<KeepTogether>false</KeepTogether>
+								<ReportItems>
+									<Textbox Name="TextBox1">
+										<Top>0.12in</Top>
+										<Left>0.12in</Left>
+										<Width>1in</Width>
+										<Height>0.25in</Height>
+										<Style>
+											<Color>=Theme.Colors!Dark2</Color>
+											<FontFamily>Georgia</FontFamily>
+											<FontWeight>700</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Left</TextAlign>
+										</Style>
+										<CanGrow>true</CanGrow>
+										<Value>名:</Value>
+									</Textbox>
+									<Textbox Name="TextBox2">
+										<Top>0.12in</Top>
+										<Left>1.12in</Left>
+										<Width>1.75in</Width>
+										<Height>0.25in</Height>
+										<Style>
+											<Color>=Theme.Colors!Dark2</Color>
+											<FontFamily>Georgia</FontFamily>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Left</TextAlign>
+										</Style>
+										<CanGrow>true</CanGrow>
+										<Value>=Fields!FirstName.Value</Value>
+									</Textbox>
+									<Textbox Name="TextBox3">
+										<Top>0.37in</Top>
+										<Left>0.12in</Left>
+										<Width>1in</Width>
+										<Height>0.25in</Height>
+										<Style>
+											<Color>=Theme.Colors!Dark2</Color>
+											<FontFamily>Georgia</FontFamily>
+											<FontWeight>700</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Left</TextAlign>
+										</Style>
+										<CanGrow>true</CanGrow>
+										<Value>姓:</Value>
+									</Textbox>
+									<Textbox Name="TextBox4">
+										<Top>0.37in</Top>
+										<Left>1.12in</Left>
+										<Width>1.75in</Width>
+										<Height>0.25in</Height>
+										<Style>
+											<Color>=Theme.Colors!Dark2</Color>
+											<FontFamily>Georgia</FontFamily>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Left</TextAlign>
+										</Style>
+										<CanGrow>true</CanGrow>
+										<Value>=Fields!LastName.Value</Value>
+									</Textbox>
+									<Textbox Name="TextBox5">
+										<Top>0.62in</Top>
+										<Left>0.12in</Left>
+										<Width>1in</Width>
+										<Height>0.25in</Height>
+										<Style>
+											<Color>=Theme.Colors!Dark2</Color>
+											<FontFamily>Georgia</FontFamily>
+											<FontWeight>700</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Left</TextAlign>
+										</Style>
+										<CanGrow>true</CanGrow>
+										<Value>役職:</Value>
+									</Textbox>
+									<Textbox Name="TextBox6">
+										<Top>0.62in</Top>
+										<Left>1.12in</Left>
+										<Width>1.75in</Width>
+										<Height>0.25in</Height>
+										<Style>
+											<Color>=Theme.Colors!Dark2</Color>
+											<FontFamily>Georgia</FontFamily>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Left</TextAlign>
+										</Style>
+										<CanGrow>true</CanGrow>
+										<Value>=Fields!Title.Value</Value>
+									</Textbox>
+								</ReportItems>
+								<CanGrow>true</CanGrow>
+							</Rectangle>
+						</ReportItems>
+					</List>
+				</ReportItems>
+			</Body>
+			<Page>
+				<ColumnSpacing>0in</ColumnSpacing>
+				<PageHeight>11in</PageHeight>
+				<PageWidth>8.5in</PageWidth>
+				<TopMargin>1in</TopMargin>
+				<BottomMargin>1in</BottomMargin>
+				<LeftMargin>1in</LeftMargin>
+				<RightMargin>1in</RightMargin>
+			</Page>
+			<Width>3.25in</Width>
+		</ReportSection>
+	</ReportSections>
+	<DataSources>
+		<DataSource Name="NorthwindEmployees">
+			<ConnectionProperties>
+				<ConnectString>jsondata={"Data":[{"Id":1,"FirstName":"Nancy","LastName":"Davolio","Title":"Sales Representative"},{"Id":2,"FirstName":"Andrew","LastName":"Fuller","Title":"Vice President, Sales"},{"Id":3,"FirstName":"Janet","LastName":"Leverling","Title":"Sales Representative"},{"Id":4,"FirstName":"Margaret","LastName":"Peacock","Title":"Sales Representative"},{"Id":5,"FirstName":"Steven","LastName":"Buchanan","Title":"Sales Manager"},{"Id":6,"FirstName":"Michael","LastName":"Suyama","Title":"Sales Representative"},{"Id":7,"FirstName":"Robert","LastName":"King","Title":"Sales Representative"},{"Id":8,"FirstName":"Laura","LastName":"Callahan","Title":"Inside Sales Coordinator"},{"Id":9,"FirstName":"Anne","LastName":"Dodsworth","Title":"Sales Representative"}]};schemadata={"$id":"http://example.com/example.json","type":"object","definitions":{},"$schema":"http://json-schema.org/draft-07/schema#","properties":{"Data":{"$id":"/properties/Data","type":"array","items":{"$id":"/properties/Data/items","type":"object","properties":{"Id":{"$id":"/properties/Data/items/properties/Id","type":"integer","title":"The Id Schema","default":0,"examples":[123]},"FirstName":{"$id":"/properties/Data/items/properties/FirstName","type":"string","title":"The FirstName Schema","default":0,"examples":["abc"]},"LastName":{"$id":"/properties/Data/items/properties/LastName","type":"string","title":"The LastName Schema","default":0,"examples":["abc"]},"Title":{"$id":"/properties/Data/items/properties/Title","type":"string","title":"The Title Schema","default":0,"examples":["abc"]}}}}}}</ConnectString>
+				<DataProvider>JSON</DataProvider>
+			</ConnectionProperties>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="Employees">
+			<Fields>
+				<Field Name="Id">
+					<DataField>Id</DataField>
+				</Field>
+				<Field Name="FirstName">
+					<DataField>FirstName</DataField>
+				</Field>
+				<Field Name="LastName">
+					<DataField>LastName</DataField>
+				</Field>
+				<Field Name="Title">
+					<DataField>Title</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>$.Data[*]</CommandText>
+				<DataSourceName>NorthwindEmployees</DataSourceName>
+			</Query>
+		</DataSet>
+	</DataSets>
+	<CustomProperties>
+		<CustomProperty>
+			<Name>Employees_Data_Set_Fields</Name>
+			<Value>{"Id":{"aggregate":"Count","dataType":"Integer"},"FirstName":{"aggregate":"Count","dataType":"String"},"LastName":{"aggregate":"Count","dataType":"String"},"Title":{"aggregate":"Count","dataType":"String"}}</Value>
+		</CustomProperty>
+		<CustomProperty>
+			<Name>Theme</Name>
+			<Value>コスモ.rdlx-theme</Value>
+		</CustomProperty>
+		<CustomProperty>
+			<Name>DisplayType</Name>
+			<Value>Page</Value>
+		</CustomProperty>
+		<CustomProperty>
+			<Name>SizeType</Name>
+			<Value>Default</Value>
+		</CustomProperty>
+		<CustomProperty>
+			<Name>PaperOrientation</Name>
+			<Value>Portrait</Value>
+		</CustomProperty>
+	</CustomProperties>
+	<ReportThemes>
+		<ThemeUri>コスモ.rdlx-theme</ThemeUri>
+	</ReportThemes>
+</Report>
