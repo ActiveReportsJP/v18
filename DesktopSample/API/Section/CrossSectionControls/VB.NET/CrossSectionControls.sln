@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CrossSectionControls", "CrossSectionControls\CrossSectionControls.vbproj", "{FF234170-B0E1-4BBE-827A-E8CCD3783F19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Release|AnyCPU = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF234170-B0E1-4BBE-827A-E8CCD3783F19}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{FF234170-B0E1-4BBE-827A-E8CCD3783F19}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{FF234170-B0E1-4BBE-827A-E8CCD3783F19}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{FF234170-B0E1-4BBE-827A-E8CCD3783F19}.Release|AnyCPU.Build.0 = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

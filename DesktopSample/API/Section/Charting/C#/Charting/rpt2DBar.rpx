@@ -1,0 +1,925 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.5" PrintWidth="8640" DocumentName="ActiveReports Document" ScriptLang="C#" MasterReport="0" CompatibilityMode="CrossPlatform">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: ＭＳ Ｐゴシック; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; ddo-char-set: 128" />
+    <Style Name="Heading1" Value="font-family: Arial; font-size: 16pt; font-style: normal; font-weight: bold" />
+    <Style Name="Heading2" Value="font-family: Times New Roman; font-size: 14pt; font-style: italic; font-weight: bold" />
+    <Style Name="Heading3" Value="font-family: Arial; font-size: 13pt; font-style: normal; font-weight: bold" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="Detail" Name="Detail" Height="5650.999" BackColor="16777215">
+      <Control Type="AR.ChartControl" Name="ChartControl" Left="0" Top="0" Width="8352" Height="5460.48" ImageType="0">
+        <AccessibleDescription special-value="null" />
+        <AccessibleName special-value="null" />
+        <AccessibleRole>Default</AccessibleRole>
+        <AutoRefresh>True</AutoRefresh>
+        <BackColor>Transparent</BackColor>
+        <Backdrop>
+          <ContextMenu special-value="null" />
+          <Style>Gradient</Style>
+          <Color>White</Color>
+          <Color2>SteelBlue</Color2>
+          <Gradient>Vertical</Gradient>
+          <Pattern>DottedGrid</Pattern>
+          <Picture special-value="null" />
+          <PictureAlignment>Stretched</PictureAlignment>
+          <Alpha>255</Alpha>
+          <AntiAliasMode>Auto</AntiAliasMode>
+        </Backdrop>
+        <BackgroundImage special-value="null" />
+        <Border>
+          <Line>
+            <Color>Transparent</Color>
+            <Weight>0</Weight>
+            <Style>None</Style>
+          </Line>
+          <ShadowWeight>0</ShadowWeight>
+          <ShadowColor>Black</ShadowColor>
+        </Border>
+        <CausesValidation>True</CausesValidation>
+        <ChartAreas>
+          <ChartArea id="7c964892-e854-4c15-9918-f97611ebe9db">
+            <Backdrop>
+              <ContextMenu special-value="null" />
+              <Style>Transparent</Style>
+              <Color>White</Color>
+              <Color2>White</Color2>
+              <Gradient>Vertical</Gradient>
+              <Pattern>DottedGrid</Pattern>
+              <Picture special-value="null" />
+              <PictureAlignment>Stretched</PictureAlignment>
+              <Alpha>255</Alpha>
+              <AntiAliasMode>Auto</AntiAliasMode>
+            </Backdrop>
+            <Border>
+              <Line>
+                <Color>Transparent</Color>
+                <Weight>0</Weight>
+                <Style>None</Style>
+              </Line>
+              <ShadowWeight>0</ShadowWeight>
+              <ShadowColor>Black</ShadowColor>
+            </Border>
+            <Padding>12, 12, 12, 12</Padding>
+            <ZDepthRatio>1</ZDepthRatio>
+            <WallXZ>
+              <Width>0</Width>
+              <Backdrop>
+                <Style>Solid</Style>
+                <Color>White</Color>
+                <Color2>Black</Color2>
+                <Gradient>Vertical</Gradient>
+                <Pattern>DottedGrid</Pattern>
+                <Picture special-value="null" />
+                <PictureAlignment>Stretched</PictureAlignment>
+                <Alpha>255</Alpha>
+                <AntiAliasMode>Auto</AntiAliasMode>
+              </Backdrop>
+              <Visible>True</Visible>
+              <ContextMenu special-value="null" />
+              <AntiAliasMode>Auto</AntiAliasMode>
+            </WallXZ>
+            <WallXY>
+              <Width>0</Width>
+              <Backdrop>
+                <Style>Solid</Style>
+                <Color>White</Color>
+                <Color2>Black</Color2>
+                <Gradient>Vertical</Gradient>
+                <Pattern>DottedGrid</Pattern>
+                <Picture special-value="null" />
+                <PictureAlignment>Stretched</PictureAlignment>
+                <Alpha>255</Alpha>
+                <AntiAliasMode>Auto</AntiAliasMode>
+              </Backdrop>
+              <Visible>True</Visible>
+              <ContextMenu special-value="null" />
+              <AntiAliasMode>Auto</AntiAliasMode>
+            </WallXY>
+            <WallYZ>
+              <Width>0</Width>
+              <Backdrop>
+                <Style>Solid</Style>
+                <Color>White</Color>
+                <Color2>Black</Color2>
+                <Gradient>Vertical</Gradient>
+                <Pattern>DottedGrid</Pattern>
+                <Picture special-value="null" />
+                <PictureAlignment>Stretched</PictureAlignment>
+                <Alpha>255</Alpha>
+                <AntiAliasMode>Auto</AntiAliasMode>
+              </Backdrop>
+              <Visible>True</Visible>
+              <ContextMenu special-value="null" />
+              <AntiAliasMode>Auto</AntiAliasMode>
+            </WallYZ>
+            <Projection>
+              <ProjectionType>Identical</ProjectionType>
+              <ProjectionDX>0.1</ProjectionDX>
+              <ProjectionDY>0.1</ProjectionDY>
+              <HorizontalRotation>0</HorizontalRotation>
+              <VerticalRotation>0</VerticalRotation>
+              <PerspectiveRatioPct>50</PerspectiveRatioPct>
+            </Projection>
+            <Light>
+              <Type>InfiniteDirectional</Type>
+              <Source>
+                <X>10</X>
+                <Y>40</Y>
+                <Z>20</Z>
+              </Source>
+              <DirectionalRatio>0.3</DirectionalRatio>
+            </Light>
+            <Axes>
+              <Axis id="a6ab0892-8416-4b63-9f97-1085f076d5b7">
+                <TickOffset>NaN</TickOffset>
+                <Position>NaN</Position>
+                <SmartLabels>True</SmartLabels>
+                <Arrow>None</Arrow>
+                <AxisType>Categorical</AxisType>
+                <Min>NaN</Min>
+                <Max>NaN</Max>
+                <Title>都道府県</Title>
+                <TitleFont>
+                  <Color>Black</Color>
+                  <Angle>0</Angle>
+                  <Font>MS PGothic, 10pt</Font>
+                </TitleFont>
+                <MajorTick>
+                  <Line>
+                    <Color>Transparent</Color>
+                    <Weight>0</Weight>
+                    <Style>None</Style>
+                  </Line>
+                  <GridLine>
+                    <Color>Transparent</Color>
+                    <Weight>0</Weight>
+                    <Style>None</Style>
+                  </GridLine>
+                  <Step>1</Step>
+                  <Length>0</Length>
+                  <Visible>False</Visible>
+                </MajorTick>
+                <MinorTick>
+                  <Line>
+                    <Color>Transparent</Color>
+                    <Weight>0</Weight>
+                    <Style>None</Style>
+                  </Line>
+                  <GridLine>
+                    <Color>Transparent</Color>
+                    <Weight>0</Weight>
+                    <Style>None</Style>
+                  </GridLine>
+                  <Step>0</Step>
+                  <Length>0</Length>
+                  <Visible>False</Visible>
+                </MinorTick>
+                <Line>
+                  <Color>Black</Color>
+                  <Weight>1</Weight>
+                  <Style>Solid</Style>
+                </Line>
+                <LabelFont>
+                  <Color>Black</Color>
+                  <Angle>-90</Angle>
+                  <Font>Arial, 8pt</Font>
+                </LabelFont>
+                <LabelsGap>1</LabelsGap>
+                <LabelFormat>{0}</LabelFormat>
+                <Labels />
+                <LabelsInside>False</LabelsInside>
+                <LabelsAtBottom>False</LabelsAtBottom>
+                <LabelsVisible>True</LabelsVisible>
+                <Scale>1</Scale>
+                <DisplayScale>False</DisplayScale>
+                <Visible>True</Visible>
+                <StaggerLabels>False</StaggerLabels>
+                <ContextMenu special-value="null" />
+                <AntiAliasMode>Auto</AntiAliasMode>
+              </Axis>
+              <Axis id="f08e355d-47d7-4482-b973-5c136123c286">
+                <TickOffset>0</TickOffset>
+                <Position>0</Position>
+                <SmartLabels>True</SmartLabels>
+                <Arrow>None</Arrow>
+                <AxisType>Numerical</AxisType>
+                <Min>NaN</Min>
+                <Max>NaN</Max>
+                <Title>
+                </Title>
+                <TitleFont>
+                  <Color>Black</Color>
+                  <Angle>0</Angle>
+                  <Font>Microsoft Sans Serif, 8pt</Font>
+                </TitleFont>
+                <MajorTick>
+                  <Line>
+                    <Color>Transparent</Color>
+                    <Weight>0</Weight>
+                    <Style>None</Style>
+                  </Line>
+                  <GridLine>
+                    <Color>Transparent</Color>
+                    <Weight>0</Weight>
+                    <Style>None</Style>
+                  </GridLine>
+                  <Step>0</Step>
+                  <Length>0</Length>
+                  <Visible>False</Visible>
+                </MajorTick>
+                <MinorTick>
+                  <Line>
+                    <Color>Transparent</Color>
+                    <Weight>0</Weight>
+                    <Style>None</Style>
+                  </Line>
+                  <GridLine>
+                    <Color>Transparent</Color>
+                    <Weight>0</Weight>
+                    <Style>None</Style>
+                  </GridLine>
+                  <Step>0</Step>
+                  <Length>0</Length>
+                  <Visible>False</Visible>
+                </MinorTick>
+                <Line>
+                  <Color>Transparent</Color>
+                  <Weight>0</Weight>
+                  <Style>None</Style>
+                </Line>
+                <LabelFont>
+                  <Color>Black</Color>
+                  <Angle>0</Angle>
+                  <Font>Microsoft Sans Serif, 8pt</Font>
+                </LabelFont>
+                <LabelsGap>0</LabelsGap>
+                <LabelFormat>{0}</LabelFormat>
+                <Labels />
+                <LabelsInside>False</LabelsInside>
+                <LabelsAtBottom>False</LabelsAtBottom>
+                <LabelsVisible>False</LabelsVisible>
+                <Scale>1</Scale>
+                <DisplayScale>False</DisplayScale>
+                <Visible>False</Visible>
+                <StaggerLabels>False</StaggerLabels>
+                <ContextMenu special-value="null" />
+                <AntiAliasMode>Auto</AntiAliasMode>
+              </Axis>
+              <Axis id="06fb3297-a1fd-4768-a6db-ae5fbc2c4d48">
+                <TickOffset>NaN</TickOffset>
+                <Position>0</Position>
+                <SmartLabels>True</SmartLabels>
+                <Arrow>None</Arrow>
+                <AxisType>Numerical</AxisType>
+                <Min>NaN</Min>
+                <Max>NaN</Max>
+                <Title>貨物量</Title>
+                <TitleFont>
+                  <Color>Black</Color>
+                  <Angle>-90</Angle>
+                  <Font>MS PGothic, 10pt</Font>
+                </TitleFont>
+                <MajorTick>
+                  <Line>
+                    <Color>Transparent</Color>
+                    <Weight>0</Weight>
+                    <Style>None</Style>
+                  </Line>
+                  <GridLine>
+                    <Color>Transparent</Color>
+                    <Weight>0</Weight>
+                    <Style>None</Style>
+                  </GridLine>
+                  <Step>0</Step>
+                  <Length>0</Length>
+                  <Visible>False</Visible>
+                </MajorTick>
+                <MinorTick>
+                  <Line>
+                    <Color>Transparent</Color>
+                    <Weight>0</Weight>
+                    <Style>None</Style>
+                  </Line>
+                  <GridLine>
+                    <Color>Transparent</Color>
+                    <Weight>0</Weight>
+                    <Style>None</Style>
+                  </GridLine>
+                  <Step>0</Step>
+                  <Length>0</Length>
+                  <Visible>False</Visible>
+                </MinorTick>
+                <Line>
+                  <Color>Black</Color>
+                  <Weight>1</Weight>
+                  <Style>Solid</Style>
+                </Line>
+                <LabelFont>
+                  <Color>Black</Color>
+                  <Angle>0</Angle>
+                  <Font>Arial, 8pt</Font>
+                </LabelFont>
+                <LabelsGap>1</LabelsGap>
+                <LabelFormat>{0}</LabelFormat>
+                <Labels />
+                <LabelsInside>False</LabelsInside>
+                <LabelsAtBottom>False</LabelsAtBottom>
+                <LabelsVisible>False</LabelsVisible>
+                <Scale>1</Scale>
+                <DisplayScale>False</DisplayScale>
+                <Visible>True</Visible>
+                <StaggerLabels>False</StaggerLabels>
+                <ContextMenu special-value="null" />
+                <AntiAliasMode>Auto</AntiAliasMode>
+              </Axis>
+              <Axis id="0dba1372-ab5b-4c43-93f4-662e9448dd74">
+                <TickOffset>NaN</TickOffset>
+                <Position>NaN</Position>
+                <SmartLabels>True</SmartLabels>
+                <Arrow>None</Arrow>
+                <AxisType>Numerical</AxisType>
+                <Min>NaN</Min>
+                <Max>NaN</Max>
+                <Title>
+                </Title>
+                <TitleFont>
+                  <Color>Black</Color>
+                  <Angle>0</Angle>
+                  <Font>Microsoft Sans Serif, 8pt</Font>
+                </TitleFont>
+                <MajorTick>
+                  <Line>
+                    <Color>Transparent</Color>
+                    <Weight>0</Weight>
+                    <Style>None</Style>
+                  </Line>
+                  <GridLine>
+                    <Color>Transparent</Color>
+                    <Weight>0</Weight>
+                    <Style>None</Style>
+                  </GridLine>
+                  <Step>0</Step>
+                  <Length>0</Length>
+                  <Visible>False</Visible>
+                </MajorTick>
+                <MinorTick>
+                  <Line>
+                    <Color>Transparent</Color>
+                    <Weight>0</Weight>
+                    <Style>None</Style>
+                  </Line>
+                  <GridLine>
+                    <Color>Transparent</Color>
+                    <Weight>0</Weight>
+                    <Style>None</Style>
+                  </GridLine>
+                  <Step>0</Step>
+                  <Length>0</Length>
+                  <Visible>False</Visible>
+                </MinorTick>
+                <Line>
+                  <Color>Transparent</Color>
+                  <Weight>0</Weight>
+                  <Style>None</Style>
+                </Line>
+                <LabelFont>
+                  <Color>Black</Color>
+                  <Angle>0</Angle>
+                  <Font>Microsoft Sans Serif, 8pt</Font>
+                </LabelFont>
+                <LabelsGap>1</LabelsGap>
+                <LabelFormat>{0}</LabelFormat>
+                <Labels />
+                <LabelsInside>False</LabelsInside>
+                <LabelsAtBottom>False</LabelsAtBottom>
+                <LabelsVisible>False</LabelsVisible>
+                <Scale>1</Scale>
+                <DisplayScale>False</DisplayScale>
+                <Visible>False</Visible>
+                <StaggerLabels>False</StaggerLabels>
+                <ContextMenu special-value="null" />
+                <AntiAliasMode>Auto</AntiAliasMode>
+              </Axis>
+              <Axis id="41f54673-b8e3-4567-ad7b-6bb651d7225f">
+                <TickOffset>0</TickOffset>
+                <Position>0</Position>
+                <SmartLabels>True</SmartLabels>
+                <Arrow>None</Arrow>
+                <AxisType>Numerical</AxisType>
+                <Min>NaN</Min>
+                <Max>NaN</Max>
+                <Title>
+                </Title>
+                <TitleFont>
+                  <Color>Black</Color>
+                  <Angle>0</Angle>
+                  <Font>Microsoft Sans Serif, 8pt</Font>
+                </TitleFont>
+                <MajorTick>
+                  <Line>
+                    <Color>Transparent</Color>
+                    <Weight>0</Weight>
+                    <Style>None</Style>
+                  </Line>
+                  <GridLine>
+                    <Color>Transparent</Color>
+                    <Weight>0</Weight>
+                    <Style>None</Style>
+                  </GridLine>
+                  <Step>0</Step>
+                  <Length>0</Length>
+                  <Visible>False</Visible>
+                </MajorTick>
+                <MinorTick>
+                  <Line>
+                    <Color>Transparent</Color>
+                    <Weight>0</Weight>
+                    <Style>None</Style>
+                  </Line>
+                  <GridLine>
+                    <Color>Transparent</Color>
+                    <Weight>0</Weight>
+                    <Style>None</Style>
+                  </GridLine>
+                  <Step>0</Step>
+                  <Length>0</Length>
+                  <Visible>False</Visible>
+                </MinorTick>
+                <Line>
+                  <Color>Transparent</Color>
+                  <Weight>0</Weight>
+                  <Style>None</Style>
+                </Line>
+                <LabelFont>
+                  <Color>Black</Color>
+                  <Angle>0</Angle>
+                  <Font>Microsoft Sans Serif, 8pt</Font>
+                </LabelFont>
+                <LabelsGap>0</LabelsGap>
+                <LabelFormat>{0}</LabelFormat>
+                <Labels />
+                <LabelsInside>False</LabelsInside>
+                <LabelsAtBottom>False</LabelsAtBottom>
+                <LabelsVisible>False</LabelsVisible>
+                <Scale>1</Scale>
+                <DisplayScale>False</DisplayScale>
+                <Visible>False</Visible>
+                <StaggerLabels>False</StaggerLabels>
+                <ContextMenu special-value="null" />
+                <AntiAliasMode>Auto</AntiAliasMode>
+              </Axis>
+            </Axes>
+            <WallRanges />
+            <SwapAxesDirection>False</SwapAxesDirection>
+            <SeriesLine>
+              <Color>Black</Color>
+              <Weight>1</Weight>
+              <Style>None</Style>
+            </SeriesLine>
+            <Name>defaultArea</Name>
+            <AntiAliasMode>Graphics</AntiAliasMode>
+          </ChartArea>
+        </ChartAreas>
+        <ColorPalette>Default</ColorPalette>
+        <CurrentDesigner special-value="null" />
+        <Cursor>Default</Cursor>
+        <DataSourceDirect special-value="null" />
+        <DeviceMode>None</DeviceMode>
+        <Font>Arial, 9pt</Font>
+        <ForeColor>ControlText</ForeColor>
+        <GridLayout>
+          <Columns>1</Columns>
+          <Rows>1</Rows>
+        </GridLayout>
+        <ImeMode>NoControl</ImeMode>
+        <IsDesignMode>False</IsDesignMode>
+        <Legends>
+          <Legend id="b5ed4a4b-9091-4db6-b53d-9591fdb9c5f6">
+            <Backdrop>
+              <ContextMenu special-value="null" />
+              <Style>Solid</Style>
+              <Color>White</Color>
+              <Color2>Black</Color2>
+              <Gradient>Vertical</Gradient>
+              <Pattern>DottedGrid</Pattern>
+              <Picture special-value="null" />
+              <PictureAlignment>Stretched</PictureAlignment>
+              <Alpha>128</Alpha>
+              <AntiAliasMode>Auto</AntiAliasMode>
+            </Backdrop>
+            <Border>
+              <Line>
+                <Color>Black</Color>
+                <Weight>1</Weight>
+                <Style>Solid</Style>
+              </Line>
+              <ShadowWeight>0</ShadowWeight>
+              <ShadowColor>Black</ShadowColor>
+            </Border>
+            <Visible>False</Visible>
+            <Header id="220c4c49-8580-4fc7-b710-6c1576dd1835">
+              <Text>Legend</Text>
+              <Backdrop>
+                <Style>Solid</Style>
+                <Color>White</Color>
+                <Color2>Black</Color2>
+                <Gradient>Vertical</Gradient>
+                <Pattern>DottedGrid</Pattern>
+                <Picture special-value="null" />
+                <PictureAlignment>Stretched</PictureAlignment>
+                <Alpha>255</Alpha>
+                <AntiAliasMode>Auto</AntiAliasMode>
+              </Backdrop>
+              <Visible>True</Visible>
+              <Docking>Top</Docking>
+              <DockArea special-value="null" />
+              <Border>
+                <Line>
+                  <Color>White</Color>
+                  <Weight>2</Weight>
+                  <Style>Solid</Style>
+                </Line>
+                <ShadowWeight>0</ShadowWeight>
+                <ShadowColor>Black</ShadowColor>
+              </Border>
+              <Font>
+                <Color>Black</Color>
+                <Angle>0</Angle>
+                <Font>Microsoft Sans Serif, 8pt</Font>
+              </Font>
+              <Alignment>TopLeft</Alignment>
+              <Name>
+              </Name>
+              <CustomBorderDrawer special-value="null" />
+              <ContextMenu special-value="null" />
+              <AntiAliasMode>Auto</AntiAliasMode>
+            </Header>
+            <Footer id="bc02fdba-595c-4b85-b672-6ef67ec16b40">
+              <Text>
+              </Text>
+              <Backdrop>
+                <Style>Transparent</Style>
+                <Color>White</Color>
+                <Color2>White</Color2>
+                <Gradient>Vertical</Gradient>
+                <Pattern>DottedGrid</Pattern>
+                <Picture special-value="null" />
+                <PictureAlignment>Stretched</PictureAlignment>
+                <Alpha>255</Alpha>
+                <AntiAliasMode>Auto</AntiAliasMode>
+              </Backdrop>
+              <Visible>True</Visible>
+              <Docking>Top</Docking>
+              <DockArea special-value="null" />
+              <Border>
+                <Line>
+                  <Color>Transparent</Color>
+                  <Weight>0</Weight>
+                  <Style>None</Style>
+                </Line>
+                <ShadowWeight>0</ShadowWeight>
+                <ShadowColor>Black</ShadowColor>
+              </Border>
+              <Font>
+                <Color>Black</Color>
+                <Angle>0</Angle>
+                <Font>Microsoft Sans Serif, 8pt</Font>
+              </Font>
+              <Alignment>TopLeft</Alignment>
+              <Name>
+              </Name>
+              <CustomBorderDrawer special-value="null" />
+              <ContextMenu special-value="null" />
+              <AntiAliasMode>Auto</AntiAliasMode>
+            </Footer>
+            <LabelsFont>
+              <Color>Black</Color>
+              <Angle>0</Angle>
+              <Font>Microsoft Sans Serif, 8pt</Font>
+            </LabelsFont>
+            <LegendItems />
+            <Alignment>Right</Alignment>
+            <MarginX>0</MarginX>
+            <MarginY>0</MarginY>
+            <CustomBorderDrawer special-value="null" />
+            <DockArea special-value="null" />
+            <DockInsideArea>False</DockInsideArea>
+            <GridLayout>
+              <Columns>1</Columns>
+              <Rows>0</Rows>
+            </GridLayout>
+            <Name>defaultLegend</Name>
+            <AntiAliasMode>Auto</AntiAliasMode>
+          </Legend>
+        </Legends>
+        <RightToLeft>No</RightToLeft>
+        <Series>
+          <Series id="6c16306d-d881-446d-bad8-810fec599237">
+            <ValueMemberX>ShipCountry</ValueMemberX>
+            <ValueMembersY>Expr1</ValueMembersY>
+            <Type>Bar2D</Type>
+            <AxisX reference-id="a6ab0892-8416-4b63-9f97-1085f076d5b7" />
+            <AxisY reference-id="06fb3297-a1fd-4768-a6db-ae5fbc2c4d48" />
+            <ZOrder>NaN</ZOrder>
+            <Visible>True</Visible>
+            <ChartArea reference-id="7c964892-e854-4c15-9918-f97611ebe9db" />
+            <Legend reference-id="b5ed4a4b-9091-4db6-b53d-9591fdb9c5f6" />
+            <Properties>
+              <BorderLine type="Line">
+                <Color>Black</Color>
+                <Weight>1</Weight>
+                <Style>Solid</Style>
+              </BorderLine>
+              <BarType type="BarType">Bar</BarType>
+            </Properties>
+            <Points>
+              <DataPoint>
+                <Properties />
+                <IsEmpty>False</IsEmpty>
+                <DisplayInLegend>Auto</DisplayInLegend>
+                <LegendText>
+                </LegendText>
+                <XValue>愛知県</XValue>
+                <YValues>701.12</YValues>
+              </DataPoint>
+              <DataPoint>
+                <Properties />
+                <IsEmpty>False</IsEmpty>
+                <DisplayInLegend>Auto</DisplayInLegend>
+                <LegendText>
+                </LegendText>
+                <XValue>茨城県</XValue>
+                <YValues>783.83</YValues>
+              </DataPoint>
+              <DataPoint>
+                <Properties />
+                <IsEmpty>False</IsEmpty>
+                <DisplayInLegend>Auto</DisplayInLegend>
+                <LegendText>
+                </LegendText>
+                <XValue>沖縄県</XValue>
+                <YValues>351.59</YValues>
+              </DataPoint>
+              <DataPoint>
+                <Properties />
+                <IsEmpty>False</IsEmpty>
+                <DisplayInLegend>Auto</DisplayInLegend>
+                <LegendText>
+                </LegendText>
+                <XValue>宮城県</XValue>
+                <YValues>1847.66</YValues>
+              </DataPoint>
+              <DataPoint>
+                <Properties />
+                <IsEmpty>False</IsEmpty>
+                <DisplayInLegend>Auto</DisplayInLegend>
+                <LegendText>
+                </LegendText>
+                <XValue>京都府</XValue>
+                <YValues>562.63</YValues>
+              </DataPoint>
+              <DataPoint>
+                <Properties />
+                <IsEmpty>False</IsEmpty>
+                <DisplayInLegend>Auto</DisplayInLegend>
+                <LegendText>
+                </LegendText>
+                <XValue>群馬県</XValue>
+                <YValues>472.19</YValues>
+              </DataPoint>
+              <DataPoint>
+                <Properties />
+                <IsEmpty>False</IsEmpty>
+                <DisplayInLegend>Auto</DisplayInLegend>
+                <LegendText>
+                </LegendText>
+                <XValue>広島県</XValue>
+                <YValues>525.52</YValues>
+              </DataPoint>
+              <DataPoint>
+                <Properties />
+                <IsEmpty>False</IsEmpty>
+                <DisplayInLegend>Auto</DisplayInLegend>
+                <LegendText>
+                </LegendText>
+                <XValue>佐賀県</XValue>
+                <YValues>65.22</YValues>
+              </DataPoint>
+              <DataPoint>
+                <Properties />
+                <IsEmpty>False</IsEmpty>
+                <DisplayInLegend>Auto</DisplayInLegend>
+                <LegendText>
+                </LegendText>
+                <XValue>埼玉県</XValue>
+                <YValues>825.05</YValues>
+              </DataPoint>
+              <DataPoint>
+                <Properties />
+                <IsEmpty>False</IsEmpty>
+                <DisplayInLegend>Auto</DisplayInLegend>
+                <LegendText>
+                </LegendText>
+                <XValue>三重県</XValue>
+                <YValues>230.76</YValues>
+              </DataPoint>
+              <DataPoint>
+                <Properties />
+                <IsEmpty>False</IsEmpty>
+                <DisplayInLegend>Auto</DisplayInLegend>
+                <LegendText>
+                </LegendText>
+                <XValue>鹿児島県</XValue>
+                <YValues>405.26</YValues>
+              </DataPoint>
+              <DataPoint>
+                <Properties />
+                <IsEmpty>False</IsEmpty>
+                <DisplayInLegend>Auto</DisplayInLegend>
+                <LegendText>
+                </LegendText>
+                <XValue>秋田県</XValue>
+                <YValues>240.77</YValues>
+              </DataPoint>
+              <DataPoint>
+                <Properties />
+                <IsEmpty>False</IsEmpty>
+                <DisplayInLegend>Auto</DisplayInLegend>
+                <LegendText>
+                </LegendText>
+                <XValue>神奈川県</XValue>
+                <YValues>1983.09</YValues>
+              </DataPoint>
+              <DataPoint>
+                <Properties />
+                <IsEmpty>False</IsEmpty>
+                <DisplayInLegend>Auto</DisplayInLegend>
+                <LegendText>
+                </LegendText>
+                <XValue>静岡県</XValue>
+                <YValues>925.07</YValues>
+              </DataPoint>
+              <DataPoint>
+                <Properties />
+                <IsEmpty>False</IsEmpty>
+                <DisplayInLegend>Auto</DisplayInLegend>
+                <LegendText>
+                </LegendText>
+                <XValue>千葉県</XValue>
+                <YValues>1651.27</YValues>
+              </DataPoint>
+              <DataPoint>
+                <Properties />
+                <IsEmpty>False</IsEmpty>
+                <DisplayInLegend>Auto</DisplayInLegend>
+                <LegendText>
+                </LegendText>
+                <XValue>大阪府</XValue>
+                <YValues>256.79</YValues>
+              </DataPoint>
+              <DataPoint>
+                <Properties />
+                <IsEmpty>False</IsEmpty>
+                <DisplayInLegend>Auto</DisplayInLegend>
+                <LegendText>
+                </LegendText>
+                <XValue>長野県</XValue>
+                <YValues>1561.23</YValues>
+              </DataPoint>
+              <DataPoint>
+                <Properties />
+                <IsEmpty>False</IsEmpty>
+                <DisplayInLegend>Auto</DisplayInLegend>
+                <LegendText>
+                </LegendText>
+                <XValue>東京都</XValue>
+                <YValues>2969.93</YValues>
+              </DataPoint>
+              <DataPoint>
+                <Properties />
+                <IsEmpty>False</IsEmpty>
+                <DisplayInLegend>Auto</DisplayInLegend>
+                <LegendText>
+                </LegendText>
+                <XValue>徳島県</XValue>
+                <YValues>443.88</YValues>
+              </DataPoint>
+              <DataPoint>
+                <Properties />
+                <IsEmpty>False</IsEmpty>
+                <DisplayInLegend>Auto</DisplayInLegend>
+                <LegendText>
+                </LegendText>
+                <XValue>富山県</XValue>
+                <YValues>499.58</YValues>
+              </DataPoint>
+              <DataPoint>
+                <Properties />
+                <IsEmpty>False</IsEmpty>
+                <DisplayInLegend>Auto</DisplayInLegend>
+                <LegendText>
+                </LegendText>
+                <XValue>福岡県</XValue>
+                <YValues>1803.85</YValues>
+              </DataPoint>
+              <DataPoint>
+                <Properties />
+                <IsEmpty>False</IsEmpty>
+                <DisplayInLegend>Auto</DisplayInLegend>
+                <LegendText>
+                </LegendText>
+                <XValue>兵庫県</XValue>
+                <YValues>335.89</YValues>
+              </DataPoint>
+              <DataPoint>
+                <Properties />
+                <IsEmpty>False</IsEmpty>
+                <DisplayInLegend>Auto</DisplayInLegend>
+                <LegendText>
+                </LegendText>
+                <XValue>北海道</XValue>
+                <YValues>1739.67</YValues>
+              </DataPoint>
+              <DataPoint>
+                <Properties />
+                <IsEmpty>False</IsEmpty>
+                <DisplayInLegend>Auto</DisplayInLegend>
+                <LegendText>
+                </LegendText>
+                <XValue>北九州</XValue>
+                <YValues>54.96</YValues>
+              </DataPoint>
+            </Points>
+            <Annotations />
+            <ColorPalette>None</ColorPalette>
+            <LegendItemsMode>Auto</LegendItemsMode>
+            <DisplayInLegend>True</DisplayInLegend>
+            <LegendText>
+            </LegendText>
+            <Name>Series1</Name>
+            <ContextMenu special-value="null" />
+            <AntiAliasMode>Auto</AntiAliasMode>
+          </Series>
+        </Series>
+        <Text>
+        </Text>
+        <Titles>
+          <Title id="e48365c7-e027-4550-bddb-6ac319624298">
+            <Text>単純な棒グラフ</Text>
+            <Backdrop>
+              <Style>Solid</Style>
+              <Color>White</Color>
+              <Color2>Black</Color2>
+              <Gradient>Vertical</Gradient>
+              <Pattern>DottedGrid</Pattern>
+              <Picture special-value="null" />
+              <PictureAlignment>Stretched</PictureAlignment>
+              <Alpha>255</Alpha>
+              <AntiAliasMode>Auto</AntiAliasMode>
+            </Backdrop>
+            <Visible>True</Visible>
+            <Docking>Top</Docking>
+            <DockArea special-value="null" />
+            <Border>
+              <Line>
+                <Color>Transparent</Color>
+                <Weight>0</Weight>
+                <Style>None</Style>
+              </Line>
+              <ShadowWeight>0</ShadowWeight>
+              <ShadowColor>Black</ShadowColor>
+            </Border>
+            <Font>
+              <Color>Black</Color>
+              <Angle>0</Angle>
+              <Font>MS PGothic, 14pt, style=Bold</Font>
+            </Font>
+            <Alignment>Center</Alignment>
+            <Name>header</Name>
+            <CustomBorderDrawer special-value="null" />
+            <ContextMenu special-value="null" />
+            <AntiAliasMode>Auto</AntiAliasMode>
+          </Title>
+        </Titles>
+        <UIOptions>ForceHitTesting</UIOptions>
+      </Control>
+    </Section>
+  </Sections>
+  <ReportComponentTray />
+  <Script><![CDATA[using System.Drawing;
+
+public void ActiveReport_PageStart()
+{
+	ChartControl.Titles[0].Text = "単純な棒グラフ";
+	ChartControl.Titles[0].Font = new GrapeCity.ActiveReports.Chart.FontInfo(Color.Black, new GrapeCity.ActiveReports.Chart.Drawing.Font("MS PGothic", 14, GrapeCity.ActiveReports.Chart.Drawing.FontStyle.Bold));
+	ChartControl.ChartAreas[0].Axes["AxisX"].Title = "都道府県";
+	ChartControl.ChartAreas[0].Axes["AxisX"].TitleFont = new GrapeCity.ActiveReports.Chart.FontInfo(Color.Black, new GrapeCity.ActiveReports.Chart.Drawing.Font("MS PGothic", 10, GrapeCity.ActiveReports.Chart.Drawing.FontStyle.Regular));
+	ChartControl.ChartAreas[0].Axes["AxisY"].Title = "貨物量";
+	ChartControl.ChartAreas[0].Axes["AxisY"].TitleFont = new GrapeCity.ActiveReports.Chart.FontInfo(Color.Black, new GrapeCity.ActiveReports.Chart.Drawing.Font("MS PGothic", 10, GrapeCity.ActiveReports.Chart.Drawing.FontStyle.Regular), 270);
+}
+
+  ]]></Script>
+  <PageSettings />
+  <Parameters />
+</ActiveReportsLayout>

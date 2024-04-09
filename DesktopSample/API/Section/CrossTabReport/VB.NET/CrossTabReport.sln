@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CrossTabReport", "CrossTabReport\CrossTabReport.vbproj", "{650D26FC-BFF0-4F61-9667-27C2A60063A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Release|AnyCPU = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{650D26FC-BFF0-4F61-9667-27C2A60063A1}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{650D26FC-BFF0-4F61-9667-27C2A60063A1}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{650D26FC-BFF0-4F61-9667-27C2A60063A1}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{650D26FC-BFF0-4F61-9667-27C2A60063A1}.Release|AnyCPU.Build.0 = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
