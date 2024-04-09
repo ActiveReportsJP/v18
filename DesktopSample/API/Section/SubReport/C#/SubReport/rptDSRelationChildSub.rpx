@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ActiveReportsLayout Version="3.5" PrintWidth="4320" DocumentName="ActiveReports Document" ScriptLang="C#" MasterReport="0" CompatibilityMode="CrossPlatform">
+	<StyleSheet>
+		<Style Name="Normal" Value="font-family: ＭＳ Ｐゴシック; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; ddo-char-set: 128" />
+		<Style Name="Heading1" Value="font-family: Arial; font-size: 16pt; font-style: normal; font-weight: bold" Parent="Normal" />
+		<Style Name="Heading2" Value="font-family: Times New Roman; font-size: 14pt; font-style: italic; font-weight: bold" Parent="Normal" />
+		<Style Name="Heading3" Value="font-family: Arial; font-size: 13pt; font-style: normal; font-weight: bold" Parent="Normal" />
+	</StyleSheet>
+	<Sections>
+		<Section Type="Detail" Name="Detail" Height="362" BackColor="16777215" KeepTogether="1">
+			<Control Type="AR.Field" Name="txtUnitPrice" DataField="UnitPrice" Left="1080" Top="0" Width="1080" Height="288" Text="単価" OutputFormat="¥#,##0" Style="font-family: MS PGothic" />
+			<Control Type="AR.Field" Name="txtQuantity" DataField="Quantity" Left="2160" Top="0" Width="1080" Height="288" Text="数量" Style="font-family: MS PGothic" />
+			<Control Type="AR.Field" Name="txtDiscount" DataField="Discount" Left="3240" Top="0" Width="1080" Height="288" Text="割引額" OutputFormat="0.00%" Style="font-family: MS PGothic" />
+			<Control Type="AR.Field" Name="txtOrderID" DataField="OrderID" Left="0" Top="0" Width="1080" Height="288" Text="受注ID" Style="font-family: MS PGothic" />
+		</Section>
+	</Sections>
+	<PageSettings />
+	<Parameters />
+</ActiveReportsLayout>

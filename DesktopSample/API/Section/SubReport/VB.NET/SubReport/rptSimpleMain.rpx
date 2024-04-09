@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ActiveReportsLayout Version="3.5" PrintWidth="8640" DocumentName="ActiveReports Document" ScriptLang="VB.NET" MasterReport="0" CompatibilityMode="CrossPlatform">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: ＭＳ Ｐゴシック; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; ddo-char-set: 128" />
+    <Style Name="Heading1" Value="font-family: Arial; font-size: 16pt; font-style: normal; font-weight: bold" />
+    <Style Name="Heading2" Value="font-family: Times New Roman; font-size: 14pt; font-style: italic; font-weight: bold" />
+    <Style Name="Heading3" Value="font-family: Arial; font-size: 13pt; font-style: normal; font-weight: bold" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="360" BackColor="16777215">
+      <Control Type="AR.Field" Name="textBox1" Left="0" Top="0" Width="5054.4" Height="288" Text="単純なサブレポート" Style="background-color: LavenderBlush; font-family: MS PGothic; font-size: 12pt; font-weight: bold" />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="1080" BackColor="16777215" CanShrink="1">
+      <Control Type="AR.Label" Name="lblCategoryName" Left="0" Top="0" Width="1440" Height="360" Caption="カテゴリ" Style="font-family: MS PGothic; font-size: 12pt; vertical-align: middle; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="txtCategoryName" DataField="CategoryName" Left="1530" Top="0" Width="2264.4" Height="360" Text="区分" Style="font-family: MS PGothic; font-size: 12pt; vertical-align: middle; ddo-char-set: 1" />
+      <Control Type="AR.Subreport" Name="ctlSubreport" Left="1529.28" Top="720" Width="6624" Height="360" />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="360" BackColor="16777215">
+      <Control Type="AR.ReportInfo" Name="reportInfo1" Left="2864.16" Top="0" Width="2894.4" Height="288" Style="font-family: MS PGothic" />
+    </Section>
+  </Sections>
+  <ReportComponentTray />
+  <Script><![CDATA[Private _subRpt As GrapeCity.ActiveReports.SectionReport
+Private _categoryID As String
+Private connectionString As String = "Data Source=..\\..\\..\\..\\..\\..\\..\\..\\Data\\NWIND.db"
+
+Public Sub Detail_Format()
+	'サブレポートのデータソースの接続文字列を設定するSQL文を示します。
+	Dim sql As string = "SELECT * FROM products WHERE categoryID = " + _categoryID
+	
+	Dim sqliteDbAdapter As New System.Data.SQLite.SQLiteDataAdapter(sql, connectionString)
+	Dim dataSet As New System.Data.DataSet()
+	sqliteDbAdapter.Fill(dataSet)
+	_subRpt.DataSource = dataSet.Tables(0)
+	ctlSubreport.Report = _subRpt ' サブレポートコントロールにサブレポートオブジェクトを設定します。
+End Sub
+
+Public Sub ActiveReport_ReportStart()
+	_subRpt = New GrapeCity.ActiveReports.SectionReport()
+	_subRpt.LoadLayout(System.IO.Path.GetFullPath("..\..\..\rptSimpleSub.rpx"))
+	
+	Dim sqliteDbAdapter As New System.Data.SQLite.SQLiteDataAdapter("Select * from categories", connectionString)
+	Dim dataSet As New System.Data.DataSet()
+	sqliteDbAdapter.Fill(dataSet)
+	rpt.DataSource = dataSet.Tables(0)
+	
+	reportInfo1.FormatString = "{PageNumber} / {PageCount}"
+End Sub
+
+Public Function ActiveReport_FetchData(eof As Boolean) As Boolean
+	'サブレポートにデータを出力する条件を取得します。
+	_categoryID = rpt.Fields("CategoryID").Value.ToString()
+	Return eof
+End Function
+
+
+]]></Script>
+  <PageSettings />
+  <Parameters />
+</ActiveReportsLayout>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ActiveReportsLayout Version="3.5" PrintWidth="8640" DocumentName="ActiveReports Document" ScriptLang="C#" MasterReport="0" CompatibilityMode="CrossPlatform">
+	<StyleSheet>
+		<Style Name="Normal" Value="font-family: ＭＳ Ｐゴシック; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; ddo-char-set: 128" />
+		<Style Name="Heading1" Value="font-family: Arial; font-size: 16pt; font-style: normal; font-weight: bold" />
+		<Style Name="Heading2" Value="font-family: Times New Roman; font-size: 14pt; font-style: italic; font-weight: bold" />
+		<Style Name="Heading3" Value="font-family: Arial; font-size: 13pt; font-style: normal; font-weight: bold" />
+	</StyleSheet>
+	<Sections>
+		<Section Type="GroupHeader" Name="ghOrders" Height="434" DataField="CustomerID" BackColor="16777215" CanShrink="1">
+			<Control Type="AR.Label" Name="lblOrderDate" Left="3659.04" Top="0" Width="1440" Height="360" Caption="受注日付" Style="font-family: MS PGothic; font-size: 12pt; font-weight: bold; ddo-char-set: 1" />
+			<Control Type="AR.Label" Name="lblOrderID" Left="5280.48" Top="0" Width="1440" Height="360" Caption="受注ID" Style="font-family: MS PGothic; font-size: 12pt; font-weight: bold; ddo-char-set: 1" />
+			<Control Type="AR.Label" Name="lblFreight" Left="6855.84" Top="0" Width="1440" Height="360" Caption="送料" Style="font-family: MS PGothic; font-size: 12pt; font-weight: bold; ddo-char-set: 1" />
+		</Section>
+		<Section Type="Detail" Name="Detail" Height="419.04" BackColor="16777215" CanShrink="1">
+			<Control Type="AR.Field" Name="txtOrderDate" DataField="OrderDate" Left="3659.04" Top="59.04" Width="1440" Height="360" Text="OrderDate" OutputFormat="yyyy/MM/dd" CanShrink="1" Style="font-family: MS PGothic; vertical-align: middle; ddo-char-set: 1" />
+			<Control Type="AR.Field" Name="txtOrderID" DataField="OrderID" Left="5280.48" Top="59.04" Width="1440" Height="360" Text="OrderID" CanShrink="1" Style="font-family: MS PGothic; vertical-align: middle; ddo-char-set: 1" />
+			<Control Type="AR.Field" Name="txtFreight" DataField="Freight" Left="6855.84" Top="59.04" Width="1440" Height="360" Text="Freight" OutputFormat="¥#,##0" CanShrink="1" Style="font-family: MS PGothic; vertical-align: middle; ddo-char-set: 1" />
+		</Section>
+		<Section Type="GroupFooter" Name="GroupFooter1" Height="360" BackColor="16777215" CanShrink="1" />
+	</Sections>
+	<Script><![CDATA[
+int i = 0;
+
+public void Detail_Format()
+{
+	if(i % 2 == 0)
+	{
+		rpt.Sections["Detail"].BackColor = System.Drawing.Color.Azure;
+	}
+	
+	else
+	{
+		rpt.Sections["Detail"].BackColor = System.Drawing.Color.AntiqueWhite;
+	}
+	
+	i++;
+}
+
+
+]]></Script>
+	<PageSettings />
+	<Parameters />
+</ActiveReportsLayout>

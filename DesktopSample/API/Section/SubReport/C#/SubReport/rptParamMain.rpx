@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.5" PrintWidth="8640" DocumentName="ActiveReports Document" ScriptLang="C#" MasterReport="0" CompatibilityMode="CrossPlatform">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: ＭＳ Ｐゴシック; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; ddo-char-set: 128" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="360" BackColor="16777215">
+      <Control Type="AR.Field" Name="textBox5" Left="0" Top="0" Width="4860" Height="288" Text="サブレポートでパラメータを使用する" Style="background-color: LavenderBlush; font-family: MS PGothic; font-size: 12pt; font-weight: bold" />
+    </Section>
+    <Section Type="GroupHeader" Name="ghSuppliers" Height="330.0001" DataField="Country" GroupKeepTogether="1" BackColor="16777215">
+      <Control Type="AR.Field" Name="TextBox1" DataField="Country" Left="0" Top="0" Width="3120.48" Height="288" Text="国" Style="background-color: Navy; color: White; font-family: MS PGothic; font-size: 12pt; font-weight: bold; ddo-char-set: 1" />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="1858" BackColor="16777215" KeepTogether="1" CanShrink="1">
+      <Control Type="AR.Field" Name="TextBox2" DataField="CompanyName" Left="90" Top="90" Width="3030.48" Height="288" Text="会社名" Style="font-family: MS PGothic; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="TextBox3" DataField="ContactName" Left="3238.56" Top="89.28" Width="3241.44" Height="288" Text="担当者名" Style="font-family: MS PGothic; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="TextBox4" DataField="Phone" Left="6570" Top="90" Width="2058.48" Height="288" Text="電話" Style="font-family: MS PGothic; ddo-char-set: 1" />
+      <Control Type="AR.Subreport" Name="SubReport1" Left="89.28" Top="493.92" Width="8539.2" Height="1260.72" />
+    </Section>
+    <Section Type="GroupFooter" Name="GroupFooter1" Height="360" BackColor="16777215" />
+    <Section Type="PageFooter" Name="PageFooter" Height="360" BackColor="16777215">
+      <Control Type="AR.ReportInfo" Name="reportInfo1" Left="2895.84" Top="72" Width="2880" Height="288" Style="font-family: MS PGothic" />
+    </Section>
+  </Sections>
+  <ReportComponentTray />
+  <DataSources>
+    <DbDataSource Name="SQLITE" Connect="Data Source=..\..\..\..\..\..\..\..\Data\NWIND.db" SQL="Select * from suppliers order by country" />
+  </DataSources>
+  <Script><![CDATA[GrapeCity.ActiveReports.SectionReport _subRpt;
+public void Detail_Format()
+{
+	SubReport1.Report = _subRpt;
+}]]></Script>
+  <PageSettings />
+  <Parameters />
+</ActiveReportsLayout>

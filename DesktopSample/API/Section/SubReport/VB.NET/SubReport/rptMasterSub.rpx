@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.5" PrintWidth="8640" DocumentName="ActiveReports Document" ScriptLang="VB.NET" ShowParamUI="0" MasterReport="0" CompatibilityMode="CrossPlatform">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: ＭＳ Ｐゴシック; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; ddo-char-set: 128" />
+    <Style Name="Heading1" Value="font-family: Arial; font-size: 16pt; font-style: normal; font-weight: bold" />
+    <Style Name="Heading2" Value="font-family: Times New Roman; font-size: 14pt; font-style: italic; font-weight: bold" />
+    <Style Name="Heading3" Value="font-family: Arial; font-size: 13pt; font-style: normal; font-weight: bold" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Visible="0" Height="0" BackColor="16777215" />
+    <Section Type="Detail" Name="Detail" Height="735" BackStyle="1" BackColor="14474460" KeepTogether="1" CanShrink="1">
+      <Control Type="AR.Field" Name="txtOrderID" DataField="OrderID" Left="89.28" Top="360" Width="1185.12" Height="285.12" Text="OrderID" CanShrink="1" Style="font-family: MS PGothic; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="txtProductName" DataField="ProductName" Left="2594.88" Top="360" Width="3375.36" Height="285.12" Text="ProductName" CanShrink="1" Style="font-family: MS PGothic; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="txtProductID" DataField="ProductID" Left="1365.12" Top="360" Width="1152" Height="285.12" Text="ProductID" CanShrink="1" Style="font-family: MS PGothic; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="txtQuantity" DataField="Quantity" Left="6059.521" Top="360" Width="1152" Height="285.12" Text="Quantity" CanShrink="1" Style="font-family: MS PGothic; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="txtDiscount" DataField="Discount" Left="7302.24" Top="360" Width="1152" Height="285.12" Text="Discount" OutputFormat="0.00%" CanShrink="1" Style="font-family: MS PGothic; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="lblOrderID" Left="90" Top="0" Width="1184.4" Height="288" Caption="受注ID" Style="color: Navy; font-family: MS PGothic; font-size: 10pt; font-weight: bold; text-align: left; vertical-align: middle; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="lblProductID" Left="1365.12" Top="0" Width="1152" Height="288" Caption="商品ID" Style="color: Navy; font-family: MS PGothic; font-size: 10pt; font-weight: bold; text-align: left; vertical-align: middle; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="lblProductName" Left="2594.88" Top="0" Width="3375.36" Height="288" Caption="商品名" Style="color: Navy; font-family: MS PGothic; font-size: 10pt; font-weight: bold; text-align: left; vertical-align: middle; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="lblQuantity" Left="6060.241" Top="0" Width="1151.28" Height="288" Caption="数量" Style="color: Navy; font-family: MS PGothic; font-size: 10pt; font-weight: bold; text-align: left; vertical-align: middle; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="lblDiscount" Left="7302.24" Top="0" Width="1152" Height="288" Caption="値引き" Style="color: Navy; font-family: MS PGothic; font-size: 10pt; font-weight: bold; text-align: left; vertical-align: middle; ddo-char-set: 1" />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Visible="0" Height="0" BackColor="16777215" />
+  </Sections>
+  <ReportComponentTray />
+  <DataSources>
+    <DbDataSource Name="SQLITE" Connect="Data Source=..\\..\\..\\..\\..\\..\\..\\..\\Data\\Nwind.db" SQL="Select * from order_details inner join products on order_details.productid = products.productID where order_details.orderID = &lt;%OrderID%&gt;" />
+  </DataSources>
+  <PageSettings />
+  <Parameters />
+</ActiveReportsLayout>
