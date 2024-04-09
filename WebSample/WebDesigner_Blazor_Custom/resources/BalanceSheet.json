@@ -1,0 +1,38 @@
+{
+    "BalanceSheet": [
+        {
+            "TotalAssets": 6500800,
+            "TotalLiabilities": 6500800,
+            "CashInBank": 45000,
+            "Inventory": 45000,
+            "Prepaid Expenses": 600,
+            "OtherCurrentAssets": 10000,
+            "TotalCurrentAssets": 100600,
+            "AccountsPayable": 2585600,
+            "TaxesPayable": 56263,
+            "NotesPayable": 216,
+            "CurrentPortion": 3800,
+            "OtherCurrentLiabilities": 3000,
+            "TotalCurrentLiabilities": 2648879,
+            "Machinary&amp;Equipment": 56200,
+            "Furniture&amp;Fixtures": 32400,
+            "LeaseholdImprovements": 6300,
+            "RealEstate/Buildings": 6250000,
+            "OtherFixedAssets": 7000,
+            "TotalFixedAssets": 6351900,
+            "ReceivableFromEmployee": 12500,
+            "ReceivableFromClients": 32600,
+            "IntangibleAssets": 3200,
+            "TotalOtherAssets": 48300,
+            "BankLoansPayable": 200,
+            "ShorttermPortion": 560,
+            "NotesPayableToStockholders": 6203,
+            "OtherLongTermDebt": 450,
+            "TotalLongTermALiablities": 7413,
+            "CommonStock": 16300,
+            "AdditionalPaidIn": 8500,
+            "RetainedEarnings": 3819708,
+            "TotalShareholderEquity": 3844508
+        }
+    ]
+}

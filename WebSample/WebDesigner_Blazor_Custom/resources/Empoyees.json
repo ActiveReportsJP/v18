@@ -1,0 +1,20 @@
+[
+  {
+    "id": "5f19472900369a802bb3356a",
+    "name": "Mcclain Waters",
+    "managerName": "Franks Salazar",
+    "department": "Sales"
+  },
+  {
+    "id": "5f194729fbf659a612d58be6",
+    "name": "Mcgee Mcneil",
+    "managerName": "Baxter Pierce",
+    "department": "Marketing"
+  },
+  {
+    "id": "5f19472915aa0980660d6fd9",
+    "name": "Evangeline Gillespie",
+    "managerName": "Elinor Miles",
+    "department": "Sales"
+  }
+]

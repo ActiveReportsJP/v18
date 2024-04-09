@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Name>Products</Name>
+    <ConnectionProperties>
+        <ConnectString>Path=Products.csv;Locale=ru-RU;TextQualifier=";ColumnsSeparator=,;RowsSeparator=\r\n;Columns=ProductID(Integer),ProductName,SupplierID(Integer),CategoryID(Integer),QuantityPerUnit,UnitPrice(Decimal),UnitsInStock(Integer),UnitsOnOrder(Integer),ReorderLevel(Integer),Discontinued(Boolean),Categories CategoryID(Integer),CategoryName,Description;HasHeaders=True</ConnectString>
+        <Extension>CSV</Extension>
+    </ConnectionProperties>
+</RptDataSource>

@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MESCIUS.ActiveReports.Aspnetcore.Designer.ja" Version="18.0.0" />
+    <PackageReference Include="MESCIUS.ActiveReports.Aspnetcore.Viewer.ja" Version="18.0.0" />
+    <PackageReference Include="MESCIUS.ActiveReports.Blazor.Designer.ja" Version="18.0.0" />
+    <PackageReference Include="MESCIUS.ActiveReports.Blazor.Viewer.ja" Version="18.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.1" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="6.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="resources\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,184 @@
+@page "/"
+@using GrapeCity.ActiveReports.Web.Designer
+@using WebDesigner_Blazor_Custom.Data
+@using WebDesigner_Blazor_Custom.Services
+@inject IJSRuntime JSRuntime
+@inject ReportService ReportService
+
+<link href="_content/@(typeof(ReportViewer).Assembly.GetName().Name)/jsViewer.min.css" rel="stylesheet"/>
+
+<div class="main">
+    <ReportList @ref="_reportList" ReportsList="@_reports" CurrentReport="@_currentReport" OnClickCallback="OnClick"></ReportList>
+    <div id="ar-web-designer" class="ar-web-designer">
+        <ReportDesigner @ref="_designer"
+                        PreviewSettings="@_preview"
+                        Document="_initialDocument"
+                        AppBarSettings="_appBarSettings"
+                        PropertyGridSettings="_propertyGridSettings"
+                        Fonts="_fonts"
+                        DataSettings="_dataSettings"
+                        MenuSettings="_menuSettings"
+                        StatusBarSettings="_statusBarSettings"
+                        LockLayout="true"
+                        LocalizationResources="_localizations"
+                        DocumentsSettings="_documentsSettings"
+                        Language="ja"/>
+    </div>
+</div>
+
+<link href="css/icon.css" rel="stylesheet" />
+
+@code {
+    private ReportDesigner? _designer;
+    private ReportViewer? _viewer;
+
+    private PreviewSettings _preview;
+    private Document? _initialDocument;
+    private AppBarSettings _appBarSettings;
+    private PropertyGridSettings _propertyGridSettings;
+    private object[] _fonts;
+    private DataSettings _dataSettings;
+    private MenuSettings _menuSettings;
+    private StatusBarSettings _statusBarSettings;
+    private LocalizationResources[] _localizations;
+    private DocumentsSettings _documentsSettings;
+
+    private ReportList? _reportList;
+    private List<Report>? _reports;
+    private string? _currentReport;
+
+    public Index()
+    {
+        _preview = new PreviewSettings
+        {
+            OpenViewer = OpenViewer
+        };
+        _appBarSettings = new AppBarSettings
+        {
+            AboutButton = new AboutButton() { Visible = false },
+            ParametersTab = new ParametersTab() { Visible = false },
+            ContextActionsTab = new ContextActionsTab() { Visible = false }
+        };
+        _propertyGridSettings = new PropertyGridSettings() { Mode = Mode.Basic };
+        _fonts = new object[]
+        {
+            new FontHeader() { Header = "Questionable Choice" },
+            new Font() { Label = "Pretty Font", Value = "Comic Sans MS" },
+            new FontHeader() { Header = "" },
+            "Arial",
+            "Courier New",
+            "Times New Roman"
+        };
+        _dataSettings = new DataSettings() { DataTab = new DataTab() { Visible = false } };
+        _menuSettings = new MenuSettings()
+        {
+            Logo = new Logo() { Custom = new MenuIcon() { Type = "css", Class = "example-icon" } },
+            ToolBox = new ToolBox() { Visible = false },
+            LayerEditor = new LayerEditor() { Visible = false }
+        };
+        _statusBarSettings = new StatusBarSettings()
+        {
+            PropertiesModeButton = new PropertiesModeButton() { Visible = false }
+        };
+
+        _localizations = new LocalizationResources[]
+        {
+            new LocalizationResources()
+            {
+                Language = "ja",
+                Resources = "[" +
+                            "{" +
+                            "\"ns\": \"app\", " +
+                            "\"lng\": \"ja\", " +
+                            "\"resources\": { " +
+                            "\"about\": { " +
+                            "\"textAppTitleCompact\": \"\" " +
+                            "}" +
+                            "}" +
+                            "}" +
+                            "]"
+            }
+        };
+
+        _documentsSettings = new DocumentsSettings()
+        {
+            FileView = new FileView() { Visible = false },
+            Handlers = new Handlers()
+            {
+                OnBeforeSave = (info) =>
+                {
+                    var report = _reports?.FirstOrDefault(r => r.Id == info.Name);
+
+                    if (report?.Readonly == true)
+                    {
+                        _designer?.Notifications.Warning("レポートは上書きできません。", "もとのレポートは変更できません。別名で保存してください。");
+                        return false;
+                    }
+
+                    return true;
+                },
+                OnAfterSave = (info) =>
+                {
+                    _reports = ReportService.GetReports();
+                    _currentReport = info.Id;
+                    StateHasChanged();
+                }
+            }
+        };
+    }
+
+    private async void OpenViewer(ViewerSettings settings)
+    {
+        if (_viewer != null)
+        {
+            await _viewer.SetTheme(settings.Theme);
+            await _viewer.OpenReport(settings.DocumentInfo.Id);
+            return;
+        }
+
+        _viewer = new ReportViewer();
+
+        var initOptions = new InitializationOptions();
+        initOptions.ReportID = settings.DocumentInfo.Id;
+        initOptions.PanelsLocation = PanelsLocation.toolbar;
+        initOptions.Theme = settings.Theme;
+        initOptions.Locale = "ja";
+        initOptions.ReportLoaded = (reportInfo) => { };
+
+        await _viewer.Render(JSRuntime, settings.Element, initOptions);
+    }
+
+    protected override void OnInitialized()
+    {
+        _reports = ReportService.GetReports();
+
+        var reportInfo = _reports.FirstOrDefault();
+
+        if (reportInfo != null)
+        {
+            _currentReport = reportInfo.Id;
+            _initialDocument = new Document() { Id = reportInfo.Id, Type = SupportedDocumentType.cpl };
+        }
+    }
+
+    private async void OnClick(string reportId)
+    {
+        try
+        {
+            _currentReport = reportId;
+
+            if(_viewer != null)
+            {
+                await JSRuntime.InvokeVoidAsync("backToDesigner");
+            }
+
+            if(_designer == null) { return; }
+
+            await _designer.Documents.OpenById(reportId, SupportedDocumentType.cpl);
+        }
+        catch
+        {
+            //handle OnBeforeSave rejections
+        }
+    }
+}

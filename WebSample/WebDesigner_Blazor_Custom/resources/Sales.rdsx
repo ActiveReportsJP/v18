@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Name>SampleData</Name>
+    <ConnectionProperties>
+        <ConnectString>Path=Sales.csv;Locale=en-US;TextQualifier=";ColumnsSeparator=,;RowsSeparator=\r\n;Columns=SALES(Float),QTR_ID(Integer),MONTH_ID(Integer),YEAR_ID(Integer),PRODUCTLINE;HasHeaders=True</ConnectString>
+        <Extension>CSV</Extension>
+    </ConnectionProperties>
+</RptDataSource>

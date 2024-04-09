@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Name>IncomeStatementTags</Name>
+    <ConnectionProperties>
+        <ConnectString>Path=IncomeStatementTags.csv;Locale=en-US;TextQualifier=";ColumnsSeparator=	;RowsSeparator=\r\n;Columns=tag,version,custom,abstract,datatype,iord,crdr,tlabel,doc;HasHeaders=True</ConnectString>
+        <Extension>CSV</Extension>
+    </ConnectionProperties>
+</RptDataSource>

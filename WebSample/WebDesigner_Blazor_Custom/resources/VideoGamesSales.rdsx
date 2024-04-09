@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Name>VideoGamesSales</Name>
+    <ConnectionProperties>
+        <ConnectString>Path=VideoGamesSales.csv;Locale=en-US;TextQualifier=";ColumnsSeparator=,;RowsSeparator=\r\n;Columns=Name,Genre,Platform,Publisher,Developer,Critic_Score(Float),User_Score(Float),Total_Shipped(Float),Global_Sales(Float),NA_Sales(Float),PAL_Sales(Float),JP_Sales(Float),Other_Sales(Float),Year(Integer);HasHeaders=True</ConnectString>
+        <Extension>CSV</Extension>
+    </ConnectionProperties>
+</RptDataSource>
