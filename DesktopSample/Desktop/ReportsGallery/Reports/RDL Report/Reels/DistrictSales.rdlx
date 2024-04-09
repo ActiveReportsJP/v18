@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://cdn.grapecity.com/ActiveReports/reporting/2022/01/reportdefinition">
+	<ReportSections>
+		<ReportSection Name="ReportArea1">
+			<Body>
+				<Height>3.375in</Height>
+				<ReportItems>
+					<CustomReportItem Name="BandedList1">
+						<Type>BandedList</Type>
+						<Top>0.875in</Top>
+						<Width>4.625in</Width>
+						<Height>1.75in</Height>
+						<Container>
+							<ReportItems>
+								<Textbox Name="TextBox3">
+									<Left>2.625in</Left>
+									<Width>1in</Width>
+									<Height>0.25in</Height>
+									<Style>
+										<PaddingBottom>2pt</PaddingBottom>
+										<PaddingLeft>2pt</PaddingLeft>
+										<PaddingRight>2pt</PaddingRight>
+										<PaddingTop>2pt</PaddingTop>
+										<TextAlign>Right</TextAlign>
+										<Border>
+											<Color>Gainsboro</Color>
+										</Border>
+										<BottomBorder>
+											<Style>Solid</Style>
+										</BottomBorder>
+									</Style>
+									<CanGrow>true</CanGrow>
+									<HideDuplicates>"StoreSales"</HideDuplicates>
+									<Value>総売上高</Value>
+								</Textbox>
+								<Textbox Name="TextBox15">
+									<Left>3.625in</Left>
+									<Width>1in</Width>
+									<Height>0.25in</Height>
+									<Style>
+										<PaddingBottom>2pt</PaddingBottom>
+										<PaddingLeft>2pt</PaddingLeft>
+										<PaddingRight>2pt</PaddingRight>
+										<PaddingTop>2pt</PaddingTop>
+										<TextAlign>Right</TextAlign>
+										<Border>
+											<Color>Gainsboro</Color>
+										</Border>
+										<BottomBorder>
+											<Style>Solid</Style>
+										</BottomBorder>
+									</Style>
+									<CanGrow>true</CanGrow>
+									<HideDuplicates>"StoreSales"</HideDuplicates>
+									<Value>総利益</Value>
+								</Textbox>
+								<Textbox Name="TextBox9">
+									<Left>2.625in</Left>
+									<Width>1in</Width>
+									<Height>0.25in</Height>
+									<Style>
+										<FontWeight>700</FontWeight>
+										<Format>c</Format>
+										<PaddingBottom>2pt</PaddingBottom>
+										<PaddingLeft>2pt</PaddingLeft>
+										<PaddingRight>2pt</PaddingRight>
+										<PaddingTop>2pt</PaddingTop>
+										<Border>
+											<Color>Gainsboro</Color>
+										</Border>
+										<TopBorder>
+											<Style>Double</Style>
+										</TopBorder>
+									</Style>
+									<CanGrow>true</CanGrow>
+									<Value>=Sum(Fields!TotalSales.Value)</Value>
+								</Textbox>
+								<Textbox Name="TextBox14">
+									<Left>3.625in</Left>
+									<Width>1in</Width>
+									<Height>0.25in</Height>
+									<Style>
+										<FontWeight>700</FontWeight>
+										<Format>c</Format>
+										<PaddingBottom>2pt</PaddingBottom>
+										<PaddingLeft>2pt</PaddingLeft>
+										<PaddingRight>2pt</PaddingRight>
+										<PaddingTop>2pt</PaddingTop>
+										<Border>
+											<Color>Gainsboro</Color>
+										</Border>
+										<TopBorder>
+											<Style>Solid</Style>
+										</TopBorder>
+									</Style>
+									<CanGrow>true</CanGrow>
+									<Value>=Sum(Fields!TotalProfit.Value)</Value>
+								</Textbox>
+							</ReportItems>
+						</Container>
+						<CustomData>
+							<DataSetName>StoreSales</DataSetName>
+							<DataRowGroupings>
+								<DataGroupings>
+									<DataGrouping>
+										<Group Name="BandedList1_Group3">
+											<GroupExpressions>
+												<GroupExpression>=Fields!SaleYear.Value</GroupExpression>
+											</GroupExpressions>
+										</Group>
+										<Container>
+											<ReportItems>
+												<Textbox Name="TextBox8">
+													<Width>2.375in</Width>
+													<Height>0.25in</Height>
+													<Style>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Left</TextAlign>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<Value>=Fields!SaleYear.Value &amp; "年"</Value>
+												</Textbox>
+												<Textbox Name="TextBox10">
+													<Left>2.625in</Left>
+													<Width>1in</Width>
+													<Height>0.25in</Height>
+													<Style>
+														<Format>c</Format>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<Border>
+															<Color>Gainsboro</Color>
+														</Border>
+														<TopBorder>
+															<Style>Solid</Style>
+														</TopBorder>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<Value>=Sum(Fields!TotalSales.Value)</Value>
+												</Textbox>
+												<Textbox Name="TextBox13">
+													<Left>3.625in</Left>
+													<Width>1in</Width>
+													<Height>0.25in</Height>
+													<Style>
+														<Format>c</Format>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<Border>
+															<Color>Gainsboro</Color>
+														</Border>
+														<TopBorder>
+															<Style>Solid</Style>
+														</TopBorder>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<Value>=Sum(Fields!TotalProfit.Value)</Value>
+												</Textbox>
+											</ReportItems>
+										</Container>
+										<DataGroupings>
+											<DataGrouping>
+												<Group Name="BandedList1_Group1">
+													<GroupExpressions>
+														<GroupExpression>=Fields!RegionID.Value</GroupExpression>
+													</GroupExpressions>
+												</Group>
+												<Container>
+													<ReportItems>
+														<Textbox Name="TextBox4">
+															<Width>2.375in</Width>
+															<Height>0.25in</Height>
+															<Style>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>15pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+															</Style>
+															<CanGrow>true</CanGrow>
+															<Value>="地域： " &amp; Fields!Region.Value</Value>
+														</Textbox>
+														<Textbox Name="TextBox7">
+															<Left>2.625in</Left>
+															<Width>1in</Width>
+															<Height>0.25in</Height>
+															<Style>
+																<Format>c</Format>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<Border>
+																	<Color>Gainsboro</Color>
+																</Border>
+																<TopBorder>
+																	<Style>Solid</Style>
+																</TopBorder>
+															</Style>
+															<CanGrow>true</CanGrow>
+															<Value>=Sum(Fields!TotalSales.Value)</Value>
+														</Textbox>
+														<Textbox Name="TextBox12">
+															<Left>3.625in</Left>
+															<Width>1in</Width>
+															<Height>0.25in</Height>
+															<Style>
+																<Format>c</Format>
+																<PaddingBottom>2pt</PaddingBottom>
+																<PaddingLeft>2pt</PaddingLeft>
+																<PaddingRight>2pt</PaddingRight>
+																<PaddingTop>2pt</PaddingTop>
+																<Border>
+																	<Color>Gainsboro</Color>
+																</Border>
+																<TopBorder>
+																	<Style>Solid</Style>
+																</TopBorder>
+															</Style>
+															<CanGrow>true</CanGrow>
+															<Value>=Sum(Fields!TotalProfit.Value)</Value>
+														</Textbox>
+													</ReportItems>
+												</Container>
+												<DataGroupings>
+													<DataGrouping>
+														<Group Name="BandedList1_Group2">
+															<GroupExpressions>
+																<GroupExpression>=Fields!DistrictID.Value</GroupExpression>
+															</GroupExpressions>
+														</Group>
+														<Container>
+															<ReportItems>
+																<Textbox Name="TextBox5">
+																	<Width>2.375in</Width>
+																	<Height>0.25in</Height>
+																	<Style>
+																		<PaddingBottom>2pt</PaddingBottom>
+																		<PaddingLeft>30pt</PaddingLeft>
+																		<PaddingRight>2pt</PaddingRight>
+																		<PaddingTop>2pt</PaddingTop>
+																	</Style>
+																	<CanGrow>true</CanGrow>
+																	<Value>="地区： " &amp; Fields!District.Value</Value>
+																</Textbox>
+																<Textbox Name="TextBox6">
+																	<Left>2.625in</Left>
+																	<Width>1in</Width>
+																	<Height>0.25in</Height>
+																	<Style>
+																		<Format>c</Format>
+																		<PaddingBottom>2pt</PaddingBottom>
+																		<PaddingLeft>2pt</PaddingLeft>
+																		<PaddingRight>2pt</PaddingRight>
+																		<PaddingTop>2pt</PaddingTop>
+																		<TextAlign>Right</TextAlign>
+																		<TopBorder>
+																			<Style>None</Style>
+																		</TopBorder>
+																	</Style>
+																	<CanGrow>true</CanGrow>
+																	<Value>=Sum(Fields!TotalSales.Value)</Value>
+																</Textbox>
+																<Textbox Name="TextBox11">
+																	<Left>3.625in</Left>
+																	<Width>1in</Width>
+																	<Height>0.25in</Height>
+																	<Style>
+																		<Format>c</Format>
+																		<PaddingBottom>2pt</PaddingBottom>
+																		<PaddingLeft>2pt</PaddingLeft>
+																		<PaddingRight>2pt</PaddingRight>
+																		<PaddingTop>2pt</PaddingTop>
+																		<TextAlign>Right</TextAlign>
+																	</Style>
+																	<ZIndex>1</ZIndex>
+																	<CanGrow>true</CanGrow>
+																	<Value>=Sum(Fields!TotalProfit.Value)</Value>
+																</Textbox>
+															</ReportItems>
+														</Container>
+														<DataGroupings>
+															<DataGrouping />
+														</DataGroupings>
+													</DataGrouping>
+												</DataGroupings>
+											</DataGrouping>
+										</DataGroupings>
+									</DataGrouping>
+								</DataGroupings>
+							</DataRowGroupings>
+						</CustomData>
+						<BandedListConfig xmlns="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition/">
+          <HeaderBand>
+            <Height>0.25in</Height>
+            <ReportItems>
+              <ReportItemReference Name="TextBox3" />
+              <ReportItemReference Name="TextBox15" />
+            </ReportItems>
+          </HeaderBand>
+          <FooterBand>
+            <Height>0.25in</Height>
+            <ReportItems>
+              <ReportItemReference Name="TextBox9" />
+              <ReportItemReference Name="TextBox14" />
+            </ReportItems>
+          </FooterBand>
+          <Groups>
+            <Group Name="BandedList1_Group3">
+              <HeaderBand>
+                <Height>0.25in</Height>
+                <ReportItems>
+                  <ReportItemReference Name="TextBox8" />
+                </ReportItems>
+              </HeaderBand>
+              <FooterBand>
+                <Height>0.25in</Height>
+                <ReportItems>
+                  <ReportItemReference Name="TextBox10" />
+                  <ReportItemReference Name="TextBox13" />
+                </ReportItems>
+              </FooterBand>
+              <Visibility>
+                <Hidden>False</Hidden>
+              </Visibility>
+            </Group>
+            <Group Name="BandedList1_Group1">
+              <HeaderBand>
+                <Height>0.25in</Height>
+                <ReportItems>
+                  <ReportItemReference Name="TextBox4" />
+                </ReportItems>
+              </HeaderBand>
+              <FooterBand>
+                <Height>0.25in</Height>
+                <ReportItems>
+                  <ReportItemReference Name="TextBox7" />
+                  <ReportItemReference Name="TextBox12" />
+                </ReportItems>
+              </FooterBand>
+              <Visibility>
+                <Hidden>False</Hidden>
+              </Visibility>
+            </Group>
+            <Group Name="BandedList1_Group2">
+              <HeaderBand>
+                <Height>0.25in</Height>
+                <ReportItems>
+                  <ReportItemReference Name="TextBox5" />
+                  <ReportItemReference Name="TextBox6" />
+                  <ReportItemReference Name="TextBox11" />
+                </ReportItems>
+              </HeaderBand>
+              <Visibility>
+                <Hidden>False</Hidden>
+              </Visibility>
+            </Group>
+          </Groups>
+          <Details>
+            <Height>0in</Height>
+          </Details>
+        </BandedListConfig>
+					</CustomReportItem>
+					<Textbox Name="TextBox1">
+						<Width>2in</Width>
+						<Height>0.375in</Height>
+						<Style>
+							<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
+							<FontSize>=Theme.Fonts!MajorFont.Size</FontSize>
+							<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
+							<FontWeight>=Theme.Fonts!MajorFont.Weight</FontWeight>
+							<PaddingBottom>2pt</PaddingBottom>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+						</Style>
+						<CanGrow>true</CanGrow>
+						<Value>地区別売上</Value>
+					</Textbox>
+					<Textbox Name="TextBox2">
+						<Top>0.375in</Top>
+						<Width>2in</Width>
+						<Height>0.25in</Height>
+						<Style>
+							<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
+							<FontSize>12pt</FontSize>
+							<FontStyle>=Theme.Fonts!MajorFont.Style</FontStyle>
+							<PaddingBottom>2pt</PaddingBottom>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+						</Style>
+						<CanGrow>true</CanGrow>
+						<Value>2年間（2004～2005年）</Value>
+					</Textbox>
+					<Image Name="Image1">
+						<Left>3.833333in</Left>
+						<Width>0.875in</Width>
+						<Height>0.625in</Height>
+						<MIMEType>image/gif</MIMEType>
+						<Sizing>FitProportional</Sizing>
+						<Source>Database</Source>
+						<Value>=Theme.Images!Logo.ImageData</Value>
+					</Image>
+				</ReportItems>
+			</Body>
+			<Page>
+				<TopMargin>1in</TopMargin>
+				<BottomMargin>1in</BottomMargin>
+				<LeftMargin>1in</LeftMargin>
+				<RightMargin>1in</RightMargin>
+			</Page>
+			<Width>5.5in</Width>
+		</ReportSection>
+	</ReportSections>
+	<DataSources>
+		<DataSource Name="ReelsDataSource">
+			<ConnectionProperties>
+				<ConnectString>Data Source=..\\..\\..\\..\\..\\..\\..\\Data\\Reels.db</ConnectString>
+				<DataProvider>SQLITE</DataProvider>
+			</ConnectionProperties>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="StoreSales">
+			<Fields>
+				<Field Name="SaleYear">
+					<DataField>SaleYear</DataField>
+				</Field>
+				<Field Name="RegionID">
+					<DataField>RegionID</DataField>
+				</Field>
+				<Field Name="Region">
+					<DataField>Region</DataField>
+				</Field>
+				<Field Name="DistrictID">
+					<DataField>DistrictID</DataField>
+				</Field>
+				<Field Name="District">
+					<DataField>District</DataField>
+				</Field>
+				<Field Name="StoreID">
+					<DataField>StoreID</DataField>
+				</Field>
+				<Field Name="StoreName">
+					<DataField>StoreName</DataField>
+				</Field>
+				<Field Name="TotalSales">
+					<DataField>TotalSales</DataField>
+				</Field>
+				<Field Name="TotalProfit">
+					<DataField>TotalProfit</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>SELECT * FROM StoreSalesByYear</CommandText>
+				<DataSourceName>ReelsDataSource</DataSourceName>
+			</Query>
+		</DataSet>
+	</DataSets>
+	<ReportThemes>
+		<ThemeUri>Reels.rdlx-theme</ThemeUri>
+	</ReportThemes>
+</Report>

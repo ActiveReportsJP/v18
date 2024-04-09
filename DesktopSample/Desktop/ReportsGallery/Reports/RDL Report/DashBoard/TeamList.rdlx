@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://cdn.grapecity.com/ActiveReports/reporting/2022/01/reportdefinition">
+	<ReportSections>
+		<ReportSection Name="ReportArea1">
+			<Body>
+				<Columns>3</Columns>
+				<ColumnSpacing>0in</ColumnSpacing>
+				<Height>0.25in</Height>
+				<ReportItems>
+					<List Name="List1">
+						<DataSetName>Games</DataSetName>
+						<Group Name="List1_Detail_Group">
+							<GroupExpressions>
+								<GroupExpression>=Fields!Team.Value</GroupExpression>
+							</GroupExpressions>
+						</Group>
+						<Width>2.165in</Width>
+						<Height>0.188in</Height>
+						<ReportItems>
+							<Textbox Name="TextBox1">
+								<Width>1.25in</Width>
+								<Height>0.188in</Height>
+								<Style>
+									<Color>Blue</Color>
+									<FontSize>8pt</FontSize>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextDecoration>Underline</TextDecoration>
+								</Style>
+								<Action>
+									<Drillthrough>
+										<Parameters>
+											<Parameter Name="Team">
+												<Value>=Fields!Team.Value</Value>
+											</Parameter>
+										</Parameters>
+										<ReportName>TeamStatisticsDashboard.rdlx</ReportName>
+									</Drillthrough>
+								</Action>
+								<CanGrow>true</CanGrow>
+								<Value>=Fields!Team.Value</Value>
+							</Textbox>
+						</ReportItems>
+						<Sorting>
+							<SortBy>
+								<Direction>Ascending</Direction>
+								<SortExpression>=Fields!Team.Value</SortExpression>
+							</SortBy>
+						</Sorting>
+					</List>
+				</ReportItems>
+			</Body>
+			<Page>
+				<PageHeader>
+					<Height>0.5in</Height>
+					<PrintOnFirstPage>true</PrintOnFirstPage>
+					<PrintOnLastPage>true</PrintOnLastPage>
+					<ReportItems>
+						<Textbox Name="TextBox2">
+							<Width>3.5in</Width>
+							<Height>0.25in</Height>
+							<Style>
+								<Color>CornflowerBlue</Color>
+								<FontSize>12pt</FontSize>
+								<FontStyle>Italic</FontStyle>
+								<FontWeight>700</FontWeight>
+								<PaddingBottom>2pt</PaddingBottom>
+								<PaddingLeft>2pt</PaddingLeft>
+								<PaddingRight>2pt</PaddingRight>
+								<PaddingTop>2pt</PaddingTop>
+							</Style>
+							<ZIndex>2</ZIndex>
+							<CanGrow>true</CanGrow>
+							<Value>2007年のチーム統計情報</Value>
+						</Textbox>
+						<Textbox Name="TextBox3">
+							<Top>0.25in</Top>
+							<Width>2.75in</Width>
+							<Height>0.188in</Height>
+							<Style>
+								<Color>Gray</Color>
+								<FontSize>7pt</FontSize>
+								<FontStyle>Italic</FontStyle>
+								<PaddingBottom>2pt</PaddingBottom>
+								<PaddingLeft>2pt</PaddingLeft>
+								<PaddingRight>2pt</PaddingRight>
+								<PaddingTop>2pt</PaddingTop>
+							</Style>
+							<ZIndex>3</ZIndex>
+							<CanGrow>true</CanGrow>
+							<Value>下記にあるチーム名をクリックすると、統計情報が表示されます。</Value>
+						</Textbox>
+					</ReportItems>
+				</PageHeader>
+				<Columns>3</Columns>
+				<ColumnSpacing>0in</ColumnSpacing>
+				<TopMargin>1in</TopMargin>
+				<BottomMargin>1in</BottomMargin>
+				<LeftMargin>1in</LeftMargin>
+				<RightMargin>1in</RightMargin>
+			</Page>
+			<Width>2.165in</Width>
+		</ReportSection>
+	</ReportSections>
+	<DataSources>
+		<DataSource Name="FootballStatistics">
+			<ConnectionProperties>
+				<ConnectString>XmlDoc=..\..\..\..\..\Data\FootballStatistics.xml</ConnectString>
+				<DataProvider>XML</DataProvider>
+			</ConnectionProperties>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="Games">
+			<Fields>
+				<Field Name="Team">
+					<DataField>./TeamName</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>//Game</CommandText>
+				<DataSourceName>FootballStatistics</DataSourceName>
+			</Query>
+		</DataSet>
+	</DataSets>
+</Report>

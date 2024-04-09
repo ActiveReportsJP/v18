@@ -1,0 +1,603 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://cdn.grapecity.com/ActiveReports/reporting/2022/01/reportdefinition">
+	<ReportSections>
+		<ReportSection Name="ReportArea1">
+			<Body>
+				<Height>1.125in</Height>
+				<ReportItems>
+					<Table Name="Table1">
+						<Top>0.4375in</Top>
+						<Left>0.125in</Left>
+						<Width>6.75in</Width>
+						<Height>0.5625in</Height>
+						<DataSetName>StockSnapshots</DataSetName>
+						<Header>
+							<TableRows>
+								<TableRow>
+									<Height>0.1875in</Height>
+									<TableCells>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox1">
+													<Style>
+														<BackgroundColor>White</BackgroundColor>
+														<Color>Gray</Color>
+														<FontSize>8pt</FontSize>
+														<FontStyle>Italic</FontStyle>
+														<FontWeight>500</FontWeight>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextDecoration>Underline</TextDecoration>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<Value>シンボル</Value>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox2">
+													<Style>
+														<BackgroundColor>White</BackgroundColor>
+														<Color>Gray</Color>
+														<FontSize>8pt</FontSize>
+														<FontStyle>Italic</FontStyle>
+														<FontWeight>500</FontWeight>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextDecoration>Underline</TextDecoration>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<Value>会社</Value>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox22">
+													<Style>
+														<Color>Gray</Color>
+														<FontSize>8pt</FontSize>
+														<FontStyle>Italic</FontStyle>
+														<FontWeight>500</FontWeight>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Left</TextAlign>
+														<TextDecoration>Underline</TextDecoration>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<Value>過去30日間</Value>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox23">
+													<Style>
+														<Color>Gray</Color>
+														<FontSize>8pt</FontSize>
+														<FontStyle>Italic</FontStyle>
+														<FontWeight>500</FontWeight>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+														<TextDecoration>Underline</TextDecoration>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<Value>終値</Value>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox3">
+													<Style>
+														<BackgroundColor>White</BackgroundColor>
+														<Color>Gray</Color>
+														<FontSize>8pt</FontSize>
+														<FontStyle>Italic</FontStyle>
+														<FontWeight>500</FontWeight>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+														<TextDecoration>Underline</TextDecoration>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<Value>始値</Value>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox10">
+													<Style>
+														<BackgroundColor>White</BackgroundColor>
+														<Color>Gray</Color>
+														<FontSize>8pt</FontSize>
+														<FontStyle>Italic</FontStyle>
+														<FontWeight>500</FontWeight>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+														<TextDecoration>Underline</TextDecoration>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<Value>高価格</Value>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox13">
+													<Style>
+														<BackgroundColor>White</BackgroundColor>
+														<Color>Gray</Color>
+														<FontSize>8pt</FontSize>
+														<FontStyle>Italic</FontStyle>
+														<FontWeight>500</FontWeight>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+														<TextDecoration>Underline</TextDecoration>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<Value>低価格</Value>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox16">
+													<Style>
+														<BackgroundColor>White</BackgroundColor>
+														<Color>Gray</Color>
+														<FontSize>8pt</FontSize>
+														<FontStyle>Italic</FontStyle>
+														<FontWeight>500</FontWeight>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+														<TextDecoration>Underline</TextDecoration>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<Value>株式数</Value>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+									</TableCells>
+								</TableRow>
+							</TableRows>
+						</Header>
+						<Details>
+							<Group Name="Table1_Detail_Group">
+								<GroupExpressions>
+									<GroupExpression>=Fields!Symbol.Value</GroupExpression>
+								</GroupExpressions>
+							</Group>
+							<TableRows>
+								<TableRow>
+									<Height>0.1875in</Height>
+									<TableCells>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox4">
+													<Style>
+														<FontSize>8pt</FontSize>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<Value>=Fields!Symbol.Value</Value>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox5">
+													<Style>
+														<FontSize>8pt</FontSize>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<Value>=Fields!Company.Value</Value>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Rectangle Name="Rectangle1">
+													<ReportItems>
+														<CustomReportItem Name="Sparkline">
+															<Type>Sparkline</Type>
+															<Width>1.25in</Width>
+															<Height>0.188in</Height>
+															<CustomProperties>
+																<CustomProperty>
+																	<Name>sparkline:Type</Name>
+																	<Value>Line</Value>
+																</CustomProperty>
+															</CustomProperties>
+															<CustomData>
+																<DataSetName>StockSnapshots</DataSetName>
+																<DataRowGroupings>
+																	<DataGroupings>
+																		<DataGrouping>
+																			<CustomProperties>
+																				<CustomProperty>
+																					<Name>sparkline:Value</Name>
+																					<Value>=Fields!AdjClose.Value</Value>
+																				</CustomProperty>
+																			</CustomProperties>
+																		</DataGrouping>
+																	</DataGroupings>
+																</DataRowGroupings>
+															</CustomData>
+														</CustomReportItem>
+													</ReportItems>
+													<CanGrow>true</CanGrow>
+												</Rectangle>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox25">
+													<Style>
+														<FontSize>8pt</FontSize>
+														<Format>c</Format>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<Value>=Last(Fields!Close.Value)</Value>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox6">
+													<Style>
+														<FontSize>8pt</FontSize>
+														<Format>c</Format>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<Value>=Last(Fields!Open.Value)</Value>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox11">
+													<Style>
+														<FontSize>8pt</FontSize>
+														<Format>c</Format>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<Value>=Last(Fields!High.Value)</Value>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox14">
+													<Style>
+														<FontSize>8pt</FontSize>
+														<Format>c</Format>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<Value>=Last(Fields!Low.Value)</Value>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox17">
+													<Style>
+														<FontSize>8pt</FontSize>
+														<Format>N0</Format>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<Value>=Fields!Volume.Value</Value>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+									</TableCells>
+								</TableRow>
+							</TableRows>
+						</Details>
+						<Footer>
+							<TableRows>
+								<TableRow>
+									<Height>0.1875in</Height>
+									<TableCells>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox7">
+													<Style>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<Value />
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox8">
+													<Style>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<Value />
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox24">
+													<Style>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<Value />
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox26">
+													<Style>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<Value />
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox9">
+													<Style>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<Value />
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox12">
+													<Style>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<Value />
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox15">
+													<Style>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<Value />
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+										<TableCell>
+											<ReportItems>
+												<Textbox Name="TextBox18">
+													<Style>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<Value />
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+									</TableCells>
+								</TableRow>
+							</TableRows>
+						</Footer>
+						<TableColumns>
+							<TableColumn>
+								<Width>0.75in</Width>
+							</TableColumn>
+							<TableColumn>
+								<Width>2in</Width>
+							</TableColumn>
+							<TableColumn>
+								<Width>1.25in</Width>
+							</TableColumn>
+							<TableColumn>
+								<Width>0.5in</Width>
+							</TableColumn>
+							<TableColumn>
+								<Width>0.5in</Width>
+							</TableColumn>
+							<TableColumn>
+								<Width>0.5in</Width>
+							</TableColumn>
+							<TableColumn>
+								<Width>0.5in</Width>
+							</TableColumn>
+							<TableColumn>
+								<Width>0.75in</Width>
+							</TableColumn>
+						</TableColumns>
+					</Table>
+					<Textbox Name="TextBox19">
+						<Top>0.125in</Top>
+						<Left>0.125in</Left>
+						<Width>6.25in</Width>
+						<Height>0.2in</Height>
+						<Style>
+							<Color>Gray</Color>
+							<FontWeight>700</FontWeight>
+							<PaddingBottom>2pt</PaddingBottom>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+						</Style>
+						<ZIndex>1</ZIndex>
+						<CanGrow>true</CanGrow>
+						<Value>="株式市場スナップショット " &amp; Last(Fields!Date.Value)</Value>
+					</Textbox>
+				</ReportItems>
+				<Style>
+					<Border>
+						<Style>Solid</Style>
+						<Color>Silver</Color>
+						<Width>1 pt</Width>
+					</Border>
+				</Style>
+			</Body>
+			<Page>
+				<TopMargin>1in</TopMargin>
+				<BottomMargin>1in</BottomMargin>
+				<LeftMargin>0.75in</LeftMargin>
+				<RightMargin>0.75in</RightMargin>
+			</Page>
+			<Width>7in</Width>
+		</ReportSection>
+	</ReportSections>
+	<DataSources>
+		<DataSource Name="MarketData">
+			<ConnectionProperties>
+				<ConnectString>XmlDoc=..\..\..\..\..\Data\MarketData.xml</ConnectString>
+				<DataProvider>XML</DataProvider>
+			</ConnectionProperties>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="StockSnapshots">
+			<Fields>
+				<Field Name="strDate">
+					<DataField>./Date</DataField>
+				</Field>
+				<Field Name="strOpen">
+					<DataField>./Open</DataField>
+				</Field>
+				<Field Name="strHigh">
+					<DataField>./High</DataField>
+				</Field>
+				<Field Name="strLow">
+					<DataField>./Low</DataField>
+				</Field>
+				<Field Name="strClose">
+					<DataField>./Close</DataField>
+				</Field>
+				<Field Name="strAdjClose">
+					<DataField>./AdjClose</DataField>
+				</Field>
+				<Field Name="strVolume">
+					<DataField>./Volume</DataField>
+				</Field>
+				<Field Name="Symbol">
+					<DataField>./Symbol</DataField>
+				</Field>
+				<Field Name="Company">
+					<DataField>./Company</DataField>
+				</Field>
+				<Field Name="Open">
+					<Value>=ToDouble(Fields!strOpen.Value)</Value>
+				</Field>
+				<Field Name="High">
+					<Value>=ToDouble(Fields!strHigh.Value)</Value>
+				</Field>
+				<Field Name="Low">
+					<Value>=ToDouble(Fields!strLow.Value)</Value>
+				</Field>
+				<Field Name="Close">
+					<Value>=ToDouble(Fields!strClose.Value)</Value>
+				</Field>
+				<Field Name="AdjClose">
+					<Value>=ToDouble(Fields!strAdjClose.Value)</Value>
+				</Field>
+				<Field Name="Volume">
+					<Value>=ToInt32(Fields!strVolume.Value)</Value>
+				</Field>
+				<Field Name="Date">
+					<Value>=ToDateTime(Fields!strDate.Value)</Value>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>//Snapshot</CommandText>
+				<DataSourceName>MarketData</DataSourceName>
+			</Query>
+		</DataSet>
+	</DataSets>
+</Report>

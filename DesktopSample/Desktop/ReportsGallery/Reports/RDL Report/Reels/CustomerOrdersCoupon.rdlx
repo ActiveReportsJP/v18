@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://cdn.grapecity.com/ActiveReports/reporting/2022/01/reportdefinition">
+	<ReportSections>
+		<ReportSection Name="ReportArea1">
+			<Body>
+				<Height>1.75in</Height>
+				<ReportItems>
+					<Rectangle Name="Rectangle2">
+						<Width>6.395817in</Width>
+						<Height>1.75in</Height>
+						<ReportItems>
+							<Rectangle Name="rectangle1">
+								<Left>0.01041667in</Left>
+								<Width>6.3854in</Width>
+								<Height>1.625in</Height>
+								<Style>
+									<Border>
+										<Style>Dashed</Style>
+									</Border>
+								</Style>
+								<ZIndex>1</ZIndex>
+								<ReportItems>
+									<Image Name="image2">
+										<Top>0.125in</Top>
+										<Left>0.2395833in</Left>
+										<Width>1in</Width>
+										<Height>0.75in</Height>
+										<ZIndex>3</ZIndex>
+										<MIMEType>=Theme.Images!Logo.MIMEType</MIMEType>
+										<Sizing>FitProportional</Sizing>
+										<Source>Database</Source>
+										<Value>=Theme.Images!Logo.ImageData</Value>
+									</Image>
+									<Textbox Name="textbox40">
+										<Top>0.125in</Top>
+										<Left>5in</Left>
+										<Width>1.3854in</Width>
+										<Height>0.75in</Height>
+										<Style>
+											<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
+											<FontSize>20pt</FontSize>
+											<Language>ja-JP</Language>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<ZIndex>2</ZIndex>
+										<CanGrow>true</CanGrow>
+										<Value>％ OFF</Value>
+									</Textbox>
+									<Textbox Name="textbox26">
+										<Top>1in</Top>
+										<Left>0.2395833in</Left>
+										<Width>2.6354in</Width>
+										<Height>0.25in</Height>
+										<Style>
+											<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+											<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+											<FontWeight>700</FontWeight>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<ZIndex>1</ZIndex>
+										<CanGrow>true</CanGrow>
+										<Value>クーポンの有効期限は03月31日です。</Value>
+									</Textbox>
+									<Textbox Name="textbox24">
+										<Top>0.125in</Top>
+										<Left>4.625in</Left>
+										<Width>0.6354in</Width>
+										<Height>0.75in</Height>
+										<Style>
+											<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
+											<FontSize>20pt</FontSize>
+											<Language>ja-JP</Language>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Left</TextAlign>
+											<HeadingLevel>1</HeadingLevel>
+										</Style>
+										<CanGrow>true</CanGrow>
+										<Value>=Parameters!CouponAmount.Value</Value>
+										<ToggleImage>
+											<InitialState>True</InitialState>
+										</ToggleImage>
+									</Textbox>
+									<Textbox Name="TextBox2">
+										<Top>1.25in</Top>
+										<Left>0.2395833in</Left>
+										<Width>3.875in</Width>
+										<Height>0.375in</Height>
+										<Style>
+											<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+											<FontSize>8pt</FontSize>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<ZIndex>7</ZIndex>
+										<CanGrow>true</CanGrow>
+										<Value>このクーポンは、他のクーポン及びサービス券との併用はできません。</Value>
+									</Textbox>
+									<Textbox Name="TextBox3">
+										<Top>0.125in</Top>
+										<Left>1.239583in</Left>
+										<Width>3.25in</Width>
+										<Height>0.625in</Height>
+										<Style>
+											<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
+											<FontSize>18pt</FontSize>
+											<Language>ja-JP</Language>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+											<TextAlign>Center</TextAlign>
+										</Style>
+										<ZIndex>8</ZIndex>
+										<CanGrow>true</CanGrow>
+										<Value>=" Reelsでの次の購入時に" &amp; Parameters!CouponAmount.Value &amp; "％ OFF!!"</Value>
+									</Textbox>
+									<CustomReportItem Name="Barcode1">
+										<Type>Barcode</Type>
+										<Top>1.125in</Top>
+										<Left>4.739583in</Left>
+										<Width>1.5in</Width>
+										<Height>0.5in</Height>
+										<Style>
+											<TextAlign>Center</TextAlign>
+										</Style>
+										<ZIndex>9</ZIndex>
+										<CustomProperties>
+											<CustomProperty>
+												<Name>dd:QuietZone.Left</Name>
+												<Value>0in</Value>
+											</CustomProperty>
+											<CustomProperty>
+												<Name>dd:QuietZone.Right</Name>
+												<Value>0in</Value>
+											</CustomProperty>
+											<CustomProperty>
+												<Name>dd:CaptionLocation</Name>
+												<Value>Below</Value>
+											</CustomProperty>
+											<CustomProperty>
+												<Name>dd:DisplayChecksum</Name>
+												<Value>true</Value>
+											</CustomProperty>
+											<CustomProperty>
+												<Name>dd:Symbology</Name>
+												<Value>Code128C</Value>
+											</CustomProperty>
+											<CustomProperty>
+												<Name>dd:Value</Name>
+												<Value>="20070331" &amp; String.Format("{0:00}", Parameters!CouponAmount.Value)</Value>
+											</CustomProperty>
+										</CustomProperties>
+									</CustomReportItem>
+								</ReportItems>
+								<CanGrow>true</CanGrow>
+							</Rectangle>
+						</ReportItems>
+						<CanGrow>true</CanGrow>
+					</Rectangle>
+				</ReportItems>
+			</Body>
+			<Page />
+			<Width>6.5in</Width>
+		</ReportSection>
+	</ReportSections>
+	<ReportParameters>
+		<ReportParameter Name="CouponAmount">
+			<DataType>Integer</DataType>
+			<Prompt>Coupon Amount</Prompt>
+			<DefaultValue>
+				<Values>
+					<Value>10</Value>
+				</Values>
+			</DefaultValue>
+		</ReportParameter>
+	</ReportParameters>
+	<ReportThemes>
+		<ThemeUri>Reels.rdlx-theme</ThemeUri>
+	</ReportThemes>
+</Report>

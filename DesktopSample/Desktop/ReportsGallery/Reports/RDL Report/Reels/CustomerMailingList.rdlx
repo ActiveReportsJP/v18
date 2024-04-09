@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://cdn.grapecity.com/ActiveReports/reporting/2022/01/reportdefinition">
+	<Author>Data Dynamics, Ltd.</Author>
+	<Name>CustomerMailingList.rdlx</Name>
+	<ReportSections>
+		<ReportSection Name="ReportArea1">
+			<Body>
+				<Columns>3</Columns>
+				<ColumnSpacing>0.25in</ColumnSpacing>
+				<Height>1in</Height>
+				<ReportItems>
+					<List Name="list">
+						<DataSetName>CustomerList</DataSetName>
+						<Width>2.5in</Width>
+						<Height>1in</Height>
+						<ReportItems>
+							<Rectangle Name="Rectangle1">
+								<Width>2.5in</Width>
+								<Height>2.54cm</Height>
+								<Style>
+									<BottomBorder>
+										<Style>Solid</Style>
+									</BottomBorder>
+								</Style>
+								<ZIndex>3</ZIndex>
+								<ReportItems>
+									<Textbox Name="FirstName">
+										<Width>2.5in</Width>
+										<Height>0.25in</Height>
+										<Style>
+											<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
+											<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<ZIndex>2</ZIndex>
+										<Value>=Fields!FirstName.Value &amp; IIF( Fields!MiddleInitial.Value Is Nothing, "", " " &amp; Fields!MiddleInitial.Value ) &amp; " " &amp; Fields!LastName.Value</Value>
+									</Textbox>
+									<Textbox Name="CustomerAddress1">
+										<Top>0.25in</Top>
+										<Width>2.5in</Width>
+										<Height>0.25in</Height>
+										<Style>
+											<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
+											<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<ZIndex>3</ZIndex>
+										<CanShrink>true</CanShrink>
+										<Value>=Fields!Address1.Value &amp; IIF( Fields!Address2.Value is Nothing, "", " " &amp; Fields!Address2.Value )</Value>
+									</Textbox>
+									<Textbox Name="CustomerCity">
+										<Top>0.5in</Top>
+										<Width>2.5in</Width>
+										<Height>0.25in</Height>
+										<Style>
+											<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
+											<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<ZIndex>4</ZIndex>
+										<Value>=Fields!City.Value &amp; ", " &amp; Fields!Region.Value &amp; "  " &amp; Fields!PostalCode.Value</Value>
+									</Textbox>
+									<Textbox Name="Country">
+										<Top>1.905cm</Top>
+										<Width>2.5in</Width>
+										<Height>0.25in</Height>
+										<Style>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<ZIndex>5</ZIndex>
+										<CanGrow>true</CanGrow>
+										<Value>=Fields!Country.Value</Value>
+									</Textbox>
+								</ReportItems>
+								<CanGrow>true</CanGrow>
+							</Rectangle>
+						</ReportItems>
+					</List>
+				</ReportItems>
+			</Body>
+			<Page>
+				<Columns>3</Columns>
+				<ColumnSpacing>0.25in</ColumnSpacing>
+				<TopMargin>1in</TopMargin>
+				<BottomMargin>1in</BottomMargin>
+				<LeftMargin>0.125in</LeftMargin>
+				<RightMargin>0.125in</RightMargin>
+			</Page>
+			<Width>2.5in</Width>
+		</ReportSection>
+	</ReportSections>
+	<Description>Creates mailing labels for Reels customers</Description>
+	<DataSources>
+		<DataSource Name="Reels">
+			<ConnectionProperties>
+				<ConnectString>Data Source=..\\..\\..\\..\\..\\..\\..\\Data\\Reels.db</ConnectString>
+				<DataProvider>SQLITE</DataProvider>
+			</ConnectionProperties>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="CustomerList">
+			<Fields>
+				<Field Name="FirstName">
+					<DataField>FirstName</DataField>
+				</Field>
+				<Field Name="MiddleInitial">
+					<DataField>MiddleInitial</DataField>
+				</Field>
+				<Field Name="LastName">
+					<DataField>LastName</DataField>
+				</Field>
+				<Field Name="Address1">
+					<DataField>Address1</DataField>
+				</Field>
+				<Field Name="Address2">
+					<DataField>Address2</DataField>
+				</Field>
+				<Field Name="City">
+					<DataField>City</DataField>
+				</Field>
+				<Field Name="Region">
+					<DataField>Region</DataField>
+				</Field>
+				<Field Name="PostalCode">
+					<DataField>PostalCode</DataField>
+				</Field>
+				<Field Name="Country">
+					<DataField>Country</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>SELECT * FROM (SELECT * FROM CustomerMailingList LIMIT 100)
+UNION
+SELECT * FROM (SELECT * FROM CustomerMailingList WHERE Country = "USA" LIMIT 100)
+ORDER BY 8 DESC</CommandText>
+				<DataSourceName>Reels</DataSourceName>
+			</Query>
+		</DataSet>
+	</DataSets>
+	<ReportThemes>
+		<ThemeUri>Reels.rdlx-theme</ThemeUri>
+	</ReportThemes>
+</Report>
