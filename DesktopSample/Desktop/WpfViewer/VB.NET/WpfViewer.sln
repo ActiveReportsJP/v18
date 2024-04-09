@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WpfViewer", "WpfViewer\WpfViewer.vbproj", "{A9259184-B8DD-4CCF-AD31-94578C93A810}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Release|AnyCPU = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9259184-B8DD-4CCF-AD31-94578C93A810}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{A9259184-B8DD-4CCF-AD31-94578C93A810}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{A9259184-B8DD-4CCF-AD31-94578C93A810}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{A9259184-B8DD-4CCF-AD31-94578C93A810}.Release|AnyCPU.Build.0 = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F690A394-D9E3-4512-AC82-66B543BA068D}
+	EndGlobalSection
+EndGlobal
