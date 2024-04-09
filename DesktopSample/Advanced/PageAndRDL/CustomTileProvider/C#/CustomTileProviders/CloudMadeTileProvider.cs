@@ -47,7 +47,7 @@ namespace ActiveReports.Samples.CustomTileProviders
 		{
 			var parameters = new Parameters
 			{
-				Key = Settings["ApiKey"] ?? "8ee2a50541944fb9bcedded5165f09d9",
+				Key = Settings["ApiKey"] ?? "yourKey",
 				ColorStyle = !string.IsNullOrEmpty(Settings["ColorStyle"]) ? int.Parse(Settings["ColorStyle"]) : 1,
 				Timeout = !string.IsNullOrEmpty(Settings["Timeout"]) ? int.Parse(Settings["Timeout"]) : -1
 			};
