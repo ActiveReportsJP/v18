@@ -41,7 +41,7 @@ Public NotInheritable Class CloudMadeTileProvider
 	Dim params As Parameters
 	Private Function GetParameters() As Parameters
 		params = New Parameters() With {
-			.Key = If(Settings("ApiKey"), "8ee2a50541944fb9bcedded5165f09d9"),
+			.Key = If(Settings("ApiKey"), "yourKey"),
 			.ColorStyle = If(Not String.IsNullOrEmpty(Settings("ColorStyle")), Integer.Parse(Settings("ColorStyle")), 1),
 			.Timeout = If(Not String.IsNullOrEmpty(Settings("Timeout")), Integer.Parse(Settings("Timeout")), -1)
 		}
