@@ -1,0 +1,2054 @@
+[
+  {
+    "Id": 76,
+    "Title": "Snow White and the Seven Dwarfs ",
+    "MPAA": "Approved",
+    "YearReleased": 1937
+  },
+  {
+    "Id": 67,
+    "Title": "Gone with the Wind ",
+    "MPAA": "Approved",
+    "YearReleased": 1939
+  },
+  {
+    "Id": 309,
+    "Title": "Bambi ",
+    "MPAA": "Approved",
+    "YearReleased": 1942
+  },
+  {
+    "Id": 134,
+    "Title": "One Hundred and One Dalmatians ",
+    "MPAA": "G",
+    "YearReleased": 1961
+  },
+  {
+    "Id": 315,
+    "Title": "Mary Poppins ",
+    "MPAA": "G",
+    "YearReleased": 1964
+  },
+  {
+    "Id": 115,
+    "Title": "The Sound of Music ",
+    "MPAA": "G",
+    "YearReleased": 1965
+  },
+  {
+    "Id": 265,
+    "Title": "Doctor Zhivago ",
+    "MPAA": "PG-13",
+    "YearReleased": 1965
+  },
+  {
+    "Id": 150,
+    "Title": "The Jungle Book ",
+    "MPAA": "G",
+    "YearReleased": 1967
+  },
+  {
+    "Id": 301,
+    "Title": "The Graduate ",
+    "MPAA": "Approved",
+    "YearReleased": 1967
+  },
+  {
+    "Id": 314,
+    "Title": "Butch Cassidy and the Sundance Kid ",
+    "MPAA": "M",
+    "YearReleased": 1969
+  },
+  {
+    "Id": 291,
+    "Title": "Love Story ",
+    "MPAA": "PG",
+    "YearReleased": 1970
+  },
+  {
+    "Id": 332,
+    "Title": "Airport ",
+    "MPAA": "G",
+    "YearReleased": 1970
+  },
+  {
+    "Id": 176,
+    "Title": "The Godfather ",
+    "MPAA": "R",
+    "YearReleased": 1972
+  },
+  {
+    "Id": 64,
+    "Title": "The Exorcist ",
+    "MPAA": "R",
+    "YearReleased": 1973
+  },
+  {
+    "Id": 121,
+    "Title": "The Sting ",
+    "MPAA": "PG",
+    "YearReleased": 1973
+  },
+  {
+    "Id": 250,
+    "Title": "American Graffiti ",
+    "MPAA": "PG",
+    "YearReleased": 1973
+  },
+  {
+    "Id": 230,
+    "Title": "Blazing Saddles ",
+    "MPAA": "R",
+    "YearReleased": 1974
+  },
+  {
+    "Id": 246,
+    "Title": "The Towering Inferno ",
+    "MPAA": "PG",
+    "YearReleased": 1974
+  },
+  {
+    "Id": 33,
+    "Title": "Jaws ",
+    "MPAA": "PG",
+    "YearReleased": 1975
+  },
+  {
+    "Id": 160,
+    "Title": "The Rocky Horror Picture Show ",
+    "MPAA": "R",
+    "YearReleased": 1975
+  },
+  {
+    "Id": 262,
+    "Title": "One Flew Over the Cuckoo\u0027s Nest ",
+    "MPAA": "R",
+    "YearReleased": 1975
+  },
+  {
+    "Id": 241,
+    "Title": "Rocky ",
+    "MPAA": "PG",
+    "YearReleased": 1976
+  },
+  {
+    "Id": 2,
+    "Title": "Star Wars ",
+    "MPAA": "PG",
+    "YearReleased": 1977
+  },
+  {
+    "Id": 149,
+    "Title": "Saturday Night Fever ",
+    "MPAA": "R",
+    "YearReleased": 1977
+  },
+  {
+    "Id": 193,
+    "Title": "Close Encounters of the Third Kind ",
+    "MPAA": "PG",
+    "YearReleased": 1977
+  },
+  {
+    "Id": 203,
+    "Title": "Smokey and the Bandit ",
+    "MPAA": "PG",
+    "YearReleased": 1977
+  },
+  {
+    "Id": 84,
+    "Title": "Grease ",
+    "MPAA": "PG",
+    "YearReleased": 1978
+  },
+  {
+    "Id": 152,
+    "Title": "Animal House ",
+    "MPAA": "R",
+    "YearReleased": 1978
+  },
+  {
+    "Id": 177,
+    "Title": "Superman ",
+    "MPAA": "PG",
+    "YearReleased": 1978
+  },
+  {
+    "Id": 294,
+    "Title": "Every Which Way But Loose ",
+    "MPAA": "PG",
+    "YearReleased": 1978
+  },
+  {
+    "Id": 308,
+    "Title": "Jaws 2 ",
+    "MPAA": "PG",
+    "YearReleased": 1978
+  },
+  {
+    "Id": 292,
+    "Title": "Kramer vs. Kramer ",
+    "MPAA": "PG",
+    "YearReleased": 1979
+  },
+  {
+    "Id": 24,
+    "Title": "Star Wars: Episode V - The Empire Strikes Back ",
+    "MPAA": "PG",
+    "YearReleased": 1980
+  },
+  {
+    "Id": 281,
+    "Title": "Superman II ",
+    "MPAA": "PG",
+    "YearReleased": 1980
+  },
+  {
+    "Id": 306,
+    "Title": "Nine to Five ",
+    "MPAA": "PG",
+    "YearReleased": 1980
+  },
+  {
+    "Id": 320,
+    "Title": "Stir Crazy ",
+    "MPAA": "R",
+    "YearReleased": 1980
+  },
+  {
+    "Id": 40,
+    "Title": "Raiders of the Lost Ark ",
+    "MPAA": "R",
+    "YearReleased": 1981
+  },
+  {
+    "Id": 233,
+    "Title": "On Golden Pond ",
+    "MPAA": "PG",
+    "YearReleased": 1981
+  },
+  {
+    "Id": 4,
+    "Title": "E.T. the Extra-Terrestrial ",
+    "MPAA": "PG",
+    "YearReleased": 1982
+  },
+  {
+    "Id": 91,
+    "Title": "Tootsie ",
+    "MPAA": "R",
+    "YearReleased": 1982
+  },
+  {
+    "Id": 189,
+    "Title": "An Officer and a Gentleman ",
+    "MPAA": "R",
+    "YearReleased": 1982
+  },
+  {
+    "Id": 217,
+    "Title": "Rocky III ",
+    "MPAA": "PG",
+    "YearReleased": 1982
+  },
+  {
+    "Id": 296,
+    "Title": "Porky\u0027s ",
+    "MPAA": "R",
+    "YearReleased": 1982
+  },
+  {
+    "Id": 19,
+    "Title": "Star Wars: Episode VI - Return of the Jedi ",
+    "MPAA": "PG",
+    "YearReleased": 1983
+  },
+  {
+    "Id": 278,
+    "Title": "Terms of Endearment ",
+    "MPAA": "PG",
+    "YearReleased": 1983
+  },
+  {
+    "Id": 43,
+    "Title": "Ghost Busters ",
+    "MPAA": "PG",
+    "YearReleased": 1984
+  },
+  {
+    "Id": 44,
+    "Title": "Beverly Hills Cop ",
+    "MPAA": "R",
+    "YearReleased": 1984
+  },
+  {
+    "Id": 88,
+    "Title": "Indiana Jones and the Temple of Doom ",
+    "MPAA": "PG",
+    "YearReleased": 1984
+  },
+  {
+    "Id": 138,
+    "Title": "Gremlins ",
+    "MPAA": "PG",
+    "YearReleased": 1984
+  },
+  {
+    "Id": 58,
+    "Title": "Back to the Future ",
+    "MPAA": "PG",
+    "YearReleased": 1985
+  },
+  {
+    "Id": 136,
+    "Title": "Rambo: First Blood Part II ",
+    "MPAA": "R",
+    "YearReleased": 1985
+  },
+  {
+    "Id": 197,
+    "Title": "Rocky IV ",
+    "MPAA": "PG",
+    "YearReleased": 1985
+  },
+  {
+    "Id": 92,
+    "Title": "Top Gun ",
+    "MPAA": "PG",
+    "YearReleased": 1986
+  },
+  {
+    "Id": 96,
+    "Title": "Crocodile Dundee ",
+    "MPAA": "PG-13",
+    "YearReleased": 1986
+  },
+  {
+    "Id": 167,
+    "Title": "Platoon ",
+    "MPAA": "R",
+    "YearReleased": 1986
+  },
+  {
+    "Id": 249,
+    "Title": "The Karate Kid, Part II ",
+    "MPAA": "PG",
+    "YearReleased": 1986
+  },
+  {
+    "Id": 273,
+    "Title": "Star Trek IV: The Voyage Home ",
+    "MPAA": "PG",
+    "YearReleased": 1986
+  },
+  {
+    "Id": 109,
+    "Title": "Three Men and a Baby ",
+    "MPAA": "PG",
+    "YearReleased": 1987
+  },
+  {
+    "Id": 126,
+    "Title": "Fatal Attraction ",
+    "MPAA": "R",
+    "YearReleased": 1987
+  },
+  {
+    "Id": 131,
+    "Title": "Beverly Hills Cop II ",
+    "MPAA": "R",
+    "YearReleased": 1987
+  },
+  {
+    "Id": 215,
+    "Title": "Good Morning, Vietnam ",
+    "MPAA": "R",
+    "YearReleased": 1987
+  },
+  {
+    "Id": 101,
+    "Title": "Rain Man ",
+    "MPAA": "R",
+    "YearReleased": 1988
+  },
+  {
+    "Id": 130,
+    "Title": "Who Framed Roger Rabbit ",
+    "MPAA": "PG",
+    "YearReleased": 1988
+  },
+  {
+    "Id": 195,
+    "Title": "Coming to America ",
+    "MPAA": "R",
+    "YearReleased": 1988
+  },
+  {
+    "Id": 251,
+    "Title": "Big ",
+    "MPAA": "PG",
+    "YearReleased": 1988
+  },
+  {
+    "Id": 263,
+    "Title": "Twins ",
+    "MPAA": "PG",
+    "YearReleased": 1988
+  },
+  {
+    "Id": 274,
+    "Title": "\u0027Crocodile\u0027 Dundee II ",
+    "MPAA": "PG",
+    "YearReleased": 1988
+  },
+  {
+    "Id": 35,
+    "Title": "Batman ",
+    "MPAA": "PG-13",
+    "YearReleased": 1989
+  },
+  {
+    "Id": 69,
+    "Title": "Indiana Jones and the Last Crusade ",
+    "MPAA": "PG-13",
+    "YearReleased": 1989
+  },
+  {
+    "Id": 140,
+    "Title": "Lethal Weapon 2 ",
+    "MPAA": "R",
+    "YearReleased": 1989
+  },
+  {
+    "Id": 158,
+    "Title": "Look Who\u0027s Talking ",
+    "MPAA": "PG-13",
+    "YearReleased": 1989
+  },
+  {
+    "Id": 186,
+    "Title": "Honey, I Shrunk the Kids ",
+    "MPAA": "PG",
+    "YearReleased": 1989
+  },
+  {
+    "Id": 236,
+    "Title": "Back to the Future Part II ",
+    "MPAA": "PG",
+    "YearReleased": 1989
+  },
+  {
+    "Id": 260,
+    "Title": "Ghostbusters II ",
+    "MPAA": "PG",
+    "YearReleased": 1989
+  },
+  {
+    "Id": 272,
+    "Title": "The Little Mermaid ",
+    "MPAA": "G",
+    "YearReleased": 1989
+  },
+  {
+    "Id": 290,
+    "Title": "Driving Miss Daisy ",
+    "MPAA": "PG",
+    "YearReleased": 1989
+  },
+  {
+    "Id": 340,
+    "Title": "Parenthood ",
+    "MPAA": "PG-13",
+    "YearReleased": 1989
+  },
+  {
+    "Id": 26,
+    "Title": "Home Alone ",
+    "MPAA": "PG",
+    "YearReleased": 1990
+  },
+  {
+    "Id": 52,
+    "Title": "Ghost ",
+    "MPAA": "PG-13",
+    "YearReleased": 1990
+  },
+  {
+    "Id": 77,
+    "Title": "Dances with Wolves ",
+    "MPAA": "PG-13",
+    "YearReleased": 1990
+  },
+  {
+    "Id": 89,
+    "Title": "Pretty Woman ",
+    "MPAA": "R",
+    "YearReleased": 1990
+  },
+  {
+    "Id": 174,
+    "Title": "Teenage Mutant Ninja Turtles ",
+    "MPAA": "PG",
+    "YearReleased": 1990
+  },
+  {
+    "Id": 224,
+    "Title": "The Hunt for Red October ",
+    "MPAA": "PG",
+    "YearReleased": 1990
+  },
+  {
+    "Id": 232,
+    "Title": "Total Recall ",
+    "MPAA": "R",
+    "YearReleased": 1990
+  },
+  {
+    "Id": 240,
+    "Title": "Die Hard 2 ",
+    "MPAA": "R",
+    "YearReleased": 1990
+  },
+  {
+    "Id": 305,
+    "Title": "Dick Tracy ",
+    "MPAA": "PG",
+    "YearReleased": 1990
+  },
+  {
+    "Id": 63,
+    "Title": "Terminator 2: Judgment Day ",
+    "MPAA": "R",
+    "YearReleased": 1991
+  },
+  {
+    "Id": 105,
+    "Title": "Beauty and the Beast ",
+    "MPAA": "G",
+    "YearReleased": 1991
+  },
+  {
+    "Id": 111,
+    "Title": "Robin Hood: Prince of Thieves ",
+    "MPAA": "PG-13",
+    "YearReleased": 1991
+  },
+  {
+    "Id": 185,
+    "Title": "The Silence of the Lambs ",
+    "MPAA": "R",
+    "YearReleased": 1991
+  },
+  {
+    "Id": 213,
+    "Title": "City Slickers ",
+    "MPAA": "PG-13",
+    "YearReleased": 1991
+  },
+  {
+    "Id": 229,
+    "Title": "Hook ",
+    "MPAA": "PG",
+    "YearReleased": 1991
+  },
+  {
+    "Id": 255,
+    "Title": "The Addams Family ",
+    "MPAA": "PG-13",
+    "YearReleased": 1991
+  },
+  {
+    "Id": 319,
+    "Title": "Sleeping with the Enemy ",
+    "MPAA": "R",
+    "YearReleased": 1991
+  },
+  {
+    "Id": 53,
+    "Title": "Aladdin ",
+    "MPAA": "G",
+    "YearReleased": 1992
+  },
+  {
+    "Id": 98,
+    "Title": "Home Alone 2: Lost in New York ",
+    "MPAA": "PG",
+    "YearReleased": 1992
+  },
+  {
+    "Id": 116,
+    "Title": "Batman Returns ",
+    "MPAA": "PG-13",
+    "YearReleased": 1992
+  },
+  {
+    "Id": 146,
+    "Title": "Lethal Weapon 3 ",
+    "MPAA": "R",
+    "YearReleased": 1992
+  },
+  {
+    "Id": 153,
+    "Title": "A Few Good Men ",
+    "MPAA": "R",
+    "YearReleased": 1992
+  },
+  {
+    "Id": 161,
+    "Title": "Sister Act ",
+    "MPAA": "PG",
+    "YearReleased": 1992
+  },
+  {
+    "Id": 219,
+    "Title": "The Bodyguard ",
+    "MPAA": "R",
+    "YearReleased": 1992
+  },
+  {
+    "Id": 220,
+    "Title": "Wayne\u0027s World ",
+    "MPAA": "PG-13",
+    "YearReleased": 1992
+  },
+  {
+    "Id": 238,
+    "Title": "Basic Instinct ",
+    "MPAA": "R",
+    "YearReleased": 1992
+  },
+  {
+    "Id": 283,
+    "Title": "A League of Their Own ",
+    "MPAA": "PG",
+    "YearReleased": 1992
+  },
+  {
+    "Id": 324,
+    "Title": "Unforgiven ",
+    "MPAA": "R",
+    "YearReleased": 1992
+  },
+  {
+    "Id": 11,
+    "Title": "Jurassic Park ",
+    "MPAA": "PG-13",
+    "YearReleased": 1993
+  },
+  {
+    "Id": 50,
+    "Title": "Mrs. Doubtfire ",
+    "MPAA": "PG-13",
+    "YearReleased": 1993
+  },
+  {
+    "Id": 79,
+    "Title": "The Fugitive ",
+    "MPAA": "PG-13",
+    "YearReleased": 1993
+  },
+  {
+    "Id": 122,
+    "Title": "The Firm ",
+    "MPAA": "R",
+    "YearReleased": 1993
+  },
+  {
+    "Id": 204,
+    "Title": "Sleepless in Seattle ",
+    "MPAA": "PG",
+    "YearReleased": 1993
+  },
+  {
+    "Id": 289,
+    "Title": "Indecent Proposal ",
+    "MPAA": "R",
+    "YearReleased": 1993
+  },
+  {
+    "Id": 313,
+    "Title": "In the Line of Fire ",
+    "MPAA": "R",
+    "YearReleased": 1993
+  },
+  {
+    "Id": 328,
+    "Title": "The Pelican Brief ",
+    "MPAA": "PG-13",
+    "YearReleased": 1993
+  },
+  {
+    "Id": 14,
+    "Title": "Forrest Gump ",
+    "MPAA": "PG-13",
+    "YearReleased": 1994
+  },
+  {
+    "Id": 15,
+    "Title": "The Lion King ",
+    "MPAA": "G",
+    "YearReleased": 1994
+  },
+  {
+    "Id": 141,
+    "Title": "True Lies ",
+    "MPAA": "R",
+    "YearReleased": 1994
+  },
+  {
+    "Id": 144,
+    "Title": "The Santa Clause ",
+    "MPAA": "PG",
+    "YearReleased": 1994
+  },
+  {
+    "Id": 187,
+    "Title": "The Flintstones ",
+    "MPAA": "PG",
+    "YearReleased": 1994
+  },
+  {
+    "Id": 199,
+    "Title": "Dumb \u0026 Dumber ",
+    "MPAA": "PG-13",
+    "YearReleased": 1994
+  },
+  {
+    "Id": 218,
+    "Title": "Clear and Present Danger ",
+    "MPAA": "PG-13",
+    "YearReleased": 1994
+  },
+  {
+    "Id": 222,
+    "Title": "Speed ",
+    "MPAA": "R",
+    "YearReleased": 1994
+  },
+  {
+    "Id": 228,
+    "Title": "The Mask ",
+    "MPAA": "PG-13",
+    "YearReleased": 1994
+  },
+  {
+    "Id": 282,
+    "Title": "Pulp Fiction ",
+    "MPAA": "R",
+    "YearReleased": 1994
+  },
+  {
+    "Id": 298,
+    "Title": "Interview with the Vampire: The Vampire Chronicles ",
+    "MPAA": "R",
+    "YearReleased": 1994
+  },
+  {
+    "Id": 318,
+    "Title": "Maverick ",
+    "MPAA": "PG",
+    "YearReleased": 1994
+  },
+  {
+    "Id": 71,
+    "Title": "Toy Story ",
+    "MPAA": "G",
+    "YearReleased": 1995
+  },
+  {
+    "Id": 78,
+    "Title": "Batman Forever ",
+    "MPAA": "PG-13",
+    "YearReleased": 1995
+  },
+  {
+    "Id": 103,
+    "Title": "Apollo 13 ",
+    "MPAA": "PG",
+    "YearReleased": 1995
+  },
+  {
+    "Id": 151,
+    "Title": "Pocahontas ",
+    "MPAA": "G",
+    "YearReleased": 1995
+  },
+  {
+    "Id": 279,
+    "Title": "Ace Ventura: When Nature Calls ",
+    "MPAA": "PG-13",
+    "YearReleased": 1995
+  },
+  {
+    "Id": 288,
+    "Title": "GoldenEye ",
+    "MPAA": "PG-13",
+    "YearReleased": 1995
+  },
+  {
+    "Id": 335,
+    "Title": "Casper ",
+    "MPAA": "PG",
+    "YearReleased": 1995
+  },
+  {
+    "Id": 337,
+    "Title": "Jumanji ",
+    "MPAA": "PG",
+    "YearReleased": 1995
+  },
+  {
+    "Id": 338,
+    "Title": "Se7en ",
+    "MPAA": "R",
+    "YearReleased": 1995
+  },
+  {
+    "Id": 341,
+    "Title": "Die Hard: With a Vengeance ",
+    "MPAA": "R",
+    "YearReleased": 1995
+  },
+  {
+    "Id": 20,
+    "Title": "Independence Day ",
+    "MPAA": "PG-13",
+    "YearReleased": 1996
+  },
+  {
+    "Id": 41,
+    "Title": "Twister ",
+    "MPAA": "PG-13",
+    "YearReleased": 1996
+  },
+  {
+    "Id": 86,
+    "Title": "Mission: Impossible ",
+    "MPAA": "PG-13",
+    "YearReleased": 1996
+  },
+  {
+    "Id": 132,
+    "Title": "Jerry Maguire ",
+    "MPAA": "R",
+    "YearReleased": 1996
+  },
+  {
+    "Id": 170,
+    "Title": "Ransom ",
+    "MPAA": "R",
+    "YearReleased": 1996
+  },
+  {
+    "Id": 171,
+    "Title": "101 Dalmatians ",
+    "MPAA": "G",
+    "YearReleased": 1996
+  },
+  {
+    "Id": 178,
+    "Title": "The Rock ",
+    "MPAA": "R",
+    "YearReleased": 1996
+  },
+  {
+    "Id": 191,
+    "Title": "The Nutty Professor ",
+    "MPAA": "PG-13",
+    "YearReleased": 1996
+  },
+  {
+    "Id": 214,
+    "Title": "The Birdcage ",
+    "MPAA": "R",
+    "YearReleased": 1996
+  },
+  {
+    "Id": 276,
+    "Title": "A Time to Kill ",
+    "MPAA": "R",
+    "YearReleased": 1996
+  },
+  {
+    "Id": 297,
+    "Title": "The First Wives Club ",
+    "MPAA": "PG",
+    "YearReleased": 1996
+  },
+  {
+    "Id": 300,
+    "Title": "Phenomenon ",
+    "MPAA": "PG",
+    "YearReleased": 1996
+  },
+  {
+    "Id": 307,
+    "Title": "Scream ",
+    "MPAA": "R",
+    "YearReleased": 1996
+  },
+  {
+    "Id": 322,
+    "Title": "Eraser ",
+    "MPAA": "R",
+    "YearReleased": 1996
+  },
+  {
+    "Id": 339,
+    "Title": "The Hunchback of Notre Dame ",
+    "MPAA": "G",
+    "YearReleased": 1996
+  },
+  {
+    "Id": 1,
+    "Title": "Titanic ",
+    "MPAA": "PG-13",
+    "YearReleased": 1997
+  },
+  {
+    "Id": 36,
+    "Title": "Men in Black ",
+    "MPAA": "PG-13",
+    "YearReleased": 1997
+  },
+  {
+    "Id": 47,
+    "Title": "The Lost World: Jurassic Park ",
+    "MPAA": "PG-13",
+    "YearReleased": 1997
+  },
+  {
+    "Id": 83,
+    "Title": "Liar Liar ",
+    "MPAA": "PG-13",
+    "YearReleased": 1997
+  },
+  {
+    "Id": 102,
+    "Title": "Air Force One ",
+    "MPAA": "R",
+    "YearReleased": 1997
+  },
+  {
+    "Id": 139,
+    "Title": "As Good as It Gets ",
+    "MPAA": "PG-13",
+    "YearReleased": 1997
+  },
+  {
+    "Id": 166,
+    "Title": "Good Will Hunting ",
+    "MPAA": "R",
+    "YearReleased": 1997
+  },
+  {
+    "Id": 202,
+    "Title": "My Best Friend\u0027s Wedding ",
+    "MPAA": "PG-13",
+    "YearReleased": 1997
+  },
+  {
+    "Id": 209,
+    "Title": "Tomorrow Never Dies ",
+    "MPAA": "PG-13",
+    "YearReleased": 1997
+  },
+  {
+    "Id": 261,
+    "Title": "Face/Off ",
+    "MPAA": "R",
+    "YearReleased": 1997
+  },
+  {
+    "Id": 284,
+    "Title": "Batman \u0026 Robin ",
+    "MPAA": "PG-13",
+    "YearReleased": 1997
+  },
+  {
+    "Id": 299,
+    "Title": "George of the Jungle ",
+    "MPAA": "PG",
+    "YearReleased": 1997
+  },
+  {
+    "Id": 321,
+    "Title": "Scream 2 ",
+    "MPAA": "R",
+    "YearReleased": 1997
+  },
+  {
+    "Id": 325,
+    "Title": "Con Air ",
+    "MPAA": "R",
+    "YearReleased": 1997
+  },
+  {
+    "Id": 327,
+    "Title": "Contact ",
+    "MPAA": "PG",
+    "YearReleased": 1997
+  },
+  {
+    "Id": 54,
+    "Title": "Saving Private Ryan ",
+    "MPAA": "R",
+    "YearReleased": 1998
+  },
+  {
+    "Id": 66,
+    "Title": "Armageddon ",
+    "MPAA": "PG-13",
+    "YearReleased": 1998
+  },
+  {
+    "Id": 93,
+    "Title": "There\u0027s Something About Mary ",
+    "MPAA": "R",
+    "YearReleased": 1998
+  },
+  {
+    "Id": 117,
+    "Title": "A Bug\u0027s Life ",
+    "MPAA": "G",
+    "YearReleased": 1998
+  },
+  {
+    "Id": 118,
+    "Title": "The Waterboy ",
+    "MPAA": "PG-13",
+    "YearReleased": 1998
+  },
+  {
+    "Id": 148,
+    "Title": "Doctor Dolittle ",
+    "MPAA": "PG-13",
+    "YearReleased": 1998
+  },
+  {
+    "Id": 155,
+    "Title": "Rush Hour ",
+    "MPAA": "PG-13",
+    "YearReleased": 1998
+  },
+  {
+    "Id": 157,
+    "Title": "Deep Impact ",
+    "MPAA": "PG-13",
+    "YearReleased": 1998
+  },
+  {
+    "Id": 172,
+    "Title": "Godzilla ",
+    "MPAA": "PG-13",
+    "YearReleased": 1998
+  },
+  {
+    "Id": 175,
+    "Title": "Patch Adams ",
+    "MPAA": "PG-13",
+    "YearReleased": 1998
+  },
+  {
+    "Id": 190,
+    "Title": "Lethal Weapon 4 ",
+    "MPAA": "R",
+    "YearReleased": 1998
+  },
+  {
+    "Id": 206,
+    "Title": "The Truman Show ",
+    "MPAA": "PG",
+    "YearReleased": 1998
+  },
+  {
+    "Id": 225,
+    "Title": "Mulan ",
+    "MPAA": "G",
+    "YearReleased": 1998
+  },
+  {
+    "Id": 247,
+    "Title": "You\u0027ve Got Mail ",
+    "MPAA": "PG",
+    "YearReleased": 1998
+  },
+  {
+    "Id": 266,
+    "Title": "Enemy of the State ",
+    "MPAA": "R",
+    "YearReleased": 1998
+  },
+  {
+    "Id": 323,
+    "Title": "The Prince of Egypt ",
+    "MPAA": "PG",
+    "YearReleased": 1998
+  },
+  {
+    "Id": 331,
+    "Title": "The Rugrats Movie ",
+    "MPAA": "G",
+    "YearReleased": 1998
+  },
+  {
+    "Id": 336,
+    "Title": "Shakespeare in Love ",
+    "MPAA": "R",
+    "YearReleased": 1998
+  },
+  {
+    "Id": 5,
+    "Title": "Star Wars: Episode I - The Phantom Menace ",
+    "MPAA": "PG",
+    "YearReleased": 1999
+  },
+  {
+    "Id": 22,
+    "Title": "The Sixth Sense ",
+    "MPAA": "PG-13",
+    "YearReleased": 1999
+  },
+  {
+    "Id": 38,
+    "Title": "Toy Story 2 ",
+    "MPAA": "G",
+    "YearReleased": 1999
+  },
+  {
+    "Id": 61,
+    "Title": "Austin Powers: The Spy Who Shagged Me ",
+    "MPAA": "PG-13",
+    "YearReleased": 1999
+  },
+  {
+    "Id": 104,
+    "Title": "The Matrix ",
+    "MPAA": "R",
+    "YearReleased": 1999
+  },
+  {
+    "Id": 106,
+    "Title": "Tarzan ",
+    "MPAA": "G",
+    "YearReleased": 1999
+  },
+  {
+    "Id": 114,
+    "Title": "Big Daddy ",
+    "MPAA": "PG-13",
+    "YearReleased": 1999
+  },
+  {
+    "Id": 128,
+    "Title": "The Mummy ",
+    "MPAA": "PG-13",
+    "YearReleased": 1999
+  },
+  {
+    "Id": 135,
+    "Title": "Runaway Bride ",
+    "MPAA": "PG",
+    "YearReleased": 1999
+  },
+  {
+    "Id": 156,
+    "Title": "The Blair Witch Project ",
+    "MPAA": "R",
+    "YearReleased": 1999
+  },
+  {
+    "Id": 159,
+    "Title": "Stuart Little ",
+    "MPAA": "PG",
+    "YearReleased": 1999
+  },
+  {
+    "Id": 169,
+    "Title": "The Green Mile ",
+    "MPAA": "R",
+    "YearReleased": 1999
+  },
+  {
+    "Id": 188,
+    "Title": "American Beauty ",
+    "MPAA": "R",
+    "YearReleased": 1999
+  },
+  {
+    "Id": 201,
+    "Title": "The World Is Not Enough ",
+    "MPAA": "PG-13",
+    "YearReleased": 1999
+  },
+  {
+    "Id": 242,
+    "Title": "Double Jeopardy ",
+    "MPAA": "R",
+    "YearReleased": 1999
+  },
+  {
+    "Id": 245,
+    "Title": "Notting Hill ",
+    "MPAA": "PG-13",
+    "YearReleased": 1999
+  },
+  {
+    "Id": 254,
+    "Title": "Wild Wild West ",
+    "MPAA": "PG-13",
+    "YearReleased": 1999
+  },
+  {
+    "Id": 287,
+    "Title": "Analyze This ",
+    "MPAA": "R",
+    "YearReleased": 1999
+  },
+  {
+    "Id": 310,
+    "Title": "The General\u0027s Daughter ",
+    "MPAA": "R",
+    "YearReleased": 1999
+  },
+  {
+    "Id": 316,
+    "Title": "American Pie ",
+    "MPAA": "R",
+    "YearReleased": 1999
+  },
+  {
+    "Id": 326,
+    "Title": "Sleepy Hollow ",
+    "MPAA": "R",
+    "YearReleased": 1999
+  },
+  {
+    "Id": 32,
+    "Title": "How the Grinch Stole Christmas ",
+    "MPAA": "PG",
+    "YearReleased": 2000
+  },
+  {
+    "Id": 46,
+    "Title": "Cast Away ",
+    "MPAA": "PG-13",
+    "YearReleased": 2000
+  },
+  {
+    "Id": 55,
+    "Title": "Mission: Impossible II ",
+    "MPAA": "PG-13",
+    "YearReleased": 2000
+  },
+  {
+    "Id": 73,
+    "Title": "Gladiator ",
+    "MPAA": "R",
+    "YearReleased": 2000
+  },
+  {
+    "Id": 81,
+    "Title": "What Women Want ",
+    "MPAA": "PG-13",
+    "YearReleased": 2000
+  },
+  {
+    "Id": 82,
+    "Title": "The Perfect Storm ",
+    "MPAA": "PG-13",
+    "YearReleased": 2000
+  },
+  {
+    "Id": 110,
+    "Title": "Meet the Parents ",
+    "MPAA": "PG-13",
+    "YearReleased": 2000
+  },
+  {
+    "Id": 124,
+    "Title": "X-Men ",
+    "MPAA": "PG-13",
+    "YearReleased": 2000
+  },
+  {
+    "Id": 125,
+    "Title": "Scary Movie ",
+    "MPAA": "R",
+    "YearReleased": 2000
+  },
+  {
+    "Id": 127,
+    "Title": "What Lies Beneath ",
+    "MPAA": "PG-13",
+    "YearReleased": 2000
+  },
+  {
+    "Id": 168,
+    "Title": "Dinosaur ",
+    "MPAA": "PG",
+    "YearReleased": 2000
+  },
+  {
+    "Id": 196,
+    "Title": "Wo hu cang long ",
+    "MPAA": "PG-13",
+    "YearReleased": 2000
+  },
+  {
+    "Id": 207,
+    "Title": "Erin Brockovich ",
+    "MPAA": "R",
+    "YearReleased": 2000
+  },
+  {
+    "Id": 210,
+    "Title": "Charlie\u0027s Angels ",
+    "MPAA": "PG-13",
+    "YearReleased": 2000
+  },
+  {
+    "Id": 212,
+    "Title": "Traffic ",
+    "MPAA": "R",
+    "YearReleased": 2000
+  },
+  {
+    "Id": 216,
+    "Title": "Nutty Professor II: The Klumps ",
+    "MPAA": "PG-13",
+    "YearReleased": 2000
+  },
+  {
+    "Id": 239,
+    "Title": "Big Momma\u0027s House ",
+    "MPAA": "PG-13",
+    "YearReleased": 2000
+  },
+  {
+    "Id": 248,
+    "Title": "Remember the Titans ",
+    "MPAA": "PG",
+    "YearReleased": 2000
+  },
+  {
+    "Id": 256,
+    "Title": "The Patriot ",
+    "MPAA": "R",
+    "YearReleased": 2000
+  },
+  {
+    "Id": 285,
+    "Title": "Miss Congeniality ",
+    "MPAA": "PG-13",
+    "YearReleased": 2000
+  },
+  {
+    "Id": 286,
+    "Title": "Chicken Run ",
+    "MPAA": "G",
+    "YearReleased": 2000
+  },
+  {
+    "Id": 317,
+    "Title": "Gone in Sixty Seconds ",
+    "MPAA": "PG-13",
+    "YearReleased": 2000
+  },
+  {
+    "Id": 16,
+    "Title": "Harry Potter and the Sorcerer\u0027s Stone ",
+    "MPAA": "PG",
+    "YearReleased": 2001
+  },
+  {
+    "Id": 17,
+    "Title": "The Lord of the Rings: The Fellowship of the Ring ",
+    "MPAA": "PG-13",
+    "YearReleased": 2001
+  },
+  {
+    "Id": 29,
+    "Title": "Shrek ",
+    "MPAA": "PG",
+    "YearReleased": 2001
+  },
+  {
+    "Id": 34,
+    "Title": "Monsters, Inc. ",
+    "MPAA": "G",
+    "YearReleased": 2001
+  },
+  {
+    "Id": 49,
+    "Title": "Rush Hour 2 ",
+    "MPAA": "PG-13",
+    "YearReleased": 2001
+  },
+  {
+    "Id": 65,
+    "Title": "The Mummy Returns ",
+    "MPAA": "PG-13",
+    "YearReleased": 2001
+  },
+  {
+    "Id": 68,
+    "Title": "Pearl Harbor ",
+    "MPAA": "PG-13",
+    "YearReleased": 2001
+  },
+  {
+    "Id": 80,
+    "Title": "Ocean\u0027s Eleven ",
+    "MPAA": "PG-13",
+    "YearReleased": 2001
+  },
+  {
+    "Id": 85,
+    "Title": "Jurassic Park III ",
+    "MPAA": "PG-13",
+    "YearReleased": 2001
+  },
+  {
+    "Id": 87,
+    "Title": "Planet of the Apes ",
+    "MPAA": "PG-13",
+    "YearReleased": 2001
+  },
+  {
+    "Id": 107,
+    "Title": "A Beautiful Mind ",
+    "MPAA": "PG-13",
+    "YearReleased": 2001
+  },
+  {
+    "Id": 112,
+    "Title": "Hannibal ",
+    "MPAA": "R",
+    "YearReleased": 2001
+  },
+  {
+    "Id": 143,
+    "Title": "American Pie 2 ",
+    "MPAA": "R",
+    "YearReleased": 2001
+  },
+  {
+    "Id": 147,
+    "Title": "The Fast and the Furious ",
+    "MPAA": "PG-13",
+    "YearReleased": 2001
+  },
+  {
+    "Id": 184,
+    "Title": "Lara Croft: Tomb Raider ",
+    "MPAA": "PG-13",
+    "YearReleased": 2001
+  },
+  {
+    "Id": 258,
+    "Title": "Dr. Dolittle 2 ",
+    "MPAA": "PG",
+    "YearReleased": 2001
+  },
+  {
+    "Id": 259,
+    "Title": "Spy Kids ",
+    "MPAA": "PG",
+    "YearReleased": 2001
+  },
+  {
+    "Id": 277,
+    "Title": "Black Hawk Down ",
+    "MPAA": "R",
+    "YearReleased": 2001
+  },
+  {
+    "Id": 280,
+    "Title": "The Princess Diaries ",
+    "MPAA": "G",
+    "YearReleased": 2001
+  },
+  {
+    "Id": 330,
+    "Title": "Vanilla Sky ",
+    "MPAA": "R",
+    "YearReleased": 2001
+  },
+  {
+    "Id": 6,
+    "Title": "Spider-Man ",
+    "MPAA": "PG-13",
+    "YearReleased": 2002
+  },
+  {
+    "Id": 12,
+    "Title": "The Lord of the Rings: The Two Towers ",
+    "MPAA": "PG-13",
+    "YearReleased": 2002
+  },
+  {
+    "Id": 18,
+    "Title": "Star Wars: Episode II - Attack of the Clones ",
+    "MPAA": "PG",
+    "YearReleased": 2002
+  },
+  {
+    "Id": 30,
+    "Title": "Harry Potter and the Chamber of Secrets ",
+    "MPAA": "PG",
+    "YearReleased": 2002
+  },
+  {
+    "Id": 42,
+    "Title": "My Big Fat Greek Wedding ",
+    "MPAA": "PG",
+    "YearReleased": 2002
+  },
+  {
+    "Id": 48,
+    "Title": "Signs ",
+    "MPAA": "PG-13",
+    "YearReleased": 2002
+  },
+  {
+    "Id": 57,
+    "Title": "Austin Powers in Goldmember ",
+    "MPAA": "PG-13",
+    "YearReleased": 2002
+  },
+  {
+    "Id": 72,
+    "Title": "Men in Black II ",
+    "MPAA": "PG-13",
+    "YearReleased": 2002
+  },
+  {
+    "Id": 94,
+    "Title": "Ice Age ",
+    "MPAA": "PG",
+    "YearReleased": 2002
+  },
+  {
+    "Id": 108,
+    "Title": "Chicago ",
+    "MPAA": "PG-13",
+    "YearReleased": 2002
+  },
+  {
+    "Id": 113,
+    "Title": "Catch Me If You Can ",
+    "MPAA": "PG-13",
+    "YearReleased": 2002
+  },
+  {
+    "Id": 120,
+    "Title": "Die Another Day ",
+    "MPAA": "PG-13",
+    "YearReleased": 2002
+  },
+  {
+    "Id": 133,
+    "Title": "Scooby-Doo ",
+    "MPAA": "PG",
+    "YearReleased": 2002
+  },
+  {
+    "Id": 142,
+    "Title": "Lilo \u0026 Stitch ",
+    "MPAA": "PG",
+    "YearReleased": 2002
+  },
+  {
+    "Id": 154,
+    "Title": "xXx ",
+    "MPAA": "PG-13",
+    "YearReleased": 2002
+  },
+  {
+    "Id": 163,
+    "Title": "The Santa Clause 2 ",
+    "MPAA": "G",
+    "YearReleased": 2002
+  },
+  {
+    "Id": 183,
+    "Title": "Minority Report ",
+    "MPAA": "PG-13",
+    "YearReleased": 2002
+  },
+  {
+    "Id": 192,
+    "Title": "The Ring ",
+    "MPAA": "PG-13",
+    "YearReleased": 2002
+  },
+  {
+    "Id": 198,
+    "Title": "Sweet Home Alabama ",
+    "MPAA": "PG-13",
+    "YearReleased": 2002
+  },
+  {
+    "Id": 205,
+    "Title": "Mr. Deeds ",
+    "MPAA": "PG-13",
+    "YearReleased": 2002
+  },
+  {
+    "Id": 221,
+    "Title": "The Bourne Identity ",
+    "MPAA": "PG-13",
+    "YearReleased": 2002
+  },
+  {
+    "Id": 237,
+    "Title": "The Sum of All Fears ",
+    "MPAA": "PG-13",
+    "YearReleased": 2002
+  },
+  {
+    "Id": 243,
+    "Title": "8 Mile ",
+    "MPAA": "R",
+    "YearReleased": 2002
+  },
+  {
+    "Id": 304,
+    "Title": "Road to Perdition ",
+    "MPAA": "R",
+    "YearReleased": 2002
+  },
+  {
+    "Id": 8,
+    "Title": "The Lord of the Rings: The Return of the King ",
+    "MPAA": "PG-13",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 13,
+    "Title": "Finding Nemo ",
+    "MPAA": "G",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 21,
+    "Title": "Pirates of the Caribbean: The Curse of the Black Pearl ",
+    "MPAA": "PG-13",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 27,
+    "Title": "The Matrix Reloaded ",
+    "MPAA": "R",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 39,
+    "Title": "Bruce Almighty ",
+    "MPAA": "PG-13",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 56,
+    "Title": "X2 ",
+    "MPAA": "PG-13",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 99,
+    "Title": "Elf ",
+    "MPAA": "PG",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 137,
+    "Title": "Terminator 3: Rise of the Machines ",
+    "MPAA": "R",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 162,
+    "Title": "The Matrix Revolutions ",
+    "MPAA": "R",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 164,
+    "Title": "Cheaper by the Dozen ",
+    "MPAA": "PG",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 165,
+    "Title": "Bad Boys II ",
+    "MPAA": "R",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 179,
+    "Title": "Anger Management ",
+    "MPAA": "PG-13",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 181,
+    "Title": "Bringing Down the House ",
+    "MPAA": "PG-13",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 182,
+    "Title": "Hulk ",
+    "MPAA": "PG-13",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 200,
+    "Title": "2 Fast 2 Furious ",
+    "MPAA": "PG-13",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 211,
+    "Title": "Something\u0027s Gotta Give ",
+    "MPAA": "PG-13",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 226,
+    "Title": "Seabiscuit ",
+    "MPAA": "PG-13",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 244,
+    "Title": "S.W.A.T. ",
+    "MPAA": "PG-13",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 264,
+    "Title": "Spy Kids 3-D: Game Over ",
+    "MPAA": "PG",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 267,
+    "Title": "The Last Samurai ",
+    "MPAA": "R",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 269,
+    "Title": "Freaky Friday ",
+    "MPAA": "PG",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 271,
+    "Title": "Scary Movie 3 ",
+    "MPAA": "PG-13",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 293,
+    "Title": "The Italian Job ",
+    "MPAA": "PG-13",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 295,
+    "Title": "How to Lose a Guy in 10 Days ",
+    "MPAA": "PG-13",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 302,
+    "Title": "American Wedding ",
+    "MPAA": "R",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 303,
+    "Title": "Daddy Day Care ",
+    "MPAA": "PG",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 312,
+    "Title": "Daredevil ",
+    "MPAA": "PG-13",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 329,
+    "Title": "Charlie\u0027s Angels: Full Throttle ",
+    "MPAA": "PG-13",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 333,
+    "Title": "The Cat in the Hat ",
+    "MPAA": "PG",
+    "YearReleased": 2003
+  },
+  {
+    "Id": 3,
+    "Title": "Shrek 2 ",
+    "MPAA": "PG",
+    "YearReleased": 2004
+  },
+  {
+    "Id": 9,
+    "Title": "Spider-Man 2 ",
+    "MPAA": "PG-13",
+    "YearReleased": 2004
+  },
+  {
+    "Id": 10,
+    "Title": "The Passion of the Christ ",
+    "MPAA": "R",
+    "YearReleased": 2004
+  },
+  {
+    "Id": 28,
+    "Title": "Meet the Fockers ",
+    "MPAA": "PG-13",
+    "YearReleased": 2004
+  },
+  {
+    "Id": 31,
+    "Title": "The Incredibles ",
+    "MPAA": "PG",
+    "YearReleased": 2004
+  },
+  {
+    "Id": 37,
+    "Title": "Harry Potter and the Prisoner of Azkaban ",
+    "MPAA": "PG",
+    "YearReleased": 2004
+  },
+  {
+    "Id": 74,
+    "Title": "The Day After Tomorrow ",
+    "MPAA": "PG-13",
+    "YearReleased": 2004
+  },
+  {
+    "Id": 95,
+    "Title": "The Bourne Supremacy ",
+    "MPAA": "PG-13",
+    "YearReleased": 2004
+  },
+  {
+    "Id": 97,
+    "Title": "The Polar Express ",
+    "MPAA": "G",
+    "YearReleased": 2004
+  },
+  {
+    "Id": 100,
+    "Title": "National Treasure ",
+    "MPAA": "PG",
+    "YearReleased": 2004
+  },
+  {
+    "Id": 119,
+    "Title": "Shark Tale ",
+    "MPAA": "PG",
+    "YearReleased": 2004
+  },
+  {
+    "Id": 145,
+    "Title": "I, Robot ",
+    "MPAA": "PG-13",
+    "YearReleased": 2004
+  },
+  {
+    "Id": 180,
+    "Title": "Troy ",
+    "MPAA": "R",
+    "YearReleased": 2004
+  },
+  {
+    "Id": 208,
+    "Title": "Ocean\u0027s Twelve ",
+    "MPAA": "PG-13",
+    "YearReleased": 2004
+  },
+  {
+    "Id": 223,
+    "Title": "50 First Dates ",
+    "MPAA": "PG-13",
+    "YearReleased": 2004
+  },
+  {
+    "Id": 227,
+    "Title": "Van Helsing ",
+    "MPAA": "PG-13",
+    "YearReleased": 2004
+  },
+  {
+    "Id": 234,
+    "Title": "Fahrenheit 9/11 ",
+    "MPAA": "R",
+    "YearReleased": 2004
+  },
+  {
+    "Id": 235,
+    "Title": "Lemony Snicket\u0027s A Series of Unfortunate Events ",
+    "MPAA": "PG",
+    "YearReleased": 2004
+  },
+  {
+    "Id": 252,
+    "Title": "Dodgeball: A True Underdog Story ",
+    "MPAA": "PG-13",
+    "YearReleased": 2004
+  },
+  {
+    "Id": 253,
+    "Title": "The Village ",
+    "MPAA": "PG-13",
+    "YearReleased": 2004
+  },
+  {
+    "Id": 270,
+    "Title": "The Grudge ",
+    "MPAA": "PG-13",
+    "YearReleased": 2004
+  },
+  {
+    "Id": 311,
+    "Title": "The Aviator ",
+    "MPAA": "PG-13",
+    "YearReleased": 2004
+  },
+  {
+    "Id": 334,
+    "Title": "Million Dollar Baby ",
+    "MPAA": "PG-13",
+    "YearReleased": 2004
+  },
+  {
+    "Id": 342,
+    "Title": "Collateral ",
+    "MPAA": "R",
+    "YearReleased": 2004
+  },
+  {
+    "Id": 7,
+    "Title": "Star Wars: Episode III - Revenge of the Sith ",
+    "MPAA": "PG-13",
+    "YearReleased": 2005
+  },
+  {
+    "Id": 23,
+    "Title": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe ",
+    "MPAA": "PG",
+    "YearReleased": 2005
+  },
+  {
+    "Id": 25,
+    "Title": "Harry Potter and the Goblet of Fire ",
+    "MPAA": "PG-13",
+    "YearReleased": 2005
+  },
+  {
+    "Id": 45,
+    "Title": "War of the Worlds ",
+    "MPAA": "PG-13",
+    "YearReleased": 2005
+  },
+  {
+    "Id": 51,
+    "Title": "King Kong ",
+    "MPAA": "PG-13",
+    "YearReleased": 2005
+  },
+  {
+    "Id": 59,
+    "Title": "Wedding Crashers ",
+    "MPAA": "R",
+    "YearReleased": 2005
+  },
+  {
+    "Id": 60,
+    "Title": "Charlie and the Chocolate Factory ",
+    "MPAA": "PG",
+    "YearReleased": 2005
+  },
+  {
+    "Id": 62,
+    "Title": "Batman Begins ",
+    "MPAA": "PG-13",
+    "YearReleased": 2005
+  },
+  {
+    "Id": 70,
+    "Title": "Madagascar ",
+    "MPAA": "PG",
+    "YearReleased": 2005
+  },
+  {
+    "Id": 75,
+    "Title": "Mr. \u0026 Mrs. Smith ",
+    "MPAA": "PG-13",
+    "YearReleased": 2005
+  },
+  {
+    "Id": 90,
+    "Title": "Hitch ",
+    "MPAA": "PG-13",
+    "YearReleased": 2005
+  },
+  {
+    "Id": 123,
+    "Title": "The Longest Yard ",
+    "MPAA": "PG-13",
+    "YearReleased": 2005
+  },
+  {
+    "Id": 129,
+    "Title": "Fantastic Four ",
+    "MPAA": "PG-13",
+    "YearReleased": 2005
+  },
+  {
+    "Id": 173,
+    "Title": "Chicken Little ",
+    "MPAA": "G",
+    "YearReleased": 2005
+  },
+  {
+    "Id": 194,
+    "Title": "Robots ",
+    "MPAA": "PG",
+    "YearReleased": 2005
+  },
+  {
+    "Id": 231,
+    "Title": "Walk the Line ",
+    "MPAA": "PG-13",
+    "YearReleased": 2005
+  },
+  {
+    "Id": 257,
+    "Title": "The Pacifier ",
+    "MPAA": "PG",
+    "YearReleased": 2005
+  },
+  {
+    "Id": 268,
+    "Title": "Fun with Dick and Jane ",
+    "MPAA": "PG-13",
+    "YearReleased": 2005
+  },
+  {
+    "Id": 275,
+    "Title": "The 40 Year Old Virgin ",
+    "MPAA": "R",
+    "YearReleased": 2005
+  }
+]
