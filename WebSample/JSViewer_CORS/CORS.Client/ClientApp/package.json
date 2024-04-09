@@ -1,0 +1,14 @@
+{
+  "name": "activereportsnet-viewer-deployer",
+  "version": "1.0.0",
+  "description": "ActiveReports Js Viewer Deployer",
+  "author": "MESCIUS",
+  "license": "MIT",
+  "devDependencies": {
+    "ncp": "^2.0.0",
+    "@mescius/activereportsnet-viewer-ja": "18.0.0"
+  },
+  "scripts": {
+    "build": "ncp ./node_modules/@mescius/activereportsnet-viewer-ja/esm ../include"
+  }
+}
