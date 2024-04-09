@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IListBinding", "IListBinding\IListBinding.csproj", "{27688B5B-04C2-4C19-8306-5D05A9196BAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IListBinding.DataLayer", "IListBinding.DataLayer\IListBinding.DataLayer.csproj", "{58674C59-60B7-4336-A510-DA84087C78FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Release|AnyCPU = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27688B5B-04C2-4C19-8306-5D05A9196BAE}.Debug|AnyCPU.ActiveCfg = Debug|Any CPU
+		{27688B5B-04C2-4C19-8306-5D05A9196BAE}.Debug|AnyCPU.Build.0 = Debug|Any CPU
+		{27688B5B-04C2-4C19-8306-5D05A9196BAE}.Release|AnyCPU.ActiveCfg = Release|Any CPU
+		{27688B5B-04C2-4C19-8306-5D05A9196BAE}.Release|AnyCPU.Build.0 = Release|Any CPU
+		{58674C59-60B7-4336-A510-DA84087C78FC}.Debug|AnyCPU.ActiveCfg = Debug|Any CPU
+		{58674C59-60B7-4336-A510-DA84087C78FC}.Debug|AnyCPU.Build.0 = Debug|Any CPU
+		{58674C59-60B7-4336-A510-DA84087C78FC}.Release|AnyCPU.ActiveCfg = Release|Any CPU
+		{58674C59-60B7-4336-A510-DA84087C78FC}.Release|AnyCPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8F29442-2448-413B-84A6-EE5DC897FDAC}
+	EndGlobalSection
+EndGlobal

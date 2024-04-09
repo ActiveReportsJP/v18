@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ActiveReportsLayout Version="3.5" PrintWidth="11332.8" DocumentName="IList サンプル" ScriptLang="C#" MasterReport="0" CompatibilityMode="CrossPlatform">
+	<StyleSheet>
+		<Style Name="Normal" Value="font-family: ＭＳ Ｐゴシック; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; ddo-char-set: 128" />
+		<Style Name="Heading1" Value="font-family: Arial; font-size: 16pt; font-style: normal; font-weight: bold" Parent="Normal" />
+		<Style Name="Heading2" Value="font-family: Times New Roman; font-size: 14pt; font-style: italic; font-weight: bold" Parent="Normal" />
+		<Style Name="Heading3" Value="font-family: Arial; font-size: 13pt; font-style: normal; font-weight: bold" Parent="Normal" />
+	</StyleSheet>
+	<Sections>
+		<Section Type="ReportHeader" Name="ReportHeader" Height="630" BackColor="16777215">
+			<Control Type="AR.Label" Name="Label10" Left="0" Top="0" Width="11664" Height="630.72" Caption="Northwind 取引業者用 商品リスト" Style="background-color: PeachPuff; font-family: MS PGothic; font-size: 20.25pt; font-weight: bold; text-align: center" />
+		</Section>
+		<Section Type="GroupHeader" Name="GroupHeader1" Height="1530" RepeatStyle="1" BackColor="16777215">
+			<Control Type="AR.Label" Name="Label1" Left="4320" Top="0" Width="810" Height="1530" Caption="単価" Style="color: IndianRed; font-family: MS PGothic; font-weight: normal; text-align: right; text-decoration: none; vertical-align: bottom; ddo-char-set: 1" />
+			<Control Type="AR.Label" Name="Label2" Left="5310" Top="0" Width="270" Height="1530" Caption="在庫数" Style="color: IndianRed; font-family: MS PGothic; font-weight: normal; text-align: left; text-decoration: none; vertical-align: bottom; ddo-char-set: 1" Angle="900" />
+			<Control Type="AR.Label" Name="Label3" Left="5760" Top="0" Width="270" Height="1530" Caption="注文単位" Style="color: IndianRed; font-family: MS PGothic; font-weight: normal; text-align: left; text-decoration: none; vertical-align: bottom; ddo-char-set: 1" Angle="900" />
+			<Control Type="AR.Label" Name="Label4" Left="630" Top="1200" Width="3690" Height="330.0001" Caption="商品名" Style="color: IndianRed; font-family: MS PGothic; font-weight: normal; text-decoration: none; vertical-align: bottom; ddo-char-set: 1" />
+			<Control Type="AR.Label" Name="Label5" Left="0" Top="0" Width="270" Height="1530" Caption="中止" Style="color: IndianRed; font-family: MS PGothic; font-weight: normal; vertical-align: bottom; ddo-char-set: 1" Angle="900" />
+			<Control Type="AR.Label" Name="Label6" Left="6210" Top="0" Width="270" Height="1530" Caption="発注点" Style="color: IndianRed; font-family: MS PGothic; font-weight: normal; text-align: left; text-decoration: none; vertical-align: bottom; ddo-char-set: 1" Angle="900" />
+			<Control Type="AR.Label" Name="Label7" Left="270" Top="0" Width="360" Height="1530" Caption="商品ID" Style="color: IndianRed; font-family: MS PGothic; font-weight: normal; text-align: center; text-decoration: none; vertical-align: bottom; ddo-char-set: 1" Angle="900" />
+			<Control Type="AR.Label" Name="Label8" Left="6480" Top="1170" Width="2340" Height="360" Caption="1単位における量" Style="color: IndianRed; font-family: MS PGothic; font-weight: normal; text-align: right; text-decoration: none; vertical-align: bottom; ddo-char-set: 1" />
+			<Control Type="AR.Label" Name="Label9" Left="8820" Top="1170" Width="2448" Height="360" Caption="コメント" Style="color: IndianRed; font-family: MS PGothic; font-weight: normal; text-align: center; text-decoration: none; vertical-align: bottom; ddo-char-set: 1" />
+		</Section>
+		<Section Type="Detail" Name="Detail" Height="270" BackColor="16777215" CanShrink="1">
+			<Control Type="AR.Field" Name="txtProductName" DataField="ProductName" Left="630" Top="0" Width="3690" Height="270" Text="ProductName" Style="font-family: MS PGothic" />
+			<Control Type="AR.Field" Name="txtUnitPrice" DataField="UnitPrice" Left="4320" Top="0" Width="810" Height="270" Text="$.$$" OutputFormat="¥#,##0" Style="font-family: MS PGothic; font-size: 10pt; text-align: center" />
+			<Control Type="AR.Field" Name="txtUnitsInStock" DataField="UnitsInStock" Left="5130" Top="0" Width="450" Height="270" Text="stk" Style="font-family: MS PGothic; text-align: right" />
+			<Control Type="AR.Field" Name="txtUnitsOnOrder" DataField="UnitsOnOrder" Left="5580" Top="0" Width="450" Height="270" Text="odr" Style="font-family: MS PGothic; text-align: right" />
+			<Control Type="AR.CheckBox" Name="cbDiscontinued" DataField="Discontinued" Left="0" Top="0" Width="270" Height="270" Caption="" Style="font-family: MS PGothic" />
+			<Control Type="AR.Field" Name="txtReorderLevel" DataField="ReorderLevel" Left="6030" Top="0" Width="450" Height="270" Text="rl" Style="font-family: MS PGothic; text-align: right" />
+			<Control Type="AR.Field" Name="txtProductId" DataField="ProductId" Left="270" Top="0" Width="360" Height="270" Text="#" Style="font-family: MS PGothic" />
+			<Control Type="AR.Field" Name="txtQuantityPerUnit" DataField="QuantityPerUnit" Left="6480" Top="0" Width="2340" Height="270" Text="QuantityPerUnit" Style="font-family: MS PGothic; font-size: 10pt; text-align: right; vertical-align: middle; ddo-char-set: 1" />
+			<Control Type="AR.Field" Name="txtComments" Left="8820" Top="0" Width="2448" Height="270" Style="font-family: MS PGothic; font-size: 9pt; text-align: center; vertical-align: middle; ddo-char-set: 1" />
+		</Section>
+		<Section Type="GroupFooter" Name="GroupFooter1" Height="0" BackColor="16777215" />
+		<Section Type="ReportFooter" Name="ReportFooter" Height="0" BackColor="16777215" />
+	</Sections>
+	  <Script><![CDATA[
+
+private long _greenBarCounter;
+
+public void ActiveReport_ReportStart()
+{
+	//レポートのDataSourceに、DataLayerオブジェクトのproductCollectionを指定します。
+	rpt.Name = "IList サンプル";
+}
+public void Detail_Format()
+{
+	// 1行おきに背景色をつけます。
+	_greenBarCounter++;
+	if ((_greenBarCounter % 2) == 0)
+	{
+		// 偶数行
+		rpt.Sections["Detail"].BackColor = Color.Transparent;
+	}
+	else
+	{
+		// 奇数行
+		rpt.Sections["Detail"].BackColor = Color.LightGray;
+	}
+
+	// 発注すべき行に色を付けます: 発注すべき商品を確認しやすくするために、
+	// 該当商品に背景色を付けます。
+	// 発注すべき商品かどうかを算出するために比較する値。
+	int reorderLevel = Int32.Parse(this.txtReorderLevel.Text);
+	int unitsInStock = Int32.Parse(this.txtUnitsInStock.Text);
+
+	if (unitsInStock < reorderLevel)
+	{
+		//発注すべき商品なので、背景色を設定します。
+		rpt.Sections["Detail"].BackColor = Color.LightCoral;
+		this.txtComments.Text = "確認 " + this.txtProductName.Text;
+	}
+	else
+	{
+		//>コメントのテキストをリセットします。
+		this.txtComments.Text = "";
+	}
+}
+]]></Script>
+	<PageSettings LeftMargin="288" RightMargin="288" TopMargin="720" BottomMargin="648" PaperSize="9" PaperWidth="11906" PaperHeight="16838" PaperName="" />
+	<Parameters />
+</ActiveReportsLayout>
