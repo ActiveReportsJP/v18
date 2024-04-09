@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataSetDataSource", "DataSetDataSource\DataSetDataSource.csproj", "{A5B3E86F-63B5-414C-BB07-4730CF646EBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Release|AnyCPU = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5B3E86F-63B5-414C-BB07-4730CF646EBF}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{A5B3E86F-63B5-414C-BB07-4730CF646EBF}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{A5B3E86F-63B5-414C-BB07-4730CF646EBF}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{A5B3E86F-63B5-414C-BB07-4730CF646EBF}.Release|AnyCPU.Build.0 = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
