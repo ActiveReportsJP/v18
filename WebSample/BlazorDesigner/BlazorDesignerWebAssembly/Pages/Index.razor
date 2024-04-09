@@ -1,0 +1,80 @@
+@page "/"
+@inject IJSRuntime JSRuntime
+<PageTitle>Index</PageTitle>
+
+<link href="_content/@(typeof(ReportViewer).Assembly.GetName().Name)/jsViewer.min.css" rel="stylesheet" />
+<div id="designerContainer">
+    <ReportDesigner 
+        @ref="_designer" 
+        ServerSettings="@_server" 
+        RpxSettings="@_rpx" 
+        AppBarSettings="@_appBar" 
+        DataSettings="@_data" 
+        PreviewSettings="@_preview"
+        Language="ja"/>
+</div>
+@code{
+    private ReportDesigner _designer;
+    private ReportViewer _viewer;
+
+    private ServerSettings _server;
+    private RpxSettings _rpx;
+    private AppBarSettings _appBar;
+    private DataSettings _data;
+    private PreviewSettings _preview;
+
+    public Index()
+    {
+        _server = new ServerSettings
+        {
+            Url = "http://localhost:5098"
+        };
+        _rpx = new RpxSettings
+        {
+            Enabled = true
+        };
+        _appBar = new AppBarSettings
+        {
+            OpenButton = new OpenButton { Visible = true }
+        };
+        _data = new DataSettings
+        {
+            DataSets = new DataSets { CanModify = true },
+            DataSources = new DataSources { CanModify = true }
+        };
+        _preview = new PreviewSettings
+        {
+            OpenViewer = OpenViewer
+        };
+    }
+
+    public async void OpenViewer(ViewerSettings settings)
+    {
+        if(_viewer != null)
+        {
+            await _viewer.SetTheme(settings.Theme);
+            await _viewer.OpenReport(settings.DocumentInfo.Id);
+            return;
+        }
+
+        _viewer = new ReportViewer();
+
+        var initOptions = new InitializationOptions();
+
+        initOptions.ReportService = new ReportServiceSettings
+        {
+            Url = _server.Url
+        };
+
+        initOptions.ReportID = settings.DocumentInfo.Id;
+        initOptions.PanelsLocation = PanelsLocation.toolbar;
+        initOptions.Theme = settings.Theme;
+        initOptions.Locale = "ja";
+        initOptions.ReportLoaded = (reportInfo) =>
+        {
+            
+        };
+
+        await _viewer.Render(JSRuntime, settings.Element, initOptions);
+    }
+}

@@ -1,0 +1,962 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://cdn.grapecity.com/ActiveReports/reporting/2022/01/reportdefinition">
+	<Name>IncomeStatement.rdlx</Name>
+	<ReportSections>
+		<ReportSection Name="レポートエリア1">
+			<Body>
+				<ColumnSpacing>5cm</ColumnSpacing>
+				<Height>2.375in</Height>
+				<ReportItems>
+					<Tablix Name="Tablix1">
+						<TablixCorner>
+							<TablixCornerRows>
+								<TablixCornerRow>
+									<TablixCornerCell>
+										<CellContents>
+											<Textbox Name="TextBox2">
+												<Style>
+													<Color>Teal</Color>
+													<FontFamily>Meiryo</FontFamily>
+													<FontSize>11pt</FontSize>
+													<FontStyle>Normal</FontStyle>
+													<FontWeight>400</FontWeight>
+													<PaddingBottom>2pt</PaddingBottom>
+													<PaddingLeft>6pt</PaddingLeft>
+													<PaddingRight>8pt</PaddingRight>
+													<PaddingTop>2pt</PaddingTop>
+													<TextAlign>Left</TextAlign>
+													<VerticalAlign>Middle</VerticalAlign>
+													<Border>
+														<Color>Gainsboro</Color>
+														<Width>0.25pt</Width>
+													</Border>
+													<BottomBorder>
+														<Style>Solid</Style>
+													</BottomBorder>
+												</Style>
+												<CanGrow>true</CanGrow>
+												<Value>至：</Value>
+											</Textbox>
+										</CellContents>
+									</TablixCornerCell>
+								</TablixCornerRow>
+							</TablixCornerRows>
+						</TablixCorner>
+						<TablixBody>
+							<TablixColumns>
+								<TablixColumn>
+									<Width>1.800001in</Width>
+								</TablixColumn>
+							</TablixColumns>
+							<TablixRows>
+								<TablixRow>
+									<Height>0.352941in</Height>
+									<TablixCells>
+										<TablixCell>
+											<CellContents>
+												<Textbox Name="TextBox5">
+													<Style>
+														<BackgroundColor>=SWITCH(Fields!tag.Value = "GrossProfit", "#f1f1f1", Fields!tag.Value = "OperatingIncome", "#f1f1f1", true, "Transparent")</BackgroundColor>
+														<Color>=SWITCH(Fields!tag.Value = "GrossProfit", "Teal", Fields!tag.Value = "OperatingIncome", "Teal", true, "Black")</Color>
+														<FontFamily>Meiryo</FontFamily>
+														<FontSize>9pt</FontSize>
+														<Format>c0</Format>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>8pt</PaddingLeft>
+														<PaddingRight>6pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+														<VerticalAlign>Middle</VerticalAlign>
+														<Border>
+															<Color>LightGray</Color>
+															<Width>0.25pt</Width>
+														</Border>
+														<BottomBorder>
+															<Style>Solid</Style>
+														</BottomBorder>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<DataElementName>value</DataElementName>
+													<Value>=Sum(Fields!value.Value)</Value>
+												</Textbox>
+											</CellContents>
+										</TablixCell>
+									</TablixCells>
+								</TablixRow>
+							</TablixRows>
+						</TablixBody>
+						<TablixColumnHierarchy>
+							<TablixMembers>
+								<TablixMember>
+									<Group Name="Tablix1_ddate1">
+										<GroupExpressions>
+											<GroupExpression>=Fields!ddate.Value</GroupExpression>
+										</GroupExpressions>
+									</Group>
+									<TablixHeader>
+										<Size>0.547059in</Size>
+										<CellContents>
+											<Textbox Name="TextBox3">
+												<Style>
+													<Color>Teal</Color>
+													<FontFamily>Meiryo</FontFamily>
+													<FontSize>11pt</FontSize>
+													<FontStyle>Normal</FontStyle>
+													<FontWeight>400</FontWeight>
+													<Format>d</Format>
+													<PaddingBottom>2pt</PaddingBottom>
+													<PaddingLeft>8pt</PaddingLeft>
+													<PaddingRight>6pt</PaddingRight>
+													<PaddingTop>2pt</PaddingTop>
+													<TextAlign>Right</TextAlign>
+													<VerticalAlign>Middle</VerticalAlign>
+													<Border>
+														<Color>Gainsboro</Color>
+														<Width>0.25pt</Width>
+													</Border>
+													<BottomBorder>
+														<Style>Solid</Style>
+													</BottomBorder>
+												</Style>
+												<CanGrow>true</CanGrow>
+												<DataElementName>ddate</DataElementName>
+												<Value>=Fields!ddate.Value</Value>
+											</Textbox>
+										</CellContents>
+									</TablixHeader>
+								</TablixMember>
+							</TablixMembers>
+						</TablixColumnHierarchy>
+						<TablixRowHierarchy>
+							<TablixMembers>
+								<TablixMember>
+									<Group Name="Tablix1_tag1">
+										<GroupExpressions>
+											<GroupExpression>=Fields!tag.Value</GroupExpression>
+										</GroupExpressions>
+									</Group>
+									<TablixHeader>
+										<Size>3.899999in</Size>
+										<CellContents>
+											<Textbox Name="TextBox4">
+												<Style>
+													<BackgroundColor>=SWITCH(Fields!tag.Value = "GrossProfit", "#f1f1f1", Fields!tag.Value = "OperatingIncome", "#f1f1f1", true, "Transparent")</BackgroundColor>
+													<Color>=SWITCH(Fields!tag.Value = "GrossProfit", "Teal", Fields!tag.Value = "OperatingIncome", "Teal", true, "Black")</Color>
+													<FontFamily>Meiryo</FontFamily>
+													<FontSize>9pt</FontSize>
+													<PaddingBottom>2pt</PaddingBottom>
+													<PaddingLeft>6pt</PaddingLeft>
+													<PaddingRight>8pt</PaddingRight>
+													<PaddingTop>2pt</PaddingTop>
+													<VerticalAlign>Middle</VerticalAlign>
+													<Border>
+														<Color>LightGray</Color>
+														<Width>0.25pt</Width>
+													</Border>
+													<BottomBorder>
+														<Style>Solid</Style>
+													</BottomBorder>
+												</Style>
+												<CanGrow>true</CanGrow>
+												<DataElementName>tag</DataElementName>
+												<Value>=Lookup(Fields!tag.Value, Fields!tag.Value, Fields!tlabel.Value, "Income_statement_tags")</Value>
+											</Textbox>
+										</CellContents>
+									</TablixHeader>
+								</TablixMember>
+							</TablixMembers>
+						</TablixRowHierarchy>
+						<Top>0.4in</Top>
+						<Left>0.4in</Left>
+						<Width>5.7in</Width>
+						<Height>0.9in</Height>
+						<DataSetName>Tradestone</DataSetName>
+					</Tablix>
+				</ReportItems>
+			</Body>
+			<Page>
+				<PageHeader>
+					<Height>0.9167in</Height>
+					<PrintOnFirstPage>true</PrintOnFirstPage>
+					<PrintOnLastPage>true</PrintOnLastPage>
+					<ReportItems>
+						<Textbox Name="TextBox1">
+							<Width>3.75in</Width>
+							<Height>0.9in</Height>
+							<Style>
+								<BackgroundColor>=""</BackgroundColor>
+								<Color>#3da7a8</Color>
+								<FontFamily>Meiryo</FontFamily>
+								<FontSize>24pt</FontSize>
+								<FontStyle>Normal</FontStyle>
+								<FontWeight>400</FontWeight>
+								<PaddingBottom>2pt</PaddingBottom>
+								<PaddingLeft>10pt</PaddingLeft>
+								<PaddingRight>2pt</PaddingRight>
+								<PaddingTop>2pt</PaddingTop>
+								<TextAlign>Left</TextAlign>
+								<VerticalAlign>Middle</VerticalAlign>
+							</Style>
+							<ZIndex>22</ZIndex>
+							<Value>損益計算書</Value>
+						</Textbox>
+						<Image Name="Image4">
+							<DataElementName>Image4</DataElementName>
+							<Top>0.125in</Top>
+							<Left>4.875in</Left>
+							<Width>3.27in</Width>
+							<Height>0.625in</Height>
+							<Style>
+								<PaddingBottom>0pt</PaddingBottom>
+								<PaddingLeft>0pt</PaddingLeft>
+								<PaddingRight>0pt</PaddingRight>
+								<PaddingTop>0pt</PaddingTop>
+							</Style>
+							<ZIndex>30</ZIndex>
+							<Sizing>FitProportional</Sizing>
+							<Source>Embedded</Source>
+							<Value>treadstone-logo-full-color-rgb</Value>
+							<VerticalAlignment>Middle</VerticalAlignment>
+						</Image>
+					</ReportItems>
+					<Style>
+						<BackgroundColor>#f1f1f1</BackgroundColor>
+					</Style>
+				</PageHeader>
+				<PageFooter>
+					<Height>0.6in</Height>
+					<PrintOnFirstPage>true</PrintOnFirstPage>
+					<PrintOnLastPage>true</PrintOnLastPage>
+					<ReportItems>
+						<Image Name="Image1">
+							<DataElementName>Image3</DataElementName>
+							<Top>0.2in</Top>
+							<Left>5.410464in</Left>
+							<Width>0.2in</Width>
+							<Height>0.2in</Height>
+							<ZIndex>1</ZIndex>
+							<Sizing>Fit</Sizing>
+							<Source>Embedded</Source>
+							<Value>footer-phone</Value>
+						</Image>
+						<Textbox Name="TextBox6">
+							<Left>5.710464in</Left>
+							<Width>2.1in</Width>
+							<Height>0.6in</Height>
+							<Style>
+								<Color>Gray</Color>
+								<FontFamily>Meiryo</FontFamily>
+								<FontSize>9pt</FontSize>
+								<FontStyle>Normal</FontStyle>
+								<FontWeight>100</FontWeight>
+								<PaddingBottom>0pt</PaddingBottom>
+								<PaddingLeft>0pt</PaddingLeft>
+								<PaddingRight>0pt</PaddingRight>
+								<PaddingTop>0pt</PaddingTop>
+								<TextAlign>Left</TextAlign>
+								<VerticalAlign>Middle</VerticalAlign>
+							</Style>
+							<CanGrow>true</CanGrow>
+							<DataElementName>TextBox72</DataElementName>
+							<Value>050-5490-4662</Value>
+						</Textbox>
+						<Textbox Name="TextBox71">
+							<Left>4.255057in</Left>
+							<Width>1.0433in</Width>
+							<Height>0.6in</Height>
+							<Style>
+								<Color>Gray</Color>
+								<FontFamily>Meiryo</FontFamily>
+								<FontSize>9pt</FontSize>
+								<FontStyle>Normal</FontStyle>
+								<FontWeight>100</FontWeight>
+								<PaddingBottom>0pt</PaddingBottom>
+								<PaddingLeft>0pt</PaddingLeft>
+								<PaddingRight>0pt</PaddingRight>
+								<PaddingTop>0pt</PaddingTop>
+								<TextAlign>Left</TextAlign>
+								<VerticalAlign>Middle</VerticalAlign>
+							</Style>
+							<CanGrow>true</CanGrow>
+							<Value>050-5490-4661</Value>
+						</Textbox>
+						<Textbox Name="TextBox7">
+							<Left>0.459536in</Left>
+							<Width>3.375in</Width>
+							<Height>0.6in</Height>
+							<Style>
+								<Color>Gray</Color>
+								<FontFamily>Meiryo</FontFamily>
+								<FontSize>9pt</FontSize>
+								<FontStyle>Normal</FontStyle>
+								<FontWeight>100</FontWeight>
+								<PaddingBottom>0pt</PaddingBottom>
+								<PaddingLeft>0pt</PaddingLeft>
+								<PaddingRight>0pt</PaddingRight>
+								<PaddingTop>0pt</PaddingTop>
+								<TextAlign>Right</TextAlign>
+								<VerticalAlign>Middle</VerticalAlign>
+							</Style>
+							<CanGrow>true</CanGrow>
+							<DataElementName>TextBox70</DataElementName>
+							<Value>="© MESCIUS inc. All rights reserved."</Value>
+						</Textbox>
+						<Image Name="Image2">
+							<DataElementName>Image2</DataElementName>
+							<Top>0.2in</Top>
+							<Left>3.957438in</Left>
+							<Width>0.2in</Width>
+							<Height>0.2in</Height>
+							<ZIndex>1</ZIndex>
+							<Sizing>Fit</Sizing>
+							<Source>Embedded</Source>
+							<Value>footer-phone</Value>
+						</Image>
+					</ReportItems>
+					<Style>
+						<BackgroundColor>#f1f1f1</BackgroundColor>
+					</Style>
+				</PageFooter>
+				<ColumnSpacing>5cm</ColumnSpacing>
+				<PageHeight>11.69in</PageHeight>
+				<PageWidth>8.27in</PageWidth>
+			</Page>
+			<Width>8.27in</Width>
+		</ReportSection>
+	</ReportSections>
+	<EmbeddedImages>
+		<EmbeddedImage Name="footer-phone">
+			<ImageData>iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAfpJREFUeNq8l00oRFEUx2d8UyhSClGW0jQREspGSSyUIjuTIllJ+Uj5SrJBahaUr0QpFj52JLKxYChEWdlZSAj5qOd/6kzdpnvnvTHvOvVr3pxz3vzvve/c8+44DcNwuN1ux3+az+dzRJjkVIFpUGq3eJTCHw1cYAvEglaQAZ7sElbN2Av2QSR/jwceO2csEy4ELSApIN4WZKBhCzvBpOAX47mgWpdwEygLkt+pQzgBTJjkl/EjsLWqPVy5MnsAMaALvNg949sgecsgBSzoWOpD8CrJuQCDdjcQUfgTrCr29LtOYbI5SQ4VXL5u4VNwFOBL5taZprtzDUh8OWCbK1ubMM14T+IvBvPc3bS9JLrBj8TfDPp0Cp+DGUVsBDToEibrBzcSPy31Ii+9FuEPXtoPSYz6+gbIVNybFaT9mgqTnYF2RYx+eIcHIVoJuOKOV/NXYbIlMK6I0fFoTTippIJakMjXtAXHhHhIwg6u5FlFrA6MgkpwyY/nS6iHXnAQuPRWhQ0++ngV8R7e++kgmwXF2iinUy3IC1XYL97BszNMHhudUuPAt5BLLbfgL8JiS20EbyZ5Th4AfT6DY7AbjjDZOijiqrdiU7zcj+EKk13z1hkSikm0exasAMNW/0lYtW8+nazwe9vFjWUTnChqwRZhv92B+lBu+BVgAOirV+Y3t0ZPAAAAAElFTkSuQmCC</ImageData>
+			<MIMEType>image/png</MIMEType>
+		</EmbeddedImage>
+		<EmbeddedImage Name="treadstone-logo-full-color-rgb">
+			<ImageData>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</ImageData>
+			<MIMEType>image/png</MIMEType>
+		</EmbeddedImage>
+	</EmbeddedImages>
+	<DataSources>
+		<DataSource Name="FinancialStatement">
+			<ConnectionProperties>
+				<ConnectString>jsondata=[
+  {
+    "adsh": "0001034054-20-000006",
+    "tag": "Revenues",
+    "version": "us-gaap/2020",
+    "coreg": "",
+    "ddate": "2020-03-31",
+    "qtrs": 1,
+    "uom": "USD",
+    "value": 517067000,
+    "footnote": ""
+  },
+  {
+    "adsh": "0001034054-20-000006",
+    "tag": "Revenues",
+    "version": "us-gaap/2020",
+    "coreg": "",
+    "ddate": "2019-03-31",
+    "qtrs": 1,
+    "uom": "USD",
+    "value": 493293000,
+    "footnote": ""
+  },
+  {
+    "adsh": "0001564590-20-025807",
+    "tag": "OtherRevenues",
+    "version": "0001564590-20-025807",
+    "coreg": "",
+    "ddate": "2020-03-31",
+    "qtrs": 1,
+    "uom": "USD",
+    "value": 547000,
+    "footnote": ""
+  },
+  {
+    "adsh": "0001564590-20-025807",
+    "tag": "OtherRevenues",
+    "version": "0001564590-20-025807",
+    "coreg": "",
+    "ddate": "2019-03-31",
+    "qtrs": 1,
+    "uom": "USD",
+    "value": 1735000,
+    "footnote": ""
+  },
+  {
+    "adsh": "0001213900-20-009750",
+    "tag": "CostOfRevenues",
+    "version": "0001213900-20-009750",
+    "coreg": "",
+    "ddate": "2019-03-31",
+    "qtrs": 4,
+    "uom": "USD",
+    "value": 455000,
+    "footnote": ""
+  },
+  {
+    "adsh": "0001213900-20-009750",
+    "tag": "CostOfRevenues",
+    "version": "0001213900-20-009750",
+    "coreg": "",
+    "ddate": "2020-03-31",
+    "qtrs": 4,
+    "uom": "USD",
+    "value": 607000,
+    "footnote": ""
+  },
+  {
+    "adsh": "0001213900-20-009750",
+    "tag": "GrossProfit",
+    "version": "0001213900-20-009750",
+    "coreg": "",
+    "ddate": "2020-03-31",
+    "qtrs": 4,
+    "uom": "USD",
+    "value": 517007000,
+    "footnote": ""
+  },
+  {
+    "adsh": "0001213900-20-009750",
+    "tag": "GrossProfit",
+    "version": "0001213900-20-009750",
+    "coreg": "",
+    "ddate": "2019-03-31",
+    "qtrs": 4,
+    "uom": "USD",
+    "value": 494573000,
+    "footnote": ""
+  },
+  {
+    "adsh": "0001628280-20-007260",
+    "tag": "SellingGeneralAndAdministrativeExpense",
+    "version": "us-gaap/2018",
+    "coreg": "",
+    "ddate": "2020-03-31",
+    "qtrs": 1,
+    "uom": "USD",
+    "value": 17317000,
+    "footnote": ""
+  },
+  {
+    "adsh": "0001628280-20-007260",
+    "tag": "SellingGeneralAndAdministrativeExpense",
+    "version": "us-gaap/2018",
+    "coreg": "",
+    "ddate": "2019-03-31",
+    "qtrs": 1,
+    "uom": "USD",
+    "value": 15139000,
+    "footnote": ""
+  },
+  {
+    "adsh": "0001487371-20-000136",
+    "tag": "ResearchAndDevelopmentExpense",
+    "version": "us-gaap/2018",
+    "coreg": "",
+    "ddate": "2020-03-31",
+    "qtrs": 1,
+    "uom": "USD",
+    "value": 6079000,
+    "footnote": ""
+  },
+  {
+    "adsh": "0001487371-20-000136",
+    "tag": "ResearchAndDevelopmentExpense",
+    "version": "us-gaap/2018",
+    "coreg": "",
+    "ddate": "2019-03-31",
+    "qtrs": 1,
+    "uom": "USD",
+    "value": 6343000,
+    "footnote": ""
+  },
+  {
+    "adsh": "0001628280-20-007466",
+    "tag": "DepreciationAndAmortization",
+    "version": "us-gaap/2018",
+    "coreg": "",
+    "ddate": "2020-03-31",
+    "qtrs": 1,
+    "uom": "USD",
+    "value": 61637000,
+    "footnote": ""
+  },
+  {
+    "adsh": "0001628280-20-007466",
+    "tag": "DepreciationAndAmortization",
+    "version": "us-gaap/2018",
+    "coreg": "",
+    "ddate": "2019-03-31",
+    "qtrs": 1,
+    "uom": "USD",
+    "value": 36131000,
+    "footnote": ""
+  },
+  {
+    "adsh": "0001564590-20-022350",
+    "tag": "InterestExpenseIncome",
+    "version": "0001564590-20-022350",
+    "coreg": "",
+    "ddate": "2020-03-31",
+    "qtrs": 3,
+    "uom": "USD",
+    "value": -102425,
+    "footnote": ""
+  },
+  {
+    "adsh": "0000906345-20-000038",
+    "tag": "TotalOtherExpenses",
+    "version": "0000906345-20-000038",
+    "coreg": "",
+    "ddate": "2020-03-31",
+    "qtrs": 1,
+    "uom": "USD",
+    "value": 117309000,
+    "footnote": ""
+  },
+  {
+    "adsh": "0000906345-20-000038",
+    "tag": "TotalOtherExpenses",
+    "version": "0000906345-20-000038",
+    "coreg": "",
+    "ddate": "2019-03-31",
+    "qtrs": 1,
+    "uom": "USD",
+    "value": 132249000,
+    "footnote": ""
+  },
+  {
+    "adsh": "0001564590-20-023437",
+    "tag": "OperatingIncome",
+    "version": "0001564590-20-023437",
+    "coreg": "",
+    "ddate": "2020-03-31",
+    "qtrs": 1,
+    "uom": "USD",
+    "value": 55291600,
+    "footnote": ""
+  },
+  {
+    "adsh": "0001564590-20-023437",
+    "tag": "OperatingIncome",
+    "version": "0001564590-20-023437",
+    "coreg": "",
+    "ddate": "2019-03-31",
+    "qtrs": 1,
+    "uom": "USD",
+    "value": 59571000,
+    "footnote": ""
+  },
+  {
+    "adsh": "0001569187-20-000021",
+    "tag": "InterestIncomeExpenseNonoperatingNet",
+    "version": "us-gaap/2018",
+    "coreg": "",
+    "ddate": "2020-03-31",
+    "qtrs": 1,
+    "uom": "USD",
+    "value": 7226000,
+    "footnote": ""
+  },
+  {
+    "adsh": "0001569187-20-000021",
+    "tag": "InterestIncomeExpenseNonoperatingNet",
+    "version": "us-gaap/2018",
+    "coreg": "",
+    "ddate": "2019-03-31",
+    "qtrs": 1,
+    "uom": "USD",
+    "value": 5319000,
+    "footnote": ""
+  },
+  {
+    "adsh": "0000717423-20-000031",
+    "tag": "GainLossOnSaleOfAssetsAndOtherIncome",
+    "version": "0000717423-20-000031",
+    "coreg": "",
+    "ddate": "2020-03-31",
+    "qtrs": 1,
+    "uom": "USD",
+    "value": 2498000,
+    "footnote": ""
+  },
+  {
+    "adsh": "0000717423-20-000031",
+    "tag": "GainLossOnSaleOfAssetsAndOtherIncome",
+    "version": "0000717423-20-000031",
+    "coreg": "",
+    "ddate": "2019-03-31",
+    "qtrs": 1,
+    "uom": "USD",
+    "value": 1192000,
+    "footnote": ""
+  },
+  {
+    "adsh": "0001193125-20-140027",
+    "tag": "IncomeTaxesPaidNet",
+    "version": "us-gaap/2019",
+    "coreg": "",
+    "ddate": "2019-03-31",
+    "qtrs": 3,
+    "uom": "USD",
+    "value": 17500000,
+    "footnote": ""
+  },
+  {
+    "adsh": "0001193125-20-140027",
+    "tag": "IncomeTaxesPaidNet",
+    "version": "us-gaap/2019",
+    "coreg": "",
+    "ddate": "2020-03-31",
+    "qtrs": 3,
+    "uom": "USD",
+    "value": 78600000,
+    "footnote": ""
+  },
+  {
+    "adsh": "0000933136-20-000034",
+    "tag": "MinorityInterest",
+    "version": "us-gaap/2019",
+    "coreg": "",
+    "ddate": "2019-03-31",
+    "qtrs": 0,
+    "uom": "USD",
+    "value": -1000000,
+    "footnote": ""
+  },
+  {
+    "adsh": "0000933136-20-000034",
+    "tag": "MinorityInterest",
+    "version": "us-gaap/2019",
+    "coreg": "",
+    "ddate": "2020-03-31",
+    "qtrs": 0,
+    "uom": "USD",
+    "value": -4000000,
+    "footnote": ""
+  },
+  {
+    "adsh": "0001493152-20-011235",
+    "tag": "ExtraordinaryItems",
+    "version": "0001493152-20-011235",
+    "coreg": "",
+    "ddate": "2020-03-31",
+    "qtrs": 1,
+    "uom": "USD",
+    "value": "",
+    "footnote": ""
+  },
+  {
+    "adsh": "0001493152-20-011235",
+    "tag": "ExtraordinaryItems",
+    "version": "0001493152-20-011235",
+    "coreg": "",
+    "ddate": "2019-03-31",
+    "qtrs": 1,
+    "uom": "USD",
+    "value": "",
+    "footnote": ""
+  },
+  {
+    "adsh": "0000013239-20-000017",
+    "tag": "TotalAdjustments",
+    "version": "0000013239-20-000017",
+    "coreg": "",
+    "ddate": "2019-03-31",
+    "qtrs": 1,
+    "uom": "USD",
+    "value": 42000000,
+    "footnote": ""
+  },
+  {
+    "adsh": "0000013239-20-000017",
+    "tag": "TotalAdjustments",
+    "version": "0000013239-20-000017",
+    "coreg": "",
+    "ddate": "2020-03-31",
+    "qtrs": 1,
+    "uom": "USD",
+    "value": 61000000,
+    "footnote": ""
+  }
+]</ConnectString>
+				<DataProvider>JSON</DataProvider>
+			</ConnectionProperties>
+		</DataSource>
+		<DataSource Name="IncomeStatementTags">
+			<ConnectionProperties>
+				<ConnectString>jsondata=[
+  {
+    "tag": "Revenues",
+    "version": "us-gaap/2018",
+    "custom": 0,
+    "abstract": 0,
+    "datatype": "monetary",
+    "iord": "D",
+    "crdr": "C",
+    "tlabel": "Revenues",
+    "doc": "Amount of revenue recognized from goods sold, services rendered, insurance premiums, or other activities that constitute an earning process. Includes, but is not limited to, investment and interest income before deduction of interest expense when recognized as a component of revenue, and sales and trading gain (loss)."
+  },
+  {
+    "tag": "OtherRevenues",
+    "version": "0001564590-20-015553",
+    "custom": 1,
+    "abstract": 0,
+    "datatype": "monetary",
+    "iord": "D",
+    "crdr": "C",
+    "tlabel": "Other Revenues",
+    "doc": "Other revenues."
+  },
+  {
+    "tag": "CostOfRevenues",
+    "version": "0001213900-20-009750",
+    "custom": 1,
+    "abstract": 0,
+    "datatype": "monetary",
+    "iord": "D",
+    "crdr": "D",
+    "tlabel": "Cost Of Revenues",
+    "doc": "The aggregate cost of goods produced and sold and services rendered during the reporting period."
+  },
+  {
+    "tag": "SellingGeneralAndAdministrativeExpense",
+    "version": "us-gaap/2018",
+    "custom": 0,
+    "abstract": 0,
+    "datatype": "monetary",
+    "iord": "D",
+    "crdr": "D",
+    "tlabel": "Selling, General and Administrative Expense",
+    "doc": "The aggregate total costs related to selling a firm's product and services, as well as all other general and administrative expenses. Direct selling expenses (for example, credit, warranty, and advertising) are expenses that can be directly linked to the sale of specific products. Indirect selling expenses are expenses that cannot be directly linked to the sale of specific products, for example telephone expenses, Internet, and postal charges. General and administrative expenses include salaries of non-sales personnel, rent, utilities, communication, etc."
+  },
+  {
+    "tag": "ResearchAndDevelopmentExpense",
+    "version": "us-gaap/2018",
+    "custom": 0,
+    "abstract": 0,
+    "datatype": "monetary",
+    "iord": "D",
+    "crdr": "D",
+    "tlabel": "Research and Development Expense",
+    "doc": "The aggregate costs incurred (1) in a planned search or critical investigation aimed at discovery of new knowledge with the hope that such knowledge will be useful in developing a new product or service, a new process or technique, or in bringing about a significant improvement to an existing product or process; or (2) to translate research findings or other knowledge into a plan or design for a new product or process or for a significant improvement to an existing product or process whether intended for sale or the entity's use, during the reporting period charged to research and development projects, including the costs of developing computer software up to the point in time of achieving technological feasibility, and costs allocated in accounting for a business combination to in-process projects deemed to have no alternative future use."
+  },
+  {
+    "tag": "DepreciationAndAmortization",
+    "version": "us-gaap/2018",
+    "custom": 0,
+    "abstract": 0,
+    "datatype": "monetary",
+    "iord": "D",
+    "crdr": "D",
+    "tlabel": "Depreciation, Depletion and Amortization",
+    "doc": "The current period expense charged against earnings on long-lived, physical assets not used in production, and which are not intended for resale, to allocate or recognize the cost of such assets over their useful lives; or to record the reduction in book value of an intangible asset over the benefit period of such asset; or to reflect consumption during the period of an asset that is not used in production."
+  },
+  {
+    "tag": "InterestExpenseIncomeNet",
+    "version": "0001509991-20-000065",
+    "custom": 1,
+    "abstract": 0,
+    "datatype": "monetary",
+    "iord": "D",
+    "crdr": "D",
+    "tlabel": "Interest Expense (Income), Net",
+    "doc": "Interest costs charged to earnings during the period, including amortization of deferred financing costs, net gain (loss) on interest rate swap derivatives, loss on extinguishment of debt, and net of interest income."
+  },
+  {
+    "tag": "TotalOtherExpenses",
+    "version": "0000906345-20-000038",
+    "custom": 1,
+    "abstract": 0,
+    "datatype": "monetary",
+    "iord": "D",
+    "crdr": "D",
+    "tlabel": "Total Other Expenses",
+    "doc": "This element represents a sum total of property management, fee and asset management, general and administrative, interest, depreciation and amortization, amortization of deferred financing costs, and expense (benefit) on deferred compensation plans."
+  },
+  {
+    "tag": "OperatingIncome",
+    "version": "0001564590-20-023437",
+    "custom": 1,
+    "abstract": 0,
+    "datatype": "monetary",
+    "iord": "D",
+    "crdr": "C",
+    "tlabel": "Operating Income",
+    "doc": "Operating income."
+  },
+  {
+    "tag": "InterestIncomeExpenseNonoperatingNet",
+    "version": "us-gaap/2018",
+    "custom": 0,
+    "abstract": 0,
+    "datatype": "monetary",
+    "iord": "D",
+    "crdr": "C",
+    "tlabel": "Interest Income (Expense), Nonoperating, Net",
+    "doc": "The net amount of nonoperating interest income (expense)."
+  },
+  {
+    "tag": "GainLossOnSaleOfAssetsAndOtherIncome",
+    "version": "0000717423-20-000031",
+    "custom": 1,
+    "abstract": 0,
+    "datatype": "monetary",
+    "iord": "D",
+    "crdr": "C",
+    "tlabel": "Gain Loss on Sale of Assets and Other Income",
+    "doc": "Gain Loss on Sale of Assets and Other Income"
+  },
+  {
+    "tag": "IncomeTaxesPaidNet",
+    "version": "us-gaap/2018",
+    "custom": 0,
+    "abstract": 0,
+    "datatype": "monetary",
+    "iord": "D",
+    "crdr": "C",
+    "tlabel": "Income Taxes Paid, Net",
+    "doc": "The amount of cash paid during the current period to foreign, federal, state, and local authorities as taxes on income, net of any cash received during the current period as refunds for the overpayment of taxes."
+  },
+  {
+    "tag": "MinorityInterest",
+    "version": "us-gaap/2018",
+    "custom": 0,
+    "abstract": 0,
+    "datatype": "monetary",
+    "iord": "I",
+    "crdr": "C",
+    "tlabel": "Minority Interest",
+    "doc": "Total of all stockholders' equity (deficit) items, net of receivables from officers, directors, owners, and affiliates of the entity which is directly or indirectly attributable to that ownership interest in subsidiary equity which is not attributable to the parent (that is, noncontrolling interest, previously referred to as minority interest)."
+  },
+  {
+    "tag": "ExtraordinaryItems",
+    "version": "0001493152-20-008094",
+    "custom": 1,
+    "abstract": 0,
+    "datatype": "monetary",
+    "iord": "D",
+    "crdr": "D",
+    "tlabel": "Extraordinary Items",
+    "doc": "Extraordinary Items."
+  },
+  {
+    "tag": "TotalAdjustments",
+    "version": "0001062993-20-001804",
+    "custom": 1,
+    "abstract": 0,
+    "datatype": "monetary",
+    "iord": "D",
+    "crdr": "D",
+    "tlabel": "Total Adjustments",
+    "doc": "Total adjustments"
+  },
+  {
+    "tag": "InterestExpenseIncome",
+    "version": "0001564590-20-022350",
+    "custom": 1,
+    "abstract": 0,
+    "datatype": "monetary",
+    "iord": "D",
+    "crdr": "D",
+    "tlabel": "Interest Expense Income",
+    "doc": "Interest expense income."
+  },
+  {
+    "tag": "GrossProfit",
+    "version": "us-gaap/2018",
+    "custom": 0,
+    "abstract": 0,
+    "datatype": "monetary",
+    "iord": "D",
+    "crdr": "C",
+    "tlabel": "Gross Profit",
+    "doc": "Aggregate revenue less cost of goods and services sold or operating expenses directly attributable to the revenue generation activity."
+  }
+]</ConnectString>
+				<DataProvider>JSON</DataProvider>
+			</ConnectionProperties>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="Tradestone">
+			<Fields>
+				<Field Name="adsh">
+					<DataField>adsh</DataField>
+				</Field>
+				<Field Name="tag">
+					<DataField>tag</DataField>
+				</Field>
+				<Field Name="version">
+					<DataField>version</DataField>
+				</Field>
+				<Field Name="coreg">
+					<DataField>coreg</DataField>
+				</Field>
+				<Field Name="ddate">
+					<DataField>ddate</DataField>
+				</Field>
+				<Field Name="qtrs">
+					<DataField>qtrs</DataField>
+				</Field>
+				<Field Name="uom">
+					<DataField>uom</DataField>
+				</Field>
+				<Field Name="value">
+					<DataField>value</DataField>
+				</Field>
+				<Field Name="footnote">
+					<DataField>footnote</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>$.[*]</CommandText>
+				<DataSourceName>FinancialStatement</DataSourceName>
+			</Query>
+		</DataSet>
+		<DataSet Name="Income_statement_tags">
+			<Fields>
+				<Field Name="tag">
+					<DataField>tag</DataField>
+				</Field>
+				<Field Name="version">
+					<DataField>version</DataField>
+				</Field>
+				<Field Name="custom">
+					<DataField>custom</DataField>
+				</Field>
+				<Field Name="abstract">
+					<DataField>abstract</DataField>
+				</Field>
+				<Field Name="datatype">
+					<DataField>datatype</DataField>
+				</Field>
+				<Field Name="iord">
+					<DataField>iord</DataField>
+				</Field>
+				<Field Name="crdr">
+					<DataField>crdr</DataField>
+				</Field>
+				<Field Name="tlabel">
+					<DataField>tlabel</DataField>
+				</Field>
+				<Field Name="doc">
+					<DataField>doc</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>$.[*]</CommandText>
+				<DataSourceName>IncomeStatementTags</DataSourceName>
+			</Query>
+		</DataSet>
+	</DataSets>
+	<DocumentMap xmlns="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+		<NumberingStyle>Decimal</NumberingStyle>
+		<Levels>
+			<Level />
+			<Level>
+				<NumberingStyle>LowerLatin</NumberingStyle>
+			</Level>
+		</Levels>
+	</DocumentMap>
+</Report>
