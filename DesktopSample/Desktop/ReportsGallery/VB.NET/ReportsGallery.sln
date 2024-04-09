@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "ReportsGallery", "Reports Gallery\ReportsGallery.vbproj", "{FA4B9975-97A6-4C67-817D-25F25A56CC3E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Release|AnyCPU = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA4B9975-97A6-4C67-817D-25F25A56CC3E}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{FA4B9975-97A6-4C67-817D-25F25A56CC3E}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{FA4B9975-97A6-4C67-817D-25F25A56CC3E}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{FA4B9975-97A6-4C67-817D-25F25A56CC3E}.Release|AnyCPU.Build.0 = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8F2E4C4-7F77-47ED-AB2E-8480D89810EC}
+	EndGlobalSection
+EndGlobal
