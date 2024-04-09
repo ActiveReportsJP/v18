@@ -1,0 +1,133 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>9</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>NU1701</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>NU1701</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MESCIUS.ActiveReports.Aspnetcore.Viewer.ja" Version="18.0.0" />
+    <PackageReference Include="MESCIUS.ActiveReports.Aspnetcore.Designer.ja" Version="18.0.0" />
+    <PackageReference Include="LiteDB" Version="5.0.17" />
+    <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.20.1" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="6.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="appsettings.Development.json" />
+    <Content Remove="appsettings.json" />
+    <Content Remove="ActiveReports.config" />
+    <Content Include="wwwwroot\**" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="resources\CosmosDB\images\MESCIUS.png" />
+    <None Remove="resources\CosmosDB\reports\AcmeStore.rdlx" />
+    <None Remove="resources\CosmosDB\reports\BalanceSheet.rdlx" />
+    <None Remove="resources\CosmosDB\reports\IncomeStatement.rdlx" />
+    <None Remove="resources\CosmosDB\reports\MonthlyExpenses.rdlx" />
+    <None Remove="resources\CosmosDB\reports\ProductSalesOverTime.rdlx" />
+    <None Remove="resources\CosmosDB\reports\Sales.rdlx" />
+    <None Remove="resources\CosmosDB\templates\OrganizationBrandedReport.png" />
+    <None Remove="resources\CosmosDB\templates\OrganizationBrandedReport.rdlx" />
+    <None Remove="resources\CosmosDB\themes\Active.rdlx-theme" />
+    <None Remove="resources\CosmosDB\themes\Autumn.rdlx-theme" />
+    <None Remove="resources\CosmosDB\themes\Clarity.rdlx-theme" />
+    <None Remove="resources\CosmosDB\themes\Cool.rdlx-theme" />
+    <None Remove="resources\CosmosDB\themes\Cordial.default.rdlx-theme" />
+    <None Remove="resources\CosmosDB\themes\Cosmo.rdlx-theme" />
+    <None Remove="resources\CosmosDB\themes\Deep.rdlx-theme" />
+    <None Remove="resources\CosmosDB\themes\Grays.rdlx-theme" />
+    <None Remove="resources\CosmosDB\themes\Handsome.rdlx-theme" />
+    <None Remove="resources\CosmosDB\themes\Northwest.rdlx-theme" />
+    <None Remove="resources\CosmosDB\themes\Placid.rdlx-theme" />
+    <None Remove="resources\CosmosDB\themes\Reels.rdlx-theme" />
+    <None Remove="resources\CosmosDB\themes\Seabreeze.rdlx-theme" />
+    <None Remove="resources\CosmosDB\themes\Summertime.rdlx-theme" />
+    <None Remove="resources\CosmosDB\themes\Wind.rdlx-theme" />
+    <None Remove="resources\lite.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resources\CosmosDB\images\MESCIUS.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\CosmosDB\reports\AcmeStore.rdlx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\CosmosDB\reports\BalanceSheet.rdlx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\CosmosDB\reports\IncomeStatement.rdlx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\CosmosDB\reports\MonthlyExpenses.rdlx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\CosmosDB\reports\ProductSalesOverTime.rdlx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\CosmosDB\reports\Sales.rdlx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\CosmosDB\templates\OrganizationBrandedReport.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\CosmosDB\templates\OrganizationBrandedReport.rdlx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\CosmosDB\themes\Active.rdlx-theme">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\CosmosDB\themes\Autumn.rdlx-theme">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\CosmosDB\themes\Clarity.rdlx-theme">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\CosmosDB\themes\Cool.rdlx-theme">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\CosmosDB\themes\Cordial.default.rdlx-theme">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\CosmosDB\themes\Cosmo.rdlx-theme">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\CosmosDB\themes\Deep.rdlx-theme">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\CosmosDB\themes\Grays.rdlx-theme">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\CosmosDB\themes\Handsome.rdlx-theme">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\CosmosDB\themes\Northwest.rdlx-theme">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\CosmosDB\themes\Placid.rdlx-theme">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\CosmosDB\themes\Reels.rdlx-theme">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\CosmosDB\themes\Seabreeze.rdlx-theme">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\CosmosDB\themes\Summertime.rdlx-theme">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\CosmosDB\themes\Wind.rdlx-theme">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\lite.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Target Name="ClientBuild" BeforeTargets="BeforeBuild">
+    <Exec WorkingDirectory="ClientApp" Command="npm install" />
+    <Exec WorkingDirectory="ClientApp" Command="npm run build" />
+  </Target>
+</Project>
