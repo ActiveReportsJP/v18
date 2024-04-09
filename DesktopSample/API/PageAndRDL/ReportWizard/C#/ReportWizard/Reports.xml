@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<reports>
+  <report title="ジャンル別の売上" filename="GenreSales.rdlx-master">
+    <fields>
+      <field name="SaleID" title="ID" width="1.4cm" datatype="number" />
+      <field name="Title" title="タイトル" width="8cm" datatype="text" />
+      <field name="YearReleased" title="公開（年）" width="2.4cm" datatype="number" />
+      <field name="MPAA" title="年齢制限" width="1.8cm" datatype="text" />
+      <field name="Quantity" title="数量" width="1.5cm" datatype="number" format="N0" summarizable="true" summaryFunction="Sum" />
+      <field name="Price" title="価格" width="1.8cm" datatype="number" format="¥#,##0.00" summarizable="true" summaryFunction="Sum" />
+    </fields>
+  </report>
+  <report title="年別の店舗売上" filename="StoreSales.rdlx-master">
+    <fields>
+      <field name="SalesID" title="売上ID" width="1.4cm" datatype="number" />
+      <field name="SaleDate" title="売上日" width="2.1cm" datatype="number" format="d" />
+      <field name="Month" title="月" width="1.4cm" datatype="number" />
+      <field name="Year" title="年" width="1.4cm" datatype="number" />
+      <field name="Quantity" title="数量" width="1.5cm" datatype="number" format="N0" summarizable="true" summaryFunction="Sum" />
+      <field name="Price" title="価格" width="1.8cm" format="¥#,##0.00" datatype="number" summarizable="true" summaryFunction="Sum" />
+      <field name="Discount" title="割引" width="1.6cm" datatype="number" format="P2" />
+      <field name="StorePrice" title="店頭価格" width="2cm" datatype="number" format="¥#,##0.00" summarizable="true" summaryFunction="Sum" />
+      <field name="Profit" title="利益" width="2cm" format="¥#,##0.00" datatype="number" summarizable="true" summaryFunction="Sum" />
+    </fields>
+  </report>
+</reports>
