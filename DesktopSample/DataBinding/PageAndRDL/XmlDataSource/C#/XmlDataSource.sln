@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlDataSource", "XmlDataSource\XmlDataSource.csproj", "{315405B8-69B1-4A94-93E1-74E804671891}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Release|AnyCPU = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{315405B8-69B1-4A94-93E1-74E804671891}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{315405B8-69B1-4A94-93E1-74E804671891}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{315405B8-69B1-4A94-93E1-74E804671891}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{315405B8-69B1-4A94-93E1-74E804671891}.Release|AnyCPU.Build.0 = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
