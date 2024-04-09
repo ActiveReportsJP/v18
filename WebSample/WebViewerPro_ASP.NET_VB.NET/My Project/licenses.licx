@@ -1,0 +1,5 @@
+GrapeCity.ActiveReports.Web.WebViewer, MESCIUS.ActiveReports.Web, Version=18.0.0.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff
+GrapeCity.ActiveReports.Web.WebViewer, MESCIUS.ActiveReports.Web
+GrapeCity.ActiveReports.SectionReport, MESCIUS.ActiveReports
+GrapeCity.ActiveReports.PageReport, MESCIUS.ActiveReports
+GrapeCity.ActiveReports.Export.Pdf.Section.PdfExport, MESCIUS.ActiveReports.Export.Pdf
