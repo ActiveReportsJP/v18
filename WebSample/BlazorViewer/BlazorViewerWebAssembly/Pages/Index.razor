@@ -1,0 +1,37 @@
+﻿@page "/"
+
+<div class="main">
+    <ReportList ReportsList="@_reportsList" CurrentReport="@_currentReport" OnClickCallback="OnClick"></ReportList>
+    <div id="viewerContainer">
+        <ReportViewer @ref="_viewer" ReportService="@_reportService" ViewerInitialized="ViewerInitialized" />
+    </div>
+</div>
+
+@code{
+    private ReportViewer _viewer;
+    private List<string> _reportsList;
+    private string _currentReport = null;
+
+    private ReportServiceSettings _reportService = new ReportServiceSettings()
+    {
+        Url = "http://localhost:58865/",
+    };
+
+    protected override async Task OnInitializedAsync()
+    {
+        var http = new HttpClient { BaseAddress = new Uri(_reportService.Url) };
+        _reportsList = await http.GetFromJsonAsync<List<string>>("/reports/");
+        _currentReport = _reportsList.FirstOrDefault();
+    }
+
+    public async void ViewerInitialized()
+    {
+        await _viewer.OpenReport(_currentReport ?? "AcmeStore.rdlx");
+    }
+
+    private async void OnClick(string res)
+    {
+        _currentReport = res;
+        await _viewer.OpenReport(_currentReport);
+    }
+}
