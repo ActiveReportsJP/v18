@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Title>ActiveReports Sample</Title>
+    <Description>ActiveReports Sample</Description>
+    <Copyright>© MESCIUS inc. All rights reserved.</Copyright>
+    <Product>ActiveReports Sample</Product>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ActiveReports.Samples.TestDesignerPro</RootNamespace>
+    <AssemblyName>ActiveReports.Samples.TestDesignerPro</AssemblyName>
+    <TargetFrameworks>net462;net8.0-windows</TargetFrameworks>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformName>windows</PlatformName>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <UseWindowsForms>true</UseWindowsForms>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <NoWarn>NU1701</NoWarn>
+    <NoWarn>CS0618</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net462'">
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="ActiveReports.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CmdNewReport.png" />
+    <None Include="Resources\CmdOpen.png" />
+    <None Include="Resources\CmdSave.png" />
+    <None Include="Resources\CmdSaveAs.png" />
+    <None Include="Resources\GroupEditorHide.png" />
+    <None Include="Resources\GroupEditorShow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MESCIUS.ActiveReports.Export.Excel.ja">
+      <Version>18.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="MESCIUS.ActiveReports.Export.Html.ja">
+      <Version>18.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="MESCIUS.ActiveReports.Export.Image.ja">
+      <Version>18.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="MESCIUS.ActiveReports.Export.Pdf.ja">
+      <Version>18.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="MESCIUS.ActiveReports.Export.Word.ja">
+      <Version>18.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="MESCIUS.ActiveReports.Export.Xml.ja">
+      <Version>18.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="MESCIUS.ActiveReports.Design.Win.ja">
+      <Version>18.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="MESCIUS.ActiveReports.Core.DataProviders.Excel">
+      <Version>1.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite.Core">
+      <Version>1.0.118</Version>
+    </PackageReference>
+    <PackageReference Include="System.Text.Encoding.CodePages">
+      <Version>6.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Resources.Extensions">
+      <Version>6.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="MySqlConnector">
+      <Version>2.2.7</Version>
+    </PackageReference>
+    <PackageReference Include="Npgsql">
+      <Version>7.0.6</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net8.0-windows'">
+    <PackageReference Include="Oracle.ManagedDataAccess.Core">
+      <Version>3.21.110</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net462'">
+    <PackageReference Include="Oracle.ManagedDataAccess">
+      <Version>21.11.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

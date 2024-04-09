@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CustomResourceLocator", "CustomResourceLocator\CustomResourceLocator.vbproj", "{6978C103-4205-4D83-A996-5FE85831FE07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Release|AnyCPU = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6978C103-4205-4D83-A996-5FE85831FE07}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{6978C103-4205-4D83-A996-5FE85831FE07}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{6978C103-4205-4D83-A996-5FE85831FE07}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{6978C103-4205-4D83-A996-5FE85831FE07}.Release|AnyCPU.Build.0 = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
