@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ActiveReportsLayout Version="3.5" PrintWidth="9480.189" DocumentName="ActiveReports Document" ScriptLang="C#" MasterReport="0" CompatibilityMode="CrossPlatform">
+	<StyleSheet>
+		<Style Name="Normal" Value="font-family: ＭＳ Ｐゴシック; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; ddo-char-set: 128" />
+		<Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; ddo-char-set: 128" />
+		<Style Name="Heading2" Value="font-family: ＭＳ Ｐゴシック; font-size: 14pt; font-weight: bold; font-style: italic; ddo-char-set: 128" />
+		<Style Name="Heading3" Value="font-weight: bold; ddo-char-set: 128; font-size: 10pt" />
+		<Style Name="DetailRecord" Value="font-family: ＭＳ Ｐゴシック; font-style: normal; text-decoration: none; font-weight: normal; color: Black; ddo-char-set: 128; font-size: 8pt" />
+		<Style Name="ReportTitle" Value="font-family: ＭＳ Ｐゴシック; font-style: normal; text-decoration: none; font-weight: normal; color: Black; ddo-char-set: 128; font-size: 22pt" />
+	</StyleSheet>
+	<Sections>
+		<Section Type="ReportHeader" Name="ReportHeader" Height="0" BackColor="16777215" />
+		<Section Type="PageHeader" Name="PageHeader" Height="1728" BackColor="16777215" CanGrow="0">
+			<Control Type="AR.Label" Name="label1" Left="7560" Top="1440" Width="1920.19" Height="288" Caption="商品数" ClassName="Heading3" Style="font-family: MS PGothic; font-weight: normal; text-align: right; vertical-align: middle; ddo-char-set: 1" PaddingRight="2" />
+			<Control Type="AR.Label" Name="lblUnitPrice" Left="5624.503" Top="1440" Width="1934.929" Height="288" Caption="平均単価" ClassName="Heading3" Style="font-family: MS PGothic; font-weight: normal; text-align: right; vertical-align: middle; ddo-char-set: 1" PaddingRight="2" />
+			<Control Type="AR.Label" Name="lblProductName" Left="0.5669118" Top="1440" Width="5624.503" Height="288" Caption="カテゴリ名" ClassName="Heading3" Style="font-family: MS PGothic; font-weight: normal; vertical-align: middle; ddo-char-set: 1" PaddingLeft="2" />
+			<Control Type="AR.Label" Name="lblTitle" Left="0" Top="90.14173" Width="9480.189" Height="540" Caption="カテゴリ一覧" Style="font-family: MS PGothic; vertical-align: middle" ClassName="ReportTitle" />
+			<Control Type="AR.Line" Name="lnePageHeader1" X1="0" Y1="1440" X2="9480.189" Y2="1440" LineWeight="2" />
+			<Control Type="AR.Line" Name="lnePageHeader2" X1="0" Y1="1728" X2="9480.189" Y2="1728" LineWeight="2" />
+		</Section>
+		<Section Type="Detail" Name="Detail" Height="288" BackColor="16777215" KeepTogether="1">
+			<Control Type="AR.Field" Name="txtAvgUnitPrice" DataField="AvgUnitPrice" Left="5624.503" Top="0" Width="1935.498" Height="288" Text="AvgUnitPrice" OutputFormat="¥#,##0" CanShrink="1" Style="font-family: MS PGothic; text-align: right; vertical-align: middle" PaddingRight="4" />
+			<Control Type="AR.Field" Name="txtCategory" DataField="CategoryName" Left="0" Top="0" Width="5624.503" Height="288" Text="Category" CanShrink="1" Style="font-family: MS PGothic; vertical-align: middle" />
+			<Control Type="AR.Field" Name="textBox1" DataField="ProductCount" Left="7560" Top="0" Width="1919.622" Height="288" Text="Count" OutputFormat="#0" CanShrink="1" Style="font-family: MS PGothic; text-align: right; vertical-align: middle" PaddingRight="4" />
+		</Section>
+		<Section Type="PageFooter" Name="PageFooter" Height="288" BackColor="16777215" CanGrow="0">
+			<Control Type="AR.ReportInfo" Name="reportInfo1" Left="3780" Top="0" Width="3420" Height="288" FormatString="{PageNumber} / {PageCount}" Style="font-family: MS PGothic" />
+		</Section>
+		<Section Type="ReportFooter" Name="ReportFooter" Height="1333" BackColor="16777215" KeepTogether="1">
+			<Control Type="AR.Label" Name="lblTotalNumber" Left="4385.764" Top="58.96063" Width="3174.237" Height="360" Caption="カテゴリ数" ClassName="Heading3" Style="font-family: MS PGothic; font-weight: normal; text-align: right; vertical-align: middle; ddo-char-set: 1" />
+			<Control Type="AR.Field" Name="txtProductCount" DataField="CategoryID" Left="7711.2" Top="59.04" Width="1604.402" Height="360" Text="CategoryCount" ClassName="Heading3" Style="font-family: MS PGothic; font-weight: normal; text-align: right; vertical-align: middle; ddo-char-set: 1" SummaryType="1" SummaryFunc="2" />
+			<Control Type="AR.Line" Name="lneReportFooter" X1="0" Y1="0" X2="9555.023" Y2="0" LineWeight="2" />
+		</Section>
+	</Sections>
+	<DataSources>
+		<DbDataSource Name="sqlite" Connect="Data Source=..\\..\\..\\..\\..\\..\\..\\..\\Data\\NWIND.db" SQL="Select Categories.CategoryID, categories.CategoryName, Avg(Products.UnitPrice) as AvgUnitPrice, Count(Categories.CategoryID) as ProductCount FROM Products, Categories WHERE Products.CategoryID = Categories.CategoryID GROUP BY Categories.CategoryID, categories.CategoryName;" />
+	</DataSources>
+	<PageSettings RightMargin="720" PaperSize="1" PaperWidth="11909" PaperHeight="16834" PaperName="" />
+	<Parameters />
+</ActiveReportsLayout>
