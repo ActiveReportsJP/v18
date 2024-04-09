@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://cdn.grapecity.com/ActiveReports/reporting/2022/01/reportdefinition">
+	<ReportSections>
+		<ReportSection Name="ReportArea1">
+			<Body>
+				<Height>1.125in</Height>
+				<ReportItems>
+					<List Name="List1">
+						<DataSetName>GDPDataSet</DataSetName>
+						<Top>0.75in</Top>
+						<Left>0.125in</Left>
+						<Width>6.375in</Width>
+						<Height>0.25in</Height>
+						<ReportItems>
+							<Textbox Name="TextBox1">
+								<Width>1.25in</Width>
+								<Height>0.25in</Height>
+								<Style>
+									<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+									<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+									<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+									<TextAlign>Right</TextAlign>
+								</Style>
+								<Action>
+									<Drillthrough>
+										<Parameters>
+											<Parameter Name="CountryID">
+												<Value>=Fields!CountryID.Value</Value>
+											</Parameter>
+										</Parameters>
+										<ReportName>CountryFacts</ReportName>
+									</Drillthrough>
+								</Action>
+								<CanGrow>true</CanGrow>
+								<Value>=Fields!CountryName.Value</Value>
+							</Textbox>
+							<Textbox Name="TextBox2">
+								<Left>1.25in</Left>
+								<Width>1in</Width>
+								<Height>0.25in</Height>
+								<Style>
+									<FontFamily>=Theme.Fonts!MinorFont.Family</FontFamily>
+									<FontSize>=Theme.Fonts!MinorFont.Size</FontSize>
+									<FontStyle>=Theme.Fonts!MinorFont.Style</FontStyle>
+									<Format>c</Format>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+								</Style>
+								<CanGrow>true</CanGrow>
+								<Value>=Fields!GDPPPP.Value / 1000</Value>
+							</Textbox>
+							<Image Name="Image1">
+								<Left>2.5in</Left>
+								<Width>1.875in</Width>
+								<Height>0.25in</Height>
+								<ZIndex>1</ZIndex>
+								<MIMEType>image/png</MIMEType>
+								<Sizing>AutoSize</Sizing>
+								<Source>Database</Source>
+								<Value>=RangeBar( 0, Max( Fields!GDPPPP.Value ), Theme.Colors( 0, 2 ), "0.25in", "1.875in", 0, Fields!GDPPPP.Value )</Value>
+							</Image>
+						</ReportItems>
+						<Sorting>
+							<SortBy>
+								<Direction>Descending</Direction>
+								<SortExpression>=Fields!GDPPPP.Value</SortExpression>
+							</SortBy>
+						</Sorting>
+					</List>
+					<Textbox Name="TextBox3">
+						<Left>0.125in</Left>
+						<Width>6.375in</Width>
+						<Height>0.375in</Height>
+						<Style>
+							<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
+							<FontSize>18pt</FontSize>
+							<FontWeight>700</FontWeight>
+							<PaddingBottom>2pt</PaddingBottom>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<TextAlign>Center</TextAlign>
+						</Style>
+						<CanGrow>true</CanGrow>
+						<Value>国内総生産の上位10カ国</Value>
+					</Textbox>
+					<Textbox Name="TextBox4">
+						<Top>0.375in</Top>
+						<Left>0.125in</Left>
+						<Width>6.375in</Width>
+						<Height>0.25in</Height>
+						<Style>
+							<FontFamily>=Theme.Fonts!MajorFont.Family</FontFamily>
+							<FontSize>12pt</FontSize>
+							<FontWeight>700</FontWeight>
+							<PaddingBottom>2pt</PaddingBottom>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<TextAlign>Center</TextAlign>
+						</Style>
+						<ZIndex>1</ZIndex>
+						<CanGrow>true</CanGrow>
+						<Value>（10億米ドル）</Value>
+					</Textbox>
+				</ReportItems>
+			</Body>
+			<Page />
+			<Width>6.625in</Width>
+		</ReportSection>
+	</ReportSections>
+	<DataSources>
+		<DataSource Name="FactBookDataSource">
+			<ConnectionProperties>
+				<ConnectString>XmlDoc=..\..\..\..\..\Data\Factbook.xml;TransformationDoc=..\..\..\..\..\Data\SortByRegionGdp.xsl</ConnectString>
+				<DataProvider>XML</DataProvider>
+			</ConnectionProperties>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="GDPDataSet">
+			<Collation>Default</Collation>
+			<Fields>
+				<Field Name="CountryName">
+					<DataField>./name</DataField>
+				</Field>
+				<Field Name="CountryID">
+					<DataField>./id</DataField>
+				</Field>
+				<Field Name="MapCode">
+					<DataField>./mapcode</DataField>
+				</Field>
+				<Field Name="GDPPurchasingPowerParity">
+					<DataField>./GDPPurchasingPowerParity</DataField>
+				</Field>
+				<Field Name="GDPPerCapita">
+					<DataField>./GDPPerCapita</DataField>
+				</Field>
+				<Field Name="GDPPPP">
+					<Value>=System.Convert.ToDouble(Fields!GDPPurchasingPowerParity.Value) * 0.000001</Value>
+				</Field>
+			</Fields>
+			<Filters>
+				<Filter>
+					<FilterExpression>=Fields!GDPPPP.Value</FilterExpression>
+					<FilterValues>
+						<FilterValue>=10</FilterValue>
+					</FilterValues>
+					<Operator>TopN</Operator>
+				</Filter>
+			</Filters>
+			<Query>
+				<CommandText>//country[name != 'World']</CommandText>
+				<DataSourceName>FactBookDataSource</DataSourceName>
+			</Query>
+		</DataSet>
+	</DataSets>
+	<CustomProperties>
+		<CustomProperty>
+			<Name>Theme</Name>
+			<Value>Factbook.rdlx-theme</Value>
+		</CustomProperty>
+	</CustomProperties>
+	<ReportThemes>
+		<ThemeUri>Factbook.rdlx-theme</ThemeUri>
+	</ReportThemes>
+</Report>
