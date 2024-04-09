@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreateReport", "CreateReport\CreateReport.csproj", "{903930EB-E9E2-4F1E-B452-938283043953}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Release|AnyCPU = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{903930EB-E9E2-4F1E-B452-938283043953}.Debug|AnyCPU.ActiveCfg = Debug|Any CPU
+		{903930EB-E9E2-4F1E-B452-938283043953}.Debug|AnyCPU.Build.0 = Debug|Any CPU
+		{903930EB-E9E2-4F1E-B452-938283043953}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{903930EB-E9E2-4F1E-B452-938283043953}.Release|AnyCPU.Build.0 = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1AD80779-86AE-41EA-89E4-98A37C64C152}
+	EndGlobalSection
+EndGlobal
