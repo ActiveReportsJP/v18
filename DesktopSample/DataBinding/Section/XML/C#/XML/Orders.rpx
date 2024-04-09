@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.5" PrintWidth="9360" DocumentName="ActiveReports Document" ScriptLang="C#" MasterReport="0" CompatibilityMode="CrossPlatform">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: ＭＳ Ｐゴシック; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; ddo-char-set: 128" />
+    <Style Name="Heading1" Value="font-family: Arial; font-size: 16pt; font-style: normal; font-weight: bold" />
+    <Style Name="Heading2" Value="font-family: Times New Roman; font-size: 14pt; font-style: italic; font-weight: bold" />
+    <Style Name="Heading3" Value="font-family: Arial; font-size: 13pt; font-style: normal; font-weight: bold" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="Detail" Name="Detail" Height="599" BackStyle="1" BackColor="12648447" KeepTogether="1">
+      <Control Type="AR.Field" Name="txtOrderNumber" DataField="NUMBER" Left="0" Top="0" Width="1440" Height="270" Text="数" Style="font-family: MS PGothic; font-size: 9.75pt; ddo-char-set: 0" />
+      <Control Type="AR.Field" Name="txtOrderDate" DataField="DATE" Left="1620" Top="0" Width="4140" Height="270" Text="年月日" Style="font-family: MS PGothic; font-size: 9.75pt; ddo-char-set: 0" />
+      <Control Type="AR.Subreport" Name="srptItems" DataField="ITEM" Left="0" Top="270" Width="9270" Height="270" />
+      <Control Type="AR.Label" Name="lblItems" Left="6120" Top="0" Width="1620" Height="270" Caption="アイテム数" Style="font-family: MS PGothic; font-size: 9.75pt; ddo-char-set: 0" />
+    </Section>
+  </Sections>
+  <ReportComponentTray />
+  <DataSources>
+    <XmlDataSource FileURL="..\..\..\..\..\Data\customer.xml" Pattern="//ORDER" />
+  </DataSources>
+  <Script><![CDATA[/// <summary>
+/// Format イベント
+/// 各セクションに対して呼び出されActiveReportsのイベント（ページヘッダー/フッター、
+/// このイベントを使用し、セクション、またはセクション内の任意のコントロールのレイアウトを変更します。
+/// これは、セクションの高さを変更できる唯一のイベントです。また、Formatイベントを使用し、
+/// SQL文字列などの情報をサブレポートに渡します。
+/// </summary>
+public void Detail_Format()
+{
+	//データソースから項目ノードの数を取得します。
+	GrapeCity.ActiveReports.Data.XMLDataSource xmlDS = rpt.DataSource as GrapeCity.ActiveReports.Data.XMLDataSource;
+	if (xmlDS == null)
+	{
+		lblItems.Text = "0";
+		return;
+	}
+
+	//項目ノードの一覧を取得します。
+	System.Xml.XmlNodeList nodeList = xmlDS.Field("ITEM", true) as System.Xml.XmlNodeList;
+	if (nodeList == null)
+	{
+		lblItems.Text = "0";
+		return;
+	}
+
+	//lblItems.Textを設定し、項目ノードの数えます。
+	lblItems.Text = string.Format(System.Globalization.CultureInfo.CurrentCulture, "Item Count: {0}", nodeList.Count);
+}
+
+
+/// <summary>
+/// ReportStart イベント
+/// レポートの実行時に必要な任意のオブジェクトまたは変数を初期化するために使用します。
+/// また、サブレポートの場合、親レポートのこのイベント内で、Subreportコントロールに
+/// 任意の子レポートを割り当てるとができます。
+/// </summary>
+public void ActiveReport_ReportStart()
+{
+	var ordersItems = new GrapeCity.ActiveReports.SectionReport();
+	ordersItems.LoadLayout(System.IO.Path.GetFullPath("..\\..\\..\\OrderItems.rpx"));
+	srptItems.Report = ordersItems;
+}
+
+
+]]></Script>
+  <PageSettings />
+  <Parameters />
+</ActiveReportsLayout>

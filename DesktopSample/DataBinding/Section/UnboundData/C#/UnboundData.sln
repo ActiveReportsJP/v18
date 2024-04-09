@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnboundData", "UnboundData\UnboundData.csproj", "{7C81FCE3-E15F-4567-9B06-5141FC5E1DD2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Release|AnyCPU = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C81FCE3-E15F-4567-9B06-5141FC5E1DD2}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{7C81FCE3-E15F-4567-9B06-5141FC5E1DD2}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{7C81FCE3-E15F-4567-9B06-5141FC5E1DD2}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{7C81FCE3-E15F-4567-9B06-5141FC5E1DD2}.Release|AnyCPU.Build.0 = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "XML", "XML\XML.vbproj", "{8617CA80-45C4-47EC-B916-FC403AE8AA2C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Release|AnyCPU = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8617CA80-45C4-47EC-B916-FC403AE8AA2C}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{8617CA80-45C4-47EC-B916-FC403AE8AA2C}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{8617CA80-45C4-47EC-B916-FC403AE8AA2C}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{8617CA80-45C4-47EC-B916-FC403AE8AA2C}.Release|AnyCPU.Build.0 = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0"?>
+<People>
+  <Person id="1">
+    <Name>林　 千春</Name>
+    <Age>25</Age>
+    <city>佐賀市</city>
+  </Person>
+  <Person id="2">
+    <Name>河本 なみ</Name>
+    <Age>30</Age>
+    <city>那覇市</city>
+  </Person>
+  <Person id="3">
+    <Name>山久 良美</Name>
+    <Age>49</Age>
+    <city>富山市</city>
+  </Person>
+  <Person id="4">
+    <Name>和辺 義隆</Name>
+    <Age>38</Age>
+    <city>津市</city>
+  </Person>
+  <Person id="5">
+    <Name>渡川 秀人</Name>
+    <Age>21</Age>
+    <city>京都府</city>
+  </Person>
+  <Person id="6">
+    <Name>小田 勝也</Name>
+    <Age>55</Age>
+    <city>板野郡</city>
+  </Person>
+  <Person id="7">
+    <Name>池林 裕香</Name>
+    <Age>24</Age>
+    <city>吾妻郡</city>
+  </Person>
+  <Person id="8">
+    <Name>池山 剛司</Name>
+    <Age>29</Age>
+    <city>吾妻郡</city>
+  </Person>
+  <Person id="9">
+    <Name>木山 勇</Name>
+    <Age>35</Age>
+    <city>長野市</city>
+  </Person>
+  <Person id="10">
+    <Name>鈴藤 哲也</Name>
+    <Age>41</Age>
+    <city>習志野市</city>
+  </Person>
+</People>
