@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ActiveReportsLayout Version="3.5" PrintWidth="9360" MaxPages="10" DocumentName="ActiveReports Document" ScriptLang="C#" MasterReport="0" CompatibilityMode="CrossPlatform">
+	<StyleSheet>
+		<Style Name="Normal" Value="font-family: ＭＳ Ｐゴシック; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; ddo-char-set: 128" />
+		<Style Name="Heading1" Value="font-family: Arial; font-size: 16pt; font-style: normal; font-weight: bold" />
+		<Style Name="Heading2" Value="font-family: Times New Roman; font-size: 14pt; font-style: italic; font-weight: bold" />
+		<Style Name="Heading3" Value="font-family: Arial; font-size: 13pt; font-style: normal; font-weight: bold" />
+	</StyleSheet>
+	<Sections>
+		<Section Type="PageHeader" Name="PageHeader" Height="0" BackColor="16777215" />
+		<Section Type="GroupHeader" Name="ghOrderID" Height="915" DataField="OrderID" GroupKeepTogether="1" BackColor="16777215" CanShrink="1">
+			<Control Type="AR.Field" Name="TextBox1" DataField="OrderID" Left="1379.52" Top="89.28001" Width="1440" Height="288" Text="Order" Style="font-family: MS PGothic" />
+			<Control Type="AR.Field" Name="TextBox6" Left="90" Top="90" Width="1289.52" Height="288" Text="受注ID:" Style="color: DarkGreen; font-family: MS PGothic; font-size: 11.25pt; font-weight: normal; text-decoration: none; ddo-char-set: 1" PaddingLeft="2" />
+			<Control Type="AR.Field" Name="lblProductID" Left="1170" Top="540" Width="1440" Height="288" Text="商品ID" Style="color: ForestGreen; font-family: MS PGothic; font-size: 11.25pt; font-weight: normal; text-decoration: none; vertical-align: middle; ddo-char-set: 1" />
+			<Control Type="AR.Field" Name="lblUnitPrice" Left="2700" Top="540" Width="1440" Height="288" Text="単価" Style="color: ForestGreen; font-family: MS PGothic; font-size: 11.25pt; font-weight: normal; text-decoration: none; vertical-align: middle; ddo-char-set: 1" />
+			<Control Type="AR.Field" Name="lblQuantity" Left="4230" Top="540" Width="1440" Height="288" Text="数量" Style="color: ForestGreen; font-family: MS PGothic; font-size: 11.25pt; font-weight: normal; text-decoration: none; vertical-align: middle; ddo-char-set: 1" />
+			<Control Type="AR.Field" Name="lblDiscount" Left="5760" Top="540" Width="1440" Height="288" Text="割引率" Style="color: ForestGreen; font-family: MS PGothic; font-size: 11.25pt; font-weight: normal; text-decoration: none; vertical-align: middle; ddo-char-set: 1" />
+			<Control Type="AR.Field" Name="lblExtendedPrice" Left="7290" Top="540" Width="1890" Height="288" Text="明細金額" Style="color: ForestGreen; font-family: MS PGothic; font-size: 11.25pt; font-weight: normal; text-decoration: none; vertical-align: middle; ddo-char-set: 1" />
+		</Section>
+		<Section Type="Detail" Name="Detail" Height="495" BackColor="16777215" KeepTogether="1" CanShrink="1">
+			<Control Type="AR.Field" Name="txtProductID" DataField="ProductID" Left="1170" Top="0" Width="1440" Height="288" Text="ProductId" Style="font-family: MS PGothic" />
+			<Control Type="AR.Field" Name="txtUnitPrice" DataField="UnitPrice" Left="2700" Top="0" Width="1440" Height="288" Text="UnitPrice" OutputFormat="¥#,##0" Style="font-family: MS PGothic" />
+			<Control Type="AR.Field" Name="txtQuantity" DataField="Quantity" Left="4230" Top="0" Width="1440" Height="288" Text="Quantity" Style="font-family: MS PGothic" />
+			<Control Type="AR.Field" Name="txtDiscount" DataField="Discount" Left="5760" Top="0" Width="1440" Height="288" Text="Discount" Style="font-family: MS PGothic" />
+			<Control Type="AR.Field" Name="txtExtendedPrice" DataField="ExtendedPrice" Left="7290" Top="0" Width="1890" Height="288" Text="ExtendedPrice" OutputFormat="¥#,##0" Style="font-family: MS PGothic" />
+		</Section>
+		<Section Type="GroupFooter" Name="gfOrderID" Height="464" BackColor="16777215" CanShrink="1">
+			<Control Type="AR.Field" Name="lblTotalExtendedPrice" Left="5760" Top="0" Width="1440" Height="288" Text="合計:" Style="color: DarkGreen; font-family: MS PGothic; font-size: 11.25pt; font-weight: normal; text-decoration: none; vertical-align: middle; ddo-char-set: 1" PaddingLeft="2" />
+			<Control Type="AR.Field" Name="txtTotalExtendedPrice" DataField="ExtendedPrice" Left="7290" Top="0" Width="1890" Height="288" Text="ExtendedPrice" OutputFormat="¥#,##0" Style="font-family: MS PGothic" SummaryType="3" SummaryRunning="1" SummaryGroup="ghOrderID" />
+		</Section>
+		<Section Type="PageFooter" Name="PageFooter" Height="825" BackColor="16777215">
+			<Control Type="AR.Label" Name="lblMaxPagesSet" Left="90" Top="90" Width="8910.001" Height="630" Caption="注意: 200ページのレポートが読み込まれていますが、MaxPagesプロパティの設定により、10ページのみ表示されています。" Style="color: Silver; font-family: MS PGothic; font-size: 9.75pt; font-style: normal; font-weight: normal; ddo-char-set: 1" />
+		</Section>
+	</Sections>
+	<DataSources>
+		<DbDataSource Name="sqlite" Connect="Data Source=..\\..\\..\\..\\..\\..\\..\\..\\Data\\NWIND.db" SQL="SELECT * FROM Order_Details ORDER BY OrderID" />
+	</DataSources>
+	  <Script><![CDATA[using System;
+using System.Globalization;
+
+public void ActiveReport_DataInitialize()
+{
+	rpt.Fields.Add("ExtendedPrice");
+}
+
+
+public bool ActiveReport_FetchData(bool eof)
+{
+	// 連結されたデータベースから計算用の値を収集します。
+	double quantity = Convert.ToDouble(rpt.Fields["Quantity"].Value, CultureInfo.CurrentCulture);
+	double unitPrice = Convert.ToDouble(rpt.Fields["UnitPrice"].Value, CultureInfo.CurrentCulture);
+	double discount = Convert.ToDouble(rpt.Fields["Discount"].Value, CultureInfo.CurrentCulture);
+
+	// 計算フィールドで指定した値を計算します。
+	rpt.Fields["ExtendedPrice"].Value = ((quantity * unitPrice) - (quantity * unitPrice * discount));
+	return eof;
+}
+
+
+]]></Script>
+	<PageSettings />
+	<Parameters />
+</ActiveReportsLayout>

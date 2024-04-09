@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.5" PrintWidth="9360" DocumentName="ActiveReports Document" ScriptLang="VB.NET" MasterReport="0" CompatibilityMode="CrossPlatform">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: ＭＳ Ｐゴシック; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; ddo-char-set: 128" />
+    <Style Name="Heading1" Value="font-family: Arial; font-size: 16pt; font-style: normal; font-weight: bold" />
+    <Style Name="Heading2" Value="font-family: Times New Roman; font-size: 14pt; font-style: italic; font-weight: bold" />
+    <Style Name="Heading3" Value="font-family: Arial; font-size: 13pt; font-style: normal; font-weight: bold" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader" Height="1634" BackColor="16777215">
+      <Control Type="AR.Label" Name="lblProductName" Left="90" Top="1170" Width="1710" Height="288" Caption="商品名" Style="color: ForestGreen; font-family: MS PGothic; font-size: 12pt; font-weight: normal; text-decoration: none; vertical-align: middle; ddo-char-set: 1" PaddingLeft="2" />
+      <Control Type="AR.Label" Name="lblUnitPrice" Left="1890" Top="1170" Width="1440" Height="288" Caption="単価" Style="color: ForestGreen; font-family: MS PGothic; font-size: 12pt; font-weight: normal; text-decoration: none; vertical-align: middle; ddo-char-set: 1" PaddingLeft="2" />
+      <Control Type="AR.Label" Name="lblQuantity" Left="3420" Top="1170" Width="1440" Height="288" Caption="数量" Style="color: ForestGreen; font-family: MS PGothic; font-size: 12pt; font-weight: normal; text-decoration: none; vertical-align: middle; ddo-char-set: 1" PaddingLeft="2" />
+      <Control Type="AR.Label" Name="lblExtendedPrice" Left="4950" Top="1170" Width="1890" Height="288" Caption="明細金額" Style="color: ForestGreen; font-family: MS PGothic; font-size: 12pt; font-weight: normal; text-decoration: none; vertical-align: middle; ddo-char-set: 1" PaddingLeft="2" />
+      <Control Type="AR.Label" Name="lblNote" Left="90" Top="90" Width="9180" Height="900" Caption="データフィールドの式にFieldsコレクションの値を使用して簡単な計算を行います。Detailセクション内のテキストボックス（txtExtendedPrice）のDataFieldプロパティの設定をご確認ください。&#xD;&#xA;注意: フィールド式では、組み込み集計関数を使用できません。" Style="color: Silver; font-family: MS PGothic; font-size: 9pt; font-style: normal; ddo-char-set: 1" />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="464" BackColor="16777215">
+      <Control Type="AR.Field" Name="txtProductName" DataField="ProductName" Left="89.28001" Top="89.28001" Width="1710" Height="288" Text="txtProductName" Style="font-family: MS PGothic" />
+      <Control Type="AR.Field" Name="txtUnitPrice" DataField="UnitPrice" Left="1890" Top="90" Width="1440" Height="288" Text="txtUnitPrice" OutputFormat="¥#,##0" Style="font-family: MS PGothic" />
+      <Control Type="AR.Field" Name="txtQuantity" DataField="Quantity" Left="3420" Top="90" Width="1440" Height="288" Text="txtQuantity" Style="font-family: MS PGothic" />
+      <Control Type="AR.Field" Name="txtExtendedPrice" DataField="=UnitPrice*Quantity" Left="4950" Top="90" Width="1890" Height="288" Text="txtExtendedPrice" OutputFormat="¥#,##0" Style="font-family: MS PGothic; font-weight: normal; text-decoration: none; ddo-char-set: 1" />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="225" BackColor="16777215" />
+  </Sections>
+  <ReportComponentTray />
+  <Script><![CDATA[Imports System
+Imports System.Collections
+
+Private _index As Integer
+Private _details As System.Collections.ArrayList
+
+
+Private Class OrderDetail
+	Public Sub New(productName As String, unitPrice As Double, quantity As Integer)
+		Me.productName = productName
+		Me.unitPrice = unitPrice
+		Me.quantity = quantity
+	End Sub
+
+	Public productName As String
+	Public unitPrice As Double
+	Public quantity As Integer
+End Class
+
+
+''' <summary>
+''' DataInitializeイベント
+''' カスタムフィールドをレポートのFieldsコレクションに追加する場合に使用します。
+''' カスタムフィールドは、バウンドレポート（レコードを取得するために組み込みデータソースを利用するレポートのこと）や、
+''' アンバウンドレポート（レコードを取得するためにデータソースを必要としないレポートのこと）に追加できます。
+''' </summary>
+Public Sub ActiveReport_DataInitialize()
+	rpt.Fields.Add("ProductName")
+	rpt.Fields.Add("UnitPrice")
+	rpt.Fields.Add("Quantity")
+End Sub
+
+
+Public Function ActiveReport_FetchData(eof As Boolean) As Boolean
+	If _index >= _details.Count - 1 Then
+		eof = True
+		Return eof
+	Else
+		eof = False
+	End If
+
+	Dim row As OrderDetail = CType(_details(System.Threading.Interlocked.Increment(_index)), OrderDetail)
+
+	rpt.Fields("ProductName").Value = row.productName
+	rpt.Fields("UnitPrice").Value = row.unitPrice
+	rpt.Fields("Quantity").Value = row.quantity
+	Return eof
+End Function
+
+''' <summary>
+''' ReportStartイベント
+''' レポートが開始されると、このイベントは毎回発生します。
+''' </summary>	
+Public Sub ActiveReport_ReportStart()
+	' テストデータ
+	_details = New System.Collections.ArrayList()
+	_details.Add(New OrderDetail("A", 10.0, 2))
+	_details.Add(New OrderDetail("B", 0.12, 1))
+	_details.Add(New OrderDetail("C", 5.92, 3))
+
+	_index = -1
+End Sub
+
+
+
+
+
+]]></Script>
+  <PageSettings />
+  <Parameters />
+</ActiveReportsLayout>
