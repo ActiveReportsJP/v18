@@ -7,7 +7,7 @@
 [ActiveReports for .NET 18.0J - サンプル](https://docs.mescius.jp/help/activereports-18/#samples.html)
 
 ## ナレッジベース
-[MESCIUS ナレッジベース](https://support.mescius.jp/hc/ja)
+[ActiveReports for .NET 18.0J – MESCIUS ナレッジベース](https://support.mescius.jp/hc/ja/categories/9172336363023)
 
 ## デモ
 [デモアプリケーション](https://developer.mescius.jp/activereports/demo)
