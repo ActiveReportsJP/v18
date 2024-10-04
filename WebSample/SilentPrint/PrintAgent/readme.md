@@ -1,10 +1,11 @@
 # プリントエージェント ASP.NET Core サンプル
 
 このプリントエージェントサンプルは、PDFファイルを印刷するためのASP.NET Core APIをホストするWindowsサービスを含んでいます。
-プリントエージェントは、GrapeCity.DioDocs.Pdf.jaライブラリを使用しています。
+プリントエージェントは、DioDocs.Pdf.jaライブラリを使用しています。
 このライブラリの非ライセンス版では、読み込みが5ページまでに制限されています。
-なお、GrapeCity.DioDocs.Pdf.jaライブラリを使用するには、別途、開発ライセンスが必要です。
-[価格表 - DioDocs | Developer Tools〈開発支援ツール〉 - グレープシティ株式会社](https://www.grapecity.co.jp/developer/diodocs/pricelist#diodocs-pdf)
+なお、DioDocs.Pdf.jaライブラリを使用するには、別途、開発ライセンスが必要です。
+[価格表 - DioDocs（ディオドック） | Developer Solutions〈開発支援ツール〉 - メシウス株式会社](https://developer.mescius.jp/diodocs/pricelist#diodocs-pdf)
+
 
 ## 設定
 プリンター名とリスニングポートは、appsettings.jsonファイルを修正することで変更できます。
